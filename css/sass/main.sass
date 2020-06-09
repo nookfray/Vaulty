@@ -1,0 +1,5555 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,  
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,  
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend 
+	vertical-align: baseline
+	font-family: inherit
+	font-weight: inherit
+	font-style: inherit
+	font-size: 100%
+	outline: 0
+	padding: 0
+	margin: 0
+	border: 0
+	&:focus 
+		outline: 0
+body 
+	background: white
+	line-height: 1
+	color: black
+ol, ul 
+	list-style: none
+table 
+	border-collapse: separate
+	border-spacing: 0
+caption, th, td 
+	font-weight: normal
+	text-align: left
+blockquote:before, blockquote:after, q:before, q:after
+	content: ""
+blockquote, q 
+	quotes: "" ""
+html, body
+	height: 100%
+
+@font-face
+	font-family: "ProximaNova"
+	src: url("../fonts/ProximaNova-Regular.woff") format("woff")
+	font-style: normal
+	font-weight: normal
+	font-display: swap
+	
+@font-face
+	font-family: "ProximaNova"
+	src: url("../fonts/ProximaNova-Light.woff") format("woff")
+	font-style: normal
+	font-weight: 300
+	font-display: swap
+	
+@font-face
+	font-family: "ProximaNova"
+	src: url("../fonts/ProximaNova-Semibold.woff") format("woff")
+	font-style: normal
+	font-weight: 600
+	font-display: swap
+	
+@font-face
+	font-family: "ProximaNova"
+	src: url("../fonts/ProximaNova-Bold.woff") format("woff")
+	font-style: normal
+	font-weight: bold
+	font-display: swap
+
+@font-face
+	font-family: "SagoePrint"
+	src: url("../fonts/sagoe_print.woff") format("woff")
+	font-style: normal
+	font-weight: normal
+	font-display: swap
+
+
+body
+	font-family: "ProximaNova", sans-serif
+	font-weight: normal
+	font-size: 16px
+	line-height: 1.3
+	min-width: 320px
+	background: #ffffff
+	color: #444444 
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	flex-direction: column
+
+	
+.hidden
+	display: none
+.clear
+	clear: both
+.overflow
+	overflow: hidden
+
+button, a
+	color: #444444
+	outline: none !important
+	-webkit-transition: .3s all
+	-moz-transition: .3s all
+	-ms-transition: .3s all
+	-o-transition: .3s all
+	transition: .3s all
+	-webkit-appearance: none
+	&:focus
+		color: inherit
+	&:hover
+		color: inherit 
+
+.page_wrapper
+	position: relative
+	width: 100% 
+	overflow: hidden
+	margin: 0 auto
+	padding-top: 109px 
+	flex: 1 0 auto
+	section
+		position: relative
+		z-index: 1 
+	h1, h2, h3, h4, h5
+		font-family: "ProximaNova", sans-serif
+		font-weight: bold 
+		line-height: 1.15
+		color: #363636 
+	h1
+		font-size: 48px 
+		margin-bottom: 30px 
+	h2
+		font-size: 30px 
+		line-height: 1.1
+		margin-bottom: 30px 
+	h3
+		font-size: 24px 
+		margin-bottom: 30px 
+	h4
+		font-size: 18px 
+		margin-bottom: 20px 
+	h5
+		font-size: 18px 
+		margin-bottom: 20px 
+	p
+		font-family: "ProximaNova", sans-serif
+		font-weight: 600
+		font-size: 20px 
+		line-height: 27px 
+		color: #505050
+		i
+			font-style: italic
+		strong
+			font-weight: bold 
+	a
+		color: #cdb382
+		text-decoration: none
+		&:hover
+			color: #9c6600
+	.section_title
+		position: relative
+		width: 100% 
+		text-align: center
+		font-family: "ProximaNova", sans-serif
+		font-weight: 600
+		font-size: 41px 
+		line-height: 50px
+		color: #343434 
+		margin-bottom: 65px  
+		&:before
+			content: "" 
+			display: block 
+			width: 38px 
+			height: 4px 
+			background: #CDB382
+			position: absolute
+			bottom: -35px 
+			left: 0px
+			right: 0px
+			margin: auto  
+		span
+			color: #cdb382
+	.main_btn, .second_btn
+		position: relative
+		text-align: center
+		font-weight: bold
+		font-size: 20px 
+		line-height: 24px
+		padding: 16px 30px
+		border: 2px solid #CDB382 
+		-webkit-border-radius: 7px
+		border-radius: 7px
+		background: none
+		color: #cdb382
+		text-decoration: none
+		&:focus
+			color: #cdb382 
+		&:hover
+			background: #f3eee3
+			color: #CDB382 
+	a.main_btn
+		display: inline-block
+		vertical-align: top
+	.mid_text
+		position: relative
+		font-weight: 600 
+		font-size: 25px 
+		line-height: 33px
+		color: #505050 
+		text-align: center
+		margin-bottom: 30px  
+	.second_btn
+		background: #CDB382 
+		color: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		&:focus
+			color: #FFF 
+		&:hover
+			background: #B59E73
+			border-color: #B59E73 
+			color: #FFF 
+			-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+
+
+
+
+.page_wrapper .more, .more
+	position: relative
+	display: inline-block
+	vertical-align: top
+	color: #CDB382 
+	font-weight: 600 
+	font-size: 20px 
+	line-height: 22px 
+	svg
+		position: relative
+		left: 0px 
+		display: inline-block
+		vertical-align: middle
+		width: 18px 
+		height: 15px 
+		margin-left: 15px 
+		fill: #CDB382
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all 
+	&:hover
+		color: #5D5D5D 
+		svg
+			fill: #5D5D5D
+			left: 10px 
+			
+
+
+.main_footer
+	flex: 0 0 auto
+
+
+a:hover, a:focus
+	outline: none
+	text-decoration: none 
+	
+
+section, .main_header, .main_footer
+	position: relative
+
+
+
+
+
+
+// HEADER
+.main_header
+	position: fixed
+	top: 0px
+	left: 0px  
+	width: 100% 
+	z-index: 99
+	background: #FFF 
+	-webkit-box-shadow: 0px 3px 15px rgba(0,0,0,.2) 
+	box-shadow: 0px 3px 15px rgba(0,0,0,.2) 
+	&.fixed_header
+		.container
+			min-height: 89px  
+	.container
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		max-width: 1650px 
+		min-height: 109px 
+		padding: 10px 15px 
+		-webkit-transition: .2s all 
+		-moz-transition: .2s all 
+		-ms-transition: .2s all 
+		-o-transition: .2s all 
+		transition: .2s all 
+	.logo
+		position: relative
+		display: inline-block
+		vertical-align: top
+		width: 165px 
+		height: 33px 
+		margin-right: 40px 
+		-webkit-transition: 0s all 
+		-moz-transition: 0s all 
+		-ms-transition: 0s all 
+		-o-transition: 0s all 
+		transition: 0s all 
+		img
+			max-width: 100% 
+		svg
+			width: 100% 
+			height: 33px 
+	.left_nav
+		position: relative
+		width: auto
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		max-width: 450px 
+		list-style: none
+		margin: 0px  
+		li
+			position: relative
+			width: auto
+			margin-right: 18px 
+			a
+				position: relative
+				display: inline-block
+				vertical-align: top
+				font-weight: 600 
+				font-size: 20px
+				line-height: 20px
+				text-decoration: none
+				color: #505050 
+				padding: 15px 8px 
+				&:hover
+					&:before
+						left: 0px
+						width: 100%  
+				&:before
+					content: "" 
+					display: block 
+					width: 0px
+					height: 2px
+					background: #CDB382 
+					position: absolute
+					bottom: 0px 
+					left: 50%
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all    
+				sup
+					position: absolute
+					top: 0px 
+					left: 100%
+					margin-left: -8px 
+					font-size: 16px 
+					line-height: 1
+					color: #CDB382   
+		li:last-of-type
+			margin-right: 0px 
+		.active
+			a
+				&:before
+					left: 0px
+					width: 100% 
+		.soon
+			a
+				opacity: .6 
+	.right_block
+		position: relative
+		width: auto
+		margin-left: auto
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+	.products_dropdown, .user_dropdown
+		position: relative
+		width: auto
+		margin-right: 22px 
+		&.open
+			.products_btn
+				color: #cdb382 
+				&:before
+					-webkit-transform: rotateX(180deg) 
+					-moz-transform: rotateX(180deg) 
+					-ms-transform: rotateX(180deg) 
+					-o-transform: rotateX(180deg) 
+					transform: rotateX(180deg) 
+					top: -6px 
+		.products_btn, .user_btn
+			position: relative
+			width: auto
+			border: none
+			background: none 
+			padding: 15px  
+			padding-right: 40px 
+			font-weight: 600 
+			font-size: 20px 
+			line-height: 20px
+			color: #505050  
+			&:hover
+				color: #cdb382 
+				&:before
+					-webkit-transform: rotateX(180deg) 
+					-moz-transform: rotateX(180deg) 
+					-ms-transform: rotateX(180deg) 
+					-o-transform: rotateX(180deg) 
+					transform: rotateX(180deg) 
+					top: -5px 
+			&:before
+				content: "" 
+				display: block
+				width: 10px 
+				height: 6px 
+				position: absolute
+				top: 6px
+				bottom: 0px
+				right: 15px  
+				margin: auto
+				border: 5px solid transparent
+				border-top: 5px solid #d7c29b
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+			svg
+				position: relative
+				top: -1px 
+				display: inline-block
+				vertical-align: top
+				width: 19px 
+				height: 22px 
+				fill: #505050
+				margin-right: 18px 
+		.dropdown_menu
+			position: absolute
+			top: 100% 
+			left: 0px
+			display: none 
+			min-width: 100% 
+			overflow: hidden
+			background: #FFF 
+			-webkit-border-radius: 5px 
+			border-radius: 5px 
+			-webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.2) 
+			box-shadow: 0px 5px 15px rgba(0,0,0,.2)  
+			li
+				position: relative
+				width: 100% 
+				margin: 0px
+				padding: 0px
+				a
+					position: relative
+					display: block 
+					width: 100% 
+					padding: 5px 15px
+					text-align: left
+					font-weight: 600 
+					font-size: 18px 
+					line-height: 24px  
+					color: #505050  
+					&:hover
+						background: #cdb382 
+						color: #FFF
+			.divider
+				height: 1px 
+				margin: 5px 0px
+				opacity: .5  
+				&:before
+					content: "" 
+					display: block
+					position: absolute
+					left: 15px 
+					right: 15px 
+					top: 0px 
+					border-bottom: 1px dashed #505050
+			li:first-of-type
+				a
+					padding-top: 8px 
+			li:last-of-type
+				a
+					padding-bottom: 8px 
+	.user_dropdown
+		margin-right: 10px 
+	.main_nav
+		position: relative
+		width: auto
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		padding-left: 30px 
+		padding-right: 30px 
+		&:before
+			content: "" 
+			display: block 
+			width: 1px 
+			height: 34px 
+			position: absolute
+			top: 0px
+			left: 0px
+			bottom: 0px
+			margin: auto
+			background: #D7C29B 
+		li
+			position: relative
+			width: auto
+			margin-right: 18px 
+			a
+				position: relative
+				display: inline-block
+				vertical-align: top
+				font-weight: 600 
+				font-size: 20px
+				line-height: 20px
+				text-decoration: none
+				color: #505050 
+				padding: 15px 8px 
+				&:hover
+					&:before
+						left: 0px
+						width: 100%  
+				&:before
+					content: "" 
+					display: block 
+					width: 0px
+					height: 2px
+					background: #CDB382 
+					position: absolute
+					bottom: 0px 
+					left: 50%
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all    
+				sup
+					position: absolute
+					top: 0px 
+					left: 100%
+					margin-left: -8px 
+					font-size: 16px 
+					line-height: 1
+					color: #CDB382  
+		li:last-of-type
+			margin-right: 0px  
+	.mobile_nav
+		position: absolute
+		display: none
+		top: 100%
+		right: 0px
+		width: 100%
+		background: #FFF
+		padding: 0px
+		width: auto
+		max-width: 200px
+		-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2)
+		box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.2)
+		li
+			margin: 0px
+			width: 100%  
+			a
+				position: relative
+				display: block
+				text-decoration: none
+				min-width: 150px
+				text-align: left
+				padding: 5px 15px
+				font-weight: 600
+				font-size: 18px
+				line-height: 24px
+				color: #505050
+				&:hover
+					background: #cdb382
+					color: #FFF
+		.divider 
+			position: relative
+			height: 1px
+			margin: 5px 0px
+			opacity: 0.5
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				left: 15px
+				right: 15px
+				top: 0px
+				border-bottom: 1px dashed #505050
+		.dropdown
+			> a
+				&:before
+					content: ""
+					display: block
+					width: 10px
+					height: 6px
+					position: absolute
+					top: 6px
+					bottom: 0px
+					right: 15px
+					margin: auto
+					border: 5px solid transparent
+					border-top: 5px solid #d7c29b
+					-webkit-transition: 0.3s all
+					-moz-transition: 0.3s all
+					-ms-transition: 0.3s all
+					-o-transition: 0.3s all
+					transition: 0.3s all
+			.dropdown_menu
+				display: none
+				li
+					a
+						font-size: 14px 
+						min-width: 0px 
+	.icons_list
+		position: relative
+		width: auto
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		padding-left: 30px 
+		padding-right: 0px 
+		&:before, &:after
+			content: "" 
+			display: block 
+			width: 1px 
+			height: 34px 
+			position: absolute
+			top: 0px
+			left: 0px
+			bottom: 0px
+			margin: auto
+			background: #D7C29B 
+		&:after
+			left: auto 
+			right: 0px
+			display: none  
+		li
+			position: relative
+			width: auto
+			padding: 0px 
+			margin-right: 16px 
+			&:before
+				display: none
+			a
+				position: relative
+				display: inline-block
+				vertical-align: top
+				text-decoration: none
+				color: #505050 
+				font-weight: 600 
+				font-size: 20px 
+				text-align: center
+				min-width: 20px 
+				text-transform: uppercase
+				&.active
+					svg
+						fill: #cdb382
+				&:hover
+					color: #cdb382 
+					svg
+						fill: #cdb382
+				svg
+					position: relative
+					display: block 
+					width: auto
+					width: 20px 
+					height: 20px 
+					fill: #505050
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all 
+			.user_link
+				svg
+					width: 20px 
+			.basket_link
+				svg
+					width: 24px 
+					height: 23px 
+			.setting_link
+				svg
+					width: 22px 
+					height: 22px 
+			.alert_link
+				svg
+					width: 22px 
+					height: 22px 
+				.green_circle
+					position: absolute
+					top: -2px 
+					right: 0px 
+					display: block 
+					width: 11px 
+					height: 11px
+					border: 1px solid #FFF 
+					-webkit-border-radius: 50% 
+					border-radius: 50%  
+					background: #5EC394 
+		.dropdown
+			&.open
+				.drop_btn
+					color: #D7C29B 
+					&:before
+						-webkit-transform: rotateX(180deg) 
+						-moz-transform: rotateX(180deg) 
+						-ms-transform: rotateX(180deg) 
+						-o-transform: rotateX(180deg) 
+						transform: rotateX(180deg) 
+						top: -5px 
+			.drop_btn
+				position: relative
+				padding: 0px
+				border: none 
+				background: none
+				color: #505050 
+				font-weight: 600 
+				font-size: 20px 
+				text-align: center
+				padding-right: 18px 
+				&:hover
+					color: #D7C29B 
+				&:before
+					content: "" 
+					display: block
+					width: 10px 
+					height: 6px 
+					position: absolute
+					top: 6px
+					bottom: 0px
+					right: 0px  
+					margin: auto
+					border: 5px solid transparent
+					border-top: 5px solid #d7c29b
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all 
+			.user_link + .dropdown_menu, .setting_link + .dropdown_menu
+				left: auto 
+				right: -15px 
+				li
+					a
+						text-transform: none
+				.divider
+					position: relative
+					height: 1px
+					margin: 5px 0px
+					opacity: 0.5
+					&:before
+						content: ""
+						display: block
+						position: absolute
+						left: 15px
+						right: 15px
+						top: 0px
+						border-bottom: 1px dashed #505050
+			.dropdown_menu
+				position: absolute
+				top: 100% 
+				min-width: 70px 
+				left: -15px
+				display: none 
+				overflow: hidden
+				background: #FFF 
+				-webkit-border-radius: 5px 
+				border-radius: 5px 
+				-webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.2) 
+				box-shadow: 0px 5px 15px rgba(0,0,0,.2) 
+				margin-top: 10px  
+				li
+					position: relative
+					width: 100% 
+					margin: 0px
+					padding: 0px
+					a
+						position: relative
+						display: block 
+						width: 100% 
+						padding: 5px 15px
+						text-align: left
+						font-weight: 600 
+						font-size: 18px 
+						line-height: 24px  
+						color: #505050  
+						&:hover
+							background: #cdb382 
+							color: #FFF
+				li:first-of-type
+					a
+						padding-top: 8px 
+				li:last-of-type
+					a
+						padding-bottom: 8px 
+			li:last-of-type
+				margin-right: 0px 		
+		li:last-of-type
+			margin-right: 0px 
+
+
+
+// SANDWICH BUTTON
+.toggle_menu
+	position: relative
+	width: 26px
+	height: 33px
+	z-index: 31
+	border: none
+	background: none
+	padding: 0px 
+	display: none 
+	margin: 0px
+	margin-left: 20px 
+	&.active
+		.sandwich
+			.sw-topper
+				top: 7px
+				transform: rotate(135deg)
+			.sw-bottom
+				top: 5px
+				transform: rotate(-135deg)
+			.sw-footer
+				opacity: 0
+				top: 0
+				transform: rotate(180deg)
+
+.sandwich 
+	width: 26px
+	height: 16px 
+	position: absolute
+	top: 0px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	display: block 
+	-webkit-transition: .3s all 
+	-moz-transition: .3s all 
+	-ms-transition: .3s all 
+	-o-transition: .3s all 
+	transition: .3s all 
+	span
+		position: relative
+		display: block 
+		background: #505050
+		border: none
+		-webkit-border-radius: 0px 
+		border-radius: 0px  
+		-webkit-transition: .5s all
+		-moz-transition: .5s all
+		-ms-transition: .5s all
+		transition: .5s all
+.sw-topper
+	top: 0
+	width: 100%
+	height: 2px
+	transition: transform 0.5s, top 0.2s  
+	// transition-delay: 0.2s, 0s;
+.sw-bottom
+	width: 100%
+	height: 2px
+	top: 5px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+.sw-footer
+	width: 100%
+	height: 2px
+	top: 10px
+	transition: all 0.5s
+	transition-delay: 0.1s
+
+
+
+
+
+
+// FOOTER
+.main_footer
+	position: relative
+	z-index: 5 
+	width: 100% 
+	background: #343434 
+	.container
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+	.top_footer
+		position: relative
+		width: 100% 
+		.container
+			padding-top: 250px 
+			padding-bottom: 50px 
+			&:before
+				content: "" 
+				display: block
+				position: absolute
+				bottom: 0px
+				left: 15px 
+				right: 15px 
+				margin: auto
+				background: #FFF 
+				height: 1px  
+		.title
+			position: relative
+			font-weight: normal 
+			font-size: 58px
+			line-height: 1.1
+			color: #FFF 
+			margin: 0px
+			text-align: left
+			max-width: calc(100% - 400px)    
+		.wrap
+			position: relative
+			margin-left: auto
+			max-width: 360px 
+			text-align: left
+		p
+			font-weight: 600 
+			font-size: 20px 
+			line-height: 27px
+			color: #FFF 
+			margin-bottom: 20px  
+		.more
+			&:hover
+				color: #FFF 
+				svg
+					fill: #FFF
+	.mid_footer
+		position: relative
+		width: 100% 
+		padding-top: 40px 
+		padding-bottom: 40px 
+		.container
+			-webkit-align-items: center
+			align-items: center
+		.logo
+			position: relative
+			display: inline-block
+			vertical-align: top
+			line-height: 0 
+			width: 195px 
+			height: 39px 
+			text-decoration: none
+			margin-left: 28px 
+			&:hover
+				svg
+					fill: #CDB382
+			svg
+				position: relative
+				display: block 
+				width: 100% 
+				height: 100% 
+				fill: #FFF
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+			img
+				width: 100% 
+	.language_dropdown
+		position: relative
+		z-index: 2 
+		width: auto
+		margin-left: auto 
+		&.open
+			.drop_btn
+				color: #CDB382
+				background: none
+				border-color: #CDB382  
+				&:before
+					-webkit-transform: rotateX(180deg) 
+					-moz-transform: rotateX(180deg) 
+					-ms-transform: rotateX(180deg) 
+					-o-transform: rotateX(180deg) 
+					transform: rotateX(180deg) 
+					top: -5px 
+					border-top: 5px solid #CDB382
+		.drop_btn
+			position: relative
+			width: auto
+			border: none
+			background: none 
+			padding: 18px 30px
+			padding-right: 50px 
+			font-weight: 600 
+			font-size: 20px 
+			line-height: 20px
+			color: #ffffff  
+			border: 2px solid #FFF
+			-webkit-border-radius: 7px 
+			border-radius: 7px  
+			&:hover
+				color: #CDB382
+				background: none
+				border-color: #CDB382  
+				&:before
+					border-top: 5px solid #CDB382
+			&:before
+				content: "" 
+				display: block
+				width: 10px 
+				height: 6px 
+				position: absolute
+				top: 6px
+				bottom: 0px
+				right: 30px  
+				margin: auto
+				border: 5px solid transparent
+				border-top: 5px solid #d6d6d6
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+		.dropdown_menu
+			position: absolute
+			top: 100% 
+			left: 0px
+			display: none 
+			min-width: 100% 
+			overflow: hidden
+			background: #FFF 
+			-webkit-border-radius: 5px 
+			border-radius: 5px 
+			-webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.2) 
+			box-shadow: 0px 5px 15px rgba(0,0,0,.2)  
+			li
+				position: relative
+				width: 100% 
+				margin: 0px
+				padding: 0px
+				a
+					position: relative
+					display: block 
+					width: 100% 
+					padding: 5px 15px
+					text-align: left
+					font-weight: 600 
+					font-size: 18px 
+					line-height: 24px  
+					color: #505050  
+					&:hover
+						background: #cdb382 
+						color: #FFF
+			li:first-of-type
+				a
+					padding-top: 8px 
+			li:last-of-type
+				a
+					padding-bottom: 8px 		
+	.bottom_footer
+		position: relative
+		width: 100% 
+		background: #505050 
+		padding-top: 30px 
+		padding-bottom: 30px 
+		text-align: center
+		.container
+			display: block
+		p
+			position: relative
+			width: 100% 
+			text-align: center
+			font-weight: 600
+			font-size: 16.6px
+			line-height: 1.2
+			color: #FFF 
+			opacity: .5 
+			margin: 0px
+	.soc_list
+		margin-left: auto 
+	.language_dropdown + .soc_list
+		margin-left: 40px 
+
+
+.soc_list
+	position: relative
+	width: auto 
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	list-style: none
+	margin: 0px  
+	li
+		position: relative
+		width: auto 
+		margin-right: 15px 
+		a
+			position: relative
+			display: block 
+			width: 32px 
+			height: 32px 
+			text-decoration: none
+			line-height: 0
+			&:hover
+				svg
+					fill: #cdb382
+			svg
+				position: relative
+				display: block 
+				width: 100% 
+				height: 100% 
+				fill: #FFF
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+			 
+
+
+
+
+
+// MAIN SECTION
+.main_section
+	position: relative
+	width: 100% 
+	background-image: url("../img/main_bg.jpg")
+	background-repeat: no-repeat 
+	background-position: right center 
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	overflow: hidden
+	.container
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+	.text_wrapper
+		position: relative
+		width: 100% 
+		max-width: 440px
+		padding-top: 97px 
+		padding-bottom: 97px 
+		margin: auto 0px  
+	.new
+		position: relative
+		width: auto
+		display: inline-block
+		vertical-align: top
+		font-weight: normal 
+		font-size: 16.6px
+		line-height: 20px
+		color: #B08B45 
+		padding: 6px 10px
+		padding-bottom: 4px 
+		background: #F3EEE3   
+		margin-bottom: 15px  
+		strong
+			font-weight: bold 
+	.main_title
+		position: relative
+		font-weight: normal 
+		font-size: 58px 
+		line-height: 1
+		color: #343434 
+		margin-bottom: 55px 
+		span, strong
+			display: block 
+			min-width: 520px 
+			font-weight: 600 
+	ul
+		position: relative
+		width: 100% 
+		list-style: none
+		margin-bottom: 70px 
+		li
+			position: relative
+			width: 100% 
+			font-weight: 600
+			font-size: 20px 
+			line-height: 27px
+			color: #505050 
+			text-align: left
+			padding-left: 45px
+			margin-bottom: 27px 
+			&:before
+				content: "" 
+				display: block 
+				width: 30px
+				height: 28px 
+				position: absolute
+				top: -1px
+				left: 0px
+				background: url("../img/hexa_icon.svg") no-repeat center center
+				-webkit-background-size: 100% 100% 
+				-o-background-size: 100% 100% 
+				background-size: 100% 100%  
+			strong
+				position: relative
+				font-weight: bold 
+				&:after
+					content: "" 
+					display: inline-block
+					vertical-align: middle
+					width: 16px 
+					height: 2px 
+					background: #505050 
+					margin-right: 8px 
+					margin-left: 10px 
+		li:last-of-type
+			margin-bottom: 0px 
+	.btns_block
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+	.main_btn
+		position: relative
+		display: inline-block
+		&:first-of-type
+			margin-right: 27px 
+	.buy_btn, a.buy_btn
+		background: #CDB382 
+		border-color: #CDB382 
+		color: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		&:focus	
+			color: #FFF 
+		&:hover
+			background: #B59E73 
+			border-color: #B59E73 
+			color: #FFF 
+			-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+	.slider_wrapper
+		position: relative
+		width: 100% 
+		max-width: 585px 
+		margin-top: auto 
+		margin-left: auto 
+		margin-top: 85px 
+		.swiper-pagination
+			position: absolute
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-justify-content: center
+			justify-content: center
+			top: -26px
+			bottom: auto  
+			width: 100% 
+			text-align: center
+			line-height: 0
+			height: auto 
+			.swiper-pagination-bullet
+				display: block 
+				width: 6px 
+				height: 6px
+				opacity: 1 
+				margin: 0px 14px
+				background: #CDB382 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all  
+			.swiper-pagination-bullet-active	
+				background: #505050 
+		.swiper-button-prev, .swiper-button-next
+			position: absolute
+			top: 50%
+			margin-top: 0px 
+			width: 24px 
+			height: 43px 
+			background: none
+			border: none
+			opacity: 1
+			cursor: pointer
+			z-index: 2   
+			left: 0px
+			right: auto 
+			-webkit-transition: .3s all 
+			-moz-transition: .3s all 
+			-ms-transition: .3s all 
+			-o-transition: .3s all 
+			transition: .3s all 
+			&:after
+				color: #505050 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+			&:hover
+				&:after
+					color: #cdb382 
+		.swiper-button-next
+			left: auto
+			right: 0px 
+
+
+.main_slider
+	position: relative
+	width: 100% 
+	max-width: 458px
+	overflow: visible
+	margin: auto
+	-moz-user-select: none
+	-khtml-user-select: none
+	user-select: none
+	.swiper-slide
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		-webkit-align-items: flex-end
+		align-items: flex-end
+		width: 458px 
+		height: 656px
+		background-repeat: no-repeat 
+		background-position: center center
+		-webkit-background-size: 100% 100% 
+		-o-background-size: 100% 100% 
+		background-size: 100% 100%  
+		background-image: url("../img/slide.png") 
+		img
+			position: absolute
+			bottom: 179px
+			left: -4px
+			right: 0px
+			margin: auto    
+			width: 100% 
+			max-width: 370px
+			height: 232px  
+	.card
+		position: relative
+		width: 100% 
+		-webkit-box-shadow: 15px 25px 20px rgba(0,0,0,.2) 
+		box-shadow: 20px 25px 20px rgba(0,0,0,.2) 
+
+
+
+
+
+
+
+.icons_line
+	position: relative
+	width: 100% 
+	background: #CDB382 
+	padding-top: 16px 
+	padding-bottom: 16px 
+	-webkit-box-shadow: inset 0px -5px 10px rgba(0,0,0,.2), inset 0px 5px 10px rgba(0,0,0,.2)
+	box-shadow: inset 0px -5px 10px rgba(0,0,0,.2), inset 0px 5px 10px rgba(0,0,0,.2)
+	.container
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+	.more
+		color: #FFF 
+		&:hover
+			color: #FFF 
+			svg
+				fill: #FFF
+		svg
+			fill: #FFF
+	.icons_list
+		position: relative
+		width: auto 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		list-style: none
+		-moz-user-select: none
+		-khtml-user-select: none
+		user-select: none
+		li
+			position: relative
+			margin: 10px 0px 
+			margin-right: 30px
+		.divider
+			position: relative
+			width: 1px 
+			height: 50px 
+			background: #FFF 
+			line-height: 0
+			font-size: 0 
+			margin-top: 0px
+			margin-bottom: 0px  
+			img, svg
+				display: none 
+		img, svg
+			position: relative
+			max-width: 100% 
+			display: block 
+			max-width: 38px
+			height: 38px 
+
+
+
+
+
+
+.what_is_section
+	position: relative
+	width: 100% 
+	padding-top: 150px 
+	padding-bottom: 350px 
+	border-bottom: 5px solid #cdb382
+	background-repeat: no-repeat 
+	background-position: center bottom
+	-webkit-background-size: auto 
+	-o-background-size: auto 
+	background-size: auto 
+	background-color: #FFF  
+	background-image: url("../img/what_is_bg.png")
+	.wrapper
+		position: relative
+		width: 100%
+		max-width: 1150px
+		margin: auto
+		text-align: center
+	p
+		position: relative
+		color: #505050 
+		font-size: 20px 
+		line-height: 32px
+		margin-bottom: 30px  
+	.main_btn, a.main_btn
+		border-color: #505050 
+		color: #505050 
+		margin-top: 30px 
+		&:focus
+			color: #505050
+		&:hover
+			background: #e6e7e8
+			color: #505050 
+		
+
+
+
+
+
+.vaulty_section
+	position: relative
+	width: 100% 
+	padding-top: 140px 
+	padding-bottom: 75px 
+	background: #F5F5F5 
+	.section_title
+		margin-bottom: 45px 
+		&:before
+			display: none
+		.tablet_br
+			display: none 
+	.wrapper
+		position: relative
+		max-width: 1140px
+		width: 100%  
+		margin: auto
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+	.vaulty_item
+		position: relative
+		background: #FFF 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		-webkit-box-shadow: 0px 0px 25px rgba(0,0,0,.05) 
+		box-shadow: 0px 0px 25px rgba(0,0,0,.05) 
+		width: calc(33.333% - 38.666px) 
+		padding: 70px 35px 
+		padding-top: 80px 
+		text-align: left
+		margin-bottom: 30px 
+		margin-right: 58px 
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all 
+		&:hover
+			-webkit-box-shadow: 0px 0px 25px rgba(0,0,0,.25) 
+			box-shadow: 0px 0px 25px rgba(0,0,0,.25)
+		.item_title
+			position: relative
+			display: inline-block
+			vertical-align: top
+			max-width: calc(100% - 100px) 
+			text-align: left
+			font-weight: 600
+			font-size: 29px 
+			line-height: 1.1
+			color: #343434 
+			margin-bottom: 25px
+		p
+			font-size: 20px 
+			line-height: 27px
+			color: #505050 
+			margin: 0px  
+		.more
+			position: absolute
+			z-index: 2 
+			left: 35px 
+			bottom: 25px 
+		.icon
+			position: absolute
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-justify-content: center
+			justify-content: center
+			-webkit-align-items: flex-end
+			align-items: flex-end
+			-webkit-border-radius: 0px 0px 10px 10px 
+			border-radius: 0px 0px 10px 10px 
+			top: 0px
+			right: 35px 
+			width: 86px 
+			height: 105px 
+			padding: 18px 
+			background: #505050 
+			img, svg
+				max-width: 51px 
+				max-height: 51px 
+				height: 100% 
+	.vaulty_item:nth-of-type(3n+3)
+		margin-right: 0px 
+				
+			 
+
+
+
+
+// MOST FUNCTIONAL
+.most_functional
+	position: relative
+	width: 100% 
+	padding-top: 150px 
+	padding-bottom: 70px 
+	text-align: center
+	min-height: 750px 
+	&:before
+		content: "" 
+		display: block
+		width: 100%
+		height: 1835px
+		background: #F5F5F5 
+		position: absolute
+		z-index: -1 
+		left: 0%
+		top: 68%  
+		-webkit-transform: skewY(-15deg) 
+		-moz-transform: skewY(-15deg) 
+		-ms-transform: skewY(-15deg) 
+		-o-transform: skewY(-15deg) 
+		transform: skewY(-15deg) 
+	.container
+		position: relative
+		z-index: 2 
+	.wrapper
+		position: relative
+		max-width: 470px
+		width: 100% 
+		text-align: left
+		margin-bottom: 125px 
+	.section_title
+		text-align: left
+		margin-bottom: 55px 
+		&:before
+			display: none 
+	ul
+		position: relative
+		width: 100% 
+		list-style: none
+		margin-bottom: 40px 
+		li
+			position: relative
+			width: 100% 
+			font-weight: 600
+			font-size: 20px 
+			line-height: 27px
+			color: #505050 
+			text-align: left
+			padding-left: 45px
+			margin-bottom: 32px 
+			&:before
+				content: "" 
+				display: block 
+				width: 30px
+				height: 28px 
+				position: absolute
+				top: -1px
+				left: 0px
+				background: url("../img/hexa_icon.svg") no-repeat center center
+				-webkit-background-size: 100% 100% 
+				-o-background-size: 100% 100% 
+				background-size: 100% 100%  
+			strong
+				position: relative
+				font-weight: bold 
+				&:after
+					content: "" 
+					display: inline-block
+					vertical-align: middle
+					width: 16px 
+					height: 2px 
+					background: #505050 
+					margin-right: 8px 
+					margin-left: 10px 
+		li:last-of-type
+			margin-bottom: 0px 	
+	.cards_img
+		position: absolute
+		max-width: 848px 
+		width: 100% 
+		top: -62px 
+		right: -140px 
+	.mid_text
+		position: relative
+		display: inline-block
+		vertical-align: top
+		font-weight: bold 
+		font-size: 20px 
+		line-height: 22px
+		margin-bottom: 0px 
+
+
+
+
+
+
+// DIFFERENCE SECTION
+.difference_section
+	position: relative
+	width: 100% 
+	padding-top: 140px 
+	padding-bottom: 100px 
+	text-align: center
+	.section_title
+		max-width: 750px
+		margin-left: auto 
+		margin-right: auto  
+	p
+		font-size: 21px 
+		line-height: 27px 
+	.mid_text
+		position: relative
+		font-size: 25px 
+		line-height: 33px 
+		max-width: 455px 
+		text-align: center
+		margin: auto
+		margin-bottom: 75px 
+	.wrapper
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		.big_logo
+			position: absolute
+			top: 0px
+			bottom: 0px
+			left: 0px
+			right: 0px
+			margin: auto
+			z-index: 2   
+			width: 448px 
+			height: 100%   
+		.left_col, .right_col
+			position: relative
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			background: #CDB382 
+			width: calc(50% - 29px) 
+			min-height: 390px 
+			-webkit-box-shadow: inset 0px -5px 10px rgba(0,0,0,.12), inset 0px 5px 10px rgba(0,0,0,.12)
+			box-shadow: inset 0px -5px 10px rgba(0,0,0,.12), inset 0px 5px 10px rgba(0,0,0,.12)
+		.right_col
+			margin-left: auto 
+			.inner
+				text-align: right
+				margin-right: auto 
+				margin-left: 0px 
+				padding-right: 15px
+				padding-left: 250px 
+			.icon
+				left: auto 
+				right: 40px 
+		.inner
+			position: relative
+			width: 100% 
+			max-width: 770px 
+			margin-left: auto 
+			text-align: left
+			padding: 20px 15px
+			padding-top: 140px
+			padding-right: 250px 
+		.icon
+			position: absolute
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-justify-content: center
+			justify-content: center
+			-webkit-align-items: flex-end
+			align-items: flex-end
+			-webkit-border-radius: 0px 0px 10px 10px 
+			border-radius: 0px 0px 10px 10px 
+			top: 0px
+			left: 40px 
+			width: 86px 
+			height: 105px 
+			padding: 18px 
+			background: #505050 
+			img, svg
+				max-width: 56px 
+				max-height: 53px 	
+		.title
+			position: relative
+			font-weight: 600
+			font-size: 41px 
+			line-height: 50px
+			color: #FFF 
+			margin-bottom: 20px 
+		p
+			position: relative
+			font-weight: 600
+			font-size: 20px 
+			line-height: 27px
+			color: #343434 
+			margin: 0px   
+
+
+
+
+
+// SECURE SECTION
+.secure_section
+	position: relative
+	width: 100% 
+	padding-top: 120px 
+	padding-bottom: 0px
+	.section_title
+		max-width: 730px  
+		margin-left: auto
+		margin-right: auto 
+	.mid_text
+		position: relative
+		font-size: 25px 
+		line-height: 33px 
+		max-width: 455px 
+		text-align: center
+		margin: auto
+		margin-bottom: 35px 
+	.slider_wrapper
+		position: relative
+		width: 100% 
+		.swiper-pagination
+			position: absolute
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-justify-content: center
+			justify-content: center
+			top: -15px
+			bottom: auto  
+			width: 100% 
+			text-align: center
+			line-height: 0
+			height: auto 
+			display: none 
+			.swiper-pagination-bullet
+				display: block 
+				width: 6px 
+				height: 6px
+				opacity: 1 
+				margin: 0px 14px
+				background: #CDB382 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all  
+			.swiper-pagination-bullet-active	
+				background: #505050 
+		.swiper-button-prev, .swiper-button-next
+			position: absolute
+			top: 117px
+			margin-top: 0px 
+			width: 24px 
+			height: 43px 
+			background: none
+			border: none
+			opacity: 1
+			cursor: pointer
+			z-index: 2   
+			left: 0px
+			right: auto 
+			-webkit-transition: .3s all 
+			-moz-transition: .3s all 
+			-ms-transition: .3s all 
+			-o-transition: .3s all 
+			transition: .3s all 
+			display: none 
+			&:after
+				color: #505050 
+				line-height: 43px 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+			&:hover
+				&:after
+					color: #cdb382 
+		.swiper-button-next
+			left: auto
+			right: 0px 
+			
+.steps_slider
+	position: relative
+	width: 100% 
+	padding-top: 35px
+	.swiper-slide
+		position: relative
+		margin-bottom: 70px 
+		text-align: center
+		padding-top: 15px 
+	.hexagon
+		position: relative
+		width: 64px
+		height: 36.95px
+		background-color: #FFF
+		margin: auto
+		box-shadow: 0 0 15px rgba(0,0,0,0.2)
+		-webkit-transform: rotate(30deg) 
+		-moz-transform: rotate(30deg) 
+		-ms-transform: rotate(30deg) 
+		-o-transform: rotate(30deg) 
+		transform: rotate(30deg) 
+		margin-bottom: 40px 
+		&:before, &:after
+			content: ""
+			position: absolute
+			z-index: 1
+			width: 45.25px
+			height: 45.25px
+			-webkit-transform: scaleY(0.5774) rotate(-45deg)
+			-ms-transform: scaleY(0.5774) rotate(-45deg)
+			transform: scaleY(0.5774) rotate(-45deg)
+			background-color: inherit
+			left: 9.3726px
+			box-shadow: 0 0 15px rgba(0,0,0,0.2)
+		&:before
+			top: -22.6274px
+		&:after
+			bottom: -22.6274px
+		span
+			display: block
+			position: absolute
+			top: 0px
+			left: 0
+			width: 64px
+			height: 36.9504px
+			z-index: 2
+			background: inherit
+		i
+			position: absolute
+			top: 4px
+			left: 0px
+			right: 0px
+			bottom: 0px
+			margin: auto
+			width: 30px
+			height: 30px     
+			display: block 
+			font-weight: 600
+			font-size: 29px 
+			line-height: 1
+			font-style: normal   
+			color: #CDB382 
+			-webkit-transform: rotate(-30deg) 
+			-moz-transform: rotate(-30deg) 
+			-ms-transform: rotate(-30deg) 
+			-o-transform: rotate(-30deg) 
+			transform: rotate(-30deg) 
+	.item_title
+		position: relative
+		width: 100% 
+		font-weight: bold 
+		color: #343434 
+		font-size: 25px 
+		line-height: 1
+		margin-bottom: 10px 
+		text-align: center 
+	p
+		position: relative
+		width: 100% 
+		max-width: 250px
+		min-height: 120px 
+		padding-bottom: 20px 
+		text-align: center
+		font-size: 20px 
+		line-height: 27px 
+		color: #505050 
+		margin: auto
+	.link
+		position: relative
+		display: inline-block
+		vertical-align: top
+		font-weight: 600
+		font-size: 20px 
+		line-height: 27px
+		color: #CDB382 
+		margin: 0px
+		&:hover
+			color: #505050
+	.icon
+		position: relative
+		display: block 
+		margin: auto
+		margin-bottom: 20px 
+		width: 152px 
+		height: 152px 
+		background: #FFF 
+		line-height: 0 
+		-webkit-border-radius: 7px 
+		border-radius: 7px 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		img
+			position: absolute
+			top: 0px
+			left: 0px
+			right: 0px
+			bottom: 0px
+			margin: auto
+			max-width: 76px
+			max-height: 61px     
+	.icon_1
+		img
+			left: -10px 
+
+
+
+
+
+
+// FAQ
+.faq_section
+	position: relative
+	width: 100% 
+	padding-top: 120px 
+	padding-bottom: 100px 
+	.section_title
+		text-align: left
+		&:before
+			right: auto 
+	.container
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+	.mid_text
+		position: relative
+		font-size: 25px 
+		line-height: 33px 
+		text-align: left
+		max-width: 644px 
+		margin-bottom: 65px 
+	.left_col
+		position: relative
+		max-width: calc(100% - 398px)
+		width: 100% 
+		.more
+			margin-top: 55px 
+	.right_col
+		position: relative
+		margin-left: auto
+		max-width: 302px 
+		width: 100% 
+	.vaulty_item
+		position: relative
+		display: block 
+		width: 100% 
+		background: #FFF 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		-webkit-box-shadow: 0px 0px 25px rgba(0,0,0,.1) 
+		box-shadow: 0px 0px 25px rgba(0,0,0,.1) 
+		padding: 70px 18px 
+		padding-top: 80px 
+		text-align: left
+		margin-bottom: 28px 
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all 
+		&:hover
+			-webkit-box-shadow: 0px 0px 25px rgba(0,0,0,.25) 
+			box-shadow: 0px 0px 25px rgba(0,0,0,.25) 
+		.item_title
+			position: relative
+			display: inline-block
+			vertical-align: top
+			max-width: calc(100% - 100px) 
+			text-align: left
+			font-weight: 600
+			font-size: 29px 
+			line-height: 1.1
+			color: #343434 
+			margin-bottom: 25px
+		p
+			font-size: 20px 
+			line-height: 27px
+			color: #505050 
+			margin: 0px  
+		.more
+			position: absolute
+			z-index: 2 
+			left: 18px 
+			bottom: 25px 
+		.icon
+			position: absolute
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-justify-content: center
+			justify-content: center
+			-webkit-align-items: flex-end
+			align-items: flex-end
+			-webkit-border-radius: 0px 0px 10px 10px 
+			border-radius: 0px 0px 10px 10px 
+			top: 0px
+			right: 16px 
+			width: 86px 
+			height: 105px 
+			padding: 18px 
+			background: #505050 
+			img, svg
+				max-width: 58px 
+				max-height: 54px 
+				height: 100% 
+
+
+
+.spoiler_item
+	position: relative
+	width: 100% 
+	background: #FFF 
+	border: 1px solid #8D8D8D 
+	.spoiler
+		position: relative
+		width: 100% 
+		padding: 17px 25px
+		padding-right: 65px 
+		border: none
+		background: none
+		font-weight: 600
+		font-size: 20px
+		line-height: 27px 
+		color: #505050  
+		margin: 0px
+		text-align: left
+		&:hover
+			color: #B08B45 
+			svg
+				fill: #B08B45
+		&.active
+			background: #F8F4EC 
+			color: #B08B45 
+			svg
+				fill: #B08B45
+				-webkit-transform: rotate(90deg) 
+				-moz-transform: rotate(90deg) 
+				-ms-transform: rotate(90deg) 
+				-o-transform: rotate(90deg) 
+				transform: rotate(90deg) 
+		svg
+			position: absolute
+			top: 0px
+			bottom: 0px
+			right: 25px 
+			margin: auto
+			display: block 
+			width: 18px 
+			height: 18px 
+			fill: #515151
+			-webkit-transition: .3s all 
+			-moz-transition: .3s all 
+			-ms-transition: .3s all 
+			-o-transition: .3s all 
+			transition: .3s all   
+	.spoiler-body
+		position: relative
+		width: 100% 
+		.well
+			position: relative
+			width: 100% 
+			border-top: 1px solid #8D8D8D 
+			padding: 20px 25px
+			padding-right: 65px 
+			p
+				font-size: 20px 
+				line-height: 32px
+				color: #505050 
+				margin-bottom: 15px  
+			p:last-of-type
+				margin-bottom: 0px 
+
+.spoiler_item + .spoiler_item
+	border-top: none 
+
+
+
+
+
+
+// FREEDOM SECTION
+.freedom_section
+	position: relative
+	width: 100% 
+	padding-top: 155px 
+	padding-bottom: 78px 
+	text-align: center
+	background-color: #CDB382 
+	background-repeat: no-repeat 
+	background-position: center bottom
+	-webkit-background-size: 100% 
+	-o-background-size: 100% 
+	background-size: 100%  
+	background-image: url("../img/payment_bg.jpg") 
+	.section_title
+		color: #FFF 
+		&:before
+			background: #FFF 
+	.mid_text
+		position: relative
+		font-size: 25px 
+		line-height: 33px 
+		text-align: center
+		color: #FFF 
+		max-width: 420px 
+		margin: auto
+		margin-bottom: 65px 
+	.main_btn, a.main_btn
+		margin: 0px 12px
+		margin-bottom: 24px 
+		color: #FFF 
+		border-color: #FFF 
+		&:focus
+			color: #FFF 
+		&:hover
+			background: none
+			color: #505050 
+			border-color: #505050
+			-webkit-box-shadow: none 
+			box-shadow: none 
+	.buy_btn, a.buy_btn
+		color: #FFF
+		background: #505050
+		border-color: #505050
+		-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		&:hover
+			background: #FFF 
+			border-color: #FFF
+			color: #505050 
+			-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+	.payment
+		position: relative
+		display: block
+		margin: auto
+		max-width: 100% 
+		-webkit-border-radius: 10px 
+		border-radius: 15px 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.3) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.3) 
+		margin-top: 200px 
+
+
+
+
+
+
+
+
+.program_section
+	padding-top: 200px 
+	padding-bottom: 72px 
+	background: #505050 
+	overflow: hidden
+	text-align: center
+	&:before
+		content: ""
+		display: block
+		width: 100%
+		height: 1500px
+		background: #616161
+		position: absolute
+		z-index: -1
+		left: 0%
+		top: 70%
+		-webkit-transform: skewY(-15deg)
+		-moz-transform: skewY(-15deg)
+		-ms-transform: skewY(-15deg)
+		-o-transform: skewY(-15deg)
+		transform: skewY(-15deg)
+	.section_title
+		color: #FFF 
+		margin-bottom: 60px 
+		text-align: left
+		&:before
+			display: none 
+	.container
+		position: relative
+	.program_img
+		position: absolute
+		top: -65px 
+		left: 0px 
+		max-width: 762px 
+		width: 100% 
+	.wrapper
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		text-align: left
+		.inner
+			margin-left: auto 
+			width: 100% 
+			max-width: 470px 
+	.price
+		position: relative
+		color: #CDB382 
+		font-style: italic 
+		font-size: 25px
+		line-height: 1.1
+		margin: 0px   
+	.more
+		&:hover
+			color: #FFF 
+			svg
+				fill: #FFF
+	.main_btn, a.main_btn
+		margin: 0px 
+		margin-top: 70px 
+		color: #505050 
+		border-color: #FFF 
+		background: #FFF
+		&:focus
+			color: #505050 
+		&:hover
+			border-color: #CDB382 
+			background: #CDB382 
+			color: #FFF 
+	ul
+		position: relative
+		width: 100% 
+		list-style: none
+		margin-bottom: 40px 
+		li
+			position: relative
+			width: 100% 
+			font-weight: 600
+			font-size: 20px 
+			line-height: 27px
+			color: #FFF
+			text-align: left
+			padding-left: 45px
+			margin-bottom: 32px 
+			&:before
+				content: "" 
+				display: block 
+				width: 30px
+				height: 28px 
+				position: absolute
+				top: -1px
+				left: 0px
+				background: url("../img/hexa_icon.svg") no-repeat center center
+				-webkit-background-size: 100% 100% 
+				-o-background-size: 100% 100% 
+				background-size: 100% 100%  
+			span
+				color: #CDB382 
+			strong
+				position: relative
+				font-weight: bold 
+				&:after
+					content: "" 
+					display: inline-block
+					vertical-align: middle
+					width: 16px 
+					height: 2px 
+					background: #505050 
+					margin-right: 8px 
+					margin-left: 10px 
+		li:last-of-type
+			margin-bottom: 0px 	
+	.mid_text
+		position: relative
+		display: inline-block
+		vertical-align: top
+		font-weight: bold 
+		font-size: 20px 
+		color: #FFF 
+		line-height: 22px
+		margin-top: 115px 
+		margin-bottom: 0px 
+
+
+
+
+// TERMINAL SECTION
+.terminal_section
+	position: relative
+	width: 100% 
+	min-height: 100% 
+	padding-top: 80px 
+	padding-bottom: 80px 
+	background: url("../img/bg.jpg") no-repeat center center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover  
+	.container
+		position: relative
+		width: 100% 
+		max-width: 475px 
+		margin: auto
+		padding-left: 15px 
+		padding-right: 15px 
+	.top_wrapper
+		position: relative
+		width: 100% 
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2)
+		padding: 40px 30px
+		padding-bottom: 50px 
+		margin-bottom: 36px 
+		-webkit-border-radius: 10px 
+		border-radius: 10px   
+		text-align: center
+		img
+			position: relative
+			display: block 
+			max-width: 100% 
+			max-height: 244px
+			margin: auto 
+			margin-bottom: 45px 
+		.more
+			display: block
+			margin-left: -30px 
+			margin-right: -30px 
+			background: #CDB382 
+			color: #FFF
+			text-align: center
+			padding: 15px 
+			padding-left: 40px 
+			-webkit-box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+			box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+			margin-bottom: 30px 
+			svg
+				fill: #FFF
+				width: 18px 
+				height: 15px 
+	.bottom_wrapper
+		position: relative
+		width: 100% 
+		background: #cdb382 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2)
+		padding: 40px 30px
+		padding-bottom: 50px 
+		-webkit-border-radius: 10px 
+		border-radius: 10px   
+		text-align: center
+		&:before
+			content: "" 
+			display: block
+			width: 24px
+			height: 24px 
+			position: absolute
+			top: -24px 
+			left: 0px
+			right: 0px
+			margin: auto
+			border: 15px solid transparent
+			border-bottom: 12px solid #cdb382
+		.section_title
+			color: #FFF 
+			&:before
+				background: #FFF 
+		.mid_text
+			color: #FFF
+			margin-bottom: 40px  
+		.text
+			position: relative
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-justify-content: center
+			justify-content: center
+			width: 100% 
+			padding-top: 22px 
+			border-top: 1px solid #FFF
+			border-bottom: 1px solid #FFF
+			margin-bottom: 40px   
+			p
+				width: 100% 
+				text-align: center
+				font-size: 21px
+				line-height: 27px
+				color: #505050 
+				margin-bottom: 22px
+			ul
+				position: relative
+				width: auto
+				list-style: none
+				margin-bottom: 22px 
+				li
+					position: relative
+					width: 100% 
+					font-weight: 600
+					font-size: 20px 
+					line-height: 27px
+					color: #505050
+					text-align: left
+					padding-left: 45px
+					margin-bottom: 20px 
+					&:before
+						content: "" 
+						display: block 
+						width: 30px
+						height: 28px 
+						position: absolute
+						top: -1px
+						left: 0px
+						background: url("../img/hexa_icon_white.svg") no-repeat center center
+						-webkit-background-size: 100% 100% 
+						-o-background-size: 100% 100% 
+						background-size: 100% 100%  
+					strong
+						position: relative
+						font-weight: bold 
+						&:after
+							content: "" 
+							display: inline-block
+							vertical-align: middle
+							width: 16px 
+							height: 2px 
+							background: #505050 
+							margin-right: 8px 
+							margin-left: 10px 
+				li:last-of-type
+					margin-bottom: 0px 	
+		.main_btn
+			position: relative
+			display: block 
+			text-decoration: none
+			outline: none 
+			max-width: 384px
+			width: 100% 
+			text-align: center
+			font-weight: 600 
+			font-size: 20px 
+			line-height: 24px
+			color: #FFF 
+			background: none
+			border: 2px solid #FFF
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			padding: 16px 
+			margin: auto
+			margin-top: 50px 
+			&:focus	
+				color: #FFF 
+			&:hover
+				background: none
+				color: #505050 
+				border-color: #505050 
+				-webkit-box-shadow: none 
+				box-shadow: none 
+
+
+
+
+
+
+
+.main_form
+	position: relative
+	width: 100% 
+	text-align: left
+	p
+		position: relative
+		width: 100% 
+		font-size: 20px 
+		line-height: 27px
+		color: #505050  
+		margin-bottom: 10px 
+	input
+		position: relative
+		outline: none 
+		width: 100% 
+		height: 66px 
+		border: 1px solid #a7a7a7
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		font-weight: 600
+		font-size: 20px 
+		line-height: 24px  
+		text-align: left
+		color: #B08B45 
+		padding: 20px
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all 
+		margin-bottom: 27px 
+		&:focus
+			-webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.3) 
+			box-shadow: 0px 5px 15px rgba(0,0,0,.3) 
+			background: #F9F9F9 
+		&.error
+			border-color: #ff3434 
+	::placeholder
+		color: #A4A4A4 
+	:-ms-input-placeholder
+		color: #A4A4A4 
+	::-ms-input-placeholder
+		color: #A4A4A4 
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover, 
+	input:-webkit-autofill:focus, 
+	input:-webkit-autofill:active
+		-webkit-box-shadow: 0 0 0 40px white inset !important
+		color: #B08B45 !important
+		-webkit-text-fill-color: #B08B45 !important
+	select.mod_select.error + .mod_select, select.mod_select.error + label + .mod_select
+		border-color: #ff3434
+	.select_item
+		position: relative
+		width: 100%
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		label.error
+			position: relative
+			display: block 
+			-webkit-order: 1
+			-ms-order: 1
+			order: 1
+	.mod_select
+		position: relative
+		outline: none 
+		float: none 
+		width: 100% 
+		height: 66px 
+		border: 1px solid #a7a7a7
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		font-weight: 600
+		font-size: 20px 
+		line-height: 24px  
+		text-align: left
+		color: #B08B45 
+		padding: 20px
+		padding-right: 50px 
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all 
+		margin-bottom: 27px 
+		&.open
+			background: #F9F9F9 
+			&:after
+				-webkit-transform: rotateX(180deg) 
+				-moz-transform: rotateX(180deg) 
+				-ms-transform: rotateX(180deg) 
+				-o-transform: rotateX(180deg) 
+				transform: rotateX(180deg) 
+				top: -10px 
+		&:after
+			content: "" 
+			display: block 
+			position: absolute
+			top: 5px
+			bottom: 0px
+			right: 20px   
+			width: 10px
+			height: 6px
+			margin: auto
+			border: 5px solid transparent
+			border-top: 5px solid #d7c29b
+			-webkit-transform: rotateX(0deg) 
+			-moz-transform: rotateX(0deg) 
+			-ms-transform: rotateX(0deg) 
+			-o-transform: rotateX(0deg) 
+			transform: rotateX(0deg) 
+			-webkit-transition: 0.2s all
+			-moz-transition: 0.2s all
+			-ms-transition: 0.2s all
+			-o-transition: 0.2s all
+			transition: 0.2s all
+		.list
+			width: calc(100% + 2px)
+			left: -1px 
+			border: 1px solid #A7A7A7 
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			list-style: none 
+			li
+				padding: 10px 20px
+				text-align: left
+				font-size: 18px 
+				line-height: 21px
+			.selected
+				display: none 
+			.disabled
+				display: none 
+	.short_info
+		position: relative
+		width: 100% 
+		padding-bottom: 24px 
+		border-bottom: 1px solid #d3d3d3
+		text-align: center
+		font-weight: 600
+		font-size: 13px 
+		line-height: 16px 
+		text-align: center
+		color: #b5b5b5
+		margin-bottom: 0px 
+	label.error
+		position: absolute
+		z-index: -2
+		opacity: 0
+		font-size: 0
+		line-height: 0
+		width: 0px 
+		height: 0px    
+	.marketing_check
+		position: relative
+		width: 100% 
+		padding-top: 20px 
+		padding-bottom: 20px
+		border-top: 1px solid #D3D3D3  
+		border-bottom: 1px solid #D3D3D3 
+		text-align: left
+		margin-top: 20px 
+		padding-right: 125px 
+		p
+			position: relative
+			font-weight: 600
+			font-size: 20px 
+			line-height: 27px
+			color: #505050 
+			margin: 0px   
+		label
+			position: absolute
+			top: 0px
+			bottom: 0px
+			right: 10px 
+			margin: auto
+			width: 45px 
+			height: 24px 
+			-webkit-border-radius: 12px 
+			border-radius: 12px  
+			input
+				position: absolute
+				top: 0px
+				left: 0px 
+				z-index: -2
+				opacity: 0
+				-webkit-transform: scale(0) 
+				-moz-transform: scale(0) 
+				-ms-transform: scale(0) 
+				-o-transform: scale(0) 
+				transform: scale(0)    
+			input:checked + .icon
+				background: #CDB382 
+				&:before
+					left: 22px 
+			.icon
+				position: relative
+				display: block 
+				width: 100% 
+				height: 100% 
+				background: #DDD 
+				cursor: pointer
+				-webkit-border-radius: 12px 
+				border-radius: 12px  
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+				&:before
+					content: "" 
+					display: block 
+					width: 22px
+					height: 22px 
+					background: #FFF 
+					-webkit-border-radius: 50% 
+					border-radius: 50%  
+					position: absolute
+					top: 1px 
+					left: 1px
+					-webkit-box-shadow: 0px 5px 5px rgba(0,0,0,.1) 
+					box-shadow: 0px 5px 5px rgba(0,0,0,.1) 
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all  
+	.password_item
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		margin-bottom: 28px 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		input
+			margin-bottom: 0px 
+			width: calc(100% - 110px)
+			-webkit-border-radius: 10px 0px 0px 10px 
+			border-radius: 10px 0px 0px 10px 
+		.show_pass
+			position: relative
+			width: 110px 
+			height: 66px 
+			border: none 
+			border: 1px solid #a7a7a7
+			border-left: 0px 
+			-webkit-border-radius: 0px 10px 10px 0px
+			border-radius: 0px 10px 10px 0px
+			font-weight: 600 
+			font-size: 13px 
+			line-height: 20px
+			color: #CDB382 
+			text-transform: uppercase 
+			background: #F9F9F9 
+			&:hover
+				background: #CDB382 
+				color: #fff 
+	.password_security
+		position: relative
+		width: 100% 
+		text-align: center
+		margin-bottom: 40px 
+		padding-top: 3px 
+		.line
+			position: relative
+			width: 100%
+			height: 7px 
+			display: block 
+			background: #CAEFBF  
+			margin-bottom: 22px 
+			span
+				position: relative
+				display: block 
+				width: 0px
+				height: 100% 
+				background: #6ED34F 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+		p
+			position: relative
+			width: 100% 
+			font-weight: 600
+			font-size: 17px 
+			line-height: 21px
+			text-align: center  
+			color: #505050 
+			margin: 0px 
+	.checkbox_item
+		position: relative
+		width: 100% 
+		padding-top: 22px 
+		padding-bottom: 22px 
+		border-top: 1px solid #d3d3d3
+		border-bottom: 1px solid #D3D3D3 
+		label
+			position: relative
+			width: 100% 
+			padding-left: 22px 
+			font-weight: 600
+			font-size: 16px 
+			line-height: 26px
+			color: #CDB382
+			margin-bottom: 5px 
+			input
+				position: absolute
+				top: 0px
+				left: 0px
+				opacity: 0
+				z-index: -2
+				-webkit-transform: scale(0) 
+				-moz-transform: scale(0) 
+				-ms-transform: scale(0) 
+				-o-transform: scale(0) 
+				transform: scale(0)
+			input:checked + .icon
+				background: #CDB382 
+				border-color: #CDB382 
+				svg
+					-webkit-transform: scale(1) 
+					-moz-transform: scale(1) 
+					-ms-transform: scale(1) 
+					-o-transform: scale(1) 
+					transform: scale(1) 
+			.icon
+				position: absolute
+				top: 6px
+				left: 0px
+				width: 12px 
+				height: 12px 
+				border: 2px solid #969696
+				background: #FFF
+				cursor: pointer 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all
+				svg
+					position: absolute
+					top: 0px
+					left: 0px
+					right: 0px
+					bottom: 0px
+					margin: auto
+					width: 100% 
+					height: 100%
+					fill: #FFF 
+					-webkit-transform: scale(0) 
+					-moz-transform: scale(0) 
+					-ms-transform: scale(0) 
+					-o-transform: scale(0) 
+					transform: scale(0) 
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all     
+			span
+				position: relative
+				display: inline-block
+				vertical-align: top
+				cursor: pointer 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+				&:hover
+					color: #5D5D5D  
+		label:last-of-type
+			margin-bottom: 0px 
+	.forgot_item
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		padding-bottom: 22px 
+		border-bottom: 1px solid #d3d3d3
+		.forgot_link
+			position: relative
+			display: inline-block
+			vertical-align: top
+			font-weight: 600
+			font-size: 16px 
+			line-height: 27px
+			color: #CDB382 
+			margin: 0px
+			margin-left: auto   
+			&:hover
+				color: #5D5D5D  
+		.checkbox_item
+			border: none
+			padding: 0px
+			margin: 0px
+			width: auto    
+			
+		
+	.submit_btn
+		position: relative
+		display: block 
+		text-decoration: none
+		outline: none 
+		max-width: 384px
+		width: 100% 
+		text-align: center
+		font-weight: 600 
+		font-size: 20px 
+		line-height: 24px
+		color: #FFF 
+		background: #CDB382 
+		border: none 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		padding: 18px 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		margin: auto
+		margin-top: 50px 
+		&:hover
+			background: #B59E73 
+			-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.35) 
+			box-shadow: 0px 5px 10px rgba(0,0,0,.35) 
+
+
+
+
+
+
+.authorization_wrapper
+	padding-top: 0px 
+	background: url("../img/bg.jpg") no-repeat center center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover  
+	.main_header
+		position: relative
+		width: 100% 
+		padding-top: 40px 
+		padding-bottom: 0px 
+		background: none
+		-webkit-box-shadow: none 
+		box-shadow: none 
+		.container
+			padding-top: 0px
+			padding-bottom: 0px  
+			min-height: 0px 
+		.logo
+			position: relative
+			display: inline-block
+			vertical-align: top
+			width: 165px 
+			height: 33px 
+			margin-right: 40px 
+			-webkit-transition: 0s all 
+			-moz-transition: 0s all 
+			-ms-transition: 0s all 
+			-o-transition: 0s all 
+			transition: 0s all 
+			img
+				max-width: 100% 
+			svg
+				width: 100% 
+				height: 33px 
+
+
+
+
+.authorization_section
+	position: relative
+	width: 100% 
+	padding-top: 70px 
+	padding-bottom: 70px 
+	.container
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+	.section_title
+		margin-bottom: 30px 
+		&:before
+			display: none 
+	.left_wrapper
+		position: relative
+		width: calc(50% - 17px) 
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2)
+		padding: 60px 30px
+		padding-bottom: 50px 
+		-webkit-border-radius: 10px 
+		border-radius: 10px   
+		text-align: center
+		margin-bottom: 35px 
+		img
+			position: relative
+			display: block 
+			max-width: 100% 
+			max-height: 244px
+			margin: auto 
+			margin-bottom: 45px 
+		.more
+			display: block
+			margin-left: -30px 
+			margin-right: -30px 
+			background: #CDB382 
+			color: #FFF
+			text-align: center
+			padding: 15px 
+			padding-left: 40px 
+			-webkit-box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+			box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+			margin-bottom: 30px 
+			svg
+				fill: #FFF
+				width: 18px 
+				height: 15px 
+		.email
+			position: relative
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-justify-content: center
+			justify-content: center
+			-webkit-align-items: center
+			align-items: center
+			margin-left: -30px 
+			margin-right: -30px 
+			background: #CDB382 
+			color: #FFF
+			text-align: center
+			padding: 15px 5px
+			padding-right: 35px 
+			-webkit-box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+			box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+			margin-bottom: 30px 
+			svg
+				position: relative
+				display: inline-block
+				vertical-align: top
+				fill: #FFF
+				width: 19px 
+				height: 19px 
+				margin: 0px 22px 
+	.right_wrapper
+		position: relative
+		width: calc(50% - 17px) 
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2)
+		padding: 45px 30px
+		-webkit-border-radius: 10px 
+		border-radius: 10px   
+		text-align: center
+		margin-left: auto 
+		margin-bottom: 35px 
+		.price
+			position: relative
+			color: #CDB382
+			font-style: italic
+			font-size: 20px
+			line-height: 1.1
+			max-width: 100% 
+			text-align: center
+			margin: 0px
+		.section_title
+			font-size: 29px 
+			line-height: 1.1
+			margin-bottom: 25px  
+		p
+			max-width: 480px 
+			font-size: 21px 
+			line-height: 27px
+			color: #505050 
+			margin: auto
+			margin-bottom: 25px 
+			span
+				color: #CDB382  
+		.more
+			margin-bottom: 35px 
+		img
+			position: relative
+			display: block 
+			width: 100% 
+			max-width: 433px 
+			max-height: 379px 
+			margin: auto
+	.recover_wrapper
+		position: relative
+		width: 100% 
+		max-width: 552px 
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2)
+		padding: 60px 30px
+		padding-bottom: 50px 
+		-webkit-border-radius: 10px 
+		border-radius: 10px   
+		text-align: center
+		margin: auto
+		margin-bottom: 50px 
+		.more 
+			display: block
+			margin-left: -30px
+			margin-right: -30px
+			background: #CDB382
+			color: #FFF
+			text-align: center
+			padding: 15px
+			padding-left: 40px
+			-webkit-box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+			box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+			margin-bottom: 30px
+			svg
+				fill: #FFF
+				width: 20px 
+				height: 18px 
+		.mid_text
+			font-size: 20px 
+			line-height: 27px
+			margin-bottom: 30px  
+		.section_title
+			margin-bottom: 60px 
+			&:before
+				display: block 
+
+
+.authorization_section
+	.check_wrapper
+		position: relative
+		width: 100% 
+		max-width: 552px 
+		margin: auto
+		background: #FFF 
+		padding: 65px 30px
+		padding-bottom: 50px  
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2)
+		margin-bottom: 50px 
+		.section_title
+			position: relative
+			width: 100% 
+			text-align: center
+			font-size: 41px 
+			line-height: 1.1
+			margin-bottom: 30px  
+		p
+			position: relative
+			width: 100% 
+			text-align: center
+			font-weight: 600
+			font-size: 20px
+			line-height: 29px
+			color: #505050 
+			margin: 0px  
+		.email
+			color: #CDB382 
+			text-decoration: none
+		.small_text
+			position: relative
+			width: 100% 
+			text-align: center
+			font-weight: 600
+			font-size: 12px 
+			line-height: 16px
+			color: #969696 
+			opacity: .6
+			margin-bottom: 5px 
+		.main_btn
+			display: block 
+			max-width: 384px
+			width: 100%  
+			background: #969696 
+			border-color: #969696 
+			margin: auto
+			color: #FFF 
+			&:focus
+				color: #FFF 
+			&:hover
+				background: #505050 
+				border-color: #505050 
+		.loader
+			position: relative
+			display: block 
+			width: 44px
+			height: 44px
+			margin: auto
+			margin-bottom: 30px 
+			&.active
+				img
+					opacity: 0
+				.check_icon
+					opacity: 1
+					-webkit-transform: scale(1) 
+					-moz-transform: scale(1) 
+					-ms-transform: scale(1) 
+					-o-transform: scale(1) 
+					transform: scale(1)  
+			img
+				position: relative
+				width: 100% 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+			.check_icon
+				position: absolute
+				top: 0px
+				left: 0px  
+				display: block 
+				width: 100% 
+				height: 100% 
+				fill: #cdb382
+				-webkit-transform: scale(0) 
+				-moz-transform: scale(0) 
+				-ms-transform: scale(0) 
+				-o-transform: scale(0) 
+				transform: scale(0) 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+	.divider
+		position: relative
+		display: block 
+		width: 100% 
+		height: 1px
+		background: #D3D3D3 
+		margin-top: 22px
+		margin-bottom: 28px 
+
+
+
+
+.authorization_section 
+	.login_right_wrapper
+		padding-top: 60px 
+		img
+			max-width: 365px
+			left: -30px  
+
+
+
+
+.inner_page
+	background: url("../img/bg.jpg") no-repeat center center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover  
+
+
+
+
+.dashboard_section
+	position: relative
+	width: 100% 
+	padding-top: 50px 
+	padding-bottom: 90px 
+	.wrapper
+		position: relative
+		width: 100% 
+		max-width: 886px 
+		margin: 0px 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+	.title
+		position: relative
+		width: 100% 
+		text-align: left
+		font-weight: 600
+		font-size: 16.67px
+		line-height: 21px
+		color: #505050 
+		margin: 0px
+		margin-bottom: 0px
+	p
+		width: 100% 
+		font-weight: 600
+		font-size: 16px 
+		line-height: 21px  
+		color: #A7A7A7  
+	.main_block
+		position: relative
+		width: 100%
+		min-height: 254px 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		padding: 15px 40px 
+		margin-bottom: 10px 
+		.left_col
+			position: relative
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			max-width: 60%
+			width: 100% 
+			padding-top: 10px 
+			p
+				margin-bottom: 7px 
+		.right_col 
+			position: relative
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-justify-content: flex-end
+			justify-content: flex-end
+			max-width: 40%
+			width: 100% 
+			text-align: right
+		p
+			position: relative
+			width: 100% 
+			color: #505050 
+			font-weight: 600
+			font-size: 16.67px 
+			line-height: 21px
+			margin-bottom: 10px   
+			span
+				display: block 
+				margin-bottom: 0px
+				color: #5EC394  
+		.name
+			position: relative
+			left: -3px 
+			font-weight: normal 
+			font-size: 58px 
+			line-height: 50px
+			margin-bottom: 0px  
+		.email
+			position: relative
+			display: inline-block
+			vertical-align: top
+			font-size: 16px 
+			line-height: 1
+			color: #A7A7A7 
+			margin-bottom: 15px 
+			margin-top: 0px 
+			svg
+				position: relative
+				display: inline-block
+				vertical-align: middle
+				width: 13px 
+				height: 13px 
+				fill: #5ec394
+				margin-left: 10px 
+				bottom: 1px
+		.code
+			position: relative
+			display: inline-block
+			vertical-align: top 
+			font-size: 16px 
+			line-height: 22px
+			color: #A7A7A7 
+			margin-bottom: 15px 
+			margin-top: 0px 
+		.score_list_block
+			position: relative
+			width: auto 
+			margin-top: auto 
+			border-top: 1px solid #D3D3D3 
+			padding-top: 14px 
+			p
+				margin-bottom: 8px 
+		.rating
+			position: relative
+			font-weight: 600
+			font-size: 33px 
+			color: #505050 
+			line-height: 1
+			letter-spacing: -0.08em 
+			span
+				display: inline 
+				font-weight: 600 
+				font-size: 125px
+				color: #505050
+				letter-spacing: -.1em 
+		.more
+			font-size: 16px 
+			line-height: 21px 
+	.balance_block
+		position: relative
+		width: calc(50% - 5px) 
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 			
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		margin-bottom: 10px 
+		margin-right: 10px 
+		.left_col
+			position: relative
+			width: 50% 
+			min-height: 93px 
+			padding: 15px 40px 
+			padding-right: 15px 
+			border-bottom: 1px solid #d3d3d3
+			.balance_title
+				position: relative
+				width: 100%
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 21px
+				color: #505050  
+				margin-bottom: 3px 
+				svg
+					position: relative
+					top: -1px 
+					display: inline-block
+					vertical-align: middle
+					width: 19px 
+					height: 19px 
+					fill: #565656
+					margin-left: 7px 
+		p
+			position: relative
+			width: 100%
+			color: #A7A7A7 
+			font-weight: 600
+			font-size: 16.67px
+			line-height: 1.1
+			margin-bottom: 0px     	
+		.right_col	
+			position: relative
+			width: 50% 
+			min-height: 93px 
+			padding: 15px 40px 
+			padding-left: 15px 
+			text-align: right
+			border-bottom: 1px solid #d3d3d3
+			.price
+				font-weight: 600 
+				font-size: 33px 
+				line-height: 1
+				color: #CDB382 
+				margin: 0px
+				span
+					font-size: 45px
+				strong
+					font-size: 16px 
+					display: block 
+					color: #A7A7A7  
+	.bottom_col
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		padding: 0px
+		.text, .btns
+			position: relative
+			width: 50% 
+			min-height: 161px 
+			padding: 10px 40px 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-align-items: center
+			align-items: center
+			-webkit-align-content: center
+			align-content: center
+			p
+				color: #505050 
+				font-size: 16px 
+				line-height: 21px 
+				width: 100% 
+				margin-bottom: 0px
+			.gray_text
+				margin-bottom: 8px 
+				color: #A7A7A7 
+				font-size: 13px
+			p:last-of-type
+				margin-bottom: 0px 
+		.text
+			border-right: 1px solid #d3d3d3
+		.main_btn, .second_btn
+			font-size: 16px
+			line-height: 20px
+			padding: 8px 10px 
+			width: 100%    
+		.second_btn
+			margin-bottom: 20px 
+
+.score_list
+	position: relative
+	width: auto
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	-webkit-align-items: center
+	align-items: center
+	list-style: none
+	margin: 0px
+	li
+		position: relative
+		width: 31px
+		height: 28px
+		background-repeat: no-repeat
+		background-position: left top
+		-webkit-background-size: 100% 100%
+		-o-background-size: 100% 100%
+		background-size: 100% 100%
+		background-image: url(../img/star.svg)
+		-webkit-background-size: 100% 100% 
+		-o-background-size: 100% 100% 
+		background-size: 100% 100% 
+		padding: 0px
+		margin: 0px
+		margin-right: 5px
+		margin-bottom: 5px 
+		&.active
+			&:before
+				opacity: 1
+		&.half
+			&:before
+				opacity: 1
+				width: 50%
+				-webkit-background-size: 200% 100%
+				-o-background-size: 200% 100%
+				background-size: 200% 100% 
+		&:before
+			content: ""
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0px
+			left: 0px
+			-webkit-transform: none
+			-moz-transform: none
+			-ms-transform: none
+			-o-transform: none
+			transform: none
+			background: url(../img/star_active.svg) no-repeat left top
+			-webkit-background-size: 100% 100%
+			-o-background-size: 100% 100%
+			background-size: 100% 100%
+			-webkit-transition: 0.3s all
+			-moz-transition: 0.3s all
+			-ms-transition: 0.3s all
+			-o-transition: 0.3s all
+			transition: 0.3s all
+			opacity: 0
+	li:last-of-type
+		margin-right: 0px 
+
+
+.info_popover, .page_wrapper .info_popover
+	position: relative
+	top: -1px 
+	display: inline-block
+	vertical-align: middle
+	width: 18px 
+	height: 18px 
+	-webkit-border-radius: 50% 
+	border-radius: 50% 
+	background: #F3EEE3 
+	border: none 
+	font-weight: bold 
+	font-style: normal 
+	font-size: 16px 
+	text-align: center
+	color: #CBAF7C 
+	margin-left: 8px 
+	&:before, &:after
+		content: "" 
+		display: block 
+		width: 2px 
+		height: 3px 
+		background: #CBAF7C 
+		position: absolute
+		top: 3px
+		left: 0px
+		right: 0px
+		margin: auto  
+	&:after
+		top: auto 
+		bottom: 3px 
+		height: 7px 
+
+.popover
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 1060
+	display: block
+	max-width: 276px
+	text-decoration: none
+	text-shadow: none
+	text-transform: none
+	letter-spacing: normal
+	word-break: normal
+	word-spacing: normal
+	white-space: normal
+	line-break: auto
+	font-weight: normal
+	font-size: 14px
+	line-height: 18px 
+	word-wrap: break-word
+	background: #FFF 
+	color: #A7A7A7 
+	text-align: center
+	border: 1px solid rgba(0,0,0,.2)
+	-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.1) 
+	box-shadow: 0px 5px 10px rgba(0,0,0,.1) 
+	border-radius: 7px
+	margin-bottom: 10px 
+	.arrow 
+		position: absolute
+		display: block
+		width: 1rem
+		height: .5rem
+		margin: 0 .3rem
+		bottom: calc((.5rem + 1px) * -1)
+		&:after, &:before
+			position: absolute
+			display: block
+			content: ""
+			border-color: transparent
+			border-style: solid
+	.popover-body
+		position: relative
+		padding: 10px 15px 
+			
+.bs-popover-top .arrow::before 
+	border-width: .5rem .5rem 0
+.bs-popover-auto[x-placement^=top] .arrow::before, .bs-popover-top .arrow::before
+	bottom: 0
+	border-top-color: rgba(0,0,0,.25)
+.bs-popover-top .arrow::after 
+	bottom: 1px
+	border-top-color: #fff
+.bs-popover-top .arrow::after, .bs-popover-top .arrow::before
+	border-width: .5rem .5rem 0
+
+
+
+.dashboard_section 
+	.total_block
+		position: relative
+		width: calc(50% - 5px) 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		margin-bottom: 10px 
+		margin-right: 0px 
+	
+.total_item
+	position: relative
+	width: 100% 
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	-webkit-align-items: center
+	align-items: center
+	height: calc(50% - 5px) 
+	background: #FFF 
+	-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+	box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+	-webkit-border-radius: 10px 
+	border-radius: 10px 	
+	padding: 15px 40px 
+	.left_col
+		position: relative
+		width: 65%
+		margin-bottom: 15px 
+	.right_col
+		position: relative
+		width: 35%
+		text-align: right
+		margin-bottom: 15px 
+		p
+			text-align: right
+			color: #CDB382 
+			font-size: 25px 
+			line-height: 1 
+	.total_level
+		position: relative
+		width: 100% 
+		margin-top: auto 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		margin-top: auto 
+		.level_line
+			position: relative
+			display: block 
+			width: 100% 
+			height: 7px
+			background: #E6E7E8  
+			margin-bottom: 5px 
+			span
+				position: relative
+				display: block 
+				width: auto 
+				height: 100% 
+				background: #CDB382 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+		p
+			position: relative
+			width: 50%
+			text-align: left
+			color: #A7A7A7 
+			font-size: 13px 
+			line-height: 18px 
+		p:nth-of-type(2)
+			text-align: right
+		
+.total_item + .total_item
+	margin-top: 10px 
+
+.dashboard_section 
+	.blocks_wrapper
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+	.link_block
+		position: relative
+		width: calc(50% - 5px) 
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 		
+		margin-bottom: 0px 
+		margin-right: 10px 
+		padding: 15px 40px 
+		.referal_link
+			position: relative
+			width: auto 
+			min-width: 100% 
+			display: block 
+			text-align: center
+			margin-left: -40px
+			margin-right: -40px 
+			font-weight: 600 
+			font-size: 25px 
+			line-height: 25px
+			color: #FFF 
+			padding: 19px
+			background: #CDB382   
+			-webkit-box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+			box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+			margin-top: 13px 
+		.btns
+			position: relative
+			width: 100% 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			padding-top: 40px 
+			padding-bottom: 25px 
+			.second_btn, .facebook_btn
+				font-size: 16.67px
+				width: calc(50% - 17px)
+				display: inline-block
+				vertical-align: top
+				padding: 9px
+				text-align: center  
+				-webkit-border-radius: 10px 
+				border-radius: 10px 
+			.facebook_btn
+				margin-left: auto
+				background: #6885C1
+				border-color: #6885C1 
+				color: #FFF 
+				padding-top: 8px 
+				padding-bottom: 6px 
+				-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+				box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+				&:hover
+					background: #335AAC 
+					border-color: #335AAC 
+					-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+					box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+				svg
+					position: relative
+					top: -1px 
+					width: 27px 
+					height: 27px 
+					fill: #FFF
+					margin-left: 10px 
+	.level_block
+		position: relative
+		width: calc(50% - 5px) 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 		
+		margin-bottom: 0px 
+		margin-right: 0px 
+		.block_header
+			position: relative
+			width: 100% 
+			padding: 15px 40px 
+			padding-bottom: 5px 
+		.level_item
+			position: relative
+			display: block 
+			width: 50%
+			.item_title
+				position: relative
+				width: 100% 
+				text-align: center
+				background: #F3EEE3
+				color: #B08B45 
+				font-size: 13px 
+				line-height: 20px
+				padding: 5px 15px 
+				letter-spacing: .2em  
+				text-transform: uppercase
+				margin: 0px
+			.item_body
+				position: relative
+				width: 100% 
+				padding: 20px
+				.inner
+					position: relative
+					width: 100% 
+					height: 114px
+					display: -webkit-box
+					display: -moz-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					-ms-flex-wrap: wrap
+					flex-wrap: wrap
+					-webkit-justify-content: center
+					justify-content: center
+					-webkit-align-items: center
+					align-items: center
+					background: #F3EEE3 
+				p
+					width: 100% 
+					text-align: center
+					margin: 0px
+					font-size: 16.67px
+					line-height: 21px 
+					color: #B08B45   
+					span
+						font-size: 45px 
+						line-height: 1 
+					strong
+						font-size: 33px 		
+						padding-right: 5px 			
+		.second_item
+			.item_title
+				background: #E6E7E8 
+				color: #707070 
+			.item_body
+				.inner
+					background: #E6E7E8 
+					color: #707070 
+					p
+						color: #707070
+	.referral_block
+		position: absolute
+		width: 438px 
+		height: 100% 
+		top: 0px
+		left: 100% 
+		margin-left: 10px  
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 		
+		.block_header
+			position: relative
+			width: 100% 
+			padding: 15px 40px 
+		.item_title
+			position: relative
+			width: 100% 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			background: #F3EEE3
+			color: #B08B45 
+			font-size: 13px 
+			line-height: 20px
+			padding: 5px 40px 
+			letter-spacing: .2em  
+			text-transform: uppercase
+			margin: 0px
+			margin-bottom: 20px 
+			span:nth-of-type(2)
+				margin-left: auto 
+	.buyer_item
+		position: relative
+		width: 100% 
+		min-height: 83px 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		padding: 10px 38px 
+		border-bottom: 1px solid #D3D3D3 
+		.icon
+			position: relative
+			display: block 
+			width: 41px 
+			height: 41px
+			-webkit-border-radius: 50% 
+			border-radius: 50%  
+			img
+				width: 100% 
+				height: 100% 
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+		.item_info
+			position: relative
+			width: calc(100% - 141px) 
+			padding-left: 20px 
+			padding-right: 20px 
+			.name
+				position: relative
+				width: 100% 
+				margin: 0px
+				font-size: 16.67px
+				line-height: 21px
+				color: #505050 
+			.date
+				position: relative
+				width: 100% 
+				margin: 0px
+				color: #A7A7A7 
+				font-size: 13px 
+				line-height: 18px
+				span:first-of-type
+					margin-right: 18px 
+		.price_info
+			position: relative
+			width: 100% 
+			max-width: 100px 
+			text-align: right
+			p
+				position: relative
+				text-align: right
+				color: #CDB382 
+				font-size: 25px 
+				line-height: 1
+				margin: 0px  
+			.pending
+				width: auto 
+				display: inline-block
+				vertical-align: top
+				margin-left: auto 
+				font-size: 14px
+				line-height: 1
+				color: #969696
+				padding-left: 15px 
+				margin-top: 5px 
+				&:before
+					content: "" 
+					display: block 
+					width: 12px 
+					height: 12px 
+					-webkit-border-radius: 50% 
+					border-radius: 50% 
+					background: #969696 
+					position: absolute
+					top: 0px
+					left: 0px
+					bottom: 0px
+					margin: auto   
+			.paid
+				width: auto 
+				display: inline-block
+				vertical-align: top
+				margin-left: auto 
+				font-size: 14px
+				line-height: 1
+				color: #5ec394
+				padding-left: 15px 
+				margin-top: 5px 
+				svg
+					content: "" 
+					display: block 
+					width: 13px 
+					height: 13px 
+					-webkit-border-radius: 50% 
+					border-radius: 50% 
+					fill: #5ec394 
+					position: absolute
+					top: 0px
+					left: 0px
+					bottom: 0px
+					margin: auto   
+			.declined
+				width: auto 
+				display: inline-block
+				vertical-align: top
+				margin-left: auto 
+				font-size: 14px
+				line-height: 1
+				color: #f45d85
+				padding-left: 15px 
+				margin-top: 5px 
+				svg
+					content: "" 
+					display: block 
+					width: 13px 
+					height: 13px 
+					-webkit-border-radius: 50% 
+					border-radius: 50% 
+					fill: #f45d85
+					position: absolute
+					top: 0px
+					left: 0px
+					bottom: 0px
+					margin: auto   
+	.page_pagination
+		margin-top: 30px 
+
+
+
+
+
+.page_wrapper .page_pagination, .page_pagination
+	position: relative
+	width: 100% 
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	-webkit-align-items: center
+	align-items: center
+	-webkit-justify-content: center
+	justify-content: center
+	li
+		position: relative
+		width: auto 
+		margin: 0 5px
+		margin-bottom: 5px 
+		font-weight: 600 
+		font-size: 16.67px
+		line-height: 21px
+		color: #505050 
+		a
+			position: relative
+			display: inline-block
+			vertical-align: top
+			font-size: 16.67px
+			line-height: 21px
+			color: #505050 
+			text-decoration: none
+			&:hover
+				color: #CBB283 
+	.active
+		a
+			color: #CBB283
+
+
+
+
+
+
+.inner_page
+	.main_header 
+		.icons_list
+			padding-left: 20px 
+
+
+
+
+
+.account_section
+	position: relative
+	width: 100% 
+	padding-top: 50px 
+	padding-bottom: 50px 
+	.wrapper
+		position: relative
+		width: 100% 
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		padding: 20px 40px
+		padding-bottom: 5px 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+	.account_header
+		position: relative
+		width: 100% 
+		margin-bottom: 25px 
+		p
+			position: relative
+			font-weight: 600
+			font-size: 16.67px
+			color: #505050 
+			line-height: 1.2
+			margin-bottom: 5px    
+			max-width: 620px 
+		.name
+			position: relative
+			font-weight: normal 
+			font-size: 58px 
+			line-height: 59px
+			color: #505050  
+			margin: 0px 
+			max-width: 620px 
+		.email
+			position: relative
+			display: inline-block
+			vertical-align: top
+			font-weight: 600 
+			font-size: 16px
+			line-height: 1
+			color: #A7A7A7
+			margin-bottom: 15px
+			margin-top: 0px
+			max-width: 620px 
+			margin-bottom: 20px
+			svg 
+				position: relative
+				display: inline-block
+				vertical-align: middle
+				width: 13px
+				height: 13px
+				fill: #5ec394
+				margin-left: 10px
+				bottom: 1px
+		.code
+			position: relative
+			display: inline-block
+			vertical-align: top 
+			font-size: 16px 
+			line-height: 22px
+			color: #A7A7A7 
+			margin-bottom: 15px 
+			margin-top: 0px 
+	.advice
+		position: absolute
+		top: 27px 
+		right: 100px 
+		width: 100% 
+		max-width: 444px 
+		background: #F3EEE3 
+		padding: 13px 20px
+		padding-right: 100px 
+		text-align: left
+		img
+			position: absolute
+			z-index: 1
+			max-width: 130px 
+			top: -24px  
+			right: -58px 
+		p
+			position: relative
+			font-weight: 600
+			color: #CDB382 
+			font-size: 16.67px
+			line-height: 21px
+			margin-bottom: 10px 
+		p:last-of-type
+			margin-bottom: 0px 
+	.account_nav
+		position: relative
+		width: 100% 
+		padding-top: 15px 
+		padding-bottom: 15px 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center	
+		border-bottom: 1px solid #d3d3d3 
+		li
+			position: relative
+			margin: 0px
+			padding: 0px  
+			margin-right: 42px 
+			a
+				position: relative
+				display: block 
+				font-weight: 600
+				font-size: 16.67px
+				color: #505050 
+				line-height: 22px
+				margin: 0px
+				&:hover
+					color: #CDB382
+					&:before
+						left: 0px
+						width: 100%  
+				&:before
+					content: "" 
+					display: block 
+					width: 0px
+					height: 3px
+					background: #CDB382 
+					position: absolute
+					left: 50%
+					bottom: -16px  
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all   
+		.active
+			a
+				color: #CDB382 
+				&:before
+					left: 0px
+					width: 100%  
+		li:last-of-type
+			margin-right: 0px 
+	.block_title
+		position: relative
+		width: 100% 
+		font-weight: 600
+		font-size: 20.8px
+		line-height: 1.2
+		color: #505050 
+		margin-bottom: 25px    
+	.line_title
+		position: relative
+		width: auto
+		margin-left: -40px 
+		margin-right: -40px 
+		display: block 
+		background: #F3EEE3
+		color: #B08B45
+		font-size: 13px
+		line-height: 20px
+		padding: 5px 40px
+		letter-spacing: 0.2em
+		text-transform: uppercase
+		margin-bottom: 0px
+	.items_group
+		position: relative
+		width: 100% 
+		margin-bottom: 50px 
+	.account_item
+		position: relative
+		width: 100% 
+		min-height: 68px 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center	
+		padding-top: 10px 
+		padding-bottom: 10px 
+		border-bottom: 1px solid #d3d3d3 
+		.item_title
+			position: relative
+			width: calc(50% - 32px)
+			padding-left: 30px 
+			padding-right: 30px 
+			font-weight: 600
+			color: #A7A7A7 
+			font-size: 16.67px
+			line-height: 21px 
+			margin: 0px   
+		.item_value
+			position: relative
+			width: 100% 
+			width: calc(50% - 32px)
+			font-weight: 600
+			color: #505050 
+			font-size: 16.67px
+			line-height: 21px   
+			margin: 0px 
+		.lock
+			position: relative
+			display: block 
+			width: 17px 
+			height: 23px 
+			fill: #a7a7a7
+			margin-left: auto 
+			margin-right: 24px 
+		.change_btn
+			position: relative
+			display: block 
+			border: none
+			background: none  
+			width: 30px 
+			height: 48px
+			top: 0px
+			bottom: 0px
+			margin-left: auto 
+			margin-right: 19px 
+			-webkit-transition: .2s all 
+			-moz-transition: .2s all 
+			-ms-transition: .2s all 
+			-o-transition: .2s all 
+			transition: .2s all 
+			&:hover
+				svg
+					fill: #505050
+			svg
+				position: absolute
+				top: 0px
+				left: -3px
+				right: 0px
+				bottom: 0px
+				margin: auto
+				width: 16px 
+				height: 15px 
+				fill: #b0b0b0
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all    
+	.account_checkbox_item
+		position: relative
+		width: 100% 
+		min-height: 68px 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center	
+		padding-top: 20px 
+		padding-bottom: 20px 
+		border-bottom: 1px solid #d3d3d3 
+		.item_title
+			position: relative
+			width: 100%
+			padding-left: 30px 
+			padding-right: 110px 
+			font-weight: 600
+			color: #505050 
+			font-size: 16.67px
+			line-height: 21px 
+			margin: 0px   
+			span
+				display: block 
+				color: #A7A7A7 
+		label
+			position: absolute
+			top: 0px
+			bottom: 0px
+			right: 30px 
+			margin: auto
+			width: 45px 
+			height: 24px 
+			-webkit-border-radius: 12px 
+			border-radius: 12px  
+			input
+				position: absolute
+				top: 0px
+				left: 0px 
+				z-index: -2
+				opacity: 0
+				-webkit-transform: scale(0) 
+				-moz-transform: scale(0) 
+				-ms-transform: scale(0) 
+				-o-transform: scale(0) 
+				transform: scale(0)    
+			input:checked + .icon
+				background: #CDB382 
+				&:before
+					left: 22px 
+			.icon
+				position: relative
+				display: block 
+				width: 100% 
+				height: 100% 
+				background: #DDD 
+				cursor: pointer
+				-webkit-border-radius: 12px 
+				border-radius: 12px  
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+				&:before
+					content: "" 
+					display: block 
+					width: 22px
+					height: 22px 
+					background: #FFF 
+					-webkit-border-radius: 50% 
+					border-radius: 50%  
+					position: absolute
+					top: 1px 
+					left: 1px
+					-webkit-box-shadow: 0px 5px 5px rgba(0,0,0,.1) 
+					box-shadow: 0px 5px 5px rgba(0,0,0,.1) 
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all  
+	.account_button_item
+		position: relative
+		width: 100% 
+		min-height: 68px 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center	
+		-webkit-flex-wrap: nowrap
+		flex-wrap: nowrap
+		padding-top: 20px 
+		padding-bottom: 20px 
+		border-bottom: 1px solid #d3d3d3 
+		.item_title
+			position: relative
+			width: auto
+			padding-left: 30px 
+			padding-right: 110px 
+			font-weight: 600
+			color: #505050 
+			font-size: 16.67px
+			line-height: 21px 
+			margin: 0px   
+			max-width: 100%
+			padding-right: 30px  
+			span
+				display: block 
+				color: #A7A7A7
+				margin-top: 2px  
+			.enabled, .disabled
+				position: relative
+				display: inline-block
+				width: auto 
+				vertical-align: middle
+				font-weight: 500
+				font-size: 12.5px
+				line-height: 16px
+				padding: 1px 16px
+				padding-top: 2px  
+				background: #5EC394 
+				color: #FFF
+				margin: 0px
+				margin-left: 16px 
+				margin-right: 16px  
+			.disabled
+				background: #f45d85
+		.main_btn
+			position: relative
+			font-weight: bold 
+			font-size: 16.67px
+			line-height: 20px
+			padding: 9px 30px
+			color: #FFF 
+			border: none 
+			background: #CDB382 
+			-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+			box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+			margin: 0px 30px
+			margin-left: auto
+			&:focus
+				color: #FFF 
+			&:hover
+				background: #B59E73
+				border-color: #B59E73
+				color: #FFF
+				-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+				box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+		.short_info
+			position: relative
+			width: auto 
+			font-weight: 600
+			font-size: 12.5px 
+			font-style: italic
+			line-height: 16px 
+			color: #A7A7A7  
+			margin: 0px 
+			margin-left: auto
+			margin-right: 25px 
+		.short_info + .main_btn
+			margin-left: 0px 
+
+
+
+
+.account_section 
+	.clear_btn
+		position: absolute
+		top: 0px
+		right: 0px  
+		border: none
+		background: none
+		padding: 0px
+		color: #F45D85 
+		font-weight: 600 
+		font-size: 16.67px 
+		line-height: 24px 
+		margin-bottom: 15px 
+		&:hover
+			color: #505050
+	.account_body
+		position: relative
+		width: 100% 
+	.log_line_title
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center	
+		padding-left: 40px 
+		padding-right: 40px 
+		span
+			width: 33.333%
+		span:nth-of-type(2), span:nth-of-type(3)
+	.account_log_item
+		position: relative
+		width: 100% 
+		min-height: 50px 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center	
+		-webkit-flex-wrap: nowrap
+		flex-wrap: nowrap
+		padding: 15px 0px
+		border-bottom: 1px solid #d3d3d3 
+		.item_title, .item_ip, .item_time
+			position: relative
+			width: 33.333%
+			font-weight: 600
+			color: #505050 
+			font-size: 16.67px
+			line-height: 21px 
+			margin: 0px   
+			max-width: 100%
+			padding-left: 30px 
+			padding-right: 30px 
+			span
+				display: block 
+				color: #A7A7A7
+				margin-top: 2px  
+		.item_ip, .item_time
+			color: #A7A7A7 
+			padding-left: 0px 
+		.item_time
+			padding-right: 60px 
+		.del_btn
+			position: absolute
+			top: 0px
+			bottom: 0px
+			right: 25px 
+			border: none
+			background: none 
+			width: 20px   
+			height: 30px 
+			font-weight: 600
+			font-size: 16.67px
+			line-height: 20px
+			color: #A7A7A7 
+			padding: 5px     
+			margin: auto
+			&:hover
+				color: #505050 
+	.more
+		position: relative
+		margin-left: 30px 
+		margin-top: 15px 
+
+
+
+.account_section
+	.line_history_title
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center	
+		span
+			width: 35% 
+			span, span:last-of-type
+				width: 50% 
+		span:last-of-type
+			width: 30% 
+			span:last-of-type
+				text-align: right
+				padding-right: 30px 
+		.double_span
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-align-items: center
+			align-items: center	
+	.mobile_line_title
+		display: none 
+	.account_history_item
+		position: relative
+		width: 100% 
+		min-height: 50px 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-flex-wrap: nowrap
+		flex-wrap: nowrap
+		padding: 15px 0px
+		border-bottom: 1px solid #d3d3d3 
+		.item_title
+			position: relative
+			width: 35%
+			font-weight: 600
+			color: #505050 
+			font-size: 16.67px
+			line-height: 21px 
+			margin: 0px   
+			max-width: 100%
+			padding-left: 30px 
+			padding-right: 30px 
+			span
+				display: block 
+				color: #A7A7A7
+				margin-top: 2px 
+		p
+			position: relative
+			font-weight: 600
+			color: #a7a7a7 
+			font-size: 16.67px
+			line-height: 21px 
+			margin: 0px   
+			max-width: 100%
+		.pending
+			width: auto 
+			display: inline-block
+			vertical-align: top
+			margin-left: auto 
+			font-size: 14px
+			line-height: 1
+			color: #969696
+			padding-left: 15px 
+			&:before
+				content: "" 
+				display: inline-block 
+				vertical-align: top
+				width: 12px 
+				height: 12px 
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+				background: #969696 
+				position: relative
+				top: 0px
+				left: 0px
+				bottom: 0px
+				margin: auto   
+				margin-right: 5px  
+		.paid
+			width: auto 
+			display: inline-block
+			vertical-align: top
+			margin-left: auto 
+			font-size: 14px
+			line-height: 1
+			color: #5ec394
+			padding-left: 15px 
+			svg
+				content: "" 
+				display: inline-block 
+				vertical-align: top
+				width: 13px 
+				height: 13px 
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+				fill: #5ec394 
+				position: relative
+				top: 0px
+				left: 0px
+				bottom: 0px
+				margin: auto   
+				margin-right: 7px 
+		.declined
+			width: auto 
+			display: inline-block
+			vertical-align: top
+			margin-left: auto 
+			font-size: 14px
+			line-height: 1
+			color: #f45d85
+			padding-left: 15px 
+			svg
+				content: "" 
+				display: inline-block 
+				vertical-align: top
+				width: 13px 
+				height: 13px 
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+				fill: #f45d85
+				position: relative
+				top: 0px
+				left: 0px
+				bottom: 0px
+				margin: auto   
+				margin-right: 7px  
+		.price
+			color: #505050 
+		.group
+			position: relative
+			width: 35% 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-flex-wrap: nowrap
+			flex-wrap: nowrap
+			p
+				width: 50% 
+				padding-right: 20px 
+		.group:last-of-type
+			width: 30%
+			p:last-of-type
+				text-align: right
+				padding-right: 30px 
+
+
+
+
+.modal-backdrop.show
+	opacity: .44 
+
+
+.account_modal
+	.modal-dialog
+		max-width: 552px 
+		width: 100% 
+		margin: auto
+		margin-top: 5%
+		margin-bottom: 5%  
+		.modal-content
+			position: relative
+			width: 100% 
+			border: none
+			background: #FFF 
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			.close
+				position: absolute
+				top: 12px 
+				right: 16px 
+				border: none
+				z-index: 2
+				width: 18px 
+				height: 18px  
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 18px   
+				color: #A7A7A7 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+				background: none 
+				padding: 0px
+				&:hover
+					color: #000 
+			.modal-body
+				position: relative
+				width: 100% 
+				padding: 60px 30px
+				padding-bottom: 45px 
+				background: none  
+				text-align: center
+				.cancle
+					position: relative
+					display: inline-block
+					vertical-align: top
+					padding: 0px
+					border: none
+					background: none
+					font-weight: 600
+					font-size: 16.67px
+					line-height: 21px
+					color: #A7A7A7 
+					margin-top: 22px 
+					&:hover
+						color: #505050 
+			.modal_title
+				position: relative
+				width: 100% 
+				text-align: center
+				font-weight: 600
+				font-size: 41px 
+				line-height: 50px
+				color: #343434
+				margin-bottom: 30px 
+			p
+				font-weight: 600 
+			.more
+				display: block
+				margin-left: -30px
+				margin-right: -30px
+				background: #CDB382
+				color: #FFF
+				text-align: center
+				padding: 15px
+				padding-left: 45px
+				-webkit-box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+				box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+				margin-bottom: 30px
+				svg
+					fill: #FFF
+			.main_form
+				text-align: left
+				.mod_select
+					background: #F9F9F9 
+				input
+					display: block 
+				.submit_btn
+					margin-top: 50px 
+			
+
+
+.main_form .mod_select .list
+	max-height: 300px 
+	overflow: auto
+
+
+.account_modal .modal-dialog .modal-content .modal_title
+	.mobile_br
+		display: none 
+
+.main_form
+	.qr_code
+		position: relative
+		width: 100% 
+		padding-bottom: 40px 
+		border-bottom: 1px solid #d3d3d3
+		text-align: center
+		img
+			max-width: 200px 
+		p
+			text-align: center
+			font-weight: 600
+			font-size: 20.8px 
+			line-height: 27px
+			color: #505050 
+			margin-bottom: 35px    
+			margin-top: 5px 
+	.phone_item
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		.phone_code
+			width: 110px 
+			margin-bottom: 0px
+			-webkit-border-top-right-radius: 0px 
+			border-top-right-radius: 0px 
+			-webkit-border-bottom-right-radius: 0px 
+			border-bottom-right-radius: 0px 
+			text-align: center
+			padding-right: 45px 
+			padding-left: 28px 
+			background: #F9F9F9 
+			ul
+				li
+					padding-left: 28px 
+					padding-right: 20px 
+		input
+			display: block 
+			width: calc(100% - 110px)
+			-webkit-border-top-left-radius: 0px 
+			border-top-left-radius: 0px 
+			-webkit-border-bottom-left-radius: 0px 
+			border-bottom-left-radius: 0px  
+			border-left: 0px 
+			margin-bottom: 0px 
+	.links_list
+		position: relative
+		width: 100% 
+		list-style: none
+		margin-top: -5px 
+		border-bottom: 1px solid #d3d3d3
+		padding-bottom: 22px 
+		li
+			position: relative
+			width: 100% 
+			text-align: right
+			a
+				position: relative
+				display: inline-block
+				vertical-align: top
+				font-weight: 600
+				font-size: 16.67px
+				color: #CDB382 
+				line-height: 21px
+				margin: 0px
+				&:hover
+					color: #505050    
+	.pin_list
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		li
+			width: 50%
+			text-align: left
+		li:nth-of-type(2)
+			text-align: right
+	.key_item
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		margin-bottom: 22px 
+		input
+			margin-bottom: 0px
+			width: 52px 
+			text-align: center
+			font-weight: 600
+			font-size: 33px 
+			line-height: 33px
+			color: #505050 
+			padding: 15px 5px   
+		input:nth-of-type(3)
+			margin-right: 30px 
+		.divider
+			position: relative
+			background: none
+			border: none
+			width: 1px 
+			height: 100% 
+			margin: 0px  
+	.pin_item
+		input:nth-of-type(3)
+			margin-right: 0px   
+
+
+
+
+.verification_section
+	.verification_text
+		position: relative
+		width: 100% 
+		max-width: 390px		
+		margin: auto		
+		padding-top: 12px 
+		margin-bottom: 45px 
+	.key_item
+		padding-bottom: 25px 
+	.right_wrapper 
+		img	
+			max-width: 365px 
+			left: -36px 
+	.main_form
+		position: relative
+		width: 100% 
+		padding-top: 24px 
+		border-top: 1px solid #d3d3d3
+	.key_item
+		border-bottom: 1px solid #d3d3d3
+		input
+			color: #505050 
+		p
+			width: 100% 
+			text-align: right
+			margin: 0px 
+			margin-top: 22px 
+			a
+				position: relative
+				display: inline-block
+				vertical-align: top
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 21px
+				color: #CDB382 
+				margin: 0px    
+				&:hover
+					color: #505050 
+		 
+
+
+
+
+.account_modal 
+	.modal-dialog 
+		.modal-content 
+			.email 
+				position: relative
+				display: -webkit-box
+				display: -moz-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				-ms-flex-wrap: wrap
+				flex-wrap: wrap
+				-webkit-justify-content: center
+				justify-content: center
+				-webkit-align-items: center
+				align-items: center
+				margin-left: -30px
+				margin-right: -30px
+				background: #CDB382
+				color: #FFF
+				text-align: center
+				padding: 15px 5px
+				padding-right: 35px
+				font-size: 21px 
+				line-height: 21px 
+				-webkit-box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+				box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+				margin-bottom: 30px
+				svg
+					position: relative
+					display: inline-block
+					vertical-align: top
+					fill: #FFF
+					width: 19px
+					height: 19px
+					margin: 0px 22px
+			.pending_block
+				position: relative
+				width: 100% 
+				p
+					text-align: center
+					margin-bottom: 30px
+					font-size: 21px 
+					line-height: 29px
+					color: #505050  
+				.price_list
+					position: relative
+					width: 100% 
+					border-top: 1px solid #d3d3d3
+					border-bottom: 1px solid #D3D3D3 
+					padding-top: 12px 
+					padding-bottom: 12px 
+					margin: 0px 
+					list-style: none
+					margin-bottom: 50px 
+					li
+						position: relative
+						width: 100% 
+						text-align: left
+						display: -webkit-box
+						display: -moz-box
+						display: -ms-flexbox
+						display: -webkit-flex
+						display: flex
+						font-weight: 600
+						font-size: 20px
+						line-height: 26px
+						color: #505050 
+						margin-bottom: 7px 
+						.info_popover
+							top: 4px 
+						span
+							margin-left: auto
+							color: #CDB382 
+							text-align: right
+					li:last-of-type
+						margin-bottom: 0px 
+			.return_btn
+				position: relative
+				display: inline-block
+				vertical-align: top
+				text-align: center
+				font-weight: bold
+				font-size: 20px
+				line-height: 24px
+				padding: 16px 30px
+				border: 2px solid #969696
+				-webkit-border-radius: 7px
+				border-radius: 7px
+				background: #969696
+				color: #FFF
+				text-decoration: none
+				display: block
+				max-width: 384px
+				width: 100%
+				margin: auto
+				&:hover
+					background: #505050
+					border-color: #505050
+			.loader
+				position: relative
+				display: block 
+				width: 44px
+				height: 44px
+				margin: auto
+				margin-bottom: 30px 
+				&.active
+					img
+						opacity: 0
+					.check_icon
+						opacity: 1
+						-webkit-transform: scale(1) 
+						-moz-transform: scale(1) 
+						-ms-transform: scale(1) 
+						-o-transform: scale(1) 
+						transform: scale(1)  
+				img
+					position: relative
+					width: 100% 
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all 
+				.check_icon
+					position: absolute
+					top: 0px
+					left: 0px  
+					display: block 
+					width: 100% 
+					height: 100% 
+					fill: #cdb382
+					-webkit-transform: scale(0) 
+					-moz-transform: scale(0) 
+					-ms-transform: scale(0) 
+					-o-transform: scale(0) 
+					transform: scale(0) 
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all 
+    
+
+.main_form 
+	.amount_item
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		margin-bottom: 27px 
+		input
+			margin-bottom: 0px 
+		.currency
+			width: 110px 
+			border: 1px solid #A7A7A7 
+			background: #F9F9F9 
+			border-right: none  
+			text-align: center
+			font-weight: 600
+			font-size: 20px
+			line-height: 20px   
+			padding: 22px 15px
+			color: #949494
+			margin: 0px 
+			-webkit-border-radius: 10px 0px 0px 10px 
+			border-radius: 10px 0px 0px 10px 
+		input
+			width: calc(100% - 110px)
+			-webkit-border-radius: 0px 10px 10px 0px 
+			border-radius: 0px 10px 10px 0px 
+		.use_max
+			position: absolute
+			z-index: 2 
+			top: 0px
+			bottom: 0px
+			right: 20px
+			margin: auto 
+			height: 20px
+			padding: 3px 5px
+			padding-top: 5px 
+			text-align: center
+			color: #FFF 
+			font-size: 12px 
+			line-height: 12px 
+			text-transform: uppercase
+			border: none
+			-webkit-border-radius: 0px 
+			border-radius: 0px    
+			background: #CDB382 
+			&:hover
+				background: #343434 
+	.price_list
+		position: relative
+		width: 100% 
+		border-top: 1px solid #d3d3d3
+		border-bottom: 1px solid #D3D3D3 
+		padding-top: 12px 
+		padding-bottom: 12px 
+		margin: 0px 
+		margin-top: 40px 
+		list-style: none
+		li
+			position: relative
+			width: 100% 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			text-align: left
+			font-weight: 600
+			font-size: 16.67px
+			line-height: 21px
+			color: #505050 
+			margin-bottom: 7px 
+			span
+				margin-left: auto
+				color: #CDB382 
+		li:last-of-type
+			margin-bottom: 0px 
+			 
+			
+
+.main_footer .top_footer .container
+	padding-top: 170px 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test
+	width: 100% 
+	height: 1000px 

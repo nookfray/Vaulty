@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vaulty</title>
+	<meta content="Vaulty" name='description' itemprop="description">
+	<meta content="Vaulty" name='keywords' itemprop="keywords">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		.html_list {
+			position: relative;
+			width: 100%;
+			padding: 50px;
+			list-style: none;
+		}
+		.html_list li {
+			margin-bottom: 10px;
+		}
+		.page_wrapper {
+			padding: 0px;
+		}
+		.page_wrapper .main_btn, .page_wrapper .second_btn {
+			font-size: 16px;
+			padding: 5px 15px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="page_wrapper">
+		<ul class="html_list">
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_name_modal">FullName</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_email_modal">Email</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_tel_modal">Phone</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_language_modal">Language</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_dateformat_modal">Date format</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_timezone_modal">Timezone</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_password_modal">Password</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_2fa1_modal">Activate 2FA - Step 1</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_2fa2_modal">Activate 2FA - Final step</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_2fa3_modal">Desactivate 2FA</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_newpin_modal">New PIN code</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#change_removepin_modal">Remove PIN code</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#withdraw_fund_modal">Withdraw fund</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#withdraw_security_modal">Withdraw security</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#pending_request_modal">Pending request</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#withdraw_fund_bitcoin_modal">Withdraw fund (BITCOIN)</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#withdraw_security_bitcoin_modal">Withdraw security (BITCOIN)</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#confirmation_bitcoin_modal">Confirmation (BITCOIN)</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#transfert_fund_modal">Transfert fund</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#transfert_security_modal">Transfert security</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#confirmation_modal">Confirmation</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#vaulty_card_modal">Where is my Vaulty Card?</button></li>
+			<li><button type="button" class="main_btn" data-toggle="modal" data-target="#request_complete_modal">Request complete!</button></li>
+		</ul>
+	</div>
+
+
+	<!-- FULLNAME MODAL -->
+	<div class="modal fade account_modal" id="change_name_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update full name</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>First name</p>
+						<input type="text" name="firstName" placeholder="First name" required>
+						<p>Last name</p>
+						<input type="text" name="lastName" placeholder="Last name" required>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END FULLNAME MODAL -->
+
+	<!-- EMAIL MODAL -->
+	<div class="modal fade account_modal" id="change_email_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update Email</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>New Email</p>
+						<input type="text" name="email" placeholder="New Email" required>
+						<p>Confirm Email</p>
+						<input type="text" name="emailre" placeholder="Confirm Email" required>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END EMAIL MODAL -->
+
+	<!-- TEL MODAL -->
+	<div class="modal fade account_modal" id="change_tel_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update <br class="mobile_br">Phone number</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Phone number</p>
+						<div class="phone_item">
+							<select name="code" class="mod_select phone_code">
+								<option value="+22" selected>+22</option>
+								<option value="+22">+22</option>
+								<option value="+22">+22</option>
+								<option value="+22">+22</option>
+								<option value="+22">+22</option>
+								<option value="+22">+22</option>
+							</select>
+							<input type="text" name="tel" placeholder="Phone number" required>
+						</div>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END TEL MODAL -->
+
+	<!-- LANGUAGE MODAL -->
+	<div class="modal fade account_modal" id="change_language_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update Language</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Select language</p>
+						<select name="language" class="mod_select">
+							<option value="English (United States)" selected>English (United States)</option>
+							<option value="French">French</option>
+							<option value="Spain">Spain</option>
+						</select>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END LANGUAGE MODAL -->
+
+	<!-- DATE FORMAT MODAL -->
+	<div class="modal fade account_modal" id="change_dateformat_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update Date format</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Select Date format</p>
+						<select name="date" class="mod_select">
+							<option value="JJ / MM / YYYY" selected>JJ / MM / YYYY</option>
+							<option value="MM / JJ / YYYY">MM / JJ / YYYY</option>
+						</select>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END DATE FORMAT MODAL -->
+
+	<!-- TIME ZONE MODAL -->
+	<div class="modal fade account_modal" id="change_timezone_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update Time zone</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Select Time zone</p>
+						<select name="time" class="mod_select">
+							<option value="Greenwich (GMT)">Greenwich (GMT)</option>
+							<option value="European Central (GMT +1)">European Central (GMT +1)</option>
+							<option value="Eastern European (GMT +2)">Eastern European (GMT +2)</option>
+							<option value="(Arabic) Egypt Standard (GMT +2)">(Arabic) Egypt Standard (GMT +2)</option>
+							<option value="Eastern African (GMT +3)">Eastern African (GMT +3)</option>
+							<option value="Middle East (GMT +3.30)">Middle East (GMT +3.30)</option>
+							<option value="Near East (GMT +4)">Near East (GMT +4)</option>
+							<option value="Pakistan Lahore (GMT +5)">Pakistan Lahore (GMT +5)</option>
+							<option value="India Standard (GMT +5.30)">India Standard (GMT +5.30)</option>
+							<option value="Bangladesh (GMT +6)" selected>Bangladesh (GMT +6)</option>
+							<option value="Vietnam Standard (GMT +7)">Vietnam Standard (GMT +7)</option>
+							<option value="China Taiwan (GMT +8)">China Taiwan (GMT +8)</option>
+							<option value="Japan Standard (GMT +9)">Japan Standard (GMT +9)</option>
+							<option value="Australia Central (GMT +9.30)">Australia Central (GMT +9.30)</option>
+							<option value="Australia Eastern (GMT +10)">Australia Eastern (GMT +10)</option>
+							<option value="Solomon Standard (GMT +11)">Solomon Standard (GMT +11)</option>
+							<option value="New Zealand Standard (GMT +12)">New Zealand Standard (GMT +12)</option>
+							<option value="Midway Islands (GMT -11)">Midway Islands (GMT -11)</option>
+							<option value="Hawaii Standard (GMT -10)">Hawaii Standard (GMT -10)</option>
+							<option value="Alaska Standard (GMT -9)">Alaska Standard (GMT -9)</option>
+							<option value="Pacific Standard (GMT -8)">Pacific Standard (GMT -8)</option>
+							<option value="Phoenix Standard (GMT -7)">Phoenix Standard (GMT -7)</option>
+							<option value="Mountain Standard (GMT -7)">Mountain Standard (GMT -7)</option>
+							<option value="Central Standard (GMT -6)">Central Standard (GMT -6)</option>
+							<option value="Eastern Standard (GMT -5)">Eastern Standard (GMT -5)</option>
+							<option value="Indiana Eastern Standard (GMT -5)">Indiana Eastern Standard (GMT -5)</option>
+							<option value="Puerto Rico and US Virgin Islands (GMT -4)">Puerto Rico and US Virgin Islands (GMT -4)</option>
+							<option value="Canada Newfoundland (GMT -3.30)">Canada Newfoundland (GMT -3.30)</option>
+							<option value="Argentina Standard (GMT -3)">Argentina Standard (GMT -3)</option>
+							<option value="Brazil Eastern (GMT -3)">Brazil Eastern (GMT -3)</option>
+							<option value="Central African (GMT -1)">Central African (GMT -1)</option>
+						</select>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END TIME ZONE MODAL -->
+
+	<!-- PASSWORD MODAL -->
+	<div class="modal fade account_modal" id="change_password_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update password</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>New password</p>
+						<div class="password_item">
+							<input type="password" name="password" placeholder="New password" required="">
+							<button type="button" class="show_pass">SHOW PASS</button>
+						</div>
+						<p>Old password</p>
+						<div class="password_item">
+							<input type="password" name="oldpassword" placeholder="Old password" required="">
+							<button type="button" class="show_pass">SHOW PASS</button>
+						</div>
+						<ul class="links_list">
+							<li><a href="#">Forgot your password?</a></li>
+						</ul>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END PASSWORD MODAL -->
+
+	<!-- 2FA1 MODAL -->
+	<div class="modal fade account_modal" id="change_2fa1_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Activate 2FA - Step 1</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<div class="qr_code">
+							<p>Scan QR code</p>
+							<img src="img/qr.png" alt="img">
+						</div>
+						<button type="submit" class="submit_btn">Continue</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END 2FA1 MODAL -->
+
+	<!-- 2FA2 MODAL -->
+	<div class="modal fade account_modal" id="change_2fa2_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Activate 2FA <span class="line">-</span> Final step</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>2FA key</p>
+						<div class="key_item">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+						</div>
+						<p>Account password</p>
+						<div class="password_item">
+							<input type="password" name="password" placeholder="Account password" required="">
+							<button type="button" class="show_pass">SHOW PASS</button>
+						</div>
+						<ul class="links_list">
+							<li><a href="#">Forgot your password?</a></li>
+						</ul>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END 2FA2 MODAL -->
+
+	<!-- 2FA3 MODAL -->
+	<div class="modal fade account_modal" id="change_2fa3_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Desactivate 2FA</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>2FA key</p>
+						<div class="key_item">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+						</div>
+						<p>Account password</p>
+						<div class="password_item">
+							<input type="password" name="password" placeholder="Account password" required="">
+							<button type="button" class="show_pass">SHOW PASS</button>
+						</div>
+						<ul class="links_list">
+							<li><a href="#">Forgot your password?</a></li>
+						</ul>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END 2FA3 MODAL -->
+
+	<!-- NEW PIN MODAL -->
+	<div class="modal fade account_modal" id="change_newpin_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">New PIN code</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>New PIN code</p>
+						<div class="key_item pin_item">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+						</div>
+						<p>Account password</p>
+						<div class="password_item">
+							<input type="password" name="password" placeholder="Account password" required="">
+							<button type="button" class="show_pass">SHOW PASS</button>
+						</div>
+						<ul class="links_list">
+							<li><a href="#">Forgot your password?</a></li>
+						</ul>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END NEW PIN MODAL -->
+
+	<!-- REMOVE PIN MODAL -->
+	<div class="modal fade account_modal" id="change_removepin_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Remove PIN code</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Actual PIN code</p>
+						<div class="key_item pin_item">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+						</div>
+						<p>Account password</p>
+						<div class="password_item">
+							<input type="password" name="password" placeholder="Account password" required="">
+							<button type="button" class="show_pass">SHOW PASS</button>
+						</div>
+						<ul class="links_list pin_list">
+							<li><a href="#">Forgot your PIN code?</a></li>
+							<li><a href="#">Forgot your password?</a></li>
+						</ul>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END REMOVE PIN MODAL -->
+
+	<!-- WITHDRAW FUND MODAL -->
+	<div class="modal fade account_modal" id="withdraw_fund_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Withdraw fund</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Withdraw method</p>
+						<select name="transfert" class="mod_select">
+							<option value="Bank wire transfert">Bank wire transfert</option>
+							<option value="Bitcoin">Bitcoin</option>
+						</select>
+						<p>Amount</p>
+						<div class="amount_item">
+							<p class="currency">USD</p>
+							<input type="text" name="amount" placeholder="Amount">
+							<button type="button" class="use_max"><span>USE </span>MAX</button>
+						</div>
+						<ul class="price_list">
+							<li>Available balance: <span>$ 6,000 USD</span></li>
+							<li>Transaction fee: <span>$ 0 USD</span></li>
+						</ul>
+						<button type="submit" class="submit_btn">Continue</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END WITHDRAW FUND MODAL -->
+
+	<!-- WITHDRAW SECURITY MODAL -->
+	<div class="modal fade account_modal" id="withdraw_security_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Withdraw security</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Bank account country</p>
+						<select name="transfert" class="mod_select">
+							<option value="China">China</option>
+							<option value="China">China</option>
+							<option value="China">China</option>
+							<option value="China">China</option>
+							<option value="China">China</option>
+						</select>
+						<p>PIN code</p>
+						<div class="key_item pin_item">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+						</div>
+						<ul class="links_list">
+							<li><a href="#">Forgot your PIN code?</a></li>
+						</ul>
+						<button type="submit" class="submit_btn">VERIFY</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END WITHDRAW SECURITY MODAL -->
+
+	<!-- PENDING REQUEST MODAL -->
+	<div class="modal fade account_modal" id="pending_request_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h3 class="modal_title">Pending request</h3>
+					<a href="#" class="email"><svg><use xlink:href="img/sprite.svg#user_icon"></use></svg>exemple@email.com</a>
+					<div class="pending_block">
+						<p>You will receive an email at your account registred email in about 24-48 hours to complete your withdraw request.</p>
+						<ul class="price_list">
+							<li>Bank account country: <span>China</span></li>
+							<li>Amount: <span>$ 2,000 USD</span></li>
+						</ul>
+					</div>
+					<a href="dashboard.html" class="return_btn">Return to Dashboard</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- PENDING REQUEST MODAL -->
+
+	<!-- WITHDRAW FUND (BITCOIN) MODAL -->
+	<div class="modal fade account_modal" id="withdraw_fund_bitcoin_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Withdraw fund</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Withdraw method</p>
+						<select name="transfert" class="mod_select">
+							<option value="Bitcoin">Bitcoin</option>
+							<option value="Bank wire transfert">Bank wire transfert</option>
+						</select>
+						<p>Amount</p>
+						<div class="amount_item">
+							<p class="currency">USD</p>
+							<input type="text" name="amount" placeholder="Amount">
+							<button type="button" class="use_max"><span>USE </span>MAX</button>
+						</div>
+						<ul class="price_list">
+							<li>Available balance: <span>$ 6,000 USD</span></li>
+							<li>Transaction fee: <span>$ 0 USD</span></li>
+						</ul>
+						<button type="submit" class="submit_btn">Continue</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END WITHDRAW FUND (BITCOIN) MODAL -->
+
+	<!-- WITHDRAW SECURITY (BITCOIN) MODAL -->
+	<div class="modal fade account_modal" id="withdraw_security_bitcoin_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Withdraw security</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Withdraw to 
+							<i class="info_popover" 
+							data-toggle="popover" 
+							data-placement="top" 
+							data-trigger="hover" 
+							data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"></i>
+						</p>
+						<input type="text" name="withdraw" placeholder="Bitcoin address" required>
+						<p>PIN code</p>
+						<div class="key_item pin_item">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+						</div>
+						<ul class="links_list">
+							<li><a href="#">Forgot your PIN code?</a></li>
+						</ul>
+						<button type="submit" class="submit_btn">VERIFY</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END WITHDRAW SECURITY (BITCOIN) MODAL -->
+
+	<!-- CONFIRMATION (BITCOIN) MODAL -->
+	<div class="modal fade account_modal" id="confirmation_bitcoin_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h3 class="modal_title">Confirmation</h3>
+					<div class="pending_block">
+						<div class="loader">
+							<img src="img/preloader.gif" alt="preloader">
+							<svg class="check_icon"><use xlink:href="img/sprite.svg#check_icon"></use></svg>
+						</div>
+						<!--
+						<script>
+							setTimeout(function(){$('.loader').addClass("active")}, 3000); 
+						</script>
+						  -->
+						<p>Withdraw informations</p>
+						<ul class="price_list">
+							<li>Bitcoin address: <span>19Pho***** *****4Y1CV</span></li>
+							<li>Amount: <span>$ 2,000 USD</span></li>
+						</ul>
+					</div>
+					<a href="dashboard.html" class="return_btn">Return to Dashboard</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- CONFIRMATION (BITCOIN) MODAL -->
+
+	<!-- TRANSFERT FUND MODAL -->
+	<div class="modal fade account_modal" id="transfert_fund_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Transfert fund</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Transfert to 
+							<i class="info_popover" 
+							data-toggle="popover" 
+							data-placement="top" 
+							data-trigger="hover" 
+							data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"></i>
+						</p>
+						<input type="text" name="transfert" placeholder="Vaulty account number" required>
+						<p>Amount</p>
+						<div class="amount_item">
+							<p class="currency">USD</p>
+							<input type="text" name="amount" placeholder="Amount">
+							<button type="button" class="use_max"><span>USE </span>MAX</button>
+						</div>
+						<ul class="price_list">
+							<li>Available balance: <span>$ 6,000 USD</span></li>
+							<li>Transaction fee: <span>$ 0 USD</span></li>
+						</ul>
+						<button type="submit" class="submit_btn">Continue</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END TRANSFERT FUND MODAL -->
+
+	<!-- TRANSFERT SECURITY MODAL -->
+	<div class="modal fade account_modal" id="transfert_security_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Transfert security</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>PIN code</p>
+						<div class="key_item pin_item">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+							<input type="text" name="pin" required="" maxlength="1">
+						</div>
+						<ul class="links_list">
+							<li><a href="#">Forgot your PIN code?</a></li>
+						</ul>
+						<button type="submit" class="submit_btn">VERIFY</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END TRANSFERT SECURITY MODAL -->
+
+	<!-- CONFIRMATION MODAL -->
+	<div class="modal fade account_modal" id="confirmation_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h3 class="modal_title">Confirmation</h3>
+					<div class="pending_block">
+						<div class="loader">
+							<img src="img/preloader.gif" alt="preloader">
+							<svg class="check_icon"><use xlink:href="img/sprite.svg#check_icon"></use></svg>
+						</div>
+						<!--
+						<script>
+							setTimeout(function(){$('.loader').addClass("active")}, 3000); 
+						</script>
+						  -->
+						<p>Transfert informations</p>
+						<ul class="price_list">
+							<li>VAN: 
+							<i class="info_popover" 
+							data-toggle="popover" 
+							data-placement="top" 
+							data-trigger="hover" 
+							data-content="Vaulty account number"></i> <span>5869-8799-8944</span></li>
+							<li>Amount: <span>$ 2,000 USD</span></li>
+						</ul>
+					</div>
+					<a href="dashboard.html" class="return_btn">Return to Dashboard</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- CONFIRMATION MODAL -->
+
+	<!-- VAULTY CARD MODAL -->
+	<div class="modal fade account_modal" id="vaulty_card_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Where is my <br>
+					Vaulty Card?</h3>
+					<p class="info_text">Enter your informations to receive an update on your Vaulty Card shipping status.</p>
+					<form action="" class="main_form">
+						<p>Email address</p>
+						<input type="text" name="email" placeholder="email@exemple.com" required>
+						<p>Reference number</p>
+						<input type="text" name="referencenumber" placeholder="VC1234567" required>
+						<button type="submit" class="submit_btn">Track my Card</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END VAULTY CARD MODAL -->
+
+	<!-- CONFIRMATION MODAL -->
+	<div class="modal fade account_modal" id="request_complete_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Request complete!</h3>
+					<div class="pending_block">
+						<div class="loader">
+							<img src="img/preloader.gif" alt="preloader">
+							<svg class="check_icon"><use xlink:href="img/sprite.svg#check_icon"></use></svg>
+						</div>
+						<!--
+						<script>
+							setTimeout(function(){$('.loader').addClass("active")}, 3000); 
+						</script>
+						  -->
+						<div class="request_text">
+							<p>Your request has been submitted.</p>
+							<p>If the information you provided was correct, once we have determined the status of your application we will send you an email.</p>
+						</div>
+					</div>
+					<a href="dashboard.html" class="return_btn">Close the box</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- CONFIRMATION MODAL -->
+
+
+
+
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/popper.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="libs/scroll2id/pagescroll2id.min.js"></script>
+	<script src="libs/validator/jquery.validate.min.js"></script>
+	<script src="libs/selectstyle/jquery.nice-select.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+</body>
+</html>

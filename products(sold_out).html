@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vaulty</title>
+	<meta content="Vaulty" name='description' itemprop="description">
+	<meta content="Vaulty" name='keywords' itemprop="keywords">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+
+	<!-- PAGE WRAPPER -->
+	<div class="page_wrapper product_page" id="top">
+	
+		<!-- HEADER -->
+		<header class="main_header product_header">
+			<div class="container">
+				<a href="index.html" class="logo"><svg><use xlink:href="img/sprite.svg#logo_icon"></use></svg></a>
+				<ul class="left_nav">
+					<li><a href="#">Card</a></li>
+					<li class="soon"><a href="#">Terminal <sup>soon</sup></a></li>
+				</ul>
+				<div class="right_block">
+					<div class="products_dropdown">
+						<button type="button" class="products_btn active">Products</button>
+						<ul class="dropdown_menu">
+							<li><a href="#">Product 1</a></li>
+							<li><a href="#">Product 2</a></li>
+							<li><a href="#">Product 3</a></li>
+							<li><a href="#">Product 4</a></li>
+						</ul>
+					</div>
+					<ul class="main_nav">
+						<li><a href="#">Academy</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Card status</a></li>
+					</ul>
+					<ul class="icons_list">
+						<li class="dropdown language_dropdown">
+							<button type="button" class="drop_btn">EN</button>
+							<ul class="dropdown_menu">
+								<li><a href="#">FR</a></li>
+								<li><a href="#">ES</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="login.html" class="user_link"><svg><use xlink:href="img/sprite.svg#user_icon"></use></svg></a>
+						</li>
+						<li>
+							<a href="#" class="basket_link"><svg><use xlink:href="img/sprite.svg#basket_icon"></use></svg></a>
+						</li>
+					</ul>
+					<button type="button" class="toggle_menu">
+						<span class='sandwich'>
+							<span class="sw-topper"></span>
+							<span class="sw-bottom"></span>
+							<span class="sw-footer"></span>
+						</span>
+					</button>
+					<!-- MODILE NAV -->
+					<ul class="mobile_nav">
+						<li><a href="#">Card</a></li>
+						<li><a href="#">Terminal</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Academy</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Card status</a></li>
+						<li class="divider"></li>
+						<li class="dropdown">
+							<a href="#">Language</a>
+							<ul class="dropdown_menu">
+								<li><a href="#">English</a></li>
+								<li><a href="#">French</a></li>
+								<li><a href="#">Spain</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- END MOBILE NAV -->
+				</div>
+			</div>
+		</header>
+		<!-- END HEADER -->
+
+		<!-- PRODUCT MAIN SECTION -->
+		<section class="product_main_section">
+			<div class="container">
+				<div class="wrapper">
+					<h1 class="main_title">Vaulty Card <br>
+					<span>Founder edition<i class="icon">!</i></span></h1>
+					<p class="short_info">The credit card that any self-respecting cryptocurrency holder must have. Store your assets into the impenetable cold crypto storage. Pay your stuff directly with your card at any store. Exchange at 0% fee your crypto and more...</p>
+					<a href="#" class="more">Learn more<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<div class="img_block">
+						<img src="img/product_back.jpg" alt="img">
+					</div>
+					<div class="config_block">
+						<div class="custom_select">
+							<h5 class="select_title">Style</h5>
+							<div class="select product_select">
+								<button type="button" class="select_btn" id="card_type"></button>
+								<ul class="select_list">
+									<li data-img="img/product_splendid.jpg" data-img-back="img/product_back.jpg" class="active">Splendid</li>
+									<li data-img="img/product_kryptonite.jpg" data-img-back="img/product_back.jpg">Kryptonite</li>
+									<li data-img="img/product_bulletproof.jpg" data-img-back="img/product_back.jpg">Bulletproof</li>
+								</ul>
+							</div>
+						</div>
+						<div class="custom_select">
+							<h5 class="select_title">View</h5>
+							<div class="select view_select">
+								<button type="button" class="select_btn" id="card_back"></button>
+								<ul class="select_list">
+									<li class="front_view active">Front</li>
+									<li class="back_view">Back</li>
+								</ul>
+							</div>
+						</div>
+						<div class="divider"></div>
+						<div class="custom_select quantity_custom_select">
+							<h5 class="select_title">Quantity</h5>
+							<div class="select quantity_select">
+								<button type="button" class="select_btn"></button>
+								<ul class="select_list">
+									<li class="active">x1</li>
+									<li>x2</li>
+									<li class="pack_li">x3</li>
+									<li>x4</li>
+									<li>x5</li>
+									<li>x6</li>
+									<li>x7</li>
+									<li>x8</li>
+									<li>x9</li>
+									<li>x10</li>
+								</ul>
+							</div>
+						</div>
+						<div class="custom_select price_block">
+							<h5 class="select_title">Price</h5>
+							<p class="price">
+								<span class="old_price">298.00 USD</span>
+								<span class="new_price"><strong>149.00</strong> USD</span>
+							</p>
+						</div>
+					</div>
+					<!-- 
+					<div class="add_card">
+						<button type="button" class="add_btn">Add to cart</button>
+						<button type="button" class="save_btn" data-price="298 + 298 + 298 - 67%">
+							<span>-67%</span> <strong>Save</strong> on a 3 card pack
+							<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg>
+						</button>
+					</div>
+					-->
+					<div class="sold_out">
+						<div class="inner">
+							<button class="main_btn">Sold out</button>
+							<p>
+								Restock:
+								<span>15 september 2020</span>
+							</p>
+						</div>
+					</div>
+					<p class="bottom_info">* The Charger Station is included <br class="mobile_br">with any Vaulty Card Kit</p>
+				</div>
+			</div>
+		</section>
+		<!-- END PRODUCT MAIN SECTION -->
+
+		<!-- ADVANTAGES LINE -->
+		<section class="advantages_line">
+			<div class="container">
+				<p class="item">
+					<img src="img/icons/advant_1.png" alt="icon" class="icon first_icon">
+					free shipping
+				</p>
+				<p class="item">
+					<img src="img/icons/advant_2.png" alt="icon" class="icon">
+					30 days money-back <span class="mobile_hide">guarantee</span>
+				</p>
+				<p class="item">
+					<img src="img/icons/advant_3.png" alt="icon" class="icon">
+					worldwide available
+				</p>
+				<p class="item">
+					<img src="img/icons/advant_4.png" alt="icon" class="icon">
+					tracking number
+				</p>
+				<p class="item">
+					<img src="img/icons/advant_5.png" alt="icon" class="icon">
+					-50% discount
+				</p>
+			</div>
+		</section>
+		<!-- END ADVANTAGES LINE -->
+
+		<!-- CHARACTERISTICS SECTION -->
+		<section class="characteristics_section">
+			<div class="container tabs">
+				<div class="nav_block">
+					<div class="mobile_block">
+						<h5 class="left_title">Quick access:</h5>
+						<p class="active_page">Batteries</p>
+						<button type="button" class="open_btn">Open</button>
+					</div>
+					<ul class="nav nav-tabs">
+						<li>
+							<a href="#tab-1" class="nav-link active" data-toggle="tab">
+								01.
+								<span>Batteries</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab-2" class="nav-link" data-toggle="tab">
+								02.
+								<span>Screen & buttons</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab-3" class="nav-link" data-toggle="tab">
+								03.
+								<span>Wallets</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab-4" class="nav-link" data-toggle="tab">
+								04.
+								<span>EAL5+ Secure Chip</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab-5" class="nav-link" data-toggle="tab">
+								05.
+								<span>Encryption</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab-6" class="nav-link" data-toggle="tab">
+								06.
+								<span>Fingerprint scan</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab-7" class="nav-link" data-toggle="tab">
+								07.
+								<span>Bluetooth</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab-8" class="nav-link" data-toggle="tab">
+								08.
+								<span>NFC Chip</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab-9" class="nav-link" data-toggle="tab">
+								09.
+								<span>Magnetic Stripe</span>
+							</a>
+						</li>
+						<li>
+							<a href="#tab-10" class="nav-link" data-toggle="tab">
+								10.
+								<span>Electronic</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content_block tab-content">
+					<div class="tab-pane active" id="tab-1">
+						<div class="well">
+							<div class="left_col">
+								<p class="number">01.</p>
+								<h3 class="title">The Batteries</h3>
+								<p>Bank deposits in 38 countries, settled in <br>2 lines text right here.</p>
+								<ul>
+									<li>Receive funds directly to your bank account with zero price volatility or risk.</li>
+									<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+								</ul>
+								<p>Bank deposits in 38 countries, settled in 2 lines text right here. Bank deposits in 38 countries, settled in 2 lines text right here.</p>
+								<a href="#tab-2" class="more" data-toggle="tab">02. <span>Screen & Buttons</span><svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+							</div>
+							<div class="right_col">
+								<img src="img/characteristics/1.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-2">
+						<div class="well">
+							<div class="left_col">
+								<p class="number">02.</p>
+								<h3 class="title">Screen & buttons</h3>
+								<p>Bank deposits in 38 countries, settled in <br>2 lines text right here.</p>
+								<ul>
+									<li>Receive funds directly to your bank account with zero price volatility or risk.</li>
+									<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+								</ul>
+								<p>Bank deposits in 38 countries, settled in 2 lines text right here. Bank deposits in 38 countries, settled in 2 lines text right here.</p>
+								<a href="#tab-3" class="more" data-toggle="tab">03. <span>Wallets</span><svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+							</div>
+							<div class="right_col">
+								<img src="img/characteristics/2.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-3">
+						<div class="well">
+							<div class="left_col">
+								<p class="number">03.</p>
+								<h3 class="title">Wallets</h3>
+								<p>Bank deposits in 38 countries, settled in <br>2 lines text right here.</p>
+								<ul>
+									<li>Receive funds directly to your bank account with zero price volatility or risk.</li>
+									<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+								</ul>
+								<p>Bank deposits in 38 countries, settled in 2 lines text right here. Bank deposits in 38 countries, settled in 2 lines text right here.</p>
+								<a href="#tab-4" class="more" data-toggle="tab">04. <span>EAL5+ Secure Chip</span><svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+							</div>
+							<div class="right_col">
+								<img src="img/characteristics/3.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-4">
+						<div class="well">
+							<div class="left_col">
+								<p class="number">04.</p>
+								<h3 class="title">EAL5+ Secure Chip</h3>
+								<p>Bank deposits in 38 countries, settled in <br>2 lines text right here.</p>
+								<ul>
+									<li>Receive funds directly to your bank account with zero price volatility or risk.</li>
+									<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+								</ul>
+								<p>Bank deposits in 38 countries, settled in 2 lines text right here. Bank deposits in 38 countries, settled in 2 lines text right here.</p>
+								<a href="#tab-5" class="more" data-toggle="tab">05. <span>Encryption</span><svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+							</div>
+							<div class="right_col">
+								<img src="img/characteristics/4.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-5">
+						<div class="well">
+							<div class="left_col">
+								<p class="number">05.</p>
+								<h3 class="title">Encryption</h3>
+								<p>Bank deposits in 38 countries, settled in <br>2 lines text right here.</p>
+								<ul>
+									<li>Receive funds directly to your bank account with zero price volatility or risk.</li>
+									<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+								</ul>
+								<p>Bank deposits in 38 countries, settled in 2 lines text right here. Bank deposits in 38 countries, settled in 2 lines text right here.</p>
+								<a href="#tab-6" class="more" data-toggle="tab">06. <span>Fingerprint scan</span><svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+							</div>
+							<div class="right_col">
+								<img src="img/characteristics/5.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-6">
+						<div class="well">
+							<div class="left_col">
+								<p class="number">06.</p>
+								<h3 class="title">Fingerprint scan</h3>
+								<p>Bank deposits in 38 countries, settled in <br>2 lines text right here.</p>
+								<ul>
+									<li>Receive funds directly to your bank account with zero price volatility or risk.</li>
+									<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+								</ul>
+								<p>Bank deposits in 38 countries, settled in 2 lines text right here. Bank deposits in 38 countries, settled in 2 lines text right here.</p>
+								<a href="#tab-7" class="more" data-toggle="tab">07. <span>Bluetooth</span><svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+							</div>
+							<div class="right_col">
+								<img src="img/characteristics/6.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-7">
+						<div class="well">
+							<div class="left_col">
+								<p class="number">07.</p>
+								<h3 class="title">Bluetooth</h3>
+								<p>Bank deposits in 38 countries, settled in <br>2 lines text right here.</p>
+								<ul>
+									<li>Receive funds directly to your bank account with zero price volatility or risk.</li>
+									<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+								</ul>
+								<p>Bank deposits in 38 countries, settled in 2 lines text right here. Bank deposits in 38 countries, settled in 2 lines text right here.</p>
+								<a href="#tab-8" class="more" data-toggle="tab">08. <span>NFC Chip</span><svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+							</div>
+							<div class="right_col">
+								<img src="img/characteristics/7.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-8">
+						<div class="well">
+							<div class="left_col">
+								<p class="number">08.</p>
+								<h3 class="title">NFC Chip</h3>
+								<p>Bank deposits in 38 countries, settled in <br>2 lines text right here.</p>
+								<ul>
+									<li>Receive funds directly to your bank account with zero price volatility or risk.</li>
+									<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+								</ul>
+								<p>Bank deposits in 38 countries, settled in 2 lines text right here. Bank deposits in 38 countries, settled in 2 lines text right here.</p>
+								<a href="#tab-9" class="more" data-toggle="tab">09. <span>Magnetic Stripe</span><svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+							</div>
+							<div class="right_col">
+								<img src="img/characteristics/8.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-9">
+						<div class="well">
+							<div class="left_col">
+								<p class="number">09.</p>
+								<h3 class="title">Magnetic Stripe</h3>
+								<p>Bank deposits in 38 countries, settled in <br>2 lines text right here.</p>
+								<ul>
+									<li>Receive funds directly to your bank account with zero price volatility or risk.</li>
+									<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+								</ul>
+								<p>Bank deposits in 38 countries, settled in 2 lines text right here. Bank deposits in 38 countries, settled in 2 lines text right here.</p>
+								<a href="#tab-10" class="more" data-toggle="tab">10. <span>Electronic</span><svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+							</div>
+							<div class="right_col">
+								<img src="img/characteristics/9.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-10">
+						<div class="well">
+							<div class="left_col">
+								<p class="number">10.</p>
+								<h3 class="title">Electronic</h3>
+								<p>Bank deposits in 38 countries, settled in <br>2 lines text right here.</p>
+								<ul>
+									<li>Receive funds directly to your bank account with zero price volatility or risk.</li>
+									<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+								</ul>
+								<p>Bank deposits in 38 countries, settled in 2 lines text right here. Bank deposits in 38 countries, settled in 2 lines text right here.</p>
+							</div>
+							<div class="right_col">
+								<img src="img/characteristics/10.png" alt="img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END CHARACTERISTICS SECTION -->
+
+		<!-- PRODUCT COMPARE -->
+		<section class="product_compare">
+			<div class="container">
+				<h3 class="section_title">Let’s try to compare our product</h3>
+				<p class="mid_text">This is what happens when you try to compare an unbeatable product.</p>
+				<div class="compare_config">
+					<p>Vaulty Card</p>
+					<p>VS.</p>
+					<div class="custom_dropdown compare_dropdown">
+						<button type="button" class="drop_btn">FuzeW</button>
+						<ul class="dropdown_menu">
+							<li data-item="compare_item_1">FuzeW</li>
+							<li data-item="compare_item_2">Trezor</li>
+							<li data-item="compare_item_3">Ledger</li>
+						</ul>
+					</div>
+					<div class="custom_dropdown option_dropdown">
+						<button type="button" class="drop_btn">Option 1</button>
+						<ul class="dropdown_menu">
+							<li>Option 1</li>
+							<li>Option 2</li>
+							<li>Option 3</li>
+							<li>Option 4</li>
+							<li>Option 5</li>
+							<li>Option 6</li>
+						</ul>
+					</div>
+				</div>
+				<div class="wrapper">
+					<p class="amazin_arrow">“Amazing!”</p>
+					<ul class="options_list">
+						<li>Option 1</li>
+						<li>Option 2</li>
+						<li>Option 3</li>
+						<li>Option 4</li>
+						<li>Option 5</li>
+						<li>Option 6</li>
+					</ul>
+					<div class="item vaulty_item">
+						<h5 class="item_title">Vaulty</h5>
+						<ul>
+							<li class="active"><img src="img/hexa_icon_green.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_green.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_green.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_green.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_green.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_green.svg" alt="img"></li>
+						</ul>
+					</div>
+					<div class="item active" id="compare_item_1">
+						<h5 class="item_title">FuzeW</h5>
+						<ul>
+							<li class="active"><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+						</ul>
+					</div>
+					<div class="item" id="compare_item_2">
+						<h5 class="item_title">Trezor</h5>
+						<ul>
+							<li class="active"><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+						</ul>
+					</div>
+					<div class="item" id="compare_item_3">
+						<h5 class="item_title">Ledger</h5>
+						<ul>
+							<li class="active"><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+							<li><img src="img/hexa_icon_pink.svg" alt="img"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END PRODUCT COMPARE -->
+
+		<!-- CHARGE SECTION -->
+		<section class="charge_section">
+			<div class="container">
+				<div class="wrapper">
+					<h3 class="section_title">With <span>one charge</span> you can change a lot of thing.</h3>
+					<ul>
+						<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+						<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+						<li>Bank deposits in 38 countries, settled in US Dollars, Euros, GBP, and more.</li>
+					</ul>
+					<a href="#" class="more">Learn more<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+				</div>
+				<img src="img/charger.png" alt="img" class="charger">
+				<p class="mid_text">“ Store, pay and exchange your assets without any mobile apps. ”</p>
+			</div>
+		</section>
+		<!-- END CHARGE SECTION -->
+
+		<!-- BOX SECTION -->
+		<section class="box_section">
+			<div class="container">
+				<div class="wrapper">
+					<h3 class="section_title">What is in <br>the box?</h3>
+					<p>Bank deposits in 38 <br>
+					countries, settled in <br>
+					2 lines text right here.</p>
+					<ul>
+						<li><span>1x</span> Vaulty Card</li>
+						<li><span>1x</span> Protection Sleeve</li>
+						<li><span>1x</span> Vaulty Card</li>
+						<li><span>5x</span> Recovery Sheets</li>
+						<li><span>2x</span> Instruction Manual</li>
+						<li><span>2x</span> Vaulty Stickers</li>
+					</ul>
+					<ul class="items_list">
+						<li>
+							<p class="item">
+								<img src="img/box_icon.png" alt="img">
+								WELL PACKED
+							</p>
+						</li>
+						<li>
+							<p class="item">
+								<img src="img/worldwide_icon.png" alt="img">
+								worldwide SHIPPING
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="box_bg"></div>
+		</section>
+		<!-- END BOX SECTION -->
+
+		<!-- TECHNICAL SECTION -->
+		<section class="technical_section">
+			<div class="container">
+				<h3 class="section_title">Product detalis & Technical specifications</h3>
+				<p class="mid_text">Invented and created for your financial <span>freedom</span>.</p>
+				<div class="wrapper">
+					<h5 class="line_title">DIMENSIONS & WEIGHT</h5>
+					<table>
+						<tr>
+							<td>
+								<p>Size:</p>
+							</td>
+							<td>
+								<p>85.5(L) x 54(H) x 0.84(T) mm</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Weight:</p>
+							</td>
+							<td>
+								<p>9.5g</p>
+							</td>
+						</tr>
+					</table>
+					<h5 class="line_title">BATTERY & POWER</h5>
+					<table>
+						<tr>
+							<td>
+								<p>Power input:</p>
+							</td>
+							<td>
+								<p>DC 3.8V / 13mAh Lithum-Polymer</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Battery life:</p>
+							</td>
+							<td>
+								<p>Regular use (4 transactions a day) - 30 days</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Recharging time:</p>
+							</td>
+							<td>
+								<p>90 minutes</p>
+							</td>
+						</tr>
+					</table>
+					<h5 class="line_title">MATERIALS</h5>
+					<table>
+						<tr>
+							<td>
+								<p>The Card:</p>
+							</td>
+							<td>
+								<p>Reinforced plastic</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>The protection Sleeve:</p>
+							</td>
+							<td>
+								<p>Suede and Stainless steel</p>
+							</td>
+						</tr>
+					</table>
+					<h5 class="line_title">CPU & CONNECTIONS</h5>
+					<table>
+						<tr>
+							<td>
+								<p>Processor:</p>
+							</td>
+							<td>
+								<p>168 MHz embedded ARM</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Internet connections</p>
+							</td>
+							<td>
+								<p>Bluetooth (BLE)</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Transaction connections</p>
+							</td>
+							<td>
+								<p>NFC (13.56 MHz)</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Contactless payements</p>
+							</td>
+							<td>
+								<p>EMV Chip</p>
+							</td>
+						</tr>
+					</table>
+					<h5 class="line_title">OPERATING TEMPERATURE</h5>
+					<table>
+						<tr>
+							<td>
+								<p>Operating temperature</p>
+							</td>
+							<td>
+								<p>-20°C to +60°C</p>
+							</td>
+						</tr>
+					</table>
+					<h5 class="line_title">DISPLAY</h5>
+					<table>
+						<tr>
+							<td>
+								<p>Screen</p>
+							</td>
+							<td>
+								<p>0.8mm e-paper</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="wrapper">
+					<h5 class="line_title">WALLETS SPEC</h5>
+					<table>
+						<tr>
+							<td>
+								<p>BIP-32:</p>
+							</td>
+							<td>
+								<p>Hierarchical Deterministic Wallets</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>BIP-39:</p>
+							</td>
+							<td>
+								<p>Mnemonic code for generating deterministic keys</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>BIP-44:</p>
+							</td>
+							<td>
+								<p>Multi-account Hierarchy for Deterministic wallets</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Seed creation:</p>
+							</td>
+							<td>
+								<p>Generate seed seed directly on the card</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Seed random:</p>
+							</td>
+							<td>
+								<p>Using True Random Number Generator (TRNG)</p>
+							</td>
+						</tr>
+					</table>
+					<h5 class="line_title">CRYPTOGRAPHY</h5>
+					<table>
+						<tr>
+							<td>
+								<p>Cryptography support:</p>
+							</td>
+							<td>
+								<p>DES: 64 / 128 / 192</p>
+								<p>AES: 128 / 192 / 256</p>
+								<p>RSA: 512 / 736 / 768 / 896 / 1024</p>
+								<p>RSA: 1280 / 1536 / 1984 / 2048</p>
+							</td>
+						</tr>
+					</table>
+					<h5 class="line_title">SUPPORTED CRYPTOCURRENCYS</h5>
+					<table>
+						<tr>
+							<td>
+								<p>SHA-256:</p>
+							</td>
+							<td>
+								<p>Bitcoin</p>
+								<p>Bitcoin Cash</p>
+								<p>Bitcoin SV</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>EtHash:</p>
+							</td>
+							<td>
+								<p>Ethereum</p>
+								<p>Ethereum-Classic</p>
+								<p>DaxxCoin</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Equihash:</p>
+							</td>
+							<td>
+								<p>Zcash</p>
+								<p>Bitcoin Gold</p>
+								<p>Komodo</p>
+							</td>
+						</tr>
+					</table>
+					<h5 class="line_title">MORE...</h5>
+					<table>
+						<tr class="link_tr">
+							<td></td>
+							<td><a href="#" class="more">+ 1192 more supported coins<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<!-- END TECHNICAL SECTION -->
+
+		<!-- INNER FREEDOM SECTION -->
+		<section class="inner_freedom_section">
+			<div class="container">
+				<h3 class="section_title">Ready to get financial freedom?</h3>
+				<p class="mid_text">Join the thousands of peoples who already using the Vaulty Card.</p>
+				<a href="#top" class="main_btn buy_btn">Buy now</a>
+			</div>
+		</section>
+		<!-- END INNER FREEDOM SECTION -->
+
+	</div>
+	<!-- END PAGE WRAPPER -->
+
+	<!-- FOOTER -->
+	<footer class="main_footer">
+		<div class="top_footer">
+			<div class="container">
+				<h3 class="title">We’re here to help</h3>
+				<div class="wrap">
+					<p>Join the thousands of peoples who already using the Vaulty Card.</p>
+					<a href="#" class="more">Contact us<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+				</div>
+			</div>
+		</div>
+		<div class="mid_footer">
+			<div class="container">
+				<a href="index.html" class="logo"><svg><use xlink:href="img/sprite.svg#logo_icon"></use></svg></a>
+				<div class="language_dropdown">
+					<button type="button" class="drop_btn">English</button>
+					<ul class="dropdown_menu">
+						<li><a href="#">French</a></li>
+						<li><a href="#">Spain</a></li>
+					</ul>
+				</div>
+				<ul class="soc_list">
+					<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#twitter_icon"></use></svg></a></li>
+					<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#facebook_icon"></use></svg></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom_footer">
+			<div class="container">
+				<p>Copyright © Vaulty LTD company. All rights reserved. Vaulty, Vaulty Card, Vaulty Terminal are registered trademarks of Vaulty LTD --- 2020</p>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+
+
+
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/popper.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="libs/scroll2id/pagescroll2id.min.js"></script>
+	<script src="libs/validator/jquery.validate.min.js"></script>
+	<script src="libs/selectstyle/jquery.nice-select.min.js"></script>
+	<script src="js/common.js"></script>
+
+	<script src="libs/typeit/typeit.min.js"></script>
+	<script>
+		$('.typed_text').typeIt({
+			speed: 150,
+			loop: true,
+			startDelay: 500,
+			loopDelay: 0,
+		})
+		.tiType('Hardware wallet')
+		.tiPause(2000)
+		.tiDelete()
+		.tiType('Payment option')
+		.tiPause(2000)
+		.tiDelete()
+		.tiType('Crypto exchange')
+		.tiPause(2000)
+		.tiDelete();
+	</script>
+
+</body>
+</html>

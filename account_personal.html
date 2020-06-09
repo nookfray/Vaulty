@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vaulty</title>
+	<meta content="Vaulty" name='description' itemprop="description">
+	<meta content="Vaulty" name='keywords' itemprop="keywords">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+
+	<!-- PAGE WRAPPER -->
+	<div class="page_wrapper inner_page">
+	
+		<!-- HEADER -->
+		<header class="main_header account_header">
+			<div class="container">
+				<a href="index.html" class="logo"><svg><use xlink:href="img/sprite.svg#logo_icon"></use></svg></a>
+				<ul class="left_nav">
+					<li><a href="index.html">Home</a></li>
+				</ul>
+				<div class="right_block">
+					<div class="user_dropdown">
+						<button type="button" class="toggle_menu accoun_toggle_menu">
+							<span class='sandwich'>
+								<span class="sw-topper"></span>
+								<span class="sw-bottom"></span>
+								<span class="sw-footer"></span>
+							</span>
+						</button>
+						<button type="button" class="user_btn"><svg><use xlink:href="img/sprite.svg#user_icon"></use></svg>Frederick</button>
+						<ul class="dropdown_menu">
+							<li><a href="dashboard.html">Dashboard</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Sign out</a></li>
+						</ul>
+					</div>
+					<ul class="icons_list">
+						<li class="dropdown">
+							<a href="#" class="setting_link"><svg><use xlink:href="img/sprite.svg#setting_icon"></use></svg></a>
+							<ul class="dropdown_menu">
+								<li><a href="account_personal.html">Personal</a></li>
+								<li><a href="account_security.html">Security</a></li>
+								<li><a href="account_notification.html">Notification</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="alert_link"><svg><use xlink:href="img/sprite.svg#bell_icon"></use></svg> <i class="green_circle"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- END HEADER -->
+
+		<!-- ACCOUNT SECTION -->
+		<section class="account_section">
+			<div class="container">
+				<div class="wrapper">
+					<div class="account_header">
+						<p>Account setting</p>
+						<h3 class="name">Frederick</h3>
+						<p class="code"># 0879-7895-7784</p>
+						<ul class="account_nav">
+							<li><a href="dashboard.html">Dashboard</a></li>
+							<li class="active"><a href="account_personal.html">Personal</a></li>
+							<li><a href="account_security.html">Security</a></li>
+							<li><a href="account_notification.html">Notifications</a></li>
+						</ul>
+						<div class="advice">
+							<p>Advice:</p>
+							<p>Never share your password to anyone and always close your session when you quit.</p>
+							<img src="img/security.svg" alt="img">
+						</div>
+					</div>
+					<div class="account_body">
+						<h4 class="block_title">Personal information</h4>
+						<h5 class="line_title">BASICS</h5>
+						<div class="items_group">
+							<div class="account_item">
+								<p class="item_title">Username</p>
+								<p class="item_value">Frederick</p>
+								<svg class="lock"><use xlink:href="img/sprite.svg#lock_icon"></use></svg>
+							</div>
+							<div class="account_item">
+								<p class="item_title">Full name</p>
+								<p class="item_value">Not add yet</p>
+								<button type="button" class="change_btn" data-toggle="modal" data-target="#change_name_modal"><svg><use xlink:href="img/sprite.svg#change_icon"></use></svg></button>
+							</div>
+							<div class="account_item">
+								<p class="item_title">Email</p>
+								<p class="item_value">frederick@gmail.com</p>
+								<button type="button" class="change_btn" data-toggle="modal" data-target="#change_email_modal"><svg><use xlink:href="img/sprite.svg#change_icon"></use></svg></button>
+							</div>
+							<div class="account_item">
+								<p class="item_title">Phone number</p>
+								<p class="item_value">Not add yet</p>
+								<button type="button" class="change_btn" data-toggle="modal" data-target="#change_tel_modal"><svg><use xlink:href="img/sprite.svg#change_icon"></use></svg></button>
+							</div>
+						</div>
+						<h5 class="line_title">PREFERENCES</h5>
+						<div class="items_group">
+							<div class="account_item">
+								<p class="item_title">Language</p>
+								<p class="item_value">English (United State)</p>
+								<button type="button" class="change_btn" data-toggle="modal" data-target="#change_language_modal"><svg><use xlink:href="img/sprite.svg#change_icon"></use></svg></button>
+							</div>
+							<div class="account_item">
+								<p class="item_title">Date format</p>
+								<p class="item_value">JJ / MM / YYYY</p>
+								<button type="button" class="change_btn" data-toggle="modal" data-target="#change_dateformat_modal"><svg><use xlink:href="img/sprite.svg#change_icon"></use></svg></button>
+							</div>
+							<div class="account_item">
+								<p class="item_title">Timezone</p>
+								<p class="item_value">Bangladesh (GMT +6)</p>
+								<button type="button" class="change_btn" data-toggle="modal" data-target="#change_timezone_modal"><svg><use xlink:href="img/sprite.svg#change_icon"></use></svg></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END ACCOUNT SECTION -->
+
+	</div>
+	<!-- END PAGE WRAPPER -->
+
+	<!-- FOOTER -->
+	<footer class="main_footer">
+		<div class="top_footer">
+			<div class="container">
+				<h3 class="title">We’re here to help</h3>
+				<div class="wrap">
+					<p>Join the thousands of peoples who already using the Vaulty Card.</p>
+					<a href="#" class="more">Contact us<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+				</div>
+			</div>
+		</div>
+		<div class="mid_footer">
+			<div class="container">
+				<a href="index.html" class="logo"><svg><use xlink:href="img/sprite.svg#logo_icon"></use></svg></a>
+				<div class="language_dropdown">
+					<button type="button" class="drop_btn">English</button>
+					<ul class="dropdown_menu">
+						<li><a href="#">French</a></li>
+						<li><a href="#">Spain</a></li>
+					</ul>
+				</div>
+				<ul class="soc_list">
+					<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#twitter_icon"></use></svg></a></li>
+					<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#facebook_icon"></use></svg></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom_footer">
+			<div class="container">
+				<p>Copyright © Vaulty LTD company. All rights reserved. Vaulty, Vaulty Card, Vaulty Terminal are registered trademarks of Vaulty LTD --- 2020</p>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+
+
+	<!-- FULLNAME MODAL -->
+	<div class="modal fade account_modal" id="change_name_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update full name</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>First name</p>
+						<input type="text" name="firstName" placeholder="First name" required>
+						<p>Last name</p>
+						<input type="text" name="lastName" placeholder="Last name" required>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END FULLNAME MODAL -->
+
+	<!-- EMAIL MODAL -->
+	<div class="modal fade account_modal" id="change_email_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update Email</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>New Email</p>
+						<input type="text" name="email" placeholder="New Email" required>
+						<p>Confirm Email</p>
+						<input type="text" name="emailre" placeholder="Confirm Email" required>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END EMAIL MODAL -->
+
+	<!-- TEL MODAL -->
+	<div class="modal fade account_modal" id="change_tel_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update <br class="mobile_br">Phone number</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Phone number</p>
+						<div class="phone_item">
+							<select name="code" class="mod_select phone_code">
+								<option value="+22" selected>+22</option>
+								<option value="+22">+22</option>
+								<option value="+22">+22</option>
+								<option value="+22">+22</option>
+								<option value="+22">+22</option>
+								<option value="+22">+22</option>
+							</select>
+							<input type="text" name="tel" placeholder="Phone number" required>
+						</div>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END TEL MODAL -->
+
+	<!-- LANGUAGE MODAL -->
+	<div class="modal fade account_modal" id="change_language_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update Language</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Select language</p>
+						<select name="language" class="mod_select">
+							<option value="English (United States)" selected>English (United States)</option>
+							<option value="French">French</option>
+							<option value="Spain">Spain</option>
+						</select>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END LANGUAGE MODAL -->
+
+	<!-- DATE FORMAT MODAL -->
+	<div class="modal fade account_modal" id="change_dateformat_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update Date format</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Select Date format</p>
+						<select name="date" class="mod_select">
+							<option value="JJ / MM / YYYY" selected>JJ / MM / YYYY</option>
+							<option value="MM / JJ / YYYY">MM / JJ / YYYY</option>
+						</select>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END DATE FORMAT MODAL -->
+
+	<!-- TIME ZONE MODAL -->
+	<div class="modal fade account_modal" id="change_timezone_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update Time zone</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>Select Time zone</p>
+						<select name="time" class="mod_select">
+							<option value="Greenwich (GMT)">Greenwich (GMT)</option>
+							<option value="European Central (GMT +1)">European Central (GMT +1)</option>
+							<option value="Eastern European (GMT +2)">Eastern European (GMT +2)</option>
+							<option value="(Arabic) Egypt Standard (GMT +2)">(Arabic) Egypt Standard (GMT +2)</option>
+							<option value="Eastern African (GMT +3)">Eastern African (GMT +3)</option>
+							<option value="Middle East (GMT +3.30)">Middle East (GMT +3.30)</option>
+							<option value="Near East (GMT +4)">Near East (GMT +4)</option>
+							<option value="Pakistan Lahore (GMT +5)">Pakistan Lahore (GMT +5)</option>
+							<option value="India Standard (GMT +5.30)">India Standard (GMT +5.30)</option>
+							<option value="Bangladesh (GMT +6)" selected>Bangladesh (GMT +6)</option>
+							<option value="Vietnam Standard (GMT +7)">Vietnam Standard (GMT +7)</option>
+							<option value="China Taiwan (GMT +8)">China Taiwan (GMT +8)</option>
+							<option value="Japan Standard (GMT +9)">Japan Standard (GMT +9)</option>
+							<option value="Australia Central (GMT +9.30)">Australia Central (GMT +9.30)</option>
+							<option value="Australia Eastern (GMT +10)">Australia Eastern (GMT +10)</option>
+							<option value="Solomon Standard (GMT +11)">Solomon Standard (GMT +11)</option>
+							<option value="New Zealand Standard (GMT +12)">New Zealand Standard (GMT +12)</option>
+							<option value="Midway Islands (GMT -11)">Midway Islands (GMT -11)</option>
+							<option value="Hawaii Standard (GMT -10)">Hawaii Standard (GMT -10)</option>
+							<option value="Alaska Standard (GMT -9)">Alaska Standard (GMT -9)</option>
+							<option value="Pacific Standard (GMT -8)">Pacific Standard (GMT -8)</option>
+							<option value="Phoenix Standard (GMT -7)">Phoenix Standard (GMT -7)</option>
+							<option value="Mountain Standard (GMT -7)">Mountain Standard (GMT -7)</option>
+							<option value="Central Standard (GMT -6)">Central Standard (GMT -6)</option>
+							<option value="Eastern Standard (GMT -5)">Eastern Standard (GMT -5)</option>
+							<option value="Indiana Eastern Standard (GMT -5)">Indiana Eastern Standard (GMT -5)</option>
+							<option value="Puerto Rico and US Virgin Islands (GMT -4)">Puerto Rico and US Virgin Islands (GMT -4)</option>
+							<option value="Canada Newfoundland (GMT -3.30)">Canada Newfoundland (GMT -3.30)</option>
+							<option value="Argentina Standard (GMT -3)">Argentina Standard (GMT -3)</option>
+							<option value="Brazil Eastern (GMT -3)">Brazil Eastern (GMT -3)</option>
+							<option value="Central African (GMT -1)">Central African (GMT -1)</option>
+						</select>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END TIME ZONE MODAL -->
+
+
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/popper.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="libs/scroll2id/pagescroll2id.min.js"></script>
+	<script src="libs/validator/jquery.validate.min.js"></script>
+	<script src="libs/selectstyle/jquery.nice-select.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+</body>
+</html>

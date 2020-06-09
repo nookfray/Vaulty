@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vaulty</title>
+	<meta content="Vaulty" name='description' itemprop="description">
+	<meta content="Vaulty" name='keywords' itemprop="keywords">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+
+	<!-- PAGE WRAPPER -->
+	<div class="page_wrapper inner_page">
+	
+		<!-- HEADER -->
+		<header class="main_header account_header">
+			<div class="container">
+				<a href="index.html" class="logo"><svg><use xlink:href="img/sprite.svg#logo_icon"></use></svg></a>
+				<ul class="left_nav">
+					<li><a href="index.html">Home</a></li>
+				</ul>
+				<div class="right_block">
+					<div class="user_dropdown">
+						<button type="button" class="toggle_menu accoun_toggle_menu">
+							<span class='sandwich'>
+								<span class="sw-topper"></span>
+								<span class="sw-bottom"></span>
+								<span class="sw-footer"></span>
+							</span>
+						</button>
+						<button type="button" class="user_btn"><svg><use xlink:href="img/sprite.svg#user_icon"></use></svg>Frederick</button>
+						<ul class="dropdown_menu">
+							<li><a href="dashboard.html">Dashboard</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Sign out</a></li>
+						</ul>
+					</div>
+					<ul class="icons_list">
+						<li class="dropdown">
+							<a href="#" class="setting_link"><svg><use xlink:href="img/sprite.svg#setting_icon"></use></svg></a>
+							<ul class="dropdown_menu">
+								<li><a href="account_personal.html">Personal</a></li>
+								<li><a href="account_security.html">Security</a></li>
+								<li><a href="account_notification.html">Notification</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="alert_link"><svg><use xlink:href="img/sprite.svg#bell_icon"></use></svg> <i class="green_circle"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- END HEADER -->
+
+		<!-- ACCOUNT SECTION -->
+		<section class="account_section">
+			<div class="container">
+				<div class="wrapper">
+					<div class="account_header">
+						<p>Account setting</p>
+						<h3 class="name">Frederick</h3>
+						<p class="code"># 0879-7895-7784</p>
+						<ul class="account_nav">
+							<li><a href="dashboard.html">Dashboard</a></li>
+							<li><a href="account_personal.html">Personal</a></li>
+							<li class="active"><a href="account_security.html">Security</a></li>
+							<li><a href="account_notification.html">Notifications</a></li>
+						</ul>
+						<div class="advice">
+							<p>Advice:</p>
+							<p>Never share your password to anyone and always close your session when you quit.</p>
+							<img src="img/security.svg" alt="img">
+						</div>
+					</div>
+					<div class="account_body">
+						<h4 class="block_title">Security settings</h4>
+						<h5 class="line_title">PROTECTION</h5>
+						<div class="items_group">
+							<div class="account_checkbox_item">
+								<p class="item_title">Save my activity logs <span>You can save your all activity logs including unusual activity detected.</span></p>
+								<label class="checkbox">
+									<input type="checkbox" name="encounter">
+									<i class="icon"></i>
+								</label>
+							</div>
+							<div class="account_button_item">
+								<p class="item_title">
+									Secure PIN code <span class="disabled">Disabled</span>
+									<span>You can set your PIN code, we will ask you on your withdraw and transfer funds.</span>
+								</p>
+								<button type="button" class="main_btn" data-toggle="modal" data-target="#change_newpin_modal">Enable</button>
+							</div>
+							<div class="account_button_item">
+								<p class="item_title">
+									Change password 
+									<span>Set a unique password to protect your account.</span>
+								</p>
+								<p class="short_info">Last changed: 10/05/2018</p>
+								<button type="button" class="main_btn" data-toggle="modal" data-target="#change_password_modal">Change pasword</button>
+							</div>
+							<div class="account_button_item">
+								<p class="item_title">
+									2FA authentification <span class="enabled">Enabled</span>
+									<span>Secure your account with 2FA security, that the optimum security level.</span>
+								</p>
+								<button type="button" class="main_btn" data-toggle="modal" data-target="#change_2fa3_modal">Disable</button>
+							</div>
+						</div>
+						<h5 class="line_title log_line_title"><span>RECENT ACTIVITY</span> <span>IP</span> <span>TIME</span></h5>
+						<div class="items_group">
+							<div class="account_log_item">
+								<p class="item_title">Chrome on Window</p>
+								<p class="item_ip">192.149.122.128</p>
+								<p class="item_time">11:34 PM</p>
+							</div>
+							<div class="account_log_item">
+								<p class="item_title">Mozilla on Window</p>
+								<p class="item_ip">86.188.154.225</p>
+								<p class="item_time">12/10/2019 - 10:14 AM</p>
+								<button type="button" class="del_btn">X</button>
+							</div>
+							<div class="account_log_item">
+								<p class="item_title">Chrome on iMac</p>
+								<p class="item_ip">192.149.122.128</p>
+								<p class="item_time">10/10/2019 - 8:45 PM</p>
+								<button type="button" class="del_btn">X</button>
+							</div>
+							<a href="account_log.html" class="more">See more<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END ACCOUNT SECTION -->
+
+	</div>
+	<!-- END PAGE WRAPPER -->
+
+	<!-- FOOTER -->
+	<footer class="main_footer">
+		<div class="top_footer">
+			<div class="container">
+				<h3 class="title">We’re here to help</h3>
+				<div class="wrap">
+					<p>Join the thousands of peoples who already using the Vaulty Card.</p>
+					<a href="#" class="more">Contact us<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+				</div>
+			</div>
+		</div>
+		<div class="mid_footer">
+			<div class="container">
+				<a href="index.html" class="logo"><svg><use xlink:href="img/sprite.svg#logo_icon"></use></svg></a>
+				<div class="language_dropdown">
+					<button type="button" class="drop_btn">English</button>
+					<ul class="dropdown_menu">
+						<li><a href="#">French</a></li>
+						<li><a href="#">Spain</a></li>
+					</ul>
+				</div>
+				<ul class="soc_list">
+					<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#twitter_icon"></use></svg></a></li>
+					<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#facebook_icon"></use></svg></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom_footer">
+			<div class="container">
+				<p>Copyright © Vaulty LTD company. All rights reserved. Vaulty, Vaulty Card, Vaulty Terminal are registered trademarks of Vaulty LTD --- 2020</p>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+
+	<!-- PASSWORD MODAL -->
+	<div class="modal fade account_modal" id="change_password_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Update password</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>New password</p>
+						<div class="password_item">
+							<input type="password" name="password" placeholder="New password" required="">
+							<button type="button" class="show_pass">SHOW PASS</button>
+						</div>
+						<p>Old password</p>
+						<div class="password_item">
+							<input type="password" name="oldpassword" placeholder="Old password" required="">
+							<button type="button" class="show_pass">SHOW PASS</button>
+						</div>
+						<ul class="links_list">
+							<li><a href="#">Forgot your password?</a></li>
+						</ul>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END PASSWORD MODAL -->
+
+	<!-- 2FA3 MODAL -->
+	<div class="modal fade account_modal" id="change_2fa3_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">Desactivate 2FA</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>2FA key</p>
+						<div class="key_item">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+						</div>
+						<p>Account password</p>
+						<div class="password_item">
+							<input type="password" name="password" placeholder="Account password" required="">
+							<button type="button" class="show_pass">SHOW PASS</button>
+						</div>
+						<ul class="links_list">
+							<li><a href="#">Forgot your password?</a></li>
+						</ul>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END 2FA3 MODAL -->
+
+	<!-- NEW PIN MODAL -->
+	<div class="modal fade account_modal" id="change_newpin_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<button class="close" type="button" data-dismiss="modal">X</button>
+				<div class="modal-body">
+					<h3 class="modal_title">New PIN code</h3>
+					<a href="#" class="more">Need more help<span class="mobile_hide"> with your account</span>?<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+					<form action="" class="main_form">
+						<p>New PIN code</p>
+						<div class="key_item pin_item">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+							<input type="text" name="key" required="" maxlength="1">
+						</div>
+						<p>Account password</p>
+						<div class="password_item">
+							<input type="password" name="password" placeholder="Account password" required="">
+							<button type="button" class="show_pass">SHOW PASS</button>
+						</div>
+						<ul class="links_list">
+							<li><a href="#">Forgot your password?</a></li>
+						</ul>
+						<button type="submit" class="submit_btn">Update profile</button>
+					</form>
+					<button type="button" class="cancle" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END NEW PIN MODAL -->
+
+
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/popper.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="libs/scroll2id/pagescroll2id.min.js"></script>
+	<script src="libs/validator/jquery.validate.min.js"></script>
+	<script src="libs/selectstyle/jquery.nice-select.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+</body>
+</html>

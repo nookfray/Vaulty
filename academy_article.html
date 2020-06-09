@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vaulty</title>
+	<meta content="Vaulty" name='description' itemprop="description">
+	<meta content="Vaulty" name='keywords' itemprop="keywords">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+
+	<!-- PAGE WRAPPER -->
+	<div class="page_wrapper academy_page_wrapper">
+	
+		<!-- HEADER -->
+		<header class="main_header">
+			<div class="container">
+				<a href="index.html" class="logo"><svg><use xlink:href="img/sprite.svg#logo_icon"></use></svg></a>
+				<ul class="left_nav">
+					<li class="active"><a href="#">Card</a></li>
+					<li class="soon"><a href="#">Terminal <sup>soon</sup></a></li>
+				</ul>
+				<div class="right_block">
+					<div class="products_dropdown">
+						<button type="button" class="products_btn">Products</button>
+						<ul class="dropdown_menu">
+							<li><a href="#">Product 1</a></li>
+							<li><a href="#">Product 2</a></li>
+							<li><a href="#">Product 3</a></li>
+							<li><a href="#">Product 4</a></li>
+						</ul>
+					</div>
+					<ul class="main_nav">
+						<li><a href="#">Academy</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Card status</a></li>
+					</ul>
+					<ul class="icons_list">
+						<li class="dropdown language_dropdown">
+							<button type="button" class="drop_btn">EN</button>
+							<ul class="dropdown_menu">
+								<li><a href="#">FR</a></li>
+								<li><a href="#">ES</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="login.html" class="user_link"><svg><use xlink:href="img/sprite.svg#user_icon"></use></svg></a>
+						</li>
+						<li>
+							<a href="#" class="basket_link"><svg><use xlink:href="img/sprite.svg#basket_icon"></use></svg></a>
+						</li>
+					</ul>
+					<button type="button" class="toggle_menu">
+						<span class='sandwich'>
+							<span class="sw-topper"></span>
+							<span class="sw-bottom"></span>
+							<span class="sw-footer"></span>
+						</span>
+					</button>
+					<!-- MODILE NAV -->
+					<ul class="mobile_nav">
+						<li><a href="#">Card</a></li>
+						<li><a href="#">Terminal</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Academy</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Card status</a></li>
+						<li class="divider"></li>
+						<li class="dropdown">
+							<a href="#">Language</a>
+							<ul class="dropdown_menu">
+								<li><a href="#">English</a></li>
+								<li><a href="#">French</a></li>
+								<li><a href="#">Spain</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- END MOBILE NAV -->
+				</div>
+			</div>
+			<!-- ACADEMY BREADCRUMBS -->
+			<div class="academy_breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumb">
+						<li class="breadcrumb-item home-item"><a href="index.html"><span>Vaulty</span> Academy</a></li>
+						<li class="breadcrumb-item"><a href="academy_all.html">Blockchain</a></li>
+						<li class="breadcrumb-item active">Public keys VS. Private keys?</li>
+					</ul>
+					<ul class="soc_list">
+						<li class="title">Share this article</li>
+						<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#twitter_icon"></use></svg></a></li>
+						<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#facebook_icon"></use></svg></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- END ACADEMY BREADCRUMBS -->
+		</header>
+		<!-- END HEADER -->
+
+		<!-- ACADEMY ARTICLE -->
+		<section class="academy_article">
+			<div class="container">
+				<div class="article_header">
+					<p class="tag">Blockchain</p>
+					<p class="date">23 / 10 / 2020</p>
+				</div>
+				<h1>Public keys VS. Private keys?</h1>
+				<div class="wrapper">
+					<h4>Key takeaways</h4>
+					<ul>
+						<li>The goal of public and private keys is to prove that a spent transaction was indeed signed by the owner of the funds, and was not forged.</li>
+						<li>When you own cryptocurrencies, what you really own is a “private key.”</li>
+						<li>Your “private key” unlocks the right for its owner to spend the associated cryptocurrencies. As it provides access to your cryptocurrencies, it should remain private.</li>
+						<li>You can have one or multiple public keys  associated to every private key.</li>
+						<li>It’s possible to recover the public key if you own the private key. However it’s impossible to find the private key using only the public key.</li>
+					</ul>
+				</div>
+				<p>Public and private keys are an integral component of cryptocurrencies built on blockchain networks that are part of a larger field of cryptography known as <span>Public Key Cryptography</span> (PKC) or Asymmetric Encryption. </p>
+				<p>The goal of PKC is to trivially transition from one state to another while making reversing the process nearly impossible, and in the process, proving you have a secret without exposing that secret. The product is subsequently a one-way mathematical function, which makes it ideal for validating the authenticity of something (i.e., a transaction) because it cannot be forged. PKC relies on a two-key model, the public and private key, often represented by a padlock (public key) and the actual key to access the padlock (the private key).</p>
+				<img src="img/text_img.png" alt="img">
+				<h3>Public Key Cryptography (PKC)</h3>
+				<p>PKC is built on the mathematical primitive of “<span>Trapdoor Functions</span>,” which is a math problem easy to compute in one direction and nearly impossible to reverse.  </p>
+				<p>Solving this problem will take computers enormous amounts of time (i.e., thousands of years) to compute the correct answer. In the context of PKC, such mathematical tricks like Prime Factorization are the trapdoor functions that make <strong>reverse-engineering (i.e., forging) cryptographic signatures impossible because it requires the computer to solve a virtually unsolvable math problem.</strong></p>
+				<br>
+				<h3>The concept of public and private keys</h3>
+				<p>The general purpose of PKC is to enable secure, private communication using digital signatures in a public channel where there can be potentially malicious eavesdroppers. <strong>In the context of cryptocurrencies, the goal is to prove that a spent transaction was indeed signed by the owner of the funds, and was not forged, all occurring over a public blockchain network between peers.</strong></p>
+				<p>When you own cryptocurrencies, what you really own is a “private key.” Your “private key” unlocks the right for its owner to spend the associated cryptocurrencies. As it provides access to your cryptocurrencies, it should – as the name suggests – remain private. </p>
+				<p>In addition to a private key, there is also a public key and there is a cryptographic link between the public key and the private key. It’s possible to recover the public key if you own the private key. However it’s impossible to find the private key using only the public key.</p>
+			</div>
+			<div class="tablet_share">
+				<div class="container">
+					<ul class="soc_list">
+						<li class="title">Share this article</li>
+						<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#twitter_icon"></use></svg></a></li>
+						<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#facebook_icon"></use></svg></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- END ACADEMY ARTICLE -->
+		
+	</div>
+	<!-- END PAGE WRAPPER -->
+
+	<!-- FOOTER -->
+	<footer class="main_footer">
+		<div class="top_footer">
+			<div class="container">
+				<h3 class="title">We’re here to help</h3>
+				<div class="wrap">
+					<p>Join the thousands of peoples who already using the Vaulty Card.</p>
+					<a href="#" class="more">Contact us<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+				</div>
+			</div>
+		</div>
+		<div class="mid_footer">
+			<div class="container">
+				<a href="index.html" class="logo"><svg><use xlink:href="img/sprite.svg#logo_icon"></use></svg></a>
+				<div class="language_dropdown">
+					<button type="button" class="drop_btn">English</button>
+					<ul class="dropdown_menu">
+						<li><a href="#">French</a></li>
+						<li><a href="#">Spain</a></li>
+					</ul>
+				</div>
+				<ul class="soc_list">
+					<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#twitter_icon"></use></svg></a></li>
+					<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#facebook_icon"></use></svg></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom_footer">
+			<div class="container">
+				<p>Copyright © Vaulty LTD company. All rights reserved. Vaulty, Vaulty Card, Vaulty Terminal are registered trademarks of Vaulty LTD --- 2020</p>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+
+
+
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/popper.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="libs/scroll2id/pagescroll2id.min.js"></script>
+	<script src="libs/validator/jquery.validate.min.js"></script>
+	<script src="libs/selectstyle/jquery.nice-select.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+</body>
+</html>

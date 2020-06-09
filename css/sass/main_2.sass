@@ -1,0 +1,5514 @@
+.academy_page_wrapper
+	padding-top: 0px 
+
+
+.main_header
+	> .container
+		z-index: 5 
+	&.fixed_header .academy_header .container
+		height: auto 
+		min-height: 0px 
+
+
+
+.academy_header
+	position: relative
+	width: 100% 
+	background: #E6E7E8 
+	.container
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		min-height: 0px 
+		padding-top: 10px
+		padding-bottom: 10px  
+	.mobile_block
+		position: relative
+		width: 100% 
+		display: none
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		justify-content: center
+		display: none 
+		.left_title
+			position: absolute
+			top: 0px
+			left: 0px  
+			bottom: 0px 
+			height: 24px 
+			font-weight: 600
+			font-size: 21px 
+			color: #505050 
+			line-height: 24px
+			width: auto 
+			margin: auto
+		.active_section, .active_page
+			position: relative
+			display: inline-block
+			vertical-align: top
+			font-weight: 600
+			font-size: 21px
+			color: #505050 
+			line-height: 24px
+			padding: 7px 28px
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			background: #FFF 
+		.open_btn
+			position: absolute
+			top: 0px
+			right: 0px  
+			bottom: 0px 
+			border-bottom: 0px
+			height: 24px  
+			display: inline-block
+			vertical-align: top
+			font-weight: 600
+			font-size: 21px
+			color: #505050 
+			line-height: 24px
+			padding: 0px
+			padding-right: 20px 
+			border: none
+			background: none   
+			margin: auto 0px
+			&.active
+				&:before
+					-webkit-transform: rotateX(180deg)
+					-moz-transform: rotateX(180deg)
+					-ms-transform: rotateX(180deg)
+					-o-transform: rotateX(180deg)
+					transform: rotateX(180deg)
+					top: -5px
+			&:before
+				content: ""
+				display: block
+				width: 10px
+				height: 6px
+				position: absolute
+				top: 6px
+				bottom: 0px
+				right: 0px
+				margin: auto
+				border: 5px solid transparent
+				border-top: 5px solid #505050
+				-webkit-transition: 0.3s all
+				-moz-transition: 0.3s all
+				-ms-transition: 0.3s all
+				-o-transition: 0.3s all
+				transition: 0.3s all
+	.academy_nav
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		list-style: none
+		margin: 0px
+		li
+			position: relative
+			padding: 0px
+			margin: 0px
+			a
+				position: relative
+				display: inline-block
+				vertical-align: top
+				font-weight: 600
+				font-size: 21px
+				color: #505050 
+				line-height: 24px
+				padding: 7px  28px
+				-webkit-border-radius: 10px 
+				border-radius: 10px 
+				&:hover
+					color: #CDB382 
+		.active, .active_page
+			a
+				background: #FFF 
+				&:hover
+					color: #505050  
+		.nav_title
+			font-weight: 600
+			font-size: 21px
+			color: #505050 
+			line-height: 24px
+			span
+				font-weight: normal 
+
+
+.academy_welcome
+	position: relative
+	width: 100% 
+	padding-top: 248px 
+	padding-bottom: 130px 
+	background: url("../img/bg.jpg") no-repeat center top
+	&:before
+		content: "" 
+		display: block 
+		width: 100% 
+		height: 90px 
+		position: absolute
+		left: 0px
+		bottom: 0px  
+		background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(248,248,248,1) 77%)
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(248,248,248,1) 77%)
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(248,248,248,1) 77%)
+	.container
+		position: relative
+	.wrapper
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		padding: 40px 80px
+		padding-bottom: 30px 
+		-webkit-border-radius: 10px 
+		border-radius: 10px  
+	.text_block
+		position: relative
+		width: 100% 
+		max-width: 582px 
+	.second_title
+		position: relative
+		width: 100% 
+		font-weight: 600
+		font-size: 33px 
+		line-height: 1.2
+		color: #343434
+		margin-bottom: 15px
+		span
+			font-weight: normal 
+	.main_title
+		position: relative
+		width: 100% 
+		font-weight: normal 
+		font-size: 41px 
+		line-height: 1.2
+		margin-bottom: 35px 
+	p
+		font-weight: 600
+		font-size: 20.83px
+		line-height: 27px
+		color: #505050 
+		margin-bottom: 28px    
+	.more
+		margin-top: 20px 
+		top: -2px 
+	.academy_main
+		position: relative
+		display: block 
+		width: calc(100% - 600px) 
+		max-width: 580px 
+		margin-left: auto 
+
+
+
+
+
+
+
+.academy_section
+	position: relative
+	width: 100% 
+	padding-top: 100px 
+	padding-bottom: 100px 
+	background: #F8F8F8  
+	.container
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+	.section_title
+		position: relative
+		width: 100% 
+		margin-bottom: 70px 
+		text-align: left
+		&:before
+			right: auto 
+			bottom: -32px 
+	.more
+		position: absolute
+		top: 20px
+		right: 0px  
+	.academy_item
+		width: calc(50% - 20px) 
+		margin-right: 40px 
+		margin-bottom: 40px 
+	.academy_item:nth-of-type(2n+2)
+		margin-right: 0px 
+	
+.academy_item
+	position: relative
+	width: 100% 
+	min-height: 218px 
+	background: #FFF 
+	-webkit-border-radius: 10px 
+	border-radius: 10px 
+	-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+	box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+	padding: 35px 30px
+	padding-left: 200px
+	padding-bottom: 65px  
+	.item_img
+		position: absolute
+		top: 25px
+		left: 20px
+		margin: auto
+		display: block 
+		width: 140px 
+	.tag
+		position: relative
+		font-weight: normal
+		font-size: 20.83px
+		line-height: 27px
+		color: #CDB382 
+		text-transform: uppercase
+		margin-bottom: 20px
+	.title
+		position: relative
+		display: inline-block
+		vertical-align: top
+		font-weight: 600
+		font-size: 25px 
+		line-height: 29px
+		color: #505050 
+		margin-bottom: 15px 
+	a.title:hover
+		color: #CDB382 
+	.date
+		position: absolute
+		left: 200px 
+		bottom: 30px 
+		font-weight: normal 
+		font-size: 16.67px
+		line-height: 27px  
+		color: #A7A7A7 
+		margin: 0px 
+	.more
+		top: auto 
+		height: 27px 
+		position: absolute
+		bottom: 32px 
+		right: 30px 
+		font-size: 20px
+		line-height: 27px
+		
+
+
+.academy_all_welcome
+	padding-bottom: 80px 
+	.wrapper
+		.main_title
+			color: #c4ae86 
+		.strong
+			font-weight: 600
+			font-size: 25px 
+			line-height: 33px  
+		.academy_main
+			width: 390px 
+			margin-right: 120px 
+
+
+.academy_all_section
+	position: relative
+	width: 100% 
+	padding-top: 0px 
+	padding-bottom: 100px 
+	background: #F8F8F8 
+	.container
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+	.academy_item
+		position: relative
+		width: calc(25% - 30px) 
+		margin-right: 40px 
+		margin-bottom: 40px 
+		padding: 28px 38px
+		padding-bottom: 60px 
+		.item_img
+			position: relative
+			top: auto
+			left: auto 
+			margin: auto
+			width: 100% 
+			max-width: 251px 
+			margin: auto
+			margin-bottom: 50px  
+		.date
+			left: 38px 
+		.more
+			right: 38px 
+			font-size: 20px 
+	.academy_item:nth-of-type(4n+4)
+		margin-right: 0px 
+
+
+.main_header.fixed_header .academy_breadcrumbs .container
+	min-height: 0px 
+
+.academy_breadcrumbs
+	position: relative
+	width: 100% 
+	background: #E6E7E8 
+	.container
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		min-height: 0px
+		padding-top: 12px 
+		padding-bottom: 12px
+	.breadcrumb	  
+		max-width: calc(100% - 300px)
+.breadcrumb
+	position: relative
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-ms-flex-wrap: nowrap
+	flex-wrap: nowrap	
+	-webkit-align-items: center
+	align-items: center
+	max-width: 100%
+	overflow: hidden
+	list-style: none 
+	margin: 0px
+	padding: 0px
+	background: none
+	border: none
+	text-overflow: ellipsis
+	.breadcrumb-item
+		position: relative
+		font-weight: normal 
+		font-size: 20.83px
+		line-height: 21px
+		color: #505050 
+		text-decoration: none
+		white-space: nowrap
+		a
+			position: relative
+			display: block
+			display: -webkit-box
+			font-size: 20.83px
+			line-height: 21px
+			color: #a7a7a7
+			text-decoration: none
+			&:hover
+				color: #cdb382 
+	.home-item
+		a
+			color: #343434 
+			font-weight: 600
+			font-size: 25px 
+			span
+				font-weight: normal 
+	.active
+		border-bottom: 1px solid #a5a6a7
+.breadcrumb-item
+	margin-right: 50px 
+	&:after
+		content: "" 
+		position: absolute
+		top: 1px
+		bottom: 0px
+		right: -35px 
+		margin: auto
+		display: inline-block 
+		vertical-align: top
+		width: 18px 
+		height: 14px 
+		background: url("../img/arrow.svg") no-repeat center center
+		-webkit-background-size: 100% 100% 
+		-o-background-size: 100% 100% 
+		background-size: 100% 100% 
+.breadcrumb-item:last-of-type
+	margin-right: 0px
+	overflow: hidden
+	text-overflow: ellipsis 
+	&:after
+		display: none
+.soc_list
+	margin-left: auto
+	-webkit-align-items: center
+	align-items: center
+	.title
+		color: #A7A7A7 
+		font-size: 20.83px
+	li
+		svg
+			fill: #a7a7a7 
+
+
+
+
+
+.academy_article
+	position: relative
+	width: 100% 
+	background: #ffffff
+	padding-top: 240px 
+	padding-bottom: 120px  
+	overflow: hidden
+	&:after
+		content: "" 
+		display: block 
+		width: 200%
+		height: 1000px 
+		background: #F5F5F5 
+		position: absolute
+		bottom: -570px 
+		left: -50%
+		-webkit-transform: rotate(-15deg) 
+		-moz-transform: rotate(-15deg) 
+		-ms-transform: rotate(-15deg) 
+		-o-transform: rotate(-15deg) 
+		transform: rotate(-15deg)  
+	.container
+		position: relative
+		z-index: 2 
+		max-width: 920px 
+	.article_header
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap		
+		.tag
+			position: relative
+			max-width: 50%
+			font-weight: normal 
+			font-size: 20.83px
+			line-height: 27px  
+			text-transform: uppercase
+			color: #CDB382 
+			margin-bottom: 15px 
+		.date
+			position: relative
+			max-width: 50%
+			text-align: right 
+			font-weight: normal 
+			font-size: 20.83px
+			line-height: 27px  
+			color: #A7A7A7 
+			margin-left: auto 
+			margin-bottom: 15px 
+	p
+		font-weight: normal 
+		font-size: 20.83px
+		line-height: 27px  
+		color: #505050 
+		margin-bottom: 20px 
+		strong
+			font-weight: 600
+		span
+			color: #CDB382 
+	h1
+		font-weight: 600
+		font-size: 41px 
+		line-height: 1.2
+		color: #343434 
+		margin-bottom: 40px   
+	h2, h3, h4, h5
+		font-weight: 600
+		font-size: 33px  
+		line-height: 1.2
+		color: #343434 
+		margin-bottom: 20px 
+	h4
+		font-size: 25px 
+	h5
+		font-size: 22px 
+	.wrapper
+		position: relative
+		width: 100% 
+		background: #F8F4EC 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		padding: 45px 38px
+		padding-bottom: 30px  
+		margin-bottom: 45px 
+		h1, h2, h3, h4, h5
+			color: #505050 
+			margin-bottom: 35px 
+	ul
+		position: relative
+		width: 100% 
+		list-style: none
+		margin-bottom: 20px 
+		li
+			position: relative
+			font-weight: normal 
+			font-size: 20.83px
+			line-height: 27px  
+			color: #505050 
+			padding-left: 45px 
+			margin-bottom: 10px 
+			&:before
+				content: ""
+				display: block
+				width: 30px
+				height: 28px
+				position: absolute
+				top: -1px
+				left: 0px
+				background: url(../img/hexa_icon_dark.svg) no-repeat center center
+				-webkit-background-size: 100% 100%
+				-o-background-size: 100% 100%
+				background-size: 100% 100%
+	ol
+		position: relative
+		width: 100% 
+		list-style: none
+		counter-reset: my-counter
+		margin-bottom: 20px 
+		li
+			position: relative
+			font-weight: normal 
+			font-size: 20.83px
+			line-height: 27px  
+			color: #505050 
+			padding-left: 45px 
+			counter-increment: my-counter
+			margin-bottom: 10px 
+			&:before
+				content: counter(my-counter) '.'
+				font-weight: 600
+				font-size: 20.83px
+				line-height: 27px
+				position: absolute
+				top: 0px
+				left: 5px   
+				color: #CDB382   
+	img
+		display: block 
+		max-width: 100% 
+		margin: auto
+		margin-bottom: 30px 
+	.tablet_share
+		position: absolute
+		left: 0px
+		bottom: 0px
+		width: 100%   
+		z-index: 2 
+		display: none
+		background: #E6E7E8 
+		padding-top: 10px 
+		padding-bottom: 10px 
+		.container
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap		
+		.soc_list
+			width: auto
+			margin-left: auto
+			-webkit-align-items: center
+			align-items: center
+			margin: 0px
+			margin-left: auto  
+			.title
+				color: #A7A7A7 
+				font-size: 20.83px
+			li
+				padding: 0px
+				margin-bottom: 0px 
+				&:before
+					display: none 
+				svg
+					fill: #a7a7a7 
+	 
+
+
+
+
+
+.faq_page
+	position: relative
+	width: 100% 
+	overflow: hidden
+	padding-top: 70px 
+	padding-bottom: 140px 
+	&:after
+		content: "" 
+		display: block 
+		width: 200%
+		height: 1000px 
+		background: #F5F5F5 
+		position: absolute
+		bottom: -570px 
+		left: -50%
+		-webkit-transform: rotate(-15deg) 
+		-moz-transform: rotate(-15deg) 
+		-ms-transform: rotate(-15deg) 
+		-o-transform: rotate(-15deg) 
+		transform: rotate(-15deg)  
+	.container
+		position: relative
+		z-index: 2 
+	.mid_text
+		max-width: 880px
+		margin-bottom: 40px 
+
+
+.faq_section 
+	.vaulty_item 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		.icon 
+			padding-left: 10px 
+			padding-right: 10px 
+			img, svg
+				max-width: 100% 
+				height: auto 
+			svg
+				width: 100% 
+				max-width: 58px 
+			.academy_img
+				position: relative
+				bottom: 7px
+
+
+
+
+
+
+.help_section
+	position: relative
+	width: 100% 
+	padding-top: 65px 
+	padding-bottom: 60px 
+	background: url("../img/bg.jpg") no-repeat center top
+	&:before
+		content: "" 
+		display: block 
+		width: 100% 
+		height: 90px 
+		position: absolute
+		left: 0px
+		bottom: 0px  
+		background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(248,248,248,1) 77%)
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(248,248,248,1) 77%)
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(248,248,248,1) 77%)
+	.container
+		position: relative
+	.section_title
+		text-align: center
+	.mid_text
+		margin-bottom: 70px 
+	.wrapper
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap		
+	.help_item	
+		position: relative
+		width: calc(33.333% - 26.666px)
+		margin-right: 40px 
+		margin-bottom: 40px 
+		padding: 30px 20px 
+		text-align: center
+		background: #FFF 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		.img_block
+			position: relative
+			width: 100% 
+			height: 270px 
+			margin-bottom: 20px 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap		
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+			svg
+				width: 100% 
+				height: 100% 
+				max-width: 275px 
+				max-height: 202px 
+			img
+				max-width: 275px 
+				width: 100% 
+				height: 100% 
+				max-height: 202px 
+		.title
+			position: relative
+			font-weight: 600
+			font-size: 25px 
+			line-height: 29px
+			margin-bottom: 25px   
+		ul
+			position: relative
+			width: 100% 
+			list-style: none
+			margin-bottom: 27px 
+			li
+				position: relative
+				width: 100% 
+				text-align: center
+				padding: 0px
+				margin: 0px
+				font-weight: 600
+				font-size: 20.83em 
+				line-height: 21px
+				color: #A7A7A7 
+				margin-bottom: 8px 
+				a
+					position: relative
+					display: inline-block
+					vertical-align: top
+					font-weight: 600
+					font-size: 20.83px
+					line-height: 21px
+					color: #A7A7A7 
+					border-bottom: 1px solid #d3d3d3 
+					&:hover
+						color: #505050 
+						border-color: #505050 
+	.help_item:nth-of-type(3n+3)
+		margin-right: 0px 
+		.img_block
+			img
+				max-width: 261px 
+
+
+
+
+.page_wrapper .help_header
+	z-index: 3 
+
+.help_header
+	position: relative
+	z-index: 3 
+	width: 100% 
+	height: 670px
+	background-repeat: no-repeat 
+	background-position: center center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover   
+	background-image: url("../img/help_bg.jpg")
+	&:before
+		content: "" 
+		display: block
+		width: 100% 
+		height: 100% 
+		position: absolute
+		top: 0px
+		left: 0px
+		background: rgba(0,0,0,.2)   
+	.container
+		position: relative
+		max-width: 1650px
+		padding-left: 15px 
+		padding-right: 15px  
+	.help_form
+		position: absolute
+		z-index: 5 
+		left: 0px
+		bottom: 0px
+		width: 100% 
+		background: rgba(52,52,52,.95)   
+		padding-top: 11px 
+		padding-bottom: 11px 
+		-webkit-box-shadow: 0px 3px 15px rgba(0,0,0,.75) 
+		box-shadow: 0px -3px 15px rgba(0,0,0,.75) 
+		p
+			position: absolute
+			left: 15px
+			top: 0px
+			bottom: 0px
+			margin: auto
+			font-weight: 600
+			font-size: 25px 
+			line-height: 25px
+			height: 25px 
+			color: #FFF 
+			span
+				font-weight: normal 
+		.wrapper
+			position: relative
+			display: block 
+			width: 100% 
+			max-width: 1169px
+			margin: auto
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			overflow: hidden
+		input
+			position: relative
+			outline: none 
+			width: 100% 
+			height: 63px 
+			background: #FFF 
+			-webkit-border-radius: 10px 
+			border-radius: 10px
+			border: none  
+			text-align: left
+			font-weight: 600
+			font-size: 20.83px
+			line-height: 21px  
+			color: #505050  
+			padding: 21px 
+			padding-left: 84px  
+			-webkit-transition: .3s all 
+			-moz-transition: .3s all 
+			-ms-transition: .3s all 
+			-o-transition: .3s all 
+			transition: .3s all 
+		::placeholder
+			color: #969696 
+		:-ms-input-placeholder
+			color: #969696 
+		::-ms-input-placeholder
+			color: #969696 
+		.submit_btn
+			position: absolute
+			z-index: 2
+			top: 0px
+			left: 0px
+			width: 65px 
+			height: 100% 
+			border: none
+			border-right: 1px solid #a7a7a7
+			background: #F9F9F9 
+			padding: 0px
+			&:hover
+				background: #E5E1E1 
+			svg
+				position: absolute
+				top: 0px
+				left: 0px
+				right: 0px
+				bottom: 0px
+				margin: auto
+				width: 24px 
+				height: 24px 
+				fill: #545454    
+
+
+
+
+
+
+
+.subscribe_section
+	position: relative
+	width: 100% 
+	padding-top: 90px 
+	padding-bottom: 150px 
+	background: #F8F8F8 
+	.section_title
+		text-align: center
+	.mid_text
+		margin-bottom: 37px 
+
+.subscribe_form
+	position: relative
+	width: 100% 
+	max-width: 645px 
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap		
+	margin: 0px auto
+	input
+		position: relative
+		outline: none 
+		width: calc(100% - 154px)
+		height: 66px 
+		background: #FFF 
+		-webkit-border-radius: 10px 
+		border-radius: 10px
+		border: 1px solid #a4a4a4
+		font-weight: 600
+		font-size: 20.83px
+		line-height: 22px  
+		color: #505050  
+		padding: 21px 20px 
+		background: #FFF 
+		text-align: left
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all 
+		&:focus	
+			-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,.2) 
+			box-shadow: 0px 0px 15px rgba(0,0,0,.2) 
+	::placeholder
+		color: #969696 
+	:-ms-input-placeholder
+		color: #969696 
+	::-ms-input-placeholder
+		color: #969696 
+	.submit_btn
+		position: relative
+		outline: none 
+		width: 134px 
+		height: 66px 
+		border: none
+		background: #939393 
+		text-align: center
+		font-weight: bold 
+		font-size: 22px 
+		line-height: 22px
+		color: #FFF 
+		padding: 22px 15px   
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		margin-left: auto 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		&:hover
+			background: #505050 
+		
+
+
+
+
+
+.supported_coins
+	position: relative
+	width: 100% 
+	height: 100% 
+	padding-top: 56px 
+	padding-bottom: 140px 
+	background: #F8F8F8 
+	.wrapper
+		position: relative
+		width: 100% 
+		-webkit-border-radius: 10px 
+		border-radius: 10px
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		padding: 65px 40px
+		padding-bottom: 44px  
+	.section_title
+		position: relative
+		width: 100% 
+		text-align: left
+		font-weight: 600
+		font-size: 41px 
+		line-height: 50px
+		color: #343434 
+		margin-bottom: 15px   
+		&:before
+			display: none 
+		span
+			color: #A7A7A7 
+	.mid_text
+		text-align: left
+		margin-bottom: 42px 
+	.more
+		margin-top: 15px 
+	.table_block
+		position: relative
+		width: 100% 
+		.line_title
+			position: relative
+			width: auto
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap		
+			margin-left: -40px
+			margin-right: -40px
+			background: #F3EEE3
+			color: #B08B45
+			font-size: 13px
+			line-height: 20px
+			padding: 5px 40px
+			letter-spacing: 0.2em
+			text-transform: uppercase
+			margin-bottom: 0px
+			.filter_span
+				cursor: pointer
+			img
+				position: relative
+				top: -1px 
+				display: inline-block
+				vertical-align: middle
+				margin-left: 5px 
+				max-width: 25px 
+			span
+				position: relative
+				display: block 
+				padding-right: 15px 
+				.table_hide
+					display: inline-block
+					vertical-align: top
+					padding-right: 0px
+					width: auto  
+			span:first-of-type
+				width: 22% 
+			span:nth-of-type(2)
+				width: 24% 
+			span:nth-of-type(3)
+				width: 14%
+				padding-right: 0px  
+				text-align: center
+			span:nth-of-type(4)
+				width: 16%
+				margin-left: auto  
+		.coin_item
+			position: relative
+			width: 100% 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap		
+			-webkit-align-items: center
+			align-items: center
+			border-bottom: 1px solid #d3d3d3
+			padding-top: 15px 
+			padding-bottom: 15px  
+			.item_title
+				position: relative
+				width: 22% 
+				padding-left: 10px 
+				padding-right: 10px 
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 21px
+				color: #505050    
+				img
+					position: relative
+					top: -1px 
+					display: inline-block
+					vertical-align: middle
+					width: 17px 
+					height: 17px 
+					-webkit-border-radius: 50% 
+					border-radius: 50% 
+					overflow: hidden
+					margin-right: 10px 
+			.short_title
+				position: relative
+				width: 24% 
+				padding-right: 15px 
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 21px
+				text-transform: uppercase
+				color: #505050    
+			.status_block
+				position: relative
+				width: 14%
+				text-align: center 
+			.supported, .pending
+				position: relative
+				display: inline-block
+				vertical-align: top
+				font-weight: 600
+				font-size: 12.5px
+				line-height: 20px
+				padding: 0px 6px
+				text-align: center
+				color: #FFF 
+				background: #5EC394 
+				margin: 0px  
+			.pending
+				background: #969696 
+			.links
+				position: relative
+				margin-left: auto 
+				display: -webkit-box
+				display: -moz-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				-ms-flex-wrap: wrap
+				flex-wrap: wrap		
+				-webkit-align-items: center
+				align-items: center
+				-webkit-justify-content: flex-end
+				justify-content: flex-end
+				width: 16%
+				padding-right: 10px 
+				a 
+					position: relative
+					display: inline-block
+					vertical-align: top
+					font-weight: 600
+					font-size: 16.67px
+					line-height: 21px
+					color: #CDB382 
+					margin: 0px
+					margin-right: 10px
+					&:hover
+						color: #505050  
+				a:last-of-type
+					margin-right: 0px 
+					margin-left: auto 
+
+
+
+
+.account_modal .modal-dialog .modal-content 
+	.info_text
+		position: relative
+		font-weight: 600
+		font-size: 20.83px
+		line-height: 27px
+		display: block
+		margin-left: -30px
+		margin-right: -30px
+		background: #CDB382
+		color: #FFF
+		text-align: center
+		padding: 10px 35px
+		-webkit-box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+		box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.12), inset 0px 5px 10px rgba(0, 0, 0, 0.12)
+		margin-bottom: 30px
+	.request_text
+		position: relative
+		width: 100% 
+		border-bottom: 1px solid #d3d3d3
+		margin-bottom: 50px  
+		p
+			margin-bottom: 18px 
+		
+
+
+.page_with_absolute_header
+	padding-top: 0px 
+
+.absolute_header
+	position: absolute
+	z-index: 20 
+	top: 0px
+	left: 0px  
+	background: rgba(52,52,52,.95) 
+	.container
+		min-height: 86px 
+	.logo 
+		svg
+			fill: #FFF
+			opacity: .6 
+	.left_nav 
+		li 
+			a
+				color: #FFF 
+				opacity: .6 
+		.soon 
+			a
+				opacity: .6
+	.products_dropdown, .user_dropdown
+		.products_btn, .user_btn
+			color: #FFF 
+			opacity: .6 
+	.main_nav 
+		li 
+			a
+				color: #FFF
+				opacity: .6 
+	.icons_list 
+		.dropdown 
+			.drop_btn
+				color: #FFF
+				opacity: .6 
+			.dropdown_menu
+				background: rgba(52,52,52,.95) 
+				li
+					a
+						color: #FFF 
+						opacity: .6 
+		li 
+			a 
+				svg
+					fill: #FFF
+					opacity: .6 
+	.main_nav
+		&:before
+			opacity: .6 
+	.icons_list:before, .icons_list:after
+		opacity: .6 
+	.products_dropdown 
+		.dropdown_menu
+			background: rgba(52,52,52,.95) 
+			li
+				a
+					color: #FFF 
+					opacity: .6 
+	.mobile_nav
+		background: rgba(52,52,52,.95) 
+		li
+			a
+				color: #FFF
+				opacity: .6 
+	.sandwich span
+		background: #FFF 
+		opacity: .6 
+
+
+
+.academy_welcome .wrapper
+	padding-top: 75px 
+	padding-bottom: 45px 
+
+
+.academy_all_welcome .wrapper .academy_main
+	margin-top: -35px 
+
+
+
+.contacs_help_section
+	padding-bottom: 0px 
+	.container
+		max-width: 1010px 
+	.help_item
+		width: calc(50% - 20px) 
+	.help_item:nth-of-type(2n+2)
+		margin-right: 0px 
+
+
+
+
+
+.contacts_page 
+	position: relative
+	width: 100% 
+	background: #F8F8F8 
+	padding-top: 50px 
+	padding-bottom: 70px 
+	.container
+		max-width: 1010px 
+	.wrapper
+		position: relative
+		width: 100% 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		padding: 65px 40px
+		padding-bottom: 50px 
+		text-align: center 
+		margin-bottom: 70px 
+	.section_title
+		position: relative
+		width: 100% 
+		text-align: center
+		margin-bottom: 50px 
+		&:before
+			display: none 
+	.soc_block
+		position: relative
+		width: 100% 
+		background: #E6E7E8 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		padding: 50px 30px
+		text-align: center
+		p
+			font-weight: normal 
+			font-size: 20.83px
+			line-height: 27px
+			color: #505050 
+			margin-bottom: 38px  
+		.soc_list
+			-webkit-justify-content: center
+			justify-content: center
+			li
+				a
+					&:hover
+						svg
+							fill: #cdb382
+				svg
+					fill: #767676
+			li:last-of-type
+				margin-right: 0px 
+	.request_info
+		position: relative
+		width: 100% 
+		text-align: center
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		background: #F8F4EC 
+		padding: 45px 35px
+		padding-bottom: 20px  
+		margin-bottom: 65px 
+		h5
+			font-weight: 600
+			font-size: 25px 
+			line-height: 27px
+			color: #505050 
+			margin-bottom: 35px 
+		p
+			font-weight: normal 
+			font-size: 20.83px
+			line-height: 27px
+			color: #505050 
+			margin-bottom: 20px 
+			span
+				color: #FFF 
+			a
+				text-decoration: none
+				color: #CDB382 
+				&:hover
+					color: #222 
+			strong
+				font-weight: 600 
+
+
+
+
+.request_form
+	position: relative
+	width: 100% 
+	p
+		position: relative
+		width: 100% 
+		text-align: left
+		font-weight: 600
+		font-size: 20.83px
+		line-height: 27px
+		color: #505050 
+		margin-bottom: 12px 
+		span
+			color: #F00 
+	input, textarea
+		position: relative
+		outline: none 
+		width: 100% 
+		height: 66px 
+		background: #FFF 
+		text-align: left
+		border: 1px solid #a7a7a7 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		-webkit-box-shadow: none 
+		box-shadow: none 
+		font-weight: 600
+		font-size: 21.83px
+		line-height: 27px  
+		color: #505050
+		padding: 18px 20px
+		text-align: left 
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all 
+		margin-bottom: 25px 
+		&.error
+			border-color: #ff3434
+		&:focus
+			-webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.3) 
+			box-shadow: 0px 5px 15px rgba(0,0,0,.3) 
+	::placeholder 
+		color: #969696 
+	:-ms-input-placeholder
+		color: #969696 
+	::-ms-input-placeholder
+		color: #969696 
+	textarea
+		resize: none
+		height: 228px  
+	label.error
+		position: absolute
+		top: 0px
+		left: 0px 
+		z-index: -1
+		opacity: 0
+		font-size: 0
+		line-height: 0    
+	.small_info
+		position: relative
+		width: 100% 
+		opacity: .6 
+		font-size: 16.67px
+		line-height: 21px
+		margin-top: -7px 
+		margin-bottom: 25px   
+	.protected_info
+		position: relative
+		width: 100% 
+		opacity: .6 
+		font-size: 16.67px
+		line-height: 21px
+		text-align: center
+		padding-bottom: 30px 
+		border-bottom: 1px solid #d3d3d3 
+		margin-bottom: 50px   
+	.submit_btn
+		position: relative
+		display: block
+		text-decoration: none
+		outline: none
+		max-width: 384px
+		width: 100%
+		text-align: center
+		font-weight: 600
+		font-size: 20.83px
+		line-height: 24px
+		color: #FFF
+		background: #CDB382
+		border: none
+		-webkit-border-radius: 10px
+		border-radius: 10px
+		padding: 18px
+		-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		margin: auto
+		&:hover
+			background: #B59E73
+			-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+
+
+
+
+
+.product_page
+	padding-top: 0px 
+
+.product_header
+	position: fixed
+	z-index: 20 
+	top: 0px
+	left: 0px  
+	background: rgba(30,30,30,.0)  
+	-webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0)
+	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0)
+	-webkit-transition: .3s all 
+	-moz-transition: .3s all 
+	-ms-transition: .3s all 
+	-o-transition: .3s all 
+	transition: .3s all 
+	&.fixed_header
+		background: rgba(30,30,30,1) 
+		-webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2)
+		box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2)
+	.container
+		min-height: 86px 
+	.logo 
+		svg
+			fill: #FFF
+			opacity: .6 
+	.left_nav 
+		li 
+			a
+				color: #FFF 
+				opacity: .6 
+		.soon 
+			a
+				opacity: .6
+	.products_dropdown, .user_dropdown
+		.products_btn, .user_btn
+			color: #FFF 
+			opacity: .6 
+	.main_nav 
+		li 
+			a
+				color: #FFF
+				opacity: .6 
+	.icons_list 
+		.dropdown 
+			.drop_btn
+				color: #FFF
+				opacity: .6 
+			.dropdown_menu
+				background: rgba(52,52,52,.95) 
+				li
+					a
+						color: #FFF 
+						opacity: .6 
+		li 
+			a 
+				svg
+					fill: #FFF
+					opacity: .6 
+	.main_nav
+		&:before
+			opacity: .6 
+	.icons_list:before, .icons_list:after
+		opacity: .6 
+	.products_dropdown 
+		.dropdown_menu
+			background: rgba(52,52,52,.95) 
+			li
+				a
+					color: #FFF 
+					opacity: .6 
+	.mobile_nav
+		background: rgba(52,52,52,.95) 
+		li
+			a
+				color: #FFF
+				opacity: .6 
+	.sandwich span
+		background: #FFF 
+		opacity: .6 
+
+
+.product_header .products_dropdown .products_btn.active
+	&:after
+		content: ""
+		display: block
+		width: 100%
+		height: 2px
+		background: #CDB382
+		position: absolute
+		bottom: 0px
+		left: 0%
+		-webkit-transition: 0.3s all
+		-moz-transition: 0.3s all
+		-ms-transition: 0.3s all
+		-o-transition: 0.3s all
+		transition: 0.3s all
+
+
+.page_wrapper 
+	.product_main_section
+		z-index: 2 
+
+.product_main_section
+	position: relative
+	z-index: 2 
+	width: 100% 
+	background: #080808 
+	.container
+		position: relative
+		z-index: 2 
+		padding-top: 190px 
+		padding-bottom: 50px 
+		min-height: 854px 
+	.wrapper
+		position: static
+		width: 100% 
+		max-width: 535px
+	.main_title
+		position: relative
+		font-weight: 600
+		font-size: 58px
+		line-height: 58px
+		color: #FFF 
+		margin-bottom: 20px 
+		span
+			position: relative
+			display: inline-block
+			vertical-align: top
+			font-weight: normal
+		.icon
+			display: block 
+			width: 20px
+			height: 20px 
+			font-weight: 600
+			font-style: normal 
+			font-size: 16.67px
+			line-height: 18px
+			color: #FFF 
+			border: 1px solid #FFF
+			-webkit-border-radius: 50% 
+			border-radius: 50%   
+			-webkit-transform: rotate(180deg) 
+			-moz-transform: rotate(180deg) 
+			-ms-transform: rotate(180deg) 
+			-o-transform: rotate(180deg) 
+			transform: rotate(180deg)   
+			position: absolute
+			text-align: center
+			top: -3px
+			right: -22px  
+	ul
+		margin: 0px 
+		position: relative
+		width: 100% 
+		padding-top: 20px 
+		list-style: none 
+		margin: 0px
+		margin-bottom: 15px  
+		li
+			position: relative
+			width: 100%
+			font-weight: normal
+			font-size: 20px
+			line-height: 27px
+			color: #FFF
+			text-align: left
+			padding-left: 40px
+			margin-bottom: 25px
+			&:before
+				content: "" 
+				display: block
+				width: 30px
+				height: 28px
+				position: absolute
+				top: -1px
+				left: 0px
+				background: url(../img/hexa_icon.svg) no-repeat center center
+				-webkit-background-size: 100% 100%
+				-o-background-size: 100% 100%
+				background-size: 100% 100%
+			strong
+				position: relative
+				font-weight: bold
+				&:after
+					content: ""
+					display: inline-block
+					vertical-align: middle
+					width: 16px
+					height: 2px
+					background: #FFF
+					margin-right: 8px
+					margin-left: 10px
+		li:last-of-type
+			margin-bottom: 0px 
+	p
+		position: relative
+		font-weight: normal 
+		font-size: 20.83px
+		line-height: 27px
+		color: #FFF 
+		margin-bottom: 15px
+	.short_info
+		max-height: 108px
+		overflow: hidden 
+	.more
+		&:hover
+			color: #CDB382
+			svg
+				fill: #CDB382
+	.img_block
+		position: absolute
+		top: 0px
+		right: -355px
+		width: 1281px
+		height: 854px
+		z-index: -1 
+		line-height: 0 
+		&:before
+			content: "" 
+			display: block 
+			width: 1585px
+			height: 560px 
+			position: absolute
+			right: 0px
+			bottom: 0px
+			background: url("../img/product_shadow.png") no-repeat center center
+			-webkit-background-size: 100% 100% 
+			-o-background-size: 100% 100% 
+			background-size: 100% 100% 
+			z-index: 1 
+		img
+			width: 100% 
+			height: 100%  
+	.config_block
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap		
+		.divider
+			width: 100% 
+			height: 1px 
+			background: none 
+
+
+.custom_select
+	position: relative
+	min-width: 164px
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap		
+	margin-top: 35px 
+	.select_title
+		position: relative
+		width: 100% 
+		font-weight: 300
+		font-size: 16.67px
+		line-height: 27px
+		color: #FFF 
+		opacity: .6    
+		margin: 0px
+		margin-bottom: 5px  
+	.select
+		position: relative
+		width: auto 
+		&.active
+			.select_list
+				-webkit-transform: scale(1) 
+				-moz-transform: scale(1) 
+				-ms-transform: scale(1) 
+				-o-transform: scale(1) 
+				transform: scale(1) 
+			.select_btn
+				&:after
+					-webkit-transform: rotateX(180deg) 
+					-moz-transform: rotateX(180deg) 
+					-ms-transform: rotateX(180deg) 
+					-o-transform: rotateX(180deg) 
+					transform: rotateX(180deg) 
+					top: -6px 
+	.select_btn
+		position: relative
+		width: auto 
+		padding: 0px 
+		margin: 0px
+		background: none
+		border: none
+		font-weight: 600
+		font-size: 25px 
+		line-height: 27px
+		color: #CDB382     
+		padding-right: 25px 
+		&:after
+			content: ""
+			display: block
+			width: 10px
+			height: 6px
+			position: absolute
+			top: 6px
+			bottom: 0px
+			right: 0px
+			margin: auto
+			border: 5px solid transparent
+			border-top: 5px solid #d7c29b
+			-webkit-transition: 0.3s all
+			-moz-transition: 0.3s all
+			-ms-transition: 0.3s all
+			-o-transition: 0.3s all
+			transition: 0.3s all
+	.select_list
+		position: absolute
+		z-index: 5 
+		min-width: 100% 
+		top: calc(100% + 5px)
+		left: 0px
+		width: auto 
+		padding: 5px 0px
+		list-style: none
+		background: rgba(30,30,30,.9) 
+		-webkit-border-radius: 5px 
+		border-radius: 5px 
+		-webkit-transition: .2s all 
+		-moz-transition: .2s all 
+		-ms-transition: .2s all 
+		-o-transition: .2s all 
+		transition: .2s all 
+		-webkit-transform: scale(0) 
+		-moz-transform: scale(0) 
+		-ms-transform: scale(0) 
+		-o-transform: scale(0) 
+		transform: scale(0) 
+		li
+			position: relative
+			width: 100% 
+			padding: 5px 10px
+			font-weight: normal 
+			font-size: 16px 
+			line-height: 22px
+			color: #FFF  
+			cursor: pointer
+			-webkit-transition: .15s all 
+			-moz-transition: .15s all 
+			-ms-transition: .15s all 
+			-o-transition: .15s all 
+			transition: .15s all 
+			&:hover
+				background: #CDB382 
+			&:before
+				content: "" 
+				display: none 
+		li:last-of-type
+			margin-bottom: 0px 
+		.active
+			display: none 
+	.price
+		position: relative
+		font-weight: normal
+		font-size: 25px 
+		line-height: 27px
+		color: #FFF 
+		margin: 0px
+		span
+			display: inline-block
+			vertical-align: top
+		strong
+			font-weight: normal 
+			font-size: 33px 
+		.old_price
+			opacity: .6
+			text-decoration: line-through  
+		.new_price
+			color: #B72222 
+		.old_price + .new_price
+			margin-left: 20px 
+			
+.product_main_section		
+	.add_card
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		padding-top: 45px 
+		.add_btn
+			position: relative
+			display: inline-block
+			vertical-align: top
+			font-weight: bold 
+			font-size: 20.83px
+			line-height: 22px
+			color: #1E1E1E 
+			padding: 19px 28px
+			text-align: center
+			background: #f5f5f5
+			border: none     
+			-webkit-border-radius: 5px 
+			border-radius: 5px 
+			margin-right: 28px 
+			&:hover
+				background: #CDB382 
+				color: #1E1E1E
+		.save_btn
+			position: relative
+			display: inline-block
+			vertical-align: top
+			border: 1px solid #616161 
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			padding: 6px 10px
+			font-weight: normal
+			font-size: 16.67px
+			line-height: 20px
+			color: #B9B9B9 
+			margin: 0px   
+			background: none 
+			&:hover
+				svg
+					margin-left: 30px 
+			strong
+				font-weight: bold 
+			span
+				font-weight: bold
+				color: #CDB382    
+			svg
+				position: relative
+				display: inline-block
+				vertical-align: middle
+				width: 18px
+				height: 15px
+				margin-left: 20px
+				fill: #B9B9B9
+				-webkit-transition: 0.3s all
+				-moz-transition: 0.3s all
+				-ms-transition: 0.3s all
+				-o-transition: 0.3s all
+				transition: 0.3s all
+
+
+
+
+
+.advantages_line
+	position: relative
+	width: 100% 
+	padding-top: 22px 
+	background: #1E1E1E 
+	-webkit-box-shadow: 0px 3px 15px rgba(0,0,0,.2) 
+	box-shadow: 0px 3px 15px rgba(0,0,0,.2) 
+	.container
+		position: relative
+		max-width: 1390px 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		-webkit-justify-content: space-around
+		justify-content: space-around
+	.item
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		-webkit-align-items: center
+		align-items: center
+		font-weight: 300
+		font-size: 16.67px
+		line-height: 21px
+		letter-spacing: -.02em 
+		color: #a5a5a5    
+		text-transform: uppercase
+		margin-bottom: 22px 
+		.icon
+			position: relative
+			display: block 
+			margin-right: 18px 
+			max-width: 61px 
+			max-height: 40px 
+
+
+
+
+
+
+// CHARACTERISTICS SECTION
+.characteristics_section
+	position: relative
+	width: 100% 
+	background: url("../img/characteristics_bg.png") no-repeat right bottom #FFF 
+	.container
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+	.nav_block
+		position: relative
+		width: 222px
+		padding-top: 160px 
+		padding-bottom: 150px 
+		background: #080808 
+		-webkit-box-shadow: 0px 3px 15px rgba(0,0,0,.2) 
+		box-shadow: 0px 3px 15px rgba(0,0,0,.2)
+		&:before, &:after
+			content: "" 
+			display: block 
+			width: 1000%
+			height: 100% 
+			position: absolute
+			top: 0px
+			right: 99.5%  
+			background: #080808  
+		&:after
+			right: auto
+			left: 99.5%  
+			display: none 
+	.nav-tabs
+		position: relative
+		width: 100% 
+		list-style: none
+		li 
+			position: relative
+			width: 100% 
+			margin-bottom: 21px 
+			a
+				position: relative
+				width: 100% 
+				display: inline-block
+				vertical-align: top
+				text-decoration: none
+				font-weight: normal 
+				font-size: 16.67px
+				line-height: 21px
+				color: #FFF 
+				opacity: .3 
+				text-transform: uppercase
+				&:hover
+					opacity: .7 
+				span
+					display: block 
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all 
+			.active
+				opacity: 1 
+				color: #CCB381 
+				span
+					color: #FFF 
+		li:last-of-type
+			margin-bottom: 0px 
+	.mobile_block
+		position: relative
+		z-index: 2 
+		width: 100% 
+		display: none
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		justify-content: center
+		display: none 
+		.left_title
+			position: absolute
+			top: 0px
+			left: 0px  
+			bottom: 0px 
+			height: 24px 
+			font-weight: 600
+			font-size: 21px 
+			color: #505050 
+			line-height: 24px
+			width: auto 
+			margin: auto
+		.active_section, .active_page
+			position: relative
+			display: inline-block
+			vertical-align: top
+			font-weight: 600
+			font-size: 21px
+			color: #505050 
+			line-height: 24px
+			padding: 7px 28px
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			background: #FFF 
+		.open_btn
+			position: absolute
+			top: 0px
+			right: 0px  
+			bottom: 0px 
+			border-bottom: 0px
+			height: 24px  
+			display: inline-block
+			vertical-align: top
+			font-weight: 600
+			font-size: 21px
+			color: #505050 
+			line-height: 24px
+			padding: 0px
+			padding-right: 20px 
+			border: none
+			background: none   
+			margin: auto 0px
+			&.active
+				&:after
+					-webkit-transform: rotateX(180deg)
+					-moz-transform: rotateX(180deg)
+					-ms-transform: rotateX(180deg)
+					-o-transform: rotateX(180deg)
+					transform: rotateX(180deg)
+					top: -5px
+			&:after
+				content: ""
+				display: block
+				width: 10px
+				height: 6px
+				position: absolute
+				top: 6px
+				bottom: 0px
+				right: 0px
+				margin: auto
+				border: 5px solid transparent
+				border-top: 5px solid #505050
+				-webkit-transition: 0.3s all
+				-moz-transition: 0.3s all
+				-ms-transition: 0.3s all
+				-o-transition: 0.3s all
+				transition: 0.3s all
+	.content_block
+		position: relative
+		width: calc(100% - 222px)
+		padding-top: 160px 
+		padding-bottom: 150px 
+	.tab-pane
+		display: none
+		&.active
+			display: block 
+		.well
+			position: relative
+			width: 100% 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap	
+			padding: 0px 
+		.left_col
+			position: relative
+			width: 100% 
+			max-width: 470px
+			padding-left: 40px 
+		.right_col
+			position: relative
+			width: 100% 
+			max-width: 472px
+			margin-left: auto  
+			padding-top: 60px 
+			text-align: center
+			line-height: 0 
+			img
+				max-width: 354px 
+				margin: auto 
+				-webkit-border-radius: 10px  
+				border-radius: 30px 
+				-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.2) 
+				box-shadow: 0px 0px 5px rgba(0,0,0,.2) 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+				&:hover
+					-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,.2) 
+					box-shadow: 0px 0px 15px rgba(0,0,0,.2) 
+		.number
+			position: relative
+			font-weight: 600
+			font-size: 20.83px
+			line-height: 27px
+			color: #CCB381 
+			margin-bottom: 5px 
+		.title
+			position: relative
+			font-weight: 600
+			font-size: 41px
+			line-height: 1 
+			color: #343434 
+			margin-bottom: 70px
+			&:before
+				content: "" 
+				display: block 
+				width: 38px 
+				height: 4px
+				background: #CCB381 
+				position: absolute
+				left: 0px
+				bottom: -37px     
+		p
+			font-weight: 600
+			font-size: 20.83px
+			line-height: 27px
+			color: #505050 
+			margin-bottom: 35px    
+		ul, ol
+			position: relative
+			list-style: none
+			margin-bottom: 0px  
+			li
+				position: relative
+				font-weight: 600
+				font-size: 20.83px
+				line-height: 27px
+				color: #505050 
+				padding-left: 45px 
+				margin-bottom: 35px 
+				&:before
+					content: ""
+					display: block
+					width: 30px
+					height: 28px
+					position: absolute
+					top: -1px
+					left: 0px
+					background: url(../img/hexa_icon.svg) no-repeat center center
+					-webkit-background-size: 100% 100%
+					-o-background-size: 100% 100%
+					background-size: 100% 100%
+
+
+.page_wrapper
+	.characteristics_section
+		z-index: 0 
+
+
+
+
+// PRODUCTS COMPARE
+.product_compare
+	position: relative
+	width: 100% 
+	padding-top: 140px 
+	padding-bottom: 140px 
+	background: #F5F5F5 
+	.wrapper
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: nowrap
+		flex-wrap: nowrap
+		-webkit-justify-content: center
+		justify-content: center	
+		-webkit-align-items: flex-end
+		align-items: flex-end
+	.mid_text
+		font-size: 21px 
+		line-height: 27px
+		margin-bottom: 70px  
+	.amazin_arrow
+		position: absolute
+		top: -40px 
+		left: 50px 
+		font-family: "SagoePrint", sans-serif
+		font-weight: normal 
+		font-size: 33px 
+		line-height: 1
+		color: #505050  
+		margin: 0px
+		opacity: .8  
+		-webkit-transform: rotate(-15deg) 
+		-moz-transform: rotate(-15deg) 
+		-ms-transform: rotate(-15deg) 
+		-o-transform: rotate(-15deg) 
+		transform: rotate(-15deg) 
+		&:before
+			content: "" 
+			display: block 
+			width: 300px 
+			height: 104px 
+			background: url("../img/amazing.svg") no-repeat center center
+			-webkit-background-size: 100% 100% 
+			-o-background-size: 100% 100% 
+			background-size: 100% 100%  
+			position: absolute
+			top: 100%
+			left: 50%
+			-webkit-transform: rotateX(180deg) 
+			-moz-transform: rotateX(180deg) 
+			-ms-transform: rotateX(180deg) 
+			-o-transform: rotateX(180deg) 
+			transform: rotateX(180deg)   
+	.options_list
+		position: relative
+		width: 100% 
+		max-width: 372px
+		margin: 0px 10px
+		margin-bottom: 40px 
+		li
+			position: relative
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-align-items: flex-end
+			align-items: flex-end
+			width: 100% 
+			height: 61px 
+			border-bottom: 1px solid #cccccc
+			padding: 5px 10px
+			font-weight: 600
+			font-size: 20.83px
+			line-height: 27px
+			color: #505050 
+			margin: 0px
+	.item
+		position: relative
+		width: 100% 
+		max-width: 169px
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-justify-content: center
+		justify-content: center
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		padding: 0px 10px 
+		margin: 0px 10px 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all 
+		&:hover
+			-webkit-box-shadow: 0px 5px 20px rgba(0,0,0,.3) 
+			box-shadow: 0px 5px 20px rgba(0,0,0,.3) 
+		.item_title
+			position: relative
+			min-width: 130px
+			max-width: 100% 
+			min-height: 84px 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+			text-align: center
+			font-weight: 600
+			font-size: 29px 
+			line-height: 1
+			color: #FFF   
+			background: #505050 
+			-webkit-border-radius: 0px 0px 10px 10px 
+			border-radius: 0px 0px 10px 10px 
+			margin-bottom: 17px 
+		ul
+			position: relative
+			width: 100% 
+			list-style: none 
+			margin-bottom: 40px 
+			li
+				position: relative
+				display: -webkit-box
+				display: -moz-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				-ms-flex-wrap: wrap
+				flex-wrap: wrap
+				-webkit-justify-content: center
+				justify-content: center
+				-webkit-align-items: flex-end
+				align-items: flex-end
+				width: 100% 
+				height: 61px 
+				border-bottom: 1px solid #cccccc
+				padding: 5px 10px
+				padding-bottom: 10px 
+				font-weight: 600
+				font-size: 20.83px
+				line-height: 27px
+				color: #505050 
+				margin: 0px 
+				img
+					width: 32px 
+	.compare_config
+		position: relative
+		width: 100% 
+		padding-top: 30px 
+		padding-bottom: 40px 
+		border-top: 1px solid #cccccc
+		border-bottom: 1px solid #CCC 
+		text-align: center
+		display: none 
+		margin-bottom: 85px 
+		p
+			position: relative
+			width: 100% 
+			font-weight: 600
+			font-size: 25px 
+			line-height: 35px  
+			color: #505050 
+			margin: 0px 
+		.custom_dropdown
+			position: relative
+			width: 100% 
+			max-width: 490px
+			margin: auto
+			margin-top: 10px 
+			&.active
+				.drop_btn
+					&:before
+						-webkit-transform: rotateX(180deg)
+						-moz-transform: rotateX(180deg)
+						-ms-transform: rotateX(180deg)
+						-o-transform: rotateX(180deg)
+						transform: rotateX(180deg)
+						top: -5px
+				.dropdown_menu
+					-webkit-transform: scale(1) 
+					-moz-transform: scale(1) 
+					-ms-transform: scale(1) 
+					-o-transform: scale(1) 
+					transform: scale(1) 
+			.drop_btn
+				position: relative
+				width: 100% 
+				min-height: 66px 
+				border: 1px solid #a2a2a2
+				-webkit-border-radius: 10px 
+				border-radius: 10px 
+				background: #F9F9F9 
+				padding: 20px
+				font-weight: 600
+				font-size: 20px 
+				line-height: 24px
+				text-align: left
+				color: #b08b45 
+				margin: 0px 
+				&:before
+					content: ""
+					display: block
+					width: 10px
+					height: 6px
+					position: absolute
+					top: 6px
+					bottom: 0px
+					right: 15px
+					margin: auto
+					border: 5px solid transparent
+					border-top: 5px solid #bfa169
+					-webkit-transition: 0.3s all
+					-moz-transition: 0.3s all
+					-ms-transition: 0.3s all
+					-o-transition: 0.3s all
+					transition: 0.3s all
+			.dropdown_menu
+				position: absolute
+				z-index: 3 
+				top: calc(100% + 5px)
+				left: 0px
+				width: 100% 
+				border: 1px solid #a2a2a2
+				background: #F9F9F9 
+				-webkit-border-radius: 10px 
+				border-radius: 10px 
+				list-style: none
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+				-webkit-transform: scale(0) 
+				-moz-transform: scale(0) 
+				-ms-transform: scale(0) 
+				-o-transform: scale(0) 
+				transform: scale(0) 
+				overflow: hidden
+				li
+					position: relative
+					width: 100% 
+					font-weight: normal 
+					font-size: 18px 
+					line-height: 22px
+					text-align: left
+					padding: 10px 20px
+					cursor: pointer 
+					-webkit-transition: .15s all 
+					-moz-transition: .15s all 
+					-ms-transition: .15s all 
+					-o-transition: .15s all 
+					transition: .15s all 
+					&:hover
+						background: #D5C099 
+						color: #FFF 
+
+				  
+
+
+
+
+// CHARGE SECTION
+.charge_section
+	position: relative
+	width: 100% 
+	background: #FFF 
+	.container
+		position: relative
+		padding-top: 150px 
+		padding-bottom: 75px 
+	.wrapper
+		position: relative
+		width: 100% 
+		min-height: 400px 
+		max-width: 520px 
+		margin-bottom: 100px 
+	.section_title
+		position: relative
+		text-align: left
+		margin-bottom: 50px 
+		&:before
+			display: none 
+		span
+			color: #CDB382 
+	p
+		font-weight: 600
+		font-size: 20.83px
+		line-height: 27px
+		color: #505050 
+		margin-bottom: 35px    
+	ul, ol
+		position: relative
+		list-style: none
+		margin-bottom: 0px  
+		max-width: 430px 
+		li
+			position: relative
+			font-weight: 600
+			font-size: 20.83px
+			line-height: 27px
+			color: #505050 
+			padding-left: 45px 
+			margin-bottom: 35px 
+			&:before
+				content: ""
+				display: block
+				width: 30px
+				height: 28px
+				position: absolute
+				top: -1px
+				left: 0px
+				background: url(../img/hexa_icon.svg) no-repeat center center
+				-webkit-background-size: 100% 100%
+				-o-background-size: 100% 100%
+				background-size: 100% 100%
+	.more
+		margin-top: 5px 
+	.mid_text
+		margin: 0px
+		font-weight: bold 
+		font-size: 21px  
+	.charger
+		position: absolute
+		max-width: 1182px
+		max-height: 100% 
+		top: -60px
+		bottom: 0px
+		right: -310px 
+		margin: auto  
+
+
+
+
+
+
+// BOX SECTION
+.box_section
+	position: relative
+	width: 100% 
+	background: #1E1E1E 
+	.container
+		position: relative
+		z-index: 2 
+	.box_bg
+		position: absolute
+		top: 0px
+		left: 28%
+		right: 0px
+		bottom: 0px
+		background: url("../img/box_section.jpg") no-repeat center center
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover
+	.section_title
+		text-align: left
+		color: #FFF      
+		&:before
+			right: auto  
+	.wrapper
+		position: relative
+		z-index: 2 
+		width: 100% 
+		max-width: 292px 
+		padding-top: 145px 
+		padding-bottom: 50px 
+		padding-right: 20px 
+		&:before
+			content: "" 
+			display: block
+			width: 1000%
+			height: 100% 
+			position: absolute
+			z-index: -1 
+			top: 0px
+			right: 0px   
+			background: #1E1E1E 
+			-webkit-box-shadow: 0px 3px 15px rgba(0,0,0,.2) 
+			box-shadow: 0px 3px 15px rgba(0,0,0,.2) 
+	p
+		position: relative
+		width: 100% 
+		font-weight: 600 
+		font-size: 20.83px
+		line-height: 27px
+		color: #FFF   
+		margin-bottom: 55px 
+	ul
+		position: relative
+		width: 100% 
+		list-style: none
+		margin-bottom: 80px 
+		li
+			position: relative
+			width: 100% 
+			font-weight: 600
+			font-size: 20.83px
+			line-height: 27px
+			color: #FFF 
+			margin: 0px
+			margin-bottom: 2px 
+			span
+				color: #CDB382 
+	.items_list
+		margin: 0px 
+		li
+			width: auto 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			margin-bottom: 0px 
+		.item
+			position: relative
+			width: auto 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: nowrap
+			flex-wrap: nowrap
+			-webkit-align-items: center
+			align-items: center
+			border: 1px solid #B9B9B9
+			-webkit-border-radius: 10px 
+			border-radius: 10px  
+			min-height: 61px 
+			font-weight: 300
+			font-size: 16.67px
+			line-height: 21px
+			text-transform: uppercase
+			color: #A5A5A5   
+			padding: 10px 20px
+			padding-right: 17px  
+			margin: 0px 
+			margin-top: 20px 
+			img
+				position: relative
+				display: inline-block
+				vertical-align: top
+				max-width: 42px 
+				max-height: 42px  
+				margin: 0px
+				margin-right: 18px 
+
+
+
+
+
+
+// TECHNICAL SECTION
+.technical_section
+	position: relative
+	width: 100% 
+	padding-top: 140px 
+	padding-bottom: 60px 
+	background: #FFF 
+	overflow: hidden
+	&:before
+		content: "" 
+		display: block
+		width: 200%
+		height: 1000px
+		background: #F5F5F5
+		position: absolute
+		top: -470px
+		left: -50%
+		-webkit-transform: rotate(-15deg)
+		-moz-transform: rotate(-15deg)
+		-ms-transform: rotate(-15deg)
+		-o-transform: rotate(-15deg)
+		transform: rotate(-15deg)
+	.container
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-justify-content: space-around
+		justify-content: space-around
+	.mid_text
+		width: 100% 
+		text-align: center
+		margin-bottom: 75px 
+		span
+			color: #CDB382 
+	.wrapper
+		position: relative
+		width: 100% 
+		max-width: 552px 
+		overflow: hidden
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		padding-top: 20px 
+	.line_title
+		position: relative
+		width: auto
+		display: block
+		background: #F3EEE3
+		color: #B08B45
+		font-size: 13px
+		line-height: 20px
+		padding: 5px 20px
+		letter-spacing: 0.2em
+		text-transform: uppercase
+		margin: 0px 
+	table
+		position: relative
+		width: 100% 
+		border: none
+		border-collapse: collapse 
+		margin: 0px
+		td
+			position: relative
+			padding: 20px 
+			padding-right: 10px 
+			font-weight: 600
+			font-size: 16.67px
+			line-height: 21px
+			color: #505050 
+			vertical-align: top
+			text-align: left
+			border-bottom: 1px solid #D3D3D3 
+			p
+				margin: 0px 
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 21px
+				color: #505050 
+			p + p
+				margin-top: 5px 
+			a, .more
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 21px
+		td:last-of-type
+			text-align: right 
+			padding-left: 10px 
+			p
+				text-align: right
+		tr:last-of-type
+			td
+				border: none  
+
+
+
+
+.inner_freedom_section
+	position: relative
+	width: 100% 
+	padding-top: 100px 
+	padding-bottom: 465px 
+	text-align: center
+	background-color: #FFF 
+	background-repeat: no-repeat 
+	background-position: center bottom
+	-webkit-background-size: 100% 
+	-o-background-size: 100% 
+	background-size: 100%  
+	background-image: url("../img/freedom_bg.jpg") 
+	.section_title
+		color: #505050 
+		&:before
+			background: #505050 
+	.mid_text
+		position: relative
+		font-size: 25px 
+		line-height: 33px 
+		text-align: center
+		color: #505050 
+		max-width: 420px 
+		margin: auto
+		margin-bottom: 65px 
+	.main_btn, a.main_btn
+		margin: 0px 12px
+		margin-bottom: 24px 
+		color: #505050 
+		border-color: #FFF 
+		&:focus
+			color: #FFF 
+		&:hover
+			background: none
+			color: #505050 
+			border-color: #505050
+			-webkit-box-shadow: none 
+			box-shadow: none 
+	.buy_btn, a.buy_btn
+		color: #FFF
+		background: #505050
+		border-color: #505050
+		-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		&:hover
+			background: #FFF 
+			border-color: #FFF
+			color: #505050 
+			-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+	.payment
+		position: relative
+		display: block
+		margin: auto
+		max-width: 100% 
+		-webkit-border-radius: 10px 
+		border-radius: 15px 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.3) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.3) 
+		margin-top: 200px 
+
+
+
+
+
+
+.product_main_section 
+	.sold_out
+		position: relative
+		width: auto 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		padding-top: 45px 
+		.inner
+			position: relative
+			z-index: 1 
+			width: auto 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-align-items: center
+			align-items: center
+			&:before
+				content: "" 
+				display: block 
+				width: 100% 
+				height: 100% 
+				position: absolute
+				top: 0px
+				left: 0px
+				-webkit-border-radius: 10px 
+				border-radius: 10px   
+				border: 1px solid #616161 
+		.main_btn
+			min-width: 160px 
+			background: #9F9F9F 
+			border: none
+			color: #1E1E1E 
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			padding: 18px 
+			margin: 0px 
+		p
+			font-weight: 600
+			font-size: 16.67px
+			line-height: 21px
+			color: #CDB382 
+			margin: 0px
+			padding: 5px 20px 
+			span
+				font-weight: normal 
+				color: #FFF 
+				display: block 
+
+
+
+
+
+.custom_select .select_list li
+	margin-bottom: 0px
+	
+.custom_select 
+	min-width: 180px 
+	width: 180px 
+	.price 
+		.old_price
+			strong
+				font-size: 25px 
+
+.custom_select.price_block
+	width: auto 
+
+
+
+
+
+
+.cart_section
+	position: relative
+	width: 100% 
+	height: 100% 
+	padding-top: 56px 
+	padding-bottom: 90px 
+	background: #F8F8F8 
+	.wrapper
+		position: relative
+		width: 100% 
+		-webkit-border-radius: 10px 
+		border-radius: 10px
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		padding: 65px 40px
+		padding-bottom: 44px 
+		margin-bottom: 40px  
+	.section_title
+		position: relative
+		width: 100% 
+		text-align: left
+		font-weight: 600
+		font-size: 41px 
+		line-height: 50px
+		color: #343434 
+		margin-bottom: 45px   
+		&:before
+			display: none 
+		span
+			color: #A7A7A7 
+	.mid_text
+		text-align: left
+		margin-bottom: 42px 
+	.more
+		margin-top: 15px 
+	.table_block
+		position: relative
+		width: 100% 
+		.line_title
+			position: relative
+			width: auto
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap		
+			margin-left: -40px
+			margin-right: -40px
+			background: #F3EEE3
+			color: #B08B45
+			font-size: 13px
+			line-height: 20px
+			padding: 5px 40px
+			letter-spacing: 0.2em
+			text-transform: uppercase
+			margin-bottom: 0px
+			.filter_span
+				cursor: pointer
+			img
+				position: relative
+				top: -1px 
+				display: inline-block
+				vertical-align: middle
+				margin-left: 5px 
+				max-width: 25px 
+			span
+				position: relative
+				display: block 
+				padding-right: 15px 
+				.table_hide
+					display: inline-block
+					vertical-align: top
+					padding-right: 0px
+					width: auto  
+			span:first-of-type
+				width: 60%
+			span:nth-of-type(2)
+				width: 20% 
+			span:nth-of-type(3)
+				width: 20%
+				padding-right: 0px  
+				text-align: right
+		.cart_item
+			position: relative
+			width: 100% 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap		
+			-webkit-align-items: center
+			align-items: center
+			border-bottom: 1px solid #d3d3d3
+			padding-top: 30px 
+			padding-bottom: 30px  
+			.del_btn
+				position: relative
+				z-index: 2 
+				padding: 0px
+				border: none
+				background: none
+				font-weight: 600
+				font-size: 14px 
+				line-height: 27px 
+				color: #505050 
+				margin-left: 20px 
+				opacity: .6 
+				&:hover
+					color: #cdb382
+					opacity: 1 
+			.item_img
+				position: relative
+				display: block
+				width: 120px 
+				height: 120px
+				line-height: 0 
+				img
+					position: absolute
+					top: 0px
+					left: 0px 
+					right: 0px
+					bottom: 0px
+					margin: auto
+					max-width: 100% 
+					max-height: 100%    
+			.item_title
+				position: relative
+				width: 49.3%
+				padding-left: 38px 
+				padding-right: 10px 
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 27px
+				color: #505050    
+				a
+					display: inline-block
+					vertical-align: top 
+					font-weight: 600
+					font-size: 16.67px
+					line-height: 27px
+					color: #505050
+					span
+						display: block 
+						color: #A7A7A7 
+				span
+					display: block 
+					color: #cdb382
+			.item_quantity
+				position: relative
+				width: 20% 
+				padding-left: 10px 
+				padding-right: 10px 
+				input
+					position: relative
+					outline: none
+					width: 60px
+					height: 46px
+					border: 1px solid #a7a7a7
+					-webkit-border-radius: 10px
+					border-radius: 10px
+					font-weight: 600
+					font-size: 16px
+					line-height: 20px
+					text-align: left
+					color: #B08B45
+					padding: 12px 5px
+					text-align: center
+					-webkit-transition: 0.3s all
+					-moz-transition: 0.3s all
+					-ms-transition: 0.3s all
+					-o-transition: 0.3s all
+					transition: 0.3s all
+					&:focus
+						-webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.15) 
+						box-shadow: 0px 5px 15px rgba(0,0,0,.15) 
+						background: #F9F9F9 
+			.item_price
+				position: relative
+				width: 20% 
+				padding-left: 10px 
+				padding-right: 10px 
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 21px
+				color: #505050   
+				text-align: right 
+				margin-left: auto 
+	.cart_nav
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap		
+		list-style: none
+		-webkit-justify-content: flex-end
+		justify-content: flex-end 
+		-webkit-align-items: center
+		align-items: center
+		list-style: none 
+		margin-top: 30px 
+		li
+			position: relative
+			margin-left: 30px 
+			a, button
+				position: relative
+				display: inline-block
+				vertical-align: top
+				color: #CDB382
+				font-weight: 600
+				font-size: 20px
+				line-height: 22px
+				margin: 0px
+				padding: 0px
+				border: none
+				background: none
+				&:hover
+					color: #CDB382   
+					svg
+						fill: #CDB382 
+						-webkit-transform: rotate(180deg) 
+						-moz-transform: rotate(180deg) 
+						-ms-transform: rotate(180deg) 
+						-o-transform: rotate(180deg) 
+						transform: rotate(180deg)   
+				svg
+					position: relative
+					top: 3px 
+					display: inline-block
+					vertical-align: top
+					width: 15px 
+					height: 15px 
+					fill: #CDB382
+					margin-right: 7px 
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all 
+			.update_btn
+				color: #505050 
+				svg
+					fill: #505050 
+				&:hover
+					color: #CDB382
+					svg
+						fill: #CDB382
+		li:first-of-type
+			margin-left: 0px 
+			
+.cart_form
+	position: relative
+	width: 100% 
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap		
+	padding: 0px
+	.wrapper
+		position: relative
+		-webkit-border-radius: 10px 
+		border-radius: 10px
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		width: calc(50% - 20px)
+		padding: 25px 40px
+		padding-bottom: 30px 
+		margin-bottom: 40px 
+		.short_info
+			font-size: 16.67px
+			line-height: 27px
+			margin-bottom: 25px   
+	.wrapper:nth-of-type(2)
+		margin-left: auto 
+	.title
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap		
+		width: 100% 
+		font-weight: 600
+		font-size: 25px
+		line-height: 33px
+		color: #363636
+		text-align: left
+		margin-bottom: 10px 
+		span
+			font-size: 16.67px
+			color: #505050
+			margin-left: auto 
+	p
+		position: relative
+		width: 100%
+		font-size: 20px
+		line-height: 27px
+		color: #505050
+		margin-bottom: 10px
+	.mod_select
+		position: relative
+		outline: none 
+		float: none 
+		width: 100% 
+		height: 66px 
+		border: 1px solid #a7a7a7
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		font-weight: 600
+		font-size: 18px 
+		line-height: 24px  
+		text-align: left
+		color: #B08B45 
+		padding: 20px
+		padding-right: 50px 
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all 
+		margin-bottom: 27px 
+		&.open
+			background: #F9F9F9 
+			&:after
+				-webkit-transform: rotateX(180deg) 
+				-moz-transform: rotateX(180deg) 
+				-ms-transform: rotateX(180deg) 
+				-o-transform: rotateX(180deg) 
+				transform: rotateX(180deg) 
+				top: -10px 
+		&:after
+			content: "" 
+			display: block 
+			position: absolute
+			top: 5px
+			bottom: 0px
+			right: 20px   
+			width: 10px
+			height: 6px
+			margin: auto
+			border: 5px solid transparent
+			border-top: 5px solid #d7c29b
+			-webkit-transform: rotateX(0deg) 
+			-moz-transform: rotateX(0deg) 
+			-ms-transform: rotateX(0deg) 
+			-o-transform: rotateX(0deg) 
+			transform: rotateX(0deg) 
+			-webkit-transition: 0.2s all
+			-moz-transition: 0.2s all
+			-ms-transition: 0.2s all
+			-o-transition: 0.2s all
+			transition: 0.2s all
+		.list
+			width: calc(100% + 2px)
+			left: -1px 
+			border: 1px solid #A7A7A7 
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			list-style: none 
+			max-height: 350px
+			overflow: auto 
+			li
+				padding: 10px 20px
+				text-align: left
+				font-size: 16px 
+				line-height: 21px
+			.selected
+				display: none 
+			.disabled
+				display: none 
+	input[type="text"], input[type="email"], textarea
+		position: relative
+		outline: none
+		display: block 
+		width: 100%
+		height: 66px
+		border: 1px solid #a7a7a7
+		-webkit-border-radius: 10px
+		border-radius: 10px
+		font-weight: 600
+		font-size: 18px
+		line-height: 24px
+		text-align: left
+		color: #B08B45
+		padding: 20px
+		-webkit-transition: 0.3s all
+		-moz-transition: 0.3s all
+		-ms-transition: 0.3s all
+		-o-transition: 0.3s all
+		transition: 0.3s all
+		margin-bottom: 27px
+		&:focus
+			-webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.3) 
+			box-shadow: 0px 5px 15px rgba(0,0,0,.3) 
+			background: #F9F9F9 
+		&.error
+			border-color: #ff3434 
+	textarea
+		resize: none
+		-webkit-border-radius: 0px 
+		border-radius: 0px 
+		height: 162px 
+		background: #F8F8F8 
+		margin-bottom: 0px 
+	.calc_btn
+		position: relative
+		text-align: center
+		font-weight: bold
+		width: 100% 
+		font-size: 20px
+		line-height: 24px
+		padding: 16px 30px
+		border: 2px solid #CDB382
+		-webkit-border-radius: 7px
+		border-radius: 7px
+		background: none
+		color: #cdb382
+		text-decoration: none
+		border-color: #505050
+		color: #505050
+		margin-top: 10px
+		&:hover
+			background: #e6e7e8
+			color: #505050
+	.short_info
+		position: relative
+		width: 100% 
+		font-weight: 600
+		font-size: 16.67px
+		color: #A7A7A7
+	.checkbox_item
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		-webkit-align-items: center 
+		align-items: center 
+		padding-top: 22px 
+		padding-bottom: 22px 
+		border-top: 1px solid #d3d3d3
+		border-bottom: 1px solid #D3D3D3 
+		label
+			position: relative 
+			top: -1px 
+			width: 17px
+			height: 17px 
+			font-weight: 600
+			font-size: 16px 
+			line-height: 26px
+			color: #CDB382
+			input
+				position: absolute
+				top: 0px
+				left: 0px
+				opacity: 0
+				z-index: -2
+				-webkit-transform: scale(0) 
+				-moz-transform: scale(0) 
+				-ms-transform: scale(0) 
+				-o-transform: scale(0) 
+				transform: scale(0)
+			input:checked + .icon
+				background: #CDB382 
+				border-color: #CDB382 
+				svg
+					-webkit-transform: scale(1) 
+					-moz-transform: scale(1) 
+					-ms-transform: scale(1) 
+					-o-transform: scale(1) 
+					transform: scale(1) 
+			.icon
+				position: absolute
+				top: 0px
+				left: 0px
+				width: 17px 
+				height: 17px 
+				border: 2px solid #969696
+				background: #FFF
+				cursor: pointer 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all
+				svg
+					position: absolute
+					top: 0px
+					left: 0px
+					right: 0px
+					bottom: 0px
+					margin: auto
+					width: 100% 
+					height: 100%
+					fill: #FFF 
+					-webkit-transform: scale(0) 
+					-moz-transform: scale(0) 
+					-ms-transform: scale(0) 
+					-o-transform: scale(0) 
+					transform: scale(0) 
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all     
+		p
+			position: relative
+			width: calc(100% - 17px) 
+			display: inline-block
+			vertical-align: top
+			-webkit-transition: .3s all 
+			-moz-transition: .3s all 
+			-ms-transition: .3s all 
+			-o-transition: .3s all 
+			transition: .3s all 
+			font-weight: 600
+			font-size: 16px 
+			line-height: 26px
+			color: #5D5D5D
+			padding-left: 15px 
+			margin: 0px 
+			a
+				color: #CDB382  
+		label:last-of-type
+			margin-bottom: 0px 
+	.garants_img
+		position: relative
+		width: 100% 
+		max-width: 340px 
+		margin-top: 0px
+		margin-bottom: 20px 
+	.icons_list	
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		-webkit-align-items: center 
+		align-items: center 
+		padding-top: 10px 
+		padding-bottom: 10px 
+		li
+			position: relative
+			line-height: 0px 
+			margin-right: 20px 
+			margin-bottom: 20px 
+			img
+				max-width: 70px
+				max-height: 70px 
+		li:last-of-type
+			margin-right: 0px 
+	.submit_btn
+		position: relative
+		display: block
+		text-decoration: none
+		outline: none
+		width: 100%
+		max-width: 440px 
+		text-align: center
+		font-weight: 600
+		font-size: 20px
+		line-height: 24px
+		color: #FFF
+		background: #CDB382
+		border: none
+		-webkit-border-radius: 10px
+		border-radius: 10px
+		padding: 18px
+		-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		margin: auto
+		margin-bottom: 10px 
+		&:hover
+			background: #B59E73
+			-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+	.or
+		position: relative
+		width: 100% 
+		text-align: center
+		font-weight: normal 
+		font-size: 16.67px
+		line-height: 27px
+		color: #505050
+		margin: 0px
+		a
+			position: relative
+			display: inline-block
+			vertical-align: top
+			color: #CDB382 
+			text-decoration: none
+			&:hover
+				color: #B59E73 
+	.price_table
+		position: relative
+		width: 100% 
+		border: none
+		margin: 0px
+		border-bottom: 1px solid #D3D3D3 
+		margin-bottom: 40px 
+		td
+			position: relative
+			vertical-align: middle
+			text-align: left
+			font-weight: 600
+			font-size: 16.67px 
+			line-height: 27px  
+			color: #505050
+			padding: 0px
+			padding-bottom: 12px 
+			padding-right: 10px  
+			span
+				font-weight: normal 
+				font-size: 13px 
+				margin-right: 10px 
+		td:last-of-type
+			padding-right: 0px
+			padding-left: 10px 
+			text-align: right 
+			font-weight: 600 
+		.color
+			color: #CDB382
+
+
+
+
+.step_section
+	position: relative
+	width: 100% 
+	min-height: 100vh
+	background: #FFF  
+	.container
+		position: relative
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap		
+	.logo
+		position: absolute
+		z-index: 3 
+		top: 55px 
+		left: 0px 
+		display: inline-block
+		vertical-align: top
+		width: 165px
+		height: 33px
+		-webkit-transition: 0s all
+		-moz-transition: 0s all
+		-ms-transition: 0s all
+		-o-transition: 0s all
+		transition: 0s all
+		margin: 0px 
+		svg
+			position: relative
+			display: block 
+			width: 100% 
+			height: 100% 
+	.breadcrumb 
+		width: 100% 
+		margin-bottom: 20px 
+		.breadcrumb-item
+			font-size: 16px
+			line-height: 21px
+			margin-right: 30px 
+			&:after
+				width: 14px 
+				height: 10px 
+				right: -22px 
+			a
+				font-weight: 600 
+				font-size: 16px 
+				line-height: 21px 
+				color: #CDB382 
+		.active
+			color: #000 
+		.breadcrumb-item:last-of-type
+			margin-right: 0px 
+
+.step_form
+	position: relative
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap	
+	-webkit-align-items: flex-start 
+	align-items: flex-start 	
+	-webkit-align-content: flex-start 
+	align-content: flex-start 
+	width: 60%
+	min-height: 100vh 
+	padding: 100px 50px 
+	padding-left: 0px 
+	padding-top: 105px 
+	p
+		position: relative
+		width: auto 
+		font-size: 18px
+		line-height: 22px  
+		color: #505050
+		margin-bottom: 15px 
+	.have_account
+		margin-left: auto 
+		font-weight: normal 
+		font-size: 16px 
+		line-height: 22px 
+		color: #505050
+		.more
+			font-size: 16px 
+			line-height: 22px 
+			position: relative
+			svg
+				width: 15px 
+				height: 12px 
+				top: -1px 
+				margin-left: 10px 
+	label.error
+		position: absolute
+		top: 0px
+		left: 0px
+		z-index: -2
+		opacity: 0
+		font-size: 0
+		line-height: 0     
+	.with_help
+		position: relative
+		width: 100% 
+		.info_popover
+			position: absolute
+			top: 0px
+			bottom: 20px
+			right: 15px
+			margin: auto   
+	.double_inputs
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		-webkit-justify-content: space-between 
+		justify-content: space-between 
+		input, input[type="text"], input[type="email"], input[type="password"], textarea
+			width: calc(50% - 10px)
+		.mod_select
+			width: calc(50% - 10px)
+	.mod_select
+		position: relative
+		outline: none 
+		float: none 
+		width: 100% 
+		height: 54px 
+		border: 1px solid #a7a7a7
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		font-weight: 600
+		font-size: 16px 
+		line-height: 22px  
+		text-align: left
+		color: #B08B45 
+		padding: 15px
+		padding-right: 50px 
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all 
+		margin-bottom: 25px 
+		&.open
+			background: #F9F9F9 
+			&:after
+				-webkit-transform: rotateX(180deg) 
+				-moz-transform: rotateX(180deg) 
+				-ms-transform: rotateX(180deg) 
+				-o-transform: rotateX(180deg) 
+				transform: rotateX(180deg) 
+				top: -10px 
+		&:after
+			content: "" 
+			display: block 
+			position: absolute
+			top: 5px
+			bottom: 0px
+			right: 20px   
+			width: 10px
+			height: 6px
+			margin: auto
+			border: 5px solid transparent
+			border-top: 5px solid #d7c29b
+			-webkit-transform: rotateX(0deg) 
+			-moz-transform: rotateX(0deg) 
+			-ms-transform: rotateX(0deg) 
+			-o-transform: rotateX(0deg) 
+			transform: rotateX(0deg) 
+			-webkit-transition: 0.2s all
+			-moz-transition: 0.2s all
+			-ms-transition: 0.2s all
+			-o-transition: 0.2s all
+			transition: 0.2s all
+		.list
+			width: calc(100% + 2px)
+			left: -1px 
+			border: 1px solid #A7A7A7 
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			list-style: none 
+			max-height: 350px
+			overflow: auto 
+			li
+				padding: 10px 20px
+				text-align: left
+				font-size: 16px 
+				line-height: 21px
+			.selected
+				display: none 
+			.disabled
+				display: none 
+	input[type="text"], input[type="email"], input[type="password"], textarea
+		position: relative
+		outline: none
+		display: block 
+		width: 100%
+		height: 54px
+		border: 1px solid #a7a7a7
+		-webkit-border-radius: 10px
+		border-radius: 10px
+		font-weight: 600
+		font-size: 16px 
+		line-height: 22px  
+		text-align: left
+		color: #B08B45 
+		padding: 15px
+		-webkit-transition: 0.3s all
+		-moz-transition: 0.3s all
+		-ms-transition: 0.3s all
+		-o-transition: 0.3s all
+		transition: 0.3s all
+		margin-bottom: 20px
+		&:focus
+			-webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.3) 
+			box-shadow: 0px 5px 15px rgba(0,0,0,.3) 
+			background: #F9F9F9 
+		&.error
+			border-color: #ff3434 
+	textarea
+		resize: none
+		height: 200px  
+	.checkbox_item
+		position: relative
+		width: 100% 
+		padding: 0px
+		margin-bottom: 20px  
+		label
+			position: relative
+			width: 100% 
+			padding-left: 25px 
+			font-weight: 600
+			font-size: 16px 
+			line-height: 26px
+			color: #CDB382
+			margin-bottom: 5px 
+			input
+				position: absolute
+				top: 0px
+				left: 0px
+				opacity: 0
+				z-index: -2
+				-webkit-transform: scale(0) 
+				-moz-transform: scale(0) 
+				-ms-transform: scale(0) 
+				-o-transform: scale(0) 
+				transform: scale(0)
+			input:checked + .icon
+				background: #CDB382 
+				border-color: #CDB382 
+				svg
+					-webkit-transform: scale(1) 
+					-moz-transform: scale(1) 
+					-ms-transform: scale(1) 
+					-o-transform: scale(1) 
+					transform: scale(1) 
+			.icon
+				position: absolute
+				top: 4px
+				left: 0px
+				width: 16px 
+				height: 16px 
+				border: 2px solid #969696
+				background: #FFF
+				cursor: pointer 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all
+				svg
+					position: absolute
+					top: 0px
+					left: 0px
+					right: 0px
+					bottom: 0px
+					margin: auto
+					width: 100% 
+					height: 100%
+					fill: #FFF 
+					-webkit-transform: scale(0) 
+					-moz-transform: scale(0) 
+					-ms-transform: scale(0) 
+					-o-transform: scale(0) 
+					transform: scale(0) 
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all     
+			span
+				position: relative
+				display: inline-block
+				vertical-align: top
+				color: #5D5D5D  
+				cursor: pointer 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+				&:hover
+					color: #5D5D5D  
+		label:last-of-type
+			margin-bottom: 0px 
+	::placeholder 
+		color: #A4A4A4 
+	:-ms-input-placeholder
+		color: #A4A4A4 
+	::-ms-input-placeholder
+		color: #A4A4A4 
+	.submit_btn
+		position: relative
+		display: block
+		text-decoration: none
+		outline: none
+		width: 100%
+		text-align: center
+		font-weight: 600
+		font-size: 20px
+		line-height: 24px
+		color: #FFF
+		background: #CDB382
+		border: none
+		-webkit-border-radius: 10px
+		border-radius: 10px
+		padding: 18px
+		-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		margin: auto
+		margin-top: 10px 
+		&:hover
+			background: #B59E73
+			-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+	.return_btn
+		position: relative
+		text-align: center
+		font-weight: bold
+		width: auto
+		font-size: 16.67px
+		line-height: 20px
+		padding: 10px 20px
+		border: 2px solid #CDB382
+		-webkit-border-radius: 7px
+		border-radius: 7px
+		background: none
+		color: #cdb382
+		text-decoration: none
+		border-color: #505050
+		color: #505050
+		&:hover
+			background: #e6e7e8
+			color: #505050
+	.btns_block
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		-webkit-align-items: center 
+		align-items: center 
+		.submit_btn
+			margin: 0px 
+			width: auto 
+			margin-left: auto
+
+
+.step_cart
+	position: relative
+	width: 40% 
+	background: #CDB382 
+	padding: 55px 50px
+	padding-right: 1px  
+	&:after
+		content: "" 
+		display: block 
+		width: 1000%
+		height: 100% 
+		position: absolute
+		top: 0px
+		left: 99.9%   
+		background: #CDB382 
+	.show_carts
+		position: relative
+		width: 100% 
+		display: none 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		-webkit-align-items: center 
+		align-items: center 
+		text-align: left
+		padding: 15px 0px
+		font-weight: 600
+		font-size: 21px
+		line-height: 27px
+		color: #FFF 
+		background: none
+		border: none
+		display: none 
+		&.active
+			span
+				&:before
+					-webkit-transform: rotateX(180deg) 
+					-moz-transform: rotateX(180deg) 
+					-ms-transform: rotateX(180deg) 
+					-o-transform: rotateX(180deg) 
+					transform: rotateX(180deg) 
+					top: -6px 
+		svg
+			position: relative
+			display: inline-block
+			vertical-align: top
+			width: 24px 
+			height: 24px
+			fill: #FFF
+			margin-right: 15px 
+		span
+			position: relative
+			display: inline-block
+			vertical-align: top
+			width: auto
+			&:before
+				content: ""
+				display: block
+				width: 10px
+				height: 6px
+				position: absolute
+				top: 6px
+				bottom: 0px
+				right: -20px
+				margin: auto
+				border: 5px solid transparent
+				border-top: 5px solid #FFF
+				-webkit-transition: 0.2s all
+				-moz-transition: 0.2s all
+				-ms-transition: 0.2s all
+				-o-transition: 0.2s all
+				transition: 0s all
+		.price
+			margin-left: auto  
+			&:before
+				display: none   
+	.wrapper
+		position: relative
+		width: 100% 
+	.cart_item
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		-webkit-align-items: center 
+		align-items: center 
+		margin-bottom: 25px 
+		.item_img
+			position: relative
+			display: block
+			width: 64px
+			height: 64px 
+			img
+				position: absolute
+				top: 0px
+				left: 0px
+				right: 0px
+				bottom: 0px
+				margin: auto
+				max-width: 100% 
+				max-height: 100%   
+				-webkit-border-radius: 5px 
+				border-radius: 5px 
+			.quantity
+				position: absolute
+				z-index: 2
+				top: -8px 
+				right: -8px 
+				min-width: 20px 
+				height: 20px 
+				width: auto 
+				-webkit-border-radius: 50em 
+				border-radius: 50em 
+				background: rgba(80,80,80,.9) 
+				font-weight: 600
+				font-size: 14px 
+				line-height: 20px
+				padding: 0px 4px 
+				text-align: center 
+				color: #FFF 
+		.item_title
+			position: relative
+			font-weight: 600
+			font-size: 16.67px
+			line-height: 21px
+			color: #FFF 
+			margin: 0px
+			padding: 5px 20px
+			padding-right: 0px 
+			width: calc(60% - 32px)
+		.item_price
+			position: relative
+			font-weight: 600
+			font-size: 16.67px
+			line-height: 21px
+			color: #FFF 
+			margin: 0px
+			padding: 5px 0px 
+			padding-left: 15px 
+			width: calc(40% - 32px)
+			text-align: right
+	.divider
+		position: relative
+		width: 100% 
+		height: 1px 
+		background: #FFF 
+		display: block 
+		margin-bottom: 20px 
+	.subtotal_table
+		position: relative
+		width: 100% 
+		border: none
+		margin-bottom: 20px 
+		td
+			position: relative
+			font-weight: normal 
+			font-size: 16px
+			line-height: 21px
+			vertical-align: middle
+			text-align: left
+			color: #FFF   
+			padding: 5px 0px 
+		td:nth-of-type(2)
+			text-align: right
+			font-size: 18px 
+		.price
+			font-weight: 600
+			font-size: 21px  
+
+		.next
+			font-size: 14px 
+	.total_table
+		position: relative
+		width: 100% 
+		border: none
+		margin-bottom: 0px 
+		td
+			position: relative
+			font-weight: normal 
+			font-size: 18px
+			line-height: 21px
+			vertical-align: middle
+			text-align: left
+			color: #FFF   
+			padding: 5px 0px 
+		td:nth-of-type(2)
+			text-align: right
+			font-weight: 600 
+			font-size: 24px 
+			
+
+
+
+.step_section
+	.contacts_table
+		position: relative
+		width: 100% 
+		border: none
+		margin-bottom: 40px 
+		td
+			position: relative
+			vertical-align: middle
+			text-align: left
+			font-weight: normal
+			font-size: 16px 
+			line-height: 21px 
+			padding: 15px 0px
+			border-bottom: 1px solid #d9d9d9
+			a
+				font-weight: 600 
+			strong
+				font-weight: bold 
+		td:first-of-type
+			color: #A7A7A7 
+			width: 120px
+		td:nth-of-type(2)
+			padding-left: 15px 
+			padding-right: 15px  
+		td:last-of-type
+			text-align: right
+			width: 100px 
+		tr:first-of-type
+			td
+				border-top: 1px solid #d9d9d9   
+	.different_address
+		position: relative
+		width: 100% 
+		display: none 
+		padding: 0px
+		padding-top: 20px  
+		.with_help
+			input
+				margin-bottom: 0px 
+			.info_popover
+				bottom: 0px
+				
+
+
+
+
+.shipping_methods
+	position: relative
+	width: 100% 
+	margin-bottom: 40px 
+	.radio_item
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: nowrap
+		flex-wrap: nowrap	
+		-webkit-align-items: center 
+		align-items: center 
+		padding: 15px 0px 
+		cursor: pointer
+		border-bottom: 1px solid #d9d9d9
+		input
+			position: absolute
+			top: 0px
+			left: 0px
+			z-index: -2
+			opacity: 0
+			width: 0px
+			height: 0px
+			padding: 0px       
+		input:checked + .icon
+			background: #CDB382  
+			&:before
+				-webkit-transform: scale(1) 
+				-moz-transform: scale(1) 
+				-ms-transform: scale(1) 
+				-o-transform: scale(1) 
+				transform: scale(1) 
+		.icon
+			position: relative
+			display: block 
+			width: 24px 
+			height: 24px 
+			-webkit-border-radius: 50% 
+			border-radius: 50% 
+			background: #ddd  
+			-webkit-transition: .3s all 
+			-moz-transition: .3s all 
+			-ms-transition: .3s all 
+			-o-transition: .3s all 
+			transition: .3s all 
+			&:before
+				content: "" 
+				display: block 
+				width: 14px 
+				height: 14px 
+				position: absolute
+				top: 0px
+				left: 0px
+				right: 0px
+				bottom: 0px
+				margin: auto    
+				background: #FFF 
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+				-webkit-transform: scale(0) 
+				-moz-transform: scale(0) 
+				-ms-transform: scale(0) 
+				-o-transform: scale(0) 
+				transform: scale(0) 
+		.name
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap	
+			-webkit-align-items: center 
+			align-items: center 
+			max-width: calc(100% - 80px) 
+			padding-left: 20px 
+			padding-right: 10px 
+			margin: 0px
+			font-size: 16.67px
+			line-height: 21px
+			font-weight: normal 
+			span
+				display: block 
+				font-size: 14px 
+				color: #A7A7A7 
+		img
+			max-width: 148px
+			max-height: 26px
+			margin: auto
+		.price
+			font-weight: 600
+			font-size: 18px 
+			line-height: 21px
+			margin: 0px
+			margin-left: auto    
+	.radio_item:first-of-type
+		border-top: 1px solid #d9d9d9
+
+
+
+.step_form .payment_info
+	position: relative
+	width: 100% 
+	font-weight: normal 
+	font-size: 16px 
+	margin-bottom: 20px 
+	margin-top: -10px 
+
+
+
+
+.payment_methods
+	position: relative
+	width: 100% 
+	margin-bottom: 40px 
+	.radio_item
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: nowrap
+		flex-wrap: nowrap	
+		-webkit-align-items: center 
+		align-items: center 
+		padding: 15px 0px 
+		cursor: pointer
+		input
+			position: absolute
+			top: 0px
+			left: 0px
+			z-index: -2
+			opacity: 0
+			width: 0px
+			height: 0px
+			padding: 0px       
+		input:checked + .icon
+			background: #CDB382  
+			&:before
+				-webkit-transform: scale(1) 
+				-moz-transform: scale(1) 
+				-ms-transform: scale(1) 
+				-o-transform: scale(1) 
+				transform: scale(1) 
+		.icon
+			position: relative
+			display: block 
+			width: 24px 
+			height: 24px 
+			-webkit-border-radius: 50% 
+			border-radius: 50% 
+			background: #ddd  
+			-webkit-transition: .3s all 
+			-moz-transition: .3s all 
+			-ms-transition: .3s all 
+			-o-transition: .3s all 
+			transition: .3s all 
+			&:before
+				content: "" 
+				display: block 
+				width: 14px 
+				height: 14px 
+				position: absolute
+				top: 0px
+				left: 0px
+				right: 0px
+				bottom: 0px
+				margin: auto    
+				background: #FFF 
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+				-webkit-transform: scale(0) 
+				-moz-transform: scale(0) 
+				-ms-transform: scale(0) 
+				-o-transform: scale(0) 
+				transform: scale(0) 
+		.name
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap	
+			-webkit-align-items: center 
+			align-items: center 
+			max-width: calc(100% - 80px) 
+			padding-left: 20px 
+			padding-right: 10px 
+			margin: 0px
+			font-weight: 600 
+			font-size: 16.67px
+			line-height: 21px
+			span
+				display: block 
+				font-size: 14px 
+				color: #A7A7A7 
+		img
+			max-width: 148px
+			max-height: 36px
+			margin: auto
+		.price
+			font-weight: 600
+			font-size: 18px 
+			line-height: 21px
+			margin: 0px
+			margin-left: auto    
+		input:checked ~ .info_block
+			display: block 
+		.icons_list
+			position: relative
+			width: auto 
+			margin-left: auto 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap	
+			-webkit-align-items: center 
+			align-items: center 
+			li
+				position: relative
+				height: 24px 
+				margin-right: 10px 
+				font-weight: normal 
+				font-size: 12px 
+				line-height: 14px 
+				margin-top: auto 
+				display: -webkit-box
+				display: -moz-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				-ms-flex-wrap: wrap
+				flex-wrap: wrap	
+				-webkit-align-items: flex-end
+				align-items: flex-end
+				img
+					width: 38px 
+					max-height: 24px 
+			li:last-of-type
+				margin-right: 0px 
+	.item_block:first-of-type
+		border-top: 1px solid #d9d9d9
+	.item_block
+		position: relative
+		width: 100% 
+		border-bottom: 1px solid #d9d9d9
+		&.active
+			-webkit-box-shadow: inset 0px -10px 15px -15px rgba(0,0,0,.2) 
+			box-shadow: inset 0px -10px 15px -15px rgba(0,0,0,.2) 
+			.item_info
+				display: block 
+		.item_info
+			position: relative
+			padding: 25px
+			text-align: center  
+			display: none 
+			img
+				position: relative
+				display: block 
+				width: 100% 
+				max-width: 163px 
+				margin: auto
+				margin-bottom: 16px 
+			p
+				position: relative
+				max-width: 400px 
+				width: 100% 
+				font-weight: normal 
+				font-size: 15px
+				line-height: 21px
+				margin: 0px auto
+				color: #A7A7A7 
+				   
+
+.shipping_methods .radio_item .name span
+	width: 100% 
+	
+.step_cart .cart_item .item_title 
+	span
+		display: block 
+		width: 100% 
+		color: #DDD
+	.price
+		color: #FFF 
+
+.step_section .breadcrumb
+	margin-bottom: 30px 
+
+.step_form
+	padding-top: 120px 
+	padding-bottom: 120px 
+	.btns_block
+		padding-top: 30px 
+	.form_footer
+		position: absolute
+		left: 0px
+		bottom: 20px  
+		width: 100% 
+		max-width: 652px 
+		list-style: none
+		margin: 0px
+		padding-top: 20px 
+		border-top: 1px solid #d3d3d3
+		margin-top: auto 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center
+		align-items: center
+		li
+			position: relative
+			width: auto 
+			font-weight: normal 
+			font-size: 16.67px
+			line-height: 21px
+			color: #CDB382 
+			margin: 0px 
+			margin-right: 20px 
+			a
+				position: relative
+				display: inline-block
+				vertical-align: top
+				font-weight: normal 
+				font-size: 16.67px
+				line-height: 21px
+				color: #CDB382 
+				&:hover
+					color: #B59E73 
+		li:last-of-type
+			margin-right: 0px 
+	
+
+.shipping_methods
+	margin-bottom: 20px 
+
+
+
+
+
+.catalog_section
+	position: relative
+	width: 100% 
+	padding-top: 60px 
+	padding-bottom: 70px 
+	background: #F8F8F8 
+	.mid_text
+		margin-bottom: 75px
+	.wrapper
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+	.catalog_item
+		position: relative
+		width: calc(25% - 30px)
+		padding: 25px
+		background: #FFF 
+		-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 5px 10px rgba(0,0,0,.2)  
+		text-align: center
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		padding-bottom: 165px 
+		margin: 0px
+		margin-right: 40px
+		margin-bottom: 80px   
+		.item_img
+			position: relative
+			display: block 
+			top: auto
+			left: auto
+			margin: auto
+			width: 100%
+			max-width: 251px
+			margin: auto
+			margin-bottom: 45px
+		.name
+			position: relative
+			display: inline-block
+			vertical-align: top
+			font-size: 20.83px
+			line-height: 27px
+			color: #505050 
+			min-height: 81px 
+			text-transform: uppercase
+			margin-bottom: 20px 
+			span
+				position: relative
+				display: block 
+				text-align: center
+				font-size: 16.67px
+				line-height: 27px 
+				color: #CDB382 
+				text-transform: none
+		.subname
+			position: relative
+			width: 100% 
+			text-align: center
+			font-weight: normal 
+			font-size: 16.67px
+			line-height: 27px
+			margin-bottom: 20px   
+			color: #CDB382 
+		.btns_block
+			position: absolute
+			left: 0px
+			bottom: 0px
+			padding: 25px 30px
+			padding-top: 0px    
+			width: 100% 
+			text-align: center
+		.price, .old_price
+			position: relative
+			display: inline-block
+			vertical-align: top
+			width: auto
+			font-weight: 600
+			font-size: 16.67px
+			line-height: 21px   
+			margin: 0px 12px 
+			margin-bottom: 20px  
+		.old_price
+			opacity: .6
+			text-decoration: line-through  
+		.add_to_card, .more, .sold_out
+			position: relative
+			display: block
+			width: 100% 
+			font-weight: bold 
+			font-size: 16.67px
+			line-height: 20px
+			color: #FFF 
+			text-align: center
+			padding: 7px 15px
+			background: #CDB382 
+			border: 2px solid #cdb382
+			-webkit-border-radius: 10px 
+			border-radius: 10px     
+			-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+			box-shadow: 0px 5px 10px rgba(0,0,0,.2)  
+			margin-bottom: 20px 
+			&:hover
+				background: #B59E73
+				border-color: #B59E73
+				color: #FFF
+				-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+				box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+		.more
+			margin-bottom: 0px 
+			-webkit-box-shadow: none 
+			box-shadow: none 
+			background: none 
+			color: #CDB382 
+			&:hover
+				background: #f3eee3
+				color: #CDB382
+				-webkit-box-shadow: none 
+				box-shadow: none 
+		.sold_out	
+			background: #9F9F9F 
+			border-color: #9F9F9F
+			&:hover
+				-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2) 
+				box-shadow: 0px 5px 10px rgba(0,0,0,.2)  
+				background: #9F9F9F 
+				border-color: #9F9F9F
+		.restock
+			position: relative
+			width: 100% 
+			display: block 
+			font-weight: normal
+			font-size: 16.67px
+			line-height: 20px
+			color: #505050
+			margin: 0px
+			border: 2px solid #9F9F9F   
+			-webkit-border-radius: 10px 
+			border-radius: 10px   
+			padding: 7px 15px
+			text-align: center
+			strong
+				font-weight: bold 
+				color: #CDB382 
+		.green_billet, .gray_billet, .red_billet
+			position: absolute
+			display: block 
+			text-align: center
+			bottom: 100% 
+			left: 16px 
+			right: 16px
+			min-height: 30px 
+			-webkit-border-radius: 10px 10px 0px 0px 
+			border-radius: 10px 10px 0px 0px  
+			background: #8BD178 
+			font-weight: 600
+			font-size: 16.67px
+			line-height: 20px
+			padding: 5px 10px
+			color: #FFF     
+		.gray_billet
+			background: #939393 
+		.red_billet
+			background: #D17878 
+	.catalog_item:nth-of-type(4n+4)
+		margin-right: 0px 
+	.coming_soon
+		padding: 0px
+		background: #E9E9E9 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-align-items: center 
+		align-items: center 
+		p
+			position: relative
+			width: 100% 
+			text-align: center
+			font-weight: 900
+			font-size: 25px 
+			line-height: 27px
+			text-transform: uppercase
+			color: #a0a0a0 
+			margin: 0px   
+			padding: 25px 15px
+			background: #f1f1f1  
+		
+
+
+
+
+
+
+
+.cart_modal.fade
+	&.show
+		.modal-dialog
+			right: 0px 
+	.modal-dialog
+		width: 100% 
+		max-width: 500px
+		margin: 0px
+		margin-left: auto   
+		-webkit-transform: translate3d(0%, 0, 0)
+		-ms-transform: translate3d(0%, 0, 0)
+		-o-transform: translate3d(0%, 0, 0)
+		transform: translate3d(0%, 0, 0)
+		right: -500px
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out
+		-moz-transition: opacity 0.3s linear, right 0.3s ease-out
+		-o-transition: opacity 0.3s linear, right 0.3s ease-out
+		transition: opacity 0.3s linear, right 0.3s ease-out
+		.modal-content
+			position: relative
+			width: 100% 
+			min-height: 100vh 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-flex-direction: column
+			flex-direction: column
+			border: none
+			-webkit-box-shadow: none 
+			box-shadow: none  
+			background: #FFF 
+			-webkit-border-radius: 0px 
+			border-radius: 0px 
+			&:before
+				content: "" 
+				display: block
+				width: 100% 
+				height: 100% 
+				position: absolute
+				top: 0px
+				left: 99.9%
+				background: #FFF  
+		.close
+			position: absolute
+			top: 23px
+			right: 22px
+			border: none
+			z-index: 2
+			width: 25px
+			height: 29px
+			font-weight: normal
+			font-size: 29px
+			line-height: 29px
+			color: #A7A7A7
+			text-align: center
+			-webkit-transition: 0.3s all
+			-moz-transition: 0.3s all
+			-ms-transition: 0.3s all
+			-o-transition: 0.3s all
+			transition: 0.3s all
+			background: none
+			padding: 0px
+			margin: 0px 
+			&:hover
+				color: #222 
+		.modal-header
+			position: relative
+			width: 100% 
+			border: none 
+			background: #F5F5F5 
+			padding: 20px 30px
+			text-align: left
+			&:before
+				content: "" 
+				display: block
+				width: 100% 
+				height: 100% 
+				position: absolute
+				top: 0px
+				left: 99.9%
+				background: #F5F5F5  
+			.modal_title
+				position: relative
+				width: 100% 
+				font-weight: 600
+				font-size: 29px 
+				line-height: 1.2
+				color: #343434 
+				margin: 0px   
+		.modal-body
+			position: relative
+			width: 100% 
+			padding: 20px 30px 
+		.cart_item
+			position: relative
+			width: 100% 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap	
+			-webkit-align-items: center 
+			align-items: center 
+			padding: 19px 0px 
+			border-bottom: 1px solid #d3d3d3 
+			.item_img
+				position: relative
+				display: block
+				width: 76px
+				height: 76px 
+				img
+					position: absolute
+					top: 0px
+					left: 0px
+					right: 0px
+					bottom: 0px
+					margin: auto
+					max-width: 100% 
+					max-height: 100%   
+					-webkit-border-radius: 0px 
+					border-radius: 0px 
+				.quantity
+					position: absolute
+					z-index: 2
+					top: -8px 
+					right: -8px 
+					min-width: 20px 
+					height: 20px 
+					-webkit-border-radius: 50em 
+					border-radius: 50em 
+					background: rgba(80,80,80,.9) 
+					font-weight: 600
+					font-size: 14px 
+					line-height: 20px
+					padding: 0px 4px 
+					text-align: center 
+					color: #505050 
+			.item_title
+				position: relative
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 27px
+				color: #505050 
+				margin: 0px
+				padding: 0px 20px
+				padding-right: 0px 
+				width: calc(70% - 38px)
+				span
+					opacity: .6
+					display: block 
+					width: 100% 
+				.price
+					opacity: 1
+					color: #CDB382  
+			.item_price
+				position: relative
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 27px
+				color: #505050
+				margin: 0px
+				padding: 0px 
+				padding-left: 10px 
+				width: calc(30% - 38px)
+				text-align: right
+				margin-top: auto 
+			.del
+				position: absolute
+				top: 23px
+				right: 0px
+				border: none
+				z-index: 2
+				width: 15px
+				height: 17px
+				font-weight: normal
+				font-size: 16.67px
+				line-height: 17px
+				color: #A7A7A7
+				text-align: center
+				border: none
+				background: none
+				padding: 0px   
+				-webkit-transition: 0.3s all
+				-moz-transition: 0.3s all
+				-ms-transition: 0.3s all
+				-o-transition: 0.3s all
+				transition: 0.3s all
+				background: none
+				padding: 0px
+				&:hover
+					color: #222 
+		.modal-footer
+			position: relative
+			width: 100% 
+			padding: 25px 30px 
+			border: none 
+			text-align: center
+		.price_table
+			position: relative
+			width: 100% 
+			border: none
+			margin: 0px
+			border-bottom: 1px solid #D3D3D3 
+			margin-bottom: 40px 
+			td
+				position: relative
+				vertical-align: middle
+				text-align: left
+				font-weight: 600
+				font-size: 16.67px 
+				line-height: 27px  
+				color: #505050
+				padding: 0px
+				padding-bottom: 12px 
+				padding-right: 10px  
+				span
+					font-weight: normal 
+					font-size: 13px 
+					margin-right: 10px 
+			td:last-of-type
+				padding-right: 0px
+				padding-left: 10px 
+				text-align: right 
+				font-weight: 600 
+			.color
+				color: #CDB382
+		.submit_btn
+			position: relative
+			display: block
+			text-decoration: none
+			outline: none
+			width: 100%
+			max-width: 440px 
+			text-align: center
+			font-weight: 600
+			font-size: 20px
+			line-height: 24px
+			color: #FFF
+			background: #CDB382
+			border: none
+			-webkit-border-radius: 10px
+			border-radius: 10px
+			padding: 18px
+			-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+			margin: auto
+			margin-bottom: 10px 
+			&:hover
+				background: #B59E73
+				-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+				box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+		.or
+			position: relative
+			width: 100% 
+			text-align: center
+			font-weight: normal 
+			font-size: 16.67px
+			line-height: 27px
+			color: #505050
+			margin: 0px
+			a
+				position: relative
+				display: inline-block
+				vertical-align: top
+				color: #CDB382 
+				text-decoration: none
+				&:hover
+					color: #B59E73 
+
+
+.step_cart .total_table td span
+	font-size: 16px 
+
+
+
+
+
+
+.policy_modal
+	.modal-dialog
+		width: 100% 
+		max-width: 900px 
+		margin: auto
+		margin-top: 5%
+		margin-bottom: 5% 
+		.modal-content
+			position: relative
+			width: 100% 
+			border: none
+			background: #FFF 
+			-webkit-border-radius: 10px 
+			border-radius: 10px  
+			.close
+				position: absolute
+				top: 27px
+				right: 22px
+				border: none
+				z-index: 2
+				width: 25px
+				height: 29px
+				font-weight: normal
+				font-size: 29px
+				line-height: 29px
+				color: #A7A7A7
+				text-align: center
+				-webkit-transition: 0.3s all
+				-moz-transition: 0.3s all
+				-ms-transition: 0.3s all
+				-o-transition: 0.3s all
+				transition: 0.3s all
+				background: none
+				padding: 0px
+				margin: 0px 
+				&:hover
+					color: #222 
+			.modal-header
+				position: relative
+				width: 100% 
+				border: none 
+				background: #FFF
+				padding: 25px 30px
+				text-align: left
+				-webkit-border-radius: 10px 10px 0px 0px 
+				border-radius: 10px 10px 0px 0px 
+				border-bottom: 1px solid #d3d3d3
+				.modal_title
+					position: relative
+					width: 100% 
+					font-weight: 600
+					font-size: 29px 
+					line-height: 1.2
+					color: #343434 
+					margin: 0px   
+			.modal-body
+				position: relative
+				width: 100% 
+				padding: 25px 30px
+				p
+					font-weight: normal 
+					font-size: 16.67px
+					line-height: 21px
+					color: #343434 
+					margin-bottom: 15px 
+				a
+					position: relative
+					display: inline-block
+					vertical-align: top
+					font-weight: normal 
+					font-size: 16.67px
+					line-height: 21px
+				h1, h2, h3, h4, h5
+					font-weight: 600 
+					font-size: 40px 
+					line-height: 1.2 
+					color: #343434 
+					margin-bottom: 20px 
+				h2
+					font-size: 28px 
+				h3
+					font-size: 24px 
+				h4
+					font-size: 22px 
+				h5
+					font-size: 20px 
+				ul
+					position: relative
+					width: 100% 
+					list-style: none
+					margin-bottom: 15px 
+					li
+						position: relative
+						width: 100% 
+						font-weight: normal 
+						font-size: 16.67px
+						line-height: 21px
+						color: #343434 
+						margin-bottom: 15px 
+					li:last-of-type
+						margin-bottom: 0px 
+
+
+
+
+
+.product_main_section 
+	.container
+		padding-bottom: 35px 
+	.add_card
+		-webkit-align-items: flex-end 
+		align-items: flex-end 
+		padding-top: 40px 
+	.sold_out
+		padding-top: 40px 
+	.bottom_info
+		font-weight: normal
+		font-style: italic 
+		font-size: 16.67px
+		line-height: 21px
+		color: #FFF 
+		opacity: .6
+		margin: 0px   
+		margin-top: 35px  
+		.mobile_br
+			display: none
+
+
+
+.thanks_section
+	.login_block
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		-webkit-align-items: center 
+		align-items: center 
+		-webkit-justify-content: space-between 
+		justify-content: space-between
+		border-bottom: 1px solid #d9d9d9
+		padding-top: 15px 
+		margin-bottom: 25px 
+		.submit_btn
+			width: 120px 
+			padding: 15px 
+			margin: 0px 
+			margin-bottom: 25px 
+		input
+			position: relative
+			width: calc(50% - 80px) 
+			margin-bottom: 25px 
+	.wrap
+		position: relative
+		width: 100% 
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap	
+		border-bottom: 1px solid #d9d9d9
+		padding-bottom: 20px 
+		margin-bottom: 25px 
+		p
+			width: 100% 
+		h3, h4, h5
+			width: 100% 
+		.col
+			position: relative
+			width: 50%
+			-ms-flex-preferred-size: auto
+			flex-basis: auto
+			-ms-flex-positive: 0
+			flex-grow: 0	
+			padding: 0px
+		.col:first-of-type
+			padding-right: 10px 
+		.col:last-of-type
+			padding-left: 10px 	
+	.last_wrap
+		margin-bottom: 20px 
+		h4
+			margin-bottom: 20px 
+	h3, h4, h5
+		position: relative
+		width: auto
+		font-weight: 600 
+		font-size: 21px
+		line-height: 27px
+		color: #505050
+		margin-bottom: 5px
+	h5
+		font-size: 16.67px
+		margin-bottom: 10px  
+	p
+		position: relative
+		width: 100%
+		font-weight: normal
+		font-size: 15px
+		line-height: 21px 
+		margin-bottom: 5px
+	ul
+		position: relative
+		width: 100% 
+		list-style: none
+		margin-bottom: 25px 
+		li
+			position: relative
+			width: 100% 
+			font-weight: normal 
+			font-size: 15px 
+			line-height: 21px
+			color: #505050
+			margin-bottom: 5px 
+			img
+				position: relative
+				top: -1px 
+				display: inline-block
+				vertical-align: middle
+				max-width: 45px 
+				margin-right: 4px 
+			strong
+				font-weight: 600 
+		li:last-of-type
+			margin-bottom: 0px 
+	ul:last-of-type
+		margin-bottom: 5px 
+	.hidden_text
+		height: 1em
+		border-radius: 4px
+		border: 1px solid transparent
+		-webkit-box-sizing: border-box
+		box-sizing: border-box
+		background-color: #e6e6e6
+	.log_info
+		position: relative
+		width: 100%
+		font-weight: normal
+		font-size: 15px
+		margin-bottom: 5px
+		margin-top: -10px
+	a.submit_btn
+		&:hover
+			color: #FFF 
+	.btns_block
+		.help
+			position: relative
+			width: auto 
+			font-weight: 600 
+			font-size: 16.67px
+			line-height: 21px
+			margin: 0px
+	.thank_block
+		position: relative
+		width: 100% 
+		margin-bottom: 25px 
+		border-bottom: 1px solid #d9d9d9
+		padding-bottom: 20px
+		margin-bottom: 25px
+		svg
+			position: absolute
+			top: 4px
+			left: -65px
+			margin: auto   
+			display: block 
+			width: 48px 
+			height: 48px 
+			-webkit-border-radius: 50% 
+			border-radius: 50% 
+			border: 2px solid #CDB382
+			padding: 10px 
+			fill: #CDB382
+		h3
+			font-size: 27px 
+	#map
+		position: relative
+		width: 100% 
+		height: 260px 
+		margin-bottom: 25px 
+		.gm-svpc, .gm-style-mtc, .gm-style-mtc
+			display: none !important
+		.balon_content
+			text-align: center
+			min-width: 180px 
+			p
+				margin-bottom: 0px 
+
+
+
+.step_form 
+	.return_btn
+		border: none
+		background: none
+		padding: 0px   
+		&:hover
+			background: none 
+			color: #CDB382 
+			svg
+				left: -10px 
+				fill: #CDB382
+		svg
+			position: relative
+			top: -1px 
+			left: 0px
+			display: inline-block
+			vertical-align: middle
+			width: 18px
+			height: 15px
+			margin-left: 15px
+			fill: #505050
+			-webkit-transition: 0.3s all
+			-moz-transition: 0.3s all
+			-ms-transition: 0.3s all
+			-o-transition: 0.3s all
+			transition: 0.3s all
+			-webkit-transform: rotate(180deg) 
+			-moz-transform: rotate(180deg) 
+			-ms-transform: rotate(180deg) 
+			-o-transform: rotate(180deg) 
+			transform: rotate(180deg) 
+			margin-right: 10px 
+
+
+
+.catalog_section .catalog_item .img_block
+	position: relative
+	display: block
+	top: auto
+	left: auto
+	margin: auto
+	width: 100%
+	max-width: 251px
+	height: 441px 
+	margin: auto
+	margin-bottom: 45px
+	.item_img
+		position: absolute
+		top: 0px
+		left: 0px
+		right: 0px
+		bottom: 0px
+		margin: auto
+		max-width: 100% 
+		max-height: 100%     
+
+.step_cart .subtotal_table td strong
+	font-weight: 600
+
+
