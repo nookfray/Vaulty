@@ -5767,4 +5767,28 @@
 		margin: auto
 		width: 77px   
 
+.main_form 
+	.checkbox_item
+		label.error
+			position: absolute
+			top: 0px
+			left: 0px
+			opacity: 0
+			z-index: -2
+			width: 0px
+			height: 0px      
+		label input
 
+
+.main_form .checkbox_item label 
+	input:checked + label + .icon
+		background: #CDB382
+		border-color: #CDB382
+		svg
+			-webkit-transform: scale(1)
+			-moz-transform: scale(1)
+			-ms-transform: scale(1)
+			-o-transform: scale(1)
+			transform: scale(1)
+	input.error + label + .icon
+		border-color: #FF3434 

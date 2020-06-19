@@ -525,7 +525,14 @@
 	<script>
 		window.onload = function() {
 			setTimeout(function(){
+
+				// показываем окно
 				$('#thanks_window').fadeIn();
+				// и скрываем через 6сек
+				setTimeout(function(){
+					$('#thanks_window').fadeOut();
+				}, 6000);
+
 			}, 500); 
 		};
 	</script>
