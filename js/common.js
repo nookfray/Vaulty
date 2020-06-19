@@ -183,11 +183,6 @@ $(document).ready(function() {
 	});
 
 
-	// PHONE INPUT MASK
-	$(function(){
-		$("input[name='pin']").mask('+7 (___) ___ - __ - __');
-	});
-
 
 	// STEPS SLIDER
 	var swiperSteps = new Swiper('.steps_slider', {
@@ -441,22 +436,22 @@ $(document).ready(function() {
 			},
 			messages:{
 				name: {
-					required: ""
+					required: "This field is required."
 				},
 				tel: {
-					required: "",
-					minlength: ""
+					required: "This field is required.",
+					minlength: "Please enter at least 8 characters."
 				},
 				email: {
-					required: "",
-					email: ""
+					required: "This field is required.",
+					email: "Please enter a valid email address."
 				},
 				emailre: {
-					required: "",
-					email: ""
+					required: "This field is required.",
+					email: "Please enter a valid email address."
 				},
 				country: {
-					required: ""
+					required: "This field is required."
 				},
 			},
 			errorPlacement: function(error, element) {
@@ -464,7 +459,12 @@ $(document).ready(function() {
 					error.insertAfter(element.next('.nice-select'));
 				} else {
 					error.insertAfter(element);
-				}
+				};
+				if (element.is('.key_item input')) {
+					error.insertAfter(element.parent());
+				} else {
+					error.insertAfter(element);
+				};
 			},
 			submitHandler: function(form) {
 				$.ajax({
@@ -506,22 +506,22 @@ $(document).ready(function() {
 			},
 			messages:{
 				name: {
-					required: ""
+					required: "This field is required."
 				},
 				tel: {
-					required: "",
-					minlength: ""
+					required: "This field is required.",
+					minlength: "Please enter at least 8 characters."
 				},
 				email: {
-					required: "",
-					email: ""
+					required: "This field is required.",
+					email: "Please enter a valid email address."
 				},
 				emailre: {
-					required: "",
-					email: ""
+					required: "This field is required.",
+					email: "Please enter a valid email address."
 				},
 				country: {
-					required: ""
+					required: "This field is required."
 				},
 			},
 			errorPlacement: function(error, element) {
@@ -543,5 +543,12 @@ $(document).ready(function() {
 			}
 		});
 	});
+
+
+	// CLOSE THANKS WINDOW
+	$(".thanks_window .close").click(function() {
+		$(".thanks_window").fadeOut();
+	});
+
 
 });

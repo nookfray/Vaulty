@@ -32,24 +32,32 @@
 					<input type="text" name="email" required placeholder="Email">
 					<p>Shipping address</p>
 					<div class="double_inputs">
-						<input type="text" name="firstname" placeholder="First name" required>
-						<input type="text" name="lastname" placeholder="Last name" required>
+						<div class="item">
+							<input type="text" name="firstname" placeholder="First name" required>
+						</div>
+						<div class="item">
+							<input type="text" name="lastname" placeholder="Last name" required>
+						</div>
 					</div>
 					<input type="text" name="company" placeholder="Company (optional)">
 					<input type="text" name="address" required placeholder="Address">
-					<input type="text" name="apart" placeholder="Apartment, suite, etc. (optional)">
+					<input type="text" name="apart" required placeholder="Apartment, suite, etc. (optional)">
 					<input type="text" name="city" required placeholder="City">
 					<div class="double_inputs">
-						<select name="country" class="mod_select">
-							<option value="United States" selected>United States</option>
-							<option value="Nigeria">Nigeria</option>
-							<option value="Australia">Australia</option>
-							<option value="Brazil">Brazil</option>
-							<option value="Afghanistan">Afghanistan</option>
-							<option value="Albania">Albania</option>
-							<option value="Algeria">Algeria</option>
-						</select>
-						<input type="text" name="zip" required placeholder="Postal code">
+						<div class="item">
+							<select name="country" class="mod_select">
+								<option value="United States" selected>United States</option>
+								<option value="Nigeria">Nigeria</option>
+								<option value="Australia">Australia</option>
+								<option value="Brazil">Brazil</option>
+								<option value="Afghanistan">Afghanistan</option>
+								<option value="Albania">Albania</option>
+								<option value="Algeria">Algeria</option>
+							</select>
+						</div>
+						<div class="item">
+							<input type="text" name="zip" required placeholder="Postal code">
+						</div>
 					</div>
 					<div class="with_help">
 						<input type="text" name="tel" required placeholder="Phone">

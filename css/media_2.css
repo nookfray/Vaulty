@@ -857,7 +857,13 @@
   .catalog_section .catalog_item:nth-of-type(3n+3) {
     margin-right: 40px; }
   .catalog_section .catalog_item:nth-of-type(2n+2) {
-    margin-right: 0px; } }
+    margin-right: 0px; }
+
+  .thanks_window {
+    right: 0px;
+    left: 0px;
+    bottom: 50px;
+    margin: auto; } }
 @media screen and (max-width: 850px) {
   .charge_section .charger {
     left: -100px; } }
@@ -1211,7 +1217,11 @@
     .catalog_section .catalog_item:nth-of-type(3n+3) {
       margin-right: 0px; }
     .catalog_section .catalog_item:nth-of-type(2n+2) {
-      margin-right: 0px; } }
+      margin-right: 0px; }
+
+  .thanks_window {
+    width: calc(100% - 40px);
+    max-width: 599px; } }
 @media screen and (max-width: 575px) {
   .academy_header .mobile_block {
     padding-top: 0px;
@@ -1781,6 +1791,33 @@
     font-size: 16.67px;
     line-height: 21px; }
   .thanks_modal .modal-dialog .modal-content .hexa_icon {
+    position: relative;
+    left: auto;
+    display: block;
+    max-width: 44px;
+    margin: auto;
+    margin-bottom: 17px; }
+
+  .step_form .double_inputs .item {
+    width: 100%; }
+
+  .thanks_section .login_block .item {
+    width: 100%; }
+
+  .thanks_window .close {
+    font-size: 21px;
+    line-height: 21px;
+    top: 10px;
+    right: 12px; }
+  .thanks_window .window_body {
+    padding: 30px;
+    text-align: center; }
+  .thanks_window .modal_title {
+    font-size: 25px; }
+  .thanks_window p {
+    font-size: 16.67px;
+    line-height: 21px; }
+  .thanks_window .hexa_icon {
     position: relative;
     left: auto;
     display: block;

@@ -5345,4 +5345,173 @@
       margin: auto;
       width: 77px; }
 
+.main_form label.error {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  top: auto;
+  left: auto;
+  z-index: 0;
+  opacity: 1;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ff3434;
+  margin: 20px 0px;
+  margin-top: -20px; }
+
+.main_form .password_item label, .main_form .amount_item label, .main_form .phone_item label {
+  -webkit-order: 1;
+  -ms-order: 1;
+  order: 1; }
+.main_form .password_item label.error, .main_form .amount_item label.error, .main_form .phone_item label.error {
+  margin-top: 10px;
+  margin-bottom: 0px; }
+.main_form .key_item {
+  position: relative; }
+  .main_form .key_item label.error {
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    left: 0px;
+    z-index: -2;
+    opacity: 0;
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1; }
+.main_form .key_item + label.error {
+  position: absolute;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  left: 0px;
+  z-index: -2;
+  opacity: 0;
+  -webkit-order: 1;
+  -ms-order: 1;
+  order: 1; }
+
+.step_form label.error {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  top: auto;
+  left: auto;
+  z-index: 0;
+  opacity: 1;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ff3434;
+  margin: 20px 0px;
+  margin-top: -10px; }
+
+.step_form .double_inputs .mod_select, .step_form .double_inputs input, .step_form .double_inputs input[type="text"], .step_form .double_inputs input[type="email"], .step_form .double_inputs input[type="password"], .step_form .double_inputs textarea {
+  width: 100%;
+  margin-bottom: 0px; }
+.step_form .double_inputs .item {
+  width: calc(50% - 10px);
+  margin-bottom: 20px; }
+.step_form .double_inputs .item:nth-of-type(2n+2) {
+  margin-left: auto; }
+.step_form .double_inputs label.error {
+  margin-top: 10px;
+  margin-bottom: 0px; }
+.step_form .with_help .info_popover {
+  top: 18px;
+  bottom: auto; }
+
+.thanks_section .login_block {
+  -webkit-align-items: flex-start;
+  align-items: flex-start; }
+  .thanks_section .login_block .item {
+    position: relative;
+    width: calc(50% - 80px);
+    margin-bottom: 25px; }
+  .thanks_section .login_block input {
+    width: 100%;
+    margin-bottom: 0px; }
+  .thanks_section .login_block label.error {
+    margin-top: 10px;
+    margin-bottom: 0px; }
+
+.request_form label.error {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  top: auto;
+  left: auto;
+  z-index: 0;
+  opacity: 1;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ff3434;
+  text-align: left;
+  margin: 20px 0px;
+  margin-top: -15px; }
+
+.thanks_window {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1001;
+  width: 100%;
+  max-width: 599px;
+  height: auto;
+  margin: 0px;
+  background: #FFF;
+  border: 3px solid #505050;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: none; }
+  .thanks_window .close {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 33px;
+    text-align: center;
+    padding: 0px;
+    border: none;
+    background: none;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all; }
+    .thanks_window .close:hover {
+      opacity: 0.7; }
+  .thanks_window .window_body {
+    position: relative;
+    width: 100%;
+    padding: 38px;
+    padding-left: 137px;
+    text-align: left; }
+  .thanks_window .modal_title {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 1;
+    color: #505050;
+    margin: 0px;
+    margin-bottom: 10px; }
+  .thanks_window p {
+    font-weight: normal;
+    font-size: 20.83px;
+    line-height: 27px;
+    color: #505050;
+    margin: 0px; }
+  .thanks_window .hexa_icon {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 29px;
+    margin: auto;
+    width: 77px; }
+
 /*# sourceMappingURL=main_2.css.map */
