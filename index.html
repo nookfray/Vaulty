@@ -527,19 +527,17 @@
 			setTimeout(function(){
 
 				// показываем окно
-				$('#thanks_window').fadeIn();
-				// и скрываем через 6сек
+				$('#thanks_window').addClass("active");
+				// и скрываем через 5сек
 				setTimeout(function(){
-					$('#thanks_window').fadeOut();
-				}, 6000);
-
+					$('#thanks_window').removeClass("active");
+				}, 5000);
 			}, 500); 
 		};
 	</script>
 
 	<!-- THANKS WINDOW -->
 	<div class="thanks_window" id="thanks_window">
-		<button class="close" type="button" data-dismiss="modal">X</button>
 		<div class="window_body">
 			<img src="img/hexa_icon_dark.svg" alt="img" class="hexa_icon">
 			<h3 class="modal_title">Thank you!</h3>

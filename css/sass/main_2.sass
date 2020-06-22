@@ -5707,20 +5707,29 @@
 
 .thanks_window
 	position: fixed
-	bottom: 50px 
-	right: 50px 
+	bottom: -100% 
+	right: 20px 
 	z-index: 1001 
 	width: 100%
-	max-width: 599px 
+	max-width: 494px 
 	height: auto
 	margin: 0px
 	background: #FFF 
-	border: 3px solid #505050 
+	border: none
 	-webkit-border-radius: 10px 
 	border-radius: 10px   
-	-webkit-box-shadow: none 
-	box-shadow: none 
-	display: none 
+	-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.2)
+	box-shadow: 0px 5px 10px rgba(0,0,0,.2)
+	display: block
+	opacity: 0
+	-webkit-transition: .5s all 
+	-moz-transition: .5s all 
+	-ms-transition: .5s all 
+	-o-transition: .5s all 
+	transition: .5s all 
+	&.active
+		bottom: 20px 
+		opacity: 1 
 	.close
 		position: absolute
 		top: 17px 
@@ -5743,19 +5752,18 @@
 	.window_body
 		position: relative
 		width: 100% 
-		padding: 38px
-		padding-left: 137px 
+		padding: 28px
+		padding-left: 94px 
 		text-align: left
 	.modal_title
 		font-weight: 600
-		font-size: 33px 
-		line-height: 1
+		font-size: 21px 
+		line-height: 27px
 		color: #505050 
 		margin: 0px 
-		margin-bottom: 10px   
 	p
 		font-weight: normal 
-		font-size: 20.83px
+		font-size: 16.67px
 		line-height: 27px
 		color: #505050 
 		margin: 0px   
@@ -5763,9 +5771,9 @@
 		position: absolute
 		top: 0px
 		bottom: 0px
-		left: 29px 
+		left: 20px 
 		margin: auto
-		width: 77px   
+		width: 52px   
 
 .main_form 
 	.checkbox_item
@@ -5792,3 +5800,14 @@
 			transform: scale(1)
 	input.error + label + .icon
 		border-color: #FF3434 
+		
+
+
+
+
+
+
+
+
+
+
