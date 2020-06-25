@@ -5543,4 +5543,22 @@
 .main_form .checkbox_item label input.error + label + .icon {
   border-color: #FF3434; }
 
+.main_form .app_message {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 0px; }
+
+.authorization_section .left_wrapper .app_message img {
+  margin: 0px; }
+
 /*# sourceMappingURL=main_2.css.map */

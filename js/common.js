@@ -411,6 +411,21 @@ $(document).ready(function() {
 	});
 
 
+	$("input[name='tel']").keydown(function(event) {
+		// Разрешаем нажатие клавиш backspace, Del, Tab и Esc
+		if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 ||
+			// Разрешаем выделение: Ctrl+A
+			(event.keyCode == 65 && event.ctrlKey === true) ||
+			// Разрешаем клавиши навигации: Home, End, Left, Right
+			(event.keyCode >= 35 && event.keyCode <= 39)) {
+			return;
+		} else {
+			// Запрещаем всё, кроме клавиш цифр на основной клавиатуре, а также Num-клавиатуре
+			if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+				event.preventDefault();
+			}  
+		}
+	});
 
 	// MAIN FORM
 	$('.main_form, .request_form').each(function() {
@@ -419,6 +434,15 @@ $(document).ready(function() {
 			rules:{
 				name: {
 					minlength: 2,
+					maxlength: 16,
+				},
+				firstName: {
+					minlength: 2,
+					maxlength: 16,
+				},
+				lastName: {
+					minlength: 2,
+					maxlength: 16,
 				},
 				tel: {
 					required: true,
@@ -426,37 +450,74 @@ $(document).ready(function() {
 				},
 				email: {
 					email: true,
+					maxlength: 120,
 				},
 				emailre: {
 					email: true,
+					maxlength: 120,
+					equalTo: "#email_input"
 				},
 				country: {
 
 				},
+				password: {
+					required: true,
+					minlength: 5,
+					maxlength: 120,
+				},
+				nameoremail: {
+					required: true,
+					minlength: 2,
+					maxlength: 120,
+				}
 			},
 			messages:{
 				name: {
-					required: "This field is required."
+					required: "This field is required.",
+					minlength: "Please enter at least 2 characters.",
+					maxlength: "Maximum 16 characters."
+				},
+				firstName: {
+					required: "Please enter your firstname.",
+					minlength: "Please enter at least 2 characters.",
+					maxlength: "Maximum 16 characters."
+				},
+				lastName: {
+					required: "Please enter your lastname.",
+					minlength: "Please enter at least 2 characters.",
+					maxlength: "Maximum 16 characters."
 				},
 				tel: {
 					required: "This field is required.",
 					minlength: "Please enter at least 8 characters."
 				},
 				email: {
-					required: "This field is required.",
-					email: "Please enter a valid email address."
+					required: "Please enter a valid email address.",
+					email: "Please enter a valid email address.",
+					maxlength: "Maximum 120 characters."
 				},
 				emailre: {
-					required: "This field is required.",
-					email: "Please enter a valid email address."
+					required: "Please enter a valid email address.",
+					email: "Please enter a valid email address.",
+					maxlength: "Maximum 120 characters.",
+					equalTo: "Please enter the same email as above"
 				},
 				country: {
 					required: "This field is required."
 				},
+				password: {
+					required: "Please provide a password",
+					minlength: "Your password must be at least 5 characters long"
+				},
+				nameoremail: {
+					required: "This field is required.",
+					minlength: "Please enter at least 2 characters.",
+					maxlength: "Maximum 120 characters."
+				}
 			},
 			errorPlacement: function(error, element) {
 				if (element.is('select:hidden')) {
-					error.insertAfter(element.next('.nice-select'));
+					error.insertAfter(element.next().next('.nice-select'));
 				} else {
 					error.insertAfter(element);
 				};
@@ -513,11 +574,11 @@ $(document).ready(function() {
 					minlength: "Please enter at least 8 characters."
 				},
 				email: {
-					required: "This field is required.",
+					required: "Please enter a valid email address.",
 					email: "Please enter a valid email address."
 				},
 				emailre: {
-					required: "This field is required.",
+					required: "Please enter a valid email address.",
 					email: "Please enter a valid email address."
 				},
 				country: {
