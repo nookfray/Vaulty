@@ -324,6 +324,7 @@ $(document).ready(function() {
 
 	// PRODUCT CHARACTERISTICS SECTION
 	$(".characteristics_section .tab-pane .more").click(function() {
+		$(this).removeClass("active");
 		thisActive = $(".characteristics_section .nav-tabs li .active");
 		$(thisActive).removeClass("active").parent().next().find("a").addClass("active");
 		$(".characteristics_section .mobile_block .active_page").text($(this).children("span").text());
