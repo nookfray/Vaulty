@@ -5610,10 +5610,11 @@
   99% {
     opacity: 0;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    top: 0px; }
   100% {
     height: 0px;
-    width: 0px;
+    top: -1000px;
     opacity: 0; } }
 
 /*# sourceMappingURL=main_2.css.map */
