@@ -5600,6 +5600,7 @@
     right: 0px;
     bottom: 0px;
     margin: auto;
+    width: 100%;
     max-width: 1000px; }
 
 @keyframes loader {

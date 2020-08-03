@@ -15,10 +15,16 @@
 <body>
 
 	<div id="preloader">
-		<video autoplay="autoplay" muted="muted">
-			<source src="video/preloader.mp4">
+		<video autoplay="autoplay" muted="muted" playsinline id="preloader_video">
+			<source src="video/preloader.mp4" type="video/mp4">
 		</video>
 	</div>	
+
+	<script>
+		window.onload = function() {
+			document.getElementById('preloader_video').play();
+		};
+	</script>
 	
 	<!-- PAGE WRAPPER -->
 	<div class="page_wrapper">
