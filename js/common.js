@@ -659,4 +659,29 @@ $(document).ready(function() {
 	});
 
 
+	$('.cart_section .cart_item').each(function() {
+		thisSumm = $(this).find(".item_price").children("span").text();
+		$(this).find("input").keyup(function() {
+			itemVal = $(this).val();
+			itemPrice = $(this).parent().siblings(".item_title").find(".item_pr").text();
+			parseSumm = parseFloat(itemPrice * itemVal);
+			$(this).parent().siblings(".item_price").children("span").text(parseSumm.toFixed(2));
+			calculateSum();
+		});
+	});
+
+	function calculateSum() {
+		var sum = 0;
+		$(".item_price span").each(function () {
+			var thisSumm = parseFloat($(this).text());
+
+				sum += thisSumm;
+
+		});
+		$('.table_summ').text(sum.toFixed(2));
+	}
+
+	calculateSum() 
+
+
 });

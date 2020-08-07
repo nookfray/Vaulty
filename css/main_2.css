@@ -5617,5 +5617,43 @@
     height: 0px;
     top: -1000px;
     opacity: 0; } }
+.main_header .icons_list li .basket_link span {
+  position: absolute;
+  display: inline-block;
+  vertical-align: top;
+  top: -5px;
+  right: -5px;
+  min-width: 16px;
+  height: 16px;
+  -webkit-border-radius: 50em;
+  border-radius: 50em;
+  background: #CDB382;
+  text-align: center;
+  color: #FFF;
+  font-size: 10px;
+  line-height: 16px; }
+
+.custom_select .select_list li {
+  line-height: 20px; }
+
+.step_form .mod_select .list {
+  max-height: 300px; }
+
+.help_section .help_item ul li {
+  font-size: 20.83px; }
+
+.cart_section .table_block .cart_item .item_title span i {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-style: normal; }
+
+.cart_form .submit_btn:hover {
+  color: #FFF; }
+
+.cart_form .price_table td .table_summ {
+  font-weight: 600;
+  font-size: 16.67px;
+  margin: 0px; }
 
 /*# sourceMappingURL=main_2.css.map */
