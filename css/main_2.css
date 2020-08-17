@@ -5656,4 +5656,25 @@
   font-size: 16.67px;
   margin: 0px; }
 
+.main_header .products_dropdown .dropdown_menu {
+  min-width: 184px; }
+.main_header .mobile_nav .products_dropdown {
+  display: none; }
+
+.custom_select.price_block {
+  max-width: 347px; }
+
+.custom_select.price_block .price {
+  max-width: 347px;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+
+.product_main_section .container {
+  padding-top: 170px; }
+
+.product_main_section .img_block {
+  height: 100%; }
+  .product_main_section .img_block img {
+    object-fit: cover; }
+
 /*# sourceMappingURL=main_2.css.map */
