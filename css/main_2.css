@@ -5677,4 +5677,22 @@
   .product_main_section .img_block img {
     object-fit: cover; }
 
+.subscribe_form label.error {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  top: 100%;
+  left: 0px;
+  z-index: 0;
+  opacity: 1;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ff3434;
+  margin: 20px 0px;
+  margin-top: 10px; }
+
+.subscribe_form input.error {
+  border-color: #ff3434; }
+
 /*# sourceMappingURL=main_2.css.map */

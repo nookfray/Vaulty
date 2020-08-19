@@ -653,6 +653,41 @@ $(document).ready(function() {
 	});
 
 
+
+	// SUBSCRIBE FORM
+	$('.subscribe_form').each(function() {
+		$(this).validate({
+			ignore: [],
+			rules:{
+				subscribe: {
+					email: true,
+					maxlength: 120,
+				},
+			},
+			messages:{
+				subscribe: {
+					required: "Please enter a valid email address.",
+					email: "Please enter a valid email address.",
+					maxlength: "Maximum 120 characters."
+				},
+			},
+			submitHandler: function(form) {
+				$.ajax({
+					url: "php/submit.php",
+					type: "POST",
+					data: $(form).serialize(),
+					success: function(response) {
+						$('.main_form').trigger('reset');
+						$(".modal").modal("hide");
+						setTimeout(function(){$('#thanks_modal').modal("show")}, 500); 
+					}            
+				});
+			}
+		});
+	});
+
+
+
 	// CLOSE THANKS WINDOW
 	$(".thanks_window .close").click(function() {
 		$(".thanks_window").fadeOut();
