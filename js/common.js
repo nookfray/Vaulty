@@ -719,4 +719,11 @@ $(document).ready(function() {
 	calculateSum() 
 
 
+
+	// SCROLL TO ID
+	$(".terminal_section .bottom_wrapper .main_btn").mPageScroll2id({
+		offset: 90
+	});
+
+
 });
