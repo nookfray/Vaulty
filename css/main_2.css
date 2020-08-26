@@ -5999,4 +5999,7 @@
     -o-background-size: 100% 100%;
     background-size: 100% 100%; }
 
+.recover_wrapper .main_form {
+  position: static; }
+
 /*# sourceMappingURL=main_2.css.map */
