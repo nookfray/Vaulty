@@ -13,7 +13,7 @@
 	
 </head>
 <body>
-
+<!-- 
 	<div id="preloader">
 		<video autoplay="autoplay" muted="muted" playsinline id="preloader_video">
 			<source src="video/preloader.mp4" type="video/mp4">
@@ -25,7 +25,7 @@
 			document.getElementById('preloader_video').play();
 		};
 	</script>
-	
+ -->
 	<!-- PAGE WRAPPER -->
 	<div class="page_wrapper">
 	
@@ -51,6 +51,13 @@
 						<li><a href="#">Help</a></li>
 						<li><a href="#">Card status</a></li>
 					</ul>
+					<button type="button" class="toggle_menu">
+						<span class='sandwich'>
+							<span class="sw-topper"></span>
+							<span class="sw-bottom"></span>
+							<span class="sw-footer"></span>
+						</span>
+					</button>
 					<ul class="icons_list">
 						<li class="dropdown language_dropdown">
 							<button type="button" class="drop_btn">EN</button>
@@ -66,15 +73,10 @@
 							<a href="#" class="basket_link" data-toggle="modal" data-target="#cart_modal"><svg><use xlink:href="img/sprite.svg#basket_icon"></use></svg></a>
 						</li>
 					</ul>
-					<button type="button" class="toggle_menu">
-						<span class='sandwich'>
-							<span class="sw-topper"></span>
-							<span class="sw-bottom"></span>
-							<span class="sw-footer"></span>
-						</span>
-					</button>
 					<!-- MODILE NAV -->
 					<ul class="mobile_nav">
+						<li class="active"><a href="#">Card</a></li>
+						<li class="soon"><a href="#">Terminal <sup>soon</sup></a></li>
 						<li class="products_dropdown">
 							<button type="button" class="products_btn">Products</button>
 							<ul class="dropdown_menu">
@@ -83,20 +85,13 @@
 								<li><a href="#">Protection Sleeve</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Card</a></li>
-						<li><a href="#">Terminal</a></li>
-						<li class="divider"></li>
 						<li><a href="#">Academy</a></li>
 						<li><a href="#">Help</a></li>
 						<li><a href="#">Card status</a></li>
-						<li class="divider"></li>
-						<li class="dropdown">
-							<a href="#">Language</a>
-							<ul class="dropdown_menu">
-								<li><a href="#">English</a></li>
-								<li><a href="#">French</a></li>
-								<li><a href="#">Spain</a></li>
-							</ul>
+						<li class="language_list">
+							<a href="#">En</a>
+							<a href="#">Fr</a>
+							<a href="#">Es</a>
 						</li>
 					</ul>
 					<!-- END MOBILE NAV -->
@@ -393,7 +388,7 @@
 						</i>
 						<h5 class="item_title">Live chat</h5>
 						<p>You can send and receive blockchain payments to Vaulty invoices in minutes.</p>
-						<a href="#" class="more">Learn more<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+						<div class="livechat_button"><a href="#">Leave us a message</a></div>
 					</div>
 				</div>
 			</div>

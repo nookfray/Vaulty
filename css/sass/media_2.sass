@@ -420,10 +420,27 @@
 		max-width: 532px
 	.catalog_section .catalog_item .name
 		font-size: 18px 
+	.main_header 
+		.icons_list
+			padding-right: 0px 
+			&:before, &:after
+				display: none 
+		.products_dropdown
+			margin-right: 25px 
+	.toggle_menu
+		width: 62px 
+		padding-left: 17px 
+		padding-right: 17px
+		border-left: 1px solid #D7C29B  
+		border-right: 1px solid #D7C29B  
+		margin-left: 0px 
+		&.active .sandwich span
+			background: #CC9325 
 
 
 
-	
+
+
 
 @media screen and (max-width: 991px)	
 	.academy_welcome 
@@ -889,6 +906,17 @@
 		position: relative
 		top: auto
 		margin-top: -30px 
+	.main_header 
+		.icons_list 
+			.dropdown 
+				.dropdown_menu
+					top: calc(100% + 50px)
+		.products_dropdown, .user_dropdown
+			.dropdown_menu	
+				top: calc(100% + 38px)
+		.left_nav
+			display: none 
+
 
 
 
@@ -1274,6 +1302,108 @@
 				a
 					font-size: 14px
 					line-height: 18px 
+	.main_header .user_dropdown
+		-webkit-order: 0 
+		-ms-order: 0 
+		order: 0 
+	.inner_page .main_header .icons_list
+		padding-right: 0px
+		border: none
+		&:after
+			display: none 
+	.toggle_menu
+		border-left: none 	
+	.main_header 
+		.mobile_nav
+			position: absolute
+			top: 100% 
+			left: 0px
+			right: 0px
+			width: 100% 
+			max-width: 100% 
+			-webkit-box-shadow: none 
+			box-shadow: none 
+			-webkit-border-radius: 0px 
+			border-radius: 0px 
+			padding: 0px 
+			background: #CDB382 
+			&:before
+				display: none 
+			li
+				border-bottom: 1px solid #E6D9C1 
+				margin: 0px 
+				a
+					display: block 
+					width: 100% 
+					font-size: 16.67px
+					line-height: 21px  
+					color: #FFF 
+					padding: 15px 
+					&:hover
+						color: #FFF 
+				sup
+					position: relative
+					left: auto 
+					top: -15px 
+					left: -5px 
+					color: #FFF 
+					font-size: 12px 
+			.soon
+				a
+					padding-top: 20px 
+			.products_dropdown 
+				.products_btn
+					font-size: 16.67px 
+					line-height: 21px 
+					color: #FFF 
+					padding: 15px 
+					&:before
+						border-top: 5px solid #f5f0e6
+					&:hover
+						color: #FFF 
+				.dropdown_menu
+					position: relative
+					top: auto
+					left: auto 
+					width: 100% 
+					-webkit-border-radius: 0px 
+					border-radius: 0px 
+					padding: 0px
+					-webkit-box-shadow: none 
+					box-shadow: none  
+					&:before
+						display: none
+					li
+						margin: 0px 
+						a
+							padding: 10px 15px 
+							&:hover
+								background: #FFF
+								color: #505050  
+					li:last-of-type
+						border: none 
+			.language_list
+				display: flex 
+	.page_wrapper
+		padding-top: 69px 
+	.product_page
+		padding-top: 0px 
+	.main_header 
+		.icons_list 
+			.dropdown 
+				.dropdown_menu
+					top: calc(100% + 45px)
+		.user_dropdown 
+			.dropdown_menu
+				top: calc(100% + 22px)
+				min-width: 171px 
+				-webkit-border-radius: 5px 
+				border-radius: 5px 
+	.absolute_header .container
+		padding-top: 18px
+		padding-bottom: 18px
+		
+
 
 
 
@@ -2118,8 +2248,15 @@
 		padding-bottom: 9px 
 	.thanks_section .thank_block h3
 		font-size: 24px 	
-
-
+	.page_wrapper
+		padding-top: 51px 
+	.product_page
+		padding-top: 0px 
+	.main_header .icons_list .dropdown .dropdown_menu
+		top: calc(100% + 36px)
+	.absolute_header .container
+		padding-top: 14px 
+		padding-bottom: 14px 
 
 
 
@@ -2151,4 +2288,17 @@
 			line-height: 1.2  
 		.price
 			max-width: 120px 
+
+
+
+
+
+
+@media screen and (max-height: 500px)	
+	.main_header .mobile_nav li a, .main_header .mobile_nav .products_dropdown .products_btn
+		padding-top: 8px
+		padding-bottom: 8px  
+
+
+
 

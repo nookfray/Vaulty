@@ -5999,19 +5999,323 @@
 		width: 100%
 
 
+.main_header 
+	.icons_list 
+		.dropdown 
+			.dropdown_menu
+				overflow: visible
+				margin-top: 0px
+				top: calc(100% + 60px)  
+				padding-top: 15px 
+				padding-bottom: 15px 
+				&:before
+					content: "" 
+					display: block 
+					width: 20px 
+					height: 20px 
+					position: absolute
+					top: -20px 
+					left: 30px 
+					background: none
+					z-index: 1
+					border: 10px solid transparent
+					border-bottom: 10px solid #FFF 
+				li 
+					a
+						padding-left: 30px 
+						padding-right: 30px 
+	.products_dropdown, .user_dropdown
+		&.open
+			&:after
+				display: block 
+		&:after
+			content: "" 
+			display: block 
+			width: 100% 
+			height: 100px 
+			position: absolute
+			top: 100% 
+			left: 0px
+			background: none
+			display: none   
+		.dropdown_menu			
+			z-index: 5 
+			overflow: visible
+			margin-top: 0px
+			min-width: 220px 
+			top: calc(100% + 48px)  
+			padding-top: 15px 
+			padding-bottom: 15px 
+			&:before
+				content: "" 
+				display: block 
+				width: 20px 
+				height: 20px 
+				position: absolute
+				top: -20px 
+				left: 30px 
+				background: none
+				z-index: 1
+				border: 10px solid transparent
+				border-bottom: 10px solid #FFF 
+			li 
+				margin-bottom: 10px 
+				a
+					padding-left: 30px 
+					padding-right: 30px 
+			li:last-of-type
+				margin-bottom: 0px 
 
 
 
+.main_header.fixed_header
+	.icons_list 
+		.dropdown 
+			.dropdown_menu
+				margin-top: 0px
+				top: calc(100% + 50px)  
+	.products_dropdown, .user_dropdown
+		.dropdown_menu
+			top: calc(100% + 38px)  
+
+
+.main_header 
+	.icons_list 
+		.dropdown 
+			.user_link + .dropdown_menu, .setting_link + .dropdown_menu
+				right: -30px 
+				&:before
+					left: auto 
+					right: 30px 
+
+
+.main_header 
+	.mobile_nav
+		position: absolute
+		z-index: 5 
+		top: calc(100% + 20px)  
+		left: auto
+		right: 24px
+		padding: 15px 30px 
+		padding-bottom: 5px 
+		display: none
+		min-width: 205px
+		overflow: visible
+		background: #FFF
+		-webkit-border-radius: 5px
+		border-radius: 5px
+		-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2)
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2)
+		&:before
+			content: "" 
+			display: block 
+			width: 20px 
+			height: 20px 
+			position: absolute
+			top: -20px 
+			left: 30px 
+			background: none
+			z-index: 1
+			border: 10px solid transparent
+			border-bottom: 10px solid #FFF
+		li
+			margin-bottom: 10px 
+			a
+				position: relative
+				width: auto 
+				min-width: 0px 
+				display: inline-block
+				vertical-align: top
+				font-size: 20px 
+				padding-left: 0px
+				padding-right: 0px  
+				&:before
+					content: ""
+					display: block
+					width: 0px
+					height: 2px
+					background: #CDB382
+					position: absolute
+					bottom: 2px
+					left: 50%
+					-webkit-transition: 0.3s all
+					-moz-transition: 0.3s all
+					-ms-transition: 0.3s all
+					-o-transition: 0.3s all
+					transition: 0.3s all
+				&:hover
+					color: #505050 
+					background: none 
+			sup
+				position: absolute
+				top: 0px
+				left: 100% 
+				margin-left: -5px 
+				font-size: 15px
+				line-height: 1
+				color: #CDB382
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+		.active
+			a
+				&:before
+					width: 100% 
+					left: 0px 
+		.soon
+			opacity: .6 
+			a
+				padding-top: 10px 
+		.products_dropdown
+			display: none 
+		.language_list
+			position: relative
+			width: 100% 
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-align-items: center 
+			align-items: center 
+			display: none 
+			padding: 15px 
+			padding-bottom: 5px  
+			a
+				position: relative
+				display: block 
+				width: auto 
+				height: 37px 
+				min-width: 51px 
+				border: 1px solid #FFF
+				-webkit-border-radius: 5px 
+				border-radius: 5px 
+				text-align: center 
+				font-weight: 600
+				font-size: 16.67px
+				line-height: 21px
+				color: #FFF 
+				text-transform: uppercase
+				text-decoration: none
+				padding: 5px 7px
+				padding-top: 9px 
+				margin-right: 10px 
+				margin-bottom: 10px 
+			.active
+				background: #FFF 
+				color: #CDB382 
+
+
+.product_header
+	.icons_list 
+		.dropdown 
+			.dropdown_menu
+				top: calc(100% + 30px)
+				&:before
+					border-bottom: 10px solid rgba(52, 52, 52, 0.95) 
+	.products_dropdown 
+		.dropdown_menu
+			top: calc(100% + 18px)
+			&:before
+				border-bottom: 10px solid rgba(52, 52, 52, 0.95) 
+				
+
+
+.absolute_header
+	.icons_list 
+		.dropdown 
+			.dropdown_menu
+				&:before
+					border-bottom: 10px solid rgba(52, 52, 52, 0.95) 
+	.products_dropdown 
+		.dropdown_menu
+			&:before
+				border-bottom: 10px solid rgba(52, 52, 52, 0.95) 
+
+.product_header, .absolute_header
+	.mobile_nav
+		background: rgba(52, 52, 52, 0.95)
+		&:before
+			border-bottom: 10px solid rgba(52, 52, 52, 0.95)
+		li 
+			a:hover
+				color: #FFF 
 
 
 
+.product_main_section .main_title .icon
+	background: none
+	color: #FFF 
+	&:before, &:after
+		display: none 
 
 
 
+.livechat_button
+	position: relative
+	display: inline-block
+	vertical-align: top
+	color: #CDB382
+	font-weight: 600
+	font-size: 20px
+	line-height: 22px
 
+.faq_section .vaulty_item .livechat_button
+	position: absolute
+	z-index: 2
+	left: 18px
+	bottom: 25px
 
-
-
+.faq_section .vaulty_item .livechat_button a 
+	position: relative
+	display: inline-block
+	vertical-align: top
+	line-height: 22px 
+	color: #CDB382 
+	&:hover
+		color: #5D5D5D 
+		&:after, &:before
+			fill: #5D5D5D
+			left: 10px
+			opacity: 0 
+		&:before
+			left: auto 
+			right: -10px 
+			opacity: 1 
+	&:after, &:before
+		content: "" 
+		position: relative
+		left: 0px
+		display: inline-block
+		vertical-align: middle
+		width: 18px
+		height: 15px
+		margin-left: 15px
+		fill: #CDB382
+		background: url("../img/arrow_gold.svg") no-repeat center center
+		-webkit-background-size: 100% 100% 
+		-o-background-size: 100% 100% 
+		background-size: 100% 100%  
+		-webkit-transition: 0.3s all
+		-moz-transition: 0.3s all
+		-ms-transition: 0.3s all
+		-o-transition: 0.3s all
+		transition: 0.3s all
+	&:before
+		position: absolute
+		z-index: 2
+		opacity: 0  
+		top: 5px
+		right: 0px  
+		left: auto 
+		background: url("../img/arrow_dark.svg") no-repeat center center
+		-webkit-background-size: 100% 100% 
+		-o-background-size: 100% 100% 
+		background-size: 100% 100%  
 
 
 

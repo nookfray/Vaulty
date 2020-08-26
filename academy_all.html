@@ -29,10 +29,9 @@
 					<div class="products_dropdown">
 						<button type="button" class="products_btn">Products</button>
 						<ul class="dropdown_menu">
-							<li><a href="#">Product 1</a></li>
-							<li><a href="#">Product 2</a></li>
-							<li><a href="#">Product 3</a></li>
-							<li><a href="#">Product 4</a></li>
+							<li><a href="#">Founder edition</a></li>
+							<li><a href="#">Charger Station</a></li>
+							<li><a href="#">Protection Sleeve</a></li>
 						</ul>
 					</div>
 					<ul class="main_nav">
@@ -40,6 +39,13 @@
 						<li><a href="#">Help</a></li>
 						<li><a href="#">Card status</a></li>
 					</ul>
+					<button type="button" class="toggle_menu">
+						<span class='sandwich'>
+							<span class="sw-topper"></span>
+							<span class="sw-bottom"></span>
+							<span class="sw-footer"></span>
+						</span>
+					</button>
 					<ul class="icons_list">
 						<li class="dropdown language_dropdown">
 							<button type="button" class="drop_btn">EN</button>
@@ -52,32 +58,28 @@
 							<a href="login.html" class="user_link"><svg><use xlink:href="img/sprite.svg#user_icon"></use></svg></a>
 						</li>
 						<li>
-							<a href="#" class="basket_link"><svg><use xlink:href="img/sprite.svg#basket_icon"></use></svg></a>
+							<a href="#" class="basket_link" data-toggle="modal" data-target="#cart_modal"><svg><use xlink:href="img/sprite.svg#basket_icon"></use></svg></a>
 						</li>
 					</ul>
-					<button type="button" class="toggle_menu">
-						<span class='sandwich'>
-							<span class="sw-topper"></span>
-							<span class="sw-bottom"></span>
-							<span class="sw-footer"></span>
-						</span>
-					</button>
 					<!-- MODILE NAV -->
 					<ul class="mobile_nav">
-						<li><a href="#">Card</a></li>
-						<li><a href="#">Terminal</a></li>
-						<li class="divider"></li>
+						<li class="active"><a href="#">Card</a></li>
+						<li class="soon"><a href="#">Terminal <sup>soon</sup></a></li>
+						<li class="products_dropdown">
+							<button type="button" class="products_btn">Products</button>
+							<ul class="dropdown_menu">
+								<li><a href="#">Founder edition</a></li>
+								<li><a href="#">Charger Station</a></li>
+								<li><a href="#">Protection Sleeve</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Academy</a></li>
 						<li><a href="#">Help</a></li>
 						<li><a href="#">Card status</a></li>
-						<li class="divider"></li>
-						<li class="dropdown">
-							<a href="#">Language</a>
-							<ul class="dropdown_menu">
-								<li><a href="#">English</a></li>
-								<li><a href="#">French</a></li>
-								<li><a href="#">Spain</a></li>
-							</ul>
+						<li class="language_list">
+							<a href="#">En</a>
+							<a href="#">Fr</a>
+							<a href="#">Es</a>
 						</li>
 					</ul>
 					<!-- END MOBILE NAV -->
