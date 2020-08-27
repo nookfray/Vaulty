@@ -6321,4 +6321,106 @@
 .recover_wrapper
 	.main_form
 		position: static
+		
+.main_header 
+	.icons_list 
+		.notifi_dropdown
+			.dropdown_menu
+				left: auto 
+				right: -30px 
+				min-width: 330px 
+				min-height: 220px 
+				text-align: center
+				&:before
+					left: auto 
+					right: 30px 
+				li
+					position: relative
+					font-weight: normal 
+					text-transform: none
+					a
+						text-transform: none
+				.no_notify
+					position: relative
+					width: 100% 	
+					min-height: 220px 
+					display: -webkit-box
+					display: -moz-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					-ms-flex-wrap: wrap
+					flex-wrap: wrap
+					-webkit-align-items: center 
+					align-items: center 
+					-webkit-align-content: center
+					align-content: center
+					-webkit-justify-content: center
+					justify-content: center
+					p
+						position: relative
+						width: 100% 
+						font-weight: normal 
+						margin: 0px
+						span
+							display: block 
+							width: 100% 
+							text-align: center
+							font-size: 16px
+							color: #ADADAD 
+							margin: 0px  
+					svg
+						display: block 
+						width: 50px
+						height: 50px
+						margin-bottom: 30px  
+						fill: #d5d9dd 
+
+
+.main_header .icons_list .language_dropdown 
+	height: 22px 
+	.drop_btn 
+		padding: 0px
+		line-height: 0
+		height: 22px 
+		&:hover
+			svg
+				fill: #cdb382
+		&:before
+			display: none 
+		img
+			width: 22px 
+			height: 22px
+		svg
+			display: block 
+			width: 22px 
+			height: 22px  
+			-webkit-transition: .3s all 
+			-moz-transition: .3s all 
+			-ms-transition: .3s all 
+			-o-transition: .3s all 
+			transition: .3s all 
+			fill: #505050
+	.dropdown_menu
+		left: -25px 
+		&:before
+			left: 25px 
+		li
+			a
+				padding-left: 20px 
+				padding-right: 20px 
+
+
+
+.product_header .icons_list .language_dropdown .drop_btn  svg
+	fill: #FFF
+	opacity: .6 
+
+
+
+
+
+
+
+
 

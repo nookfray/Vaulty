@@ -1402,8 +1402,32 @@
 	.absolute_header .container
 		padding-top: 18px
 		padding-bottom: 18px
-		
-
+	.main_header 
+		.icons_list 
+			.notifi_dropdown 
+				.dropdown_menu	
+					right: -18px 
+					&:before
+						right: 18px 
+		.products_dropdown 
+			&.open
+				.products_btn
+					&:before, &:hover:before
+						-webkit-transform: rotateX(180deg)
+						-moz-transform: rotateX(180deg)
+						-ms-transform: rotateX(180deg)
+						-o-transform: rotateX(180deg)
+						transform: rotateX(180deg)
+						top: -6px
+			.products_btn
+				&:hover
+					&:before
+						-webkit-transform: rotateX(0deg) 
+						-moz-transform: rotateX(0deg) 
+						-ms-transform: rotateX(0deg) 
+						-o-transform: rotateX(0deg) 
+						transform: rotateX(0deg) 
+						top: 6px 
 
 
 
@@ -2289,6 +2313,14 @@
 		.price
 			max-width: 120px 
 
+
+
+
+
+
+@media screen and (max-width: 359px)
+	.main_header .icons_list .notifi_dropdown .dropdown_menu
+		min-width: 300px 
 
 
 
