@@ -1999,7 +1999,10 @@
     display: block;
     max-width: 44px;
     margin: auto;
-    margin-bottom: 17px; } }
+    margin-bottom: 17px; }
+
+  .faq_section .vaulty_item .livechat_button a {
+    font-size: 17px; } }
 @media screen and (max-width: 479px) {
   .academy_welcome {
     padding-top: 158px; }
