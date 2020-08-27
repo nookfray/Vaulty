@@ -265,10 +265,6 @@ $(document).ready(function() {
 
 
 
-	$('.mod_select').on('change', function() {
-		$(this).valid();
-	})
-
 
 
 	// CUSTOM SELECT
@@ -478,7 +474,7 @@ $(document).ready(function() {
 					equalTo: "#email_input"
 				},
 				country: {
-
+					required: true,
 				},
 				password: {
 					required: true,
@@ -537,12 +533,9 @@ $(document).ready(function() {
 			},
 			errorPlacement: function(error, element) {
 				if (element.is('select:hidden')) {
-					error.insertAfter(element.next().next('.nice-select'));
-				} else {
-					error.insertAfter(element);
-				};
-				if (element.is('.key_item input')) {
-					error.insertAfter(element.parent());
+					error.insertAfter(element.siblings('.nice-select'));
+				} else if (element.is('.key_item input')) {
+					error.appendTo(element.parent());
 				} else {
 					error.insertAfter(element);
 				};
@@ -653,7 +646,7 @@ $(document).ready(function() {
 			},
 			errorPlacement: function(error, element) {
 				if (element.is('select:hidden')) {
-					error.insertAfter(element.next('.nice-select'));
+					error.insertAfter(element.siblings('.nice-select'));
 				} else {
 					error.insertAfter(element);
 				}
@@ -749,6 +742,11 @@ $(document).ready(function() {
 			offset: 72
 		});
 	}
+
+
+	$('.mod_select').on('change', function() {
+        $(this).valid();
+    })
 
 
 });
