@@ -6088,4 +6088,7 @@
   fill: #FFF;
   opacity: 0.6; }
 
+.grecaptcha-badge {
+  display: none !important; }
+
 /*# sourceMappingURL=main_2.css.map */
