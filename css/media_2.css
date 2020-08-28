@@ -894,7 +894,11 @@
   .main_header .products_dropdown .dropdown_menu, .main_header .user_dropdown .dropdown_menu {
     top: calc(100% + 38px); }
   .main_header .left_nav {
-    display: none; } }
+    display: none; }
+
+  .dashboard_section .main_block .name, .account_section .account_header .name {
+    font-size: 41px;
+    line-height: 44px; } }
 @media screen and (max-width: 850px) {
   .charge_section .charger {
     left: -100px; } }
@@ -2005,7 +2009,18 @@
     font-size: 17px; }
 
   .faq_section .vaulty_item .livechat_button a:after, .faq_section .vaulty_item .livechat_button a:before {
-    margin-left: 20px; } }
+    margin-left: 20px; }
+
+  .help_form .results_window .window_title {
+    font-size: 18px; }
+
+  .dashboard_section .main_block .name, .account_section .account_header .name {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 5px; }
+
+  .dashboard_section .main_block .left_col .name {
+    margin-bottom: 5px; } }
 @media screen and (max-width: 479px) {
   .academy_welcome {
     padding-top: 158px; }

@@ -6102,4 +6102,87 @@
   bottom: auto;
   top: 19px; }
 
+.main_header .products_dropdown .dropdown_menu li:first-of-type a, .main_header .user_dropdown .dropdown_menu li:first-of-type a, .main_header .icons_list .dropdown .dropdown_menu li:first-of-type a {
+  padding-top: 5px; }
+
+.main_header .products_dropdown .dropdown_menu li:last-of-type a, .main_header .user_dropdown .dropdown_menu li:last-of-type a, .main_header .icons_list .dropdown .dropdown_menu li:last-of-type a {
+  padding-bottom: 5px; }
+
+.help_header .help_form .wrapper {
+  overflow: visible; }
+.help_header .help_form .submit_btn {
+  -webkit-border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0px 0px 10px; }
+
+.help_form .results_window {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  overflow: hidden;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  background: #FFF;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 10px; }
+  .help_form .results_window .window_title {
+    position: relative;
+    width: 100%;
+    padding: 20px 15px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 21px;
+    color: #A7A7A7;
+    border-bottom: 1px solid #d3d3d3;
+    margin: 0px; }
+  .help_form .results_window .results_list {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    .help_form .results_window .results_list li {
+      position: relative;
+      width: 100%; }
+      .help_form .results_window .results_list li a {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        text-align: left;
+        text-decoration: none;
+        font-size: 16.67px;
+        line-height: 21px;
+        color: #505050;
+        margin: 0px; }
+        .help_form .results_window .results_list li a:hover {
+          background: #cdb382;
+          color: #FFF; }
+        .help_form .results_window .results_list li a strong {
+          font-weight: bold; }
+
+.account_section .account_header p {
+  line-height: 21px; }
+
+.dashboard_section .main_block {
+  padding-top: 20px; }
+  .dashboard_section .main_block .left_col {
+    padding-top: 0px; }
+    .dashboard_section .main_block .left_col p {
+      margin-bottom: 5px; }
+    .dashboard_section .main_block .left_col .name {
+      margin-bottom: 0px; }
+  .dashboard_section .main_block .name {
+    font-size: 58px;
+    line-height: 59px;
+    left: auto;
+    margin: 0px; }
+
+.main_slider {
+  overflow: hidden; }
+
 /*# sourceMappingURL=main_2.css.map */

@@ -95,8 +95,33 @@
 				<div class="container">
 					<p><span>Vaulty</span> Support</p>
 					<div class="wrapper">
-						<input type="text" name="search" placeholder="Search" required>
+						<input type="text" name="search" placeholder="Search" required autocomplete="off">
 						<button type="submit" class="submit_btn"><svg><use xlink:href="img/sprite.svg#search_icon"></use></svg></button>
+						<div class="results_window">
+							<h5 class="window_title">Top article suggestions</h5>
+							<ul class="results_list">
+								<li><a href="#">How do I order a TenX Visa Card?</a></li>
+								<li><a href="#">Where can I use my TenX Visa Card?</a></li>
+								<li><a href="#">How can I track my card order?</a></li>
+								<li><a href="#">How do I activate my card?</a></li>
+								<li><a href="#">Can I order a company or corporate card?</a></li>
+								<li><a href="#">How can I get a refund for my card order?</a></li>
+							</ul>
+						</div>
+
+						<!-- скрипт просто для примера что бы показать окно -->
+						<script>
+							window.onload = function() {
+								$(".help_form input").focus(function() {
+									$(".help_form .results_window").fadeIn();
+								});
+									
+								$(".help_form input").blur(function() {
+									$(".help_form .results_window").fadeOut();
+								});
+							};
+						</script>
+
 					</div>
 				</div>
 			</form>
