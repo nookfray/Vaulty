@@ -6185,4 +6185,19 @@
 .main_slider {
   overflow: hidden; }
 
+.main_header .products_dropdown .products_btn:before, .main_header .products_dropdown .user_btn:before, .main_header .user_dropdown .products_btn:before, .main_header .user_dropdown .user_btn:before {
+  width: 10px;
+  height: 10px;
+  top: 7px;
+  bottom: 0px;
+  margin: auto; }
+
+.main_header .products_dropdown.open .products_btn:before, .main_header .user_dropdown.open .user_btn:before {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  top: -3px; }
+
 /*# sourceMappingURL=main_2.css.map */
