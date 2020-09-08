@@ -6091,13 +6091,6 @@
 .grecaptcha-badge {
   display: none !important; }
 
-.shipping_methods .double_inputs label.error {
-  margin-top: -10px;
-  margin-bottom: 20px; }
-
-.shipping_methods .with_help label.error {
-  margin-top: 10px; }
-
 .step_section .different_address .with_help .info_popover {
   bottom: auto;
   top: 19px; }
