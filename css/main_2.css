@@ -6245,4 +6245,7 @@
     -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35); }
 
+.step_form select.error + .mod_select {
+  border-color: #ff3434; }
+
 /*# sourceMappingURL=main_2.css.map */
