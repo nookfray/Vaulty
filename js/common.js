@@ -84,10 +84,6 @@ $(document).ready(function() {
 	});
 
 
-	$(".soon a").click(function() {
-		return false;
-	});
-
 
 	// HOVER DROPDOWN
 	$(".main_header .products_dropdown").hover(function(){
