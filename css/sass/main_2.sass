@@ -6404,7 +6404,9 @@
 	.dropdown_menu
 		left: -25px 
 		&:before
-			left: 25px 
+			left: 0px
+			right: 0px
+			margin: auto  
 		li
 			a
 				padding-left: 20px 
@@ -6594,4 +6596,280 @@
 				
 .step_form select.error + .mod_select
 	border-color: #ff3434 
+
+.main_header .products_dropdown .dropdown_menu:before, .main_header .user_dropdown .dropdown_menu:before, .main_header .mobile_nav:before
+	left: 0px
+	right: 0px
+	margin: auto  
+	
+
+
+.search_form
+	position: relative
+	width: 100% 
+	display: flex 
+	-webkit-flex-wrap: wrap 
+	-ms-flex-wrap: wrap 
+	flex-wrap: wrap 
+	margin-bottom: 40px 
+	.submit_btn
+		position: relative
+		width: 64px 
+		height: 64px
+		border: none
+		-webkit-border-radius: 0px 
+		border-radius: 0px   
+		margin: 0px
+		padding: 0px  
+		background: #F9F9F9 
+		-webkit-order: -1 
+		-ms-order: -1 
+		order: -1 
+		margin-right: auto 
+		&:hover
+			background: #E5E1E1
+		svg
+			position: absolute
+			top: 0px
+			left: 0px
+			right: 0px
+			bottom: 0px
+			margin: auto
+			display: block 
+			width: 24px 
+			height: 24px 
+			fill: #9b9b9b   
+			-webkit-transition: .3s all 
+			-moz-transition: .3s all 
+			-ms-transition: .3s all 
+			-o-transition: .3s all 
+			transition: .3s all  
+	input
+		position: relative
+		width: calc(100% - 67px)
+		height: 64px
+		outline: none
+		border: none 
+		-webkit-border-radius: 0px 
+		border-radius: 0px    
+		padding: 20px
+		font-weight: 600
+		font-size: 20px 
+		line-height: 24px   
+		color: #343434 
+		-webkit-box-shadow: none 
+		box-shadow: none 
+		text-align: left
+		background: #F9F9F9 
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all 
+		&:focus
+			-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.15) 
+			box-shadow: 5px 5px 10px rgba(0,0,0,.15) 
+	::placeholder
+		color: #a1a1a1 
+	:-ms-input-placeholder
+		color: #a1a1a1 
+	::-ms-input-placeholder
+		color: #a1a1a1
+
+
+
+.subscribe_form
+	max-width: 490px
+	input
+		width: 100% 
+		text-align: center
+		margin-bottom: 50px
+	.submit_btn
+		margin: auto
+	label.error
+		position: relative
+		top: auto
+		text-align: center
+		margin-top: -40px 
+		margin-bottom: 20px 
+
+
+
+.section_404
+	position: relative
+	width: 100% 
+	height: 100% 
+	background: url("../img/404_bg.jpg") repeat-y left top
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover  
+	padding-top: 135px 
+	padding-bottom: 135px 
+	display: flex 
+	-webkit-flex-wrap: wrap 
+	-ms-flex-wrap: wrap 
+	flex-wrap: wrap 
+	-webkit-align-items: center
+	align-items: center
+	-webkit-justify-content: center
+	justify-content: center
+	.container
+		position: relative
+		display: flex 
+		-webkit-flex-wrap: wrap 
+		-ms-flex-wrap: wrap 
+		flex-wrap: wrap 
+		-webkit-align-items: center
+		align-items: center
+	.error_img
+		position: relative
+		width: 696px 
+		height: auto 
+		margin: 0px
+	.text_block
+		position: relative
+		width: 100%
+		max-width: 480px 
+		margin-left: auto 
+	p
+		font-weight: 600
+		font-size: 25px 
+		line-height: 33px
+		color: #505050 
+		margin: 0px
+		span
+			color: #CCB381 
+	a
+		position: relative
+		display: inline-block
+		vertical-align: top
+		font-weight: 600
+		font-size: 25px 
+		line-height: 33px
+		color: #CCB381 
+		text-decoration: none
+	.error_title
+		position: relative
+		font-weight: bold 
+		font-size: 75px 
+		line-height: 1
+		color: #343434 
+		margin: 0px
+		margin-bottom: 5px 
+	.title
+		position: relative
+		font-weight: 600
+		font-size: 41px 
+		line-height: 1.1
+		color: #343434 
+		margin-bottom: 60px 
+		&:after
+			content: "" 
+			display: block 
+			width: 38px 
+			height: 4px
+			background: #CCB381    
+			position: absolute
+			left: 0px
+			bottom: -30px  
+
+
+
+
+.subscribed_thank
+	position: relative
+	width: 100% 
+	height: 100% 
+	background: #FFF
+	padding-top: 80px 
+	padding-bottom: 110px 
+	display: flex 
+	-webkit-flex-wrap: wrap 
+	-ms-flex-wrap: wrap 
+	flex-wrap: wrap 
+	-webkit-align-items: center
+	align-items: center
+	-webkit-justify-content: center
+	justify-content: center
+	.container
+		position: relative
+		text-align: center
+	.thank_img
+		position: relative
+		display: block 
+		width: 134px 
+		height: auto 
+		margin: auto
+		margin-bottom: 55px 
+	.title
+		position: relative
+		font-weight: 600
+		font-size: 41px 
+		line-height: 1.1
+		color: #343434 
+		margin-bottom: 60px 
+		&:after
+			content: "" 
+			display: block 
+			width: 38px 
+			height: 4px
+			background: #CCB381    
+			position: absolute
+			left: 0px
+			right: 0px
+			margin: auto 
+			bottom: -30px  
+	p
+		position: relative
+		display: block 
+		max-width: 950px 
+		text-align: center
+		font-weight: 600
+		font-size: 25px 
+		line-height: 33px
+		color: #505050 
+		margin: auto
+		margin-bottom: 35px 
+		span
+			color: #CCB381 
+	a
+		position: relative
+		display: inline-block
+		vertical-align: top
+		font-weight: 600
+		font-size: 25px 
+		line-height: 33px
+		color: #CCB381 
+		text-decoration: none
+	.main_btn
+		background: #CDB382
+		border-color: #CDB382
+		color: #FFF
+		-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+		margin-bottom: 20px 
+		&:focus
+			color: #FFF 
+		&:hover
+			background: #B59E73
+			border-color: #B59E73
+			color: #FFF
+			-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+	.small_text
+		position: relative
+		max-width: 100% 
+		width: 100% 
+		text-align: center
+		margin: 0px
+		font-weight: 300
+		font-size: 16.67px
+		line-height: 27px    
+
+
+
+
+
+
+
 

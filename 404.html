@@ -89,91 +89,19 @@
 		</header>
 		<!-- END HEADER -->
 
-		<!-- SUPPORTED COINS -->
-		<section class="supported_coins">
+		<!-- 404 section -->
+		<section class="section_404">
 			<div class="container">
-				<div class="wrapper">
-					<h3 class="section_title">Supported coins & tokens <span>(1192)</span></h3>
-					<p class="mid_text">List of all coins & tokens supported by the Vaulty Card.</p>
-					<form action="" class="search_form">
-						<input type="text" name="search" placeholder="Quick search" required autocomplete="off">
-						<button type="submit" class="submit_btn"><svg><use xlink:href="img/sprite.svg#search_icon"></use></svg></button>
-					</form>
-					<div class="table_block">
-						<h5 class="line_title">
-							<span class="filter_span">COIN & TOKEN <span class="table_hide">NAME</span> <img src="img/triangles.png" alt="img"></span>
-							<span>SHORT</span>
-							<span>SUPORTS STATUS</span>
-							<span>LINKS</span>
-						</h5>
-						<div class="coin_item">
-							<p class="item_title"><img src="img/coin_1.png" alt="coin">Bitcoin</p>
-							<p class="short_title">BTC</p>
-							<div class="status_block">
-								<p class="supported">Supported</p>
-							</div>
-							<div class="links">
-								<a href="#" target="_blank">Github</a>
-								<a href="#" target="_blank">Homepage</a>
-							</div>
-						</div>
-						<div class="coin_item">
-							<p class="item_title"><img src="img/coin_2.png" alt="coin">Litecoin</p>
-							<p class="short_title">LTC</p>
-							<div class="status_block">
-								<p class="pending">Pending</p>
-							</div>
-							<div class="links">
-								<a href="#" target="_blank">Homepage</a>
-							</div>
-						</div>
-						<div class="coin_item">
-							<p class="item_title"><img src="img/coin_3.png" alt="coin">Ripple</p>
-							<p class="short_title">XRP</p>
-							<div class="status_block">
-								<p class="supported">Supported</p>
-							</div>
-							<div class="links">
-								<a href="#" target="_blank">Homepage</a>
-							</div>
-						</div>
-						<div class="coin_item">
-							<p class="item_title"><img src="img/coin_1.png" alt="coin">Bitcoin</p>
-							<p class="short_title">BTC</p>
-							<div class="status_block">
-								<p class="supported">Supported</p>
-							</div>
-							<div class="links">
-								<a href="#" target="_blank">Github</a>
-								<a href="#" target="_blank">Homepage</a>
-							</div>
-						</div>
-						<div class="coin_item">
-							<p class="item_title"><img src="img/coin_2.png" alt="coin">Litecoin</p>
-							<p class="short_title">LTC</p>
-							<div class="status_block">
-								<p class="pending">Pending</p>
-							</div>
-							<div class="links">
-								<a href="#" target="_blank">Homepage</a>
-							</div>
-						</div>
-						<div class="coin_item">
-							<p class="item_title"><img src="img/coin_3.png" alt="coin">Ripple</p>
-							<p class="short_title">XRP</p>
-							<div class="status_block">
-								<p class="supported">Supported</p>
-							</div>
-							<div class="links">
-								<a href="#" target="_blank">Homepage</a>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="more">See all of them<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+				<img src="img/404.svg" alt="img" class="error_img">
+				<div class="text_block">
+					<h2 class="error_title">404</h2>
+					<h3 class="title">Are you lost?</h3>
+					<p>If it seems like something should be here, 
+					<a href="#">please let us know.</a></p>	
 				</div>
 			</div>
 		</section>
-		<!-- END SUPPORTED COINS -->
+		<!-- 404 section -->
 
 	</div>
 	<!-- END PAGE WRAPPER -->
@@ -212,6 +140,23 @@
 		</div>
 	</footer>
 	<!-- END FOOTER -->
+
+	<!-- CART MODAL -->
+	<div class="modal fade cart_modal" id="cart_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal">X</button>
+					<h3 class="modal_title">My Cart</h3>
+				</div>
+				<div class="empty_cart">
+					<p>Your cart is currently empty.</p>
+					<a href="#" class="continue_btn" data-dismiss="modal">Continue browsing</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END CART MODAL -->
 
 
 
