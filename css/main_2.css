@@ -6418,6 +6418,21 @@
       position: absolute;
       left: 0px;
       bottom: -30px; }
+  .section_404 .main_btn {
+    background: #CDB382;
+    border-color: #CDB382;
+    color: #FFF;
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 35px; }
+    .section_404 .main_btn:focus {
+      color: #FFF; }
+    .section_404 .main_btn:hover {
+      background: #B59E73;
+      border-color: #B59E73;
+      color: #FFF;
+      -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35); }
 
 .subscribed_thank {
   position: relative;
