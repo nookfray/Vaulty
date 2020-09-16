@@ -750,11 +750,11 @@ $(document).ready(function() {
 
     // SCROLL TO ID
 	if($(window).width() > 479) {
-		$(".main_section .main_btn").mPageScroll2id({
+		$(".main_section .main_btn, .what_is_section .main_btn").mPageScroll2id({
 			offset: 86
 		});
 	} else {
-		$(".main_section .main_btn").mPageScroll2id({
+		$(".main_section .main_btn, .what_is_section .main_btn").mPageScroll2id({
 			offset: 51
 		});
 	}
