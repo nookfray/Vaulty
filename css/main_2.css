@@ -6250,10 +6250,14 @@
 .step_form select.error + .mod_select {
   border-color: #ff3434; }
 
-.main_header .products_dropdown .dropdown_menu:before, .main_header .user_dropdown .dropdown_menu:before, .main_header .mobile_nav:before {
-  left: 0px;
-  right: 0px;
-  margin: auto; }
+.main_header .products_dropdown .dropdown_menu:before {
+  left: 54px; }
+
+.main_header .mobile_nav:before {
+  left: 49px; }
+
+.main_header .user_dropdown .dropdown_menu:before {
+  left: 87px; }
 
 .search_form {
   position: relative;

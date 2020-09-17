@@ -142,7 +142,7 @@ $(document).ready(function() {
 
 	$(".icons_list .dropdown > a, .icons_list .dropdown > button").click(function() {
 		$(".toggle_menu").removeClass("active");
-		$(".main_header .mobile_nav").fadeOut(300).removeClass("active");
+		$(".main_header .mobile_nav, .main_header .user_dropdown .dropdown_menu").fadeOut(300).removeClass("active");
 		$(".icons_list .dropdown > a, .icons_list .dropdown > button").not(this).parent().removeClass("open");
 		$(".icons_list .dropdown > a, .icons_list .dropdown > button").not(this).next().fadeOut();
 		$(this).parent().toggleClass("open");
