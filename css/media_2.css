@@ -1451,7 +1451,16 @@
       font-size: 34px; }
     .subscribed_thank .thank_img {
       width: 110px;
-      margin-bottom: 40px; } }
+      margin-bottom: 40px; }
+    .subscribed_thank .lang_img {
+      width: 110px;
+      height: 110px;
+      margin-bottom: 40px; }
+      .subscribed_thank .lang_img p {
+        font-size: 30px;
+        line-height: 1;
+        right: -35px;
+        top: -2px; } }
 @media screen and (max-width: 575px) {
   .academy_header .mobile_block {
     padding-top: 0px;
