@@ -6339,6 +6339,7 @@
   .subscribe_form .submit_btn {
     margin: auto; }
   .subscribe_form label.error {
+    display: none !important;
     position: relative;
     top: auto;
     text-align: center;
