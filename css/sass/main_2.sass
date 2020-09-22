@@ -5807,28 +5807,30 @@
 	.main_form
 		position: static
 		
-.main_form .app_message
-	position: absolute
-	top: 0px
-	left: 0px
-	bottom: 0px
-	right: 0px  
-	width: 100% 
-	height: 100%   
-	padding: 5px
-	z-index: 20 
-	background: rgba(255,255,255,.7)  
-	display: none 
-	img
+.main_form, .subscribe_form, .request_form
+	.app_message
 		position: absolute
-		width: 44px 
-		height: 44px 
 		top: 0px
-		left: 0px 
-		right: 0px
+		left: 0px
 		bottom: 0px
-		margin: auto   
-
+		right: 0px  
+		width: 100% 
+		height: 100%   
+		padding: 5px
+		z-index: 20 
+		background: rgba(255,255,255,.7)  
+		display: none 
+		img
+			position: absolute
+			width: 44px 
+			height: 44px 
+			top: 0px
+			left: 0px 
+			right: 0px
+			bottom: 0px
+			margin: auto   
+.subscribe_form .app_message
+	background: rgba(248,248,248,.7)
 
 
 
@@ -6905,11 +6907,11 @@
 			color: #505050 
 			margin: 0px   
 
+.main_header .icons_list .language_dropdown .dropdown_menu li a
+	padding-left: 16px
+	padding-right: 16px
+	text-align: center
 
-
-
-
-
-
-
+.main_form label.error, .request_form label.error, .thanks_section .login_block label.error, .step_form label.error
+	display: none !important 
 

@@ -174,7 +174,7 @@ $(document).ready(function() {
 		loop: true,
 		effect: 'fade',
 		autoplay: {
-			delay: 50000,
+			delay: 5000,
 			disableOnInteraction: false,
 		},
 		pagination: {

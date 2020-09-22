@@ -1463,7 +1463,10 @@
         top: -2px; }
 
   .main_header .user_dropdown .dropdown_menu:before {
-    left: 30px; } }
+    left: 30px; }
+
+  .authorization_wrapper {
+    padding-top: 0px; } }
 @media screen and (max-width: 575px) {
   .academy_header .mobile_block {
     padding-top: 0px;
@@ -2330,7 +2333,10 @@
 
   .absolute_header .container {
     padding-top: 14px;
-    padding-bottom: 14px; } }
+    padding-bottom: 14px; }
+
+  .authorization_wrapper {
+    padding-top: 0px; } }
 @media screen and (max-width: 399px) {
   .product_compare .wrapper {
     padding-bottom: 150px; }

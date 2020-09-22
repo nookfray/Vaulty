@@ -5546,7 +5546,7 @@
 .authorization_section .left_wrapper .main_form {
   position: static; }
 
-.main_form .app_message {
+.main_form .app_message, .subscribe_form .app_message, .request_form .app_message {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -5558,7 +5558,7 @@
   z-index: 20;
   background: rgba(255, 255, 255, 0.7);
   display: none; }
-  .main_form .app_message img {
+  .main_form .app_message img, .subscribe_form .app_message img, .request_form .app_message img {
     position: absolute;
     width: 44px;
     height: 44px;
@@ -5567,6 +5567,9 @@
     right: 0px;
     bottom: 0px;
     margin: auto; }
+
+.subscribe_form .app_message {
+  background: rgba(248, 248, 248, 0.7); }
 
 .referral_section .wrapper {
   max-width: 100%; }
@@ -6550,5 +6553,13 @@
       text-transform: uppercase;
       color: #505050;
       margin: 0px; }
+
+.main_header .icons_list .language_dropdown .dropdown_menu li a {
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center; }
+
+.main_form label.error, .request_form label.error, .thanks_section .login_block label.error, .step_form label.error {
+  display: none !important; }
 
 /*# sourceMappingURL=main_2.css.map */

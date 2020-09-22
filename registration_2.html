@@ -56,6 +56,25 @@
 							</label>
 						</div>
 						<button type="submit" class="submit_btn">Create account</button>
+						<div class="app_message">
+							<img src="img/preloader.gif" alt="preloader">
+						</div>
+
+						<!-- скрипт для примера (появление окна) -->
+						<script>
+							window.onload = function() {
+								// показываем окно по клику на кнопку отправить
+								$('.submit_btn').click(function() {
+									$('.app_message').show(0);
+
+									// скрываем через 3сек
+									setTimeout(function(){
+										$('.app_message').hide(0);
+									}, 3000);
+								});
+								
+							};
+						</script>
 					</form>
 				</div>
 				<div class="right_wrapper">
