@@ -6559,7 +6559,7 @@
   padding-right: 16px;
   text-align: center; }
 
-.main_form label.error, .request_form label.error, .thanks_section .login_block label.error, .step_form label.error {
+.main_form label.error, .request_form label.error, .thanks_section .login_block label.error, .step_form label.error, .main_form_2 label.error {
   display: none !important; }
 
 /*# sourceMappingURL=main_2.css.map */
