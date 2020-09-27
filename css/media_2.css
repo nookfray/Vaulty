@@ -33,9 +33,19 @@
 
   .contacs_help_section .container, .contacts_page .container {
     max-width: 970px; } }
+@media screen and (min-width: 2000px) {
+  .characteristics_section {
+    -webkit-background-size: 65%;
+    -o-background-size: 65%;
+    background-size: 65%; } }
 @media screen and (max-width: 1659px) {
   .box_section .box_bg {
-    left: 25%; } }
+    left: 25%; }
+
+  .characteristics_section {
+    -webkit-background-size: 77%;
+    -o-background-size: 77%;
+    background-size: 80%; } }
 @media screen and (max-width: 1599px) {
   .help_header .container {
     max-width: 1170px; }
@@ -65,7 +75,9 @@
     margin-right: 10px; }
 
   .characteristics_section {
-    background-position: right -100px bottom -100px; }
+    -webkit-background-size: 77%;
+    -o-background-size: 77%;
+    background-size: 77%; }
     .characteristics_section .tab-pane .right_col {
       max-width: 400px; }
 
@@ -923,7 +935,12 @@
     line-height: 44px; }
 
   .toggle_menu:after {
-    margin-top: 27px; } }
+    margin-top: 27px; }
+
+  .characteristics_section {
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%; } }
 @media screen and (max-width: 850px) {
   .charge_section .charger {
     left: -100px; } }

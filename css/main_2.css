@@ -1919,7 +1919,10 @@
 .characteristics_section {
   position: relative;
   width: 100%;
-  background: url("../img/characteristics_bg.png") no-repeat right bottom #FFF; }
+  background: url("../img/characteristics_bg.png") no-repeat right bottom;
+  -webkit-background-size: 72%;
+  -o-background-size: 72%;
+  background-size: 72%; }
   .characteristics_section .container {
     position: relative;
     display: -webkit-box;

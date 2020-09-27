@@ -768,4 +768,15 @@ $(document).ready(function() {
 	}
 	
 
+	// SCROLL TO ID
+	if($(window).width() > 767) {
+		$(".academy_all_welcome .more").mPageScroll2id({
+			offset: 200
+		});
+	} else {
+		$(".academy_all_welcome .more").mPageScroll2id({
+			offset: 140
+		});
+	}
+
 });
