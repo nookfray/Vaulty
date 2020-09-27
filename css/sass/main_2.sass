@@ -6912,6 +6912,34 @@
 	padding-right: 16px
 	text-align: center
 
+
 .main_form label.error, .request_form label.error, .thanks_section .login_block label.error, .step_form label.error, .main_form_2 label.error
 	display: none !important 
 
+
+.main_header .mobile_nav:before
+	display: none 
+.toggle_menu
+	&.active
+		&:after
+			opacity: 1
+			visibility: visible 
+	&:after
+		content: ""
+		display: block
+		width: 20px
+		height: 20px
+		position: absolute
+		top: 100%
+		left: 0px
+		right: 0px
+		margin: auto 
+		background: none
+		z-index: 1
+		border: 10px solid transparent
+		border-bottom: 10px solid #FFF
+		margin-top: 38px 
+		opacity: 0
+		visibility: hidden
+		transition: .3s all
+		 

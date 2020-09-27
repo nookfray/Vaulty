@@ -920,13 +920,16 @@
 
   .dashboard_section .main_block .name, .account_section .account_header .name {
     font-size: 41px;
-    line-height: 44px; } }
+    line-height: 44px; }
+
+  .toggle_menu:after {
+    margin-top: 27px; } }
 @media screen and (max-width: 850px) {
   .charge_section .charger {
     left: -100px; } }
 @media screen and (max-width: 767px) {
   .academy_welcome {
-    padding-top: 215px; }
+    padding-top: 150px; }
     .academy_welcome .container {
       max-width: 540px; }
     .academy_welcome .wrapper {
@@ -1466,7 +1469,10 @@
     left: 30px; }
 
   .authorization_wrapper {
-    padding-top: 0px; } }
+    padding-top: 0px; }
+
+  .toggle_menu:after {
+    display: none; } }
 @media screen and (max-width: 575px) {
   .academy_header .mobile_block {
     padding-top: 0px;
@@ -1509,7 +1515,7 @@
     padding-bottom: 4px; }
 
   .academy_welcome {
-    padding-top: 168px;
+    padding-top: 148px;
     padding-bottom: 60px; }
     .academy_welcome .container {
       padding-left: 0px;
@@ -2088,7 +2094,7 @@
     margin-bottom: 5px; } }
 @media screen and (max-width: 479px) {
   .academy_welcome {
-    padding-top: 158px; }
+    padding-top: 120px; }
     .academy_welcome .wrapper {
       padding-left: 20px;
       padding-right: 20px; }
