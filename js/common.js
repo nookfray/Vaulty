@@ -216,10 +216,12 @@ $(document).ready(function() {
 
 
 	// SCROLL TO ID
-	$(".terminal_section .top_wrapper .more[href*='#'], .inner_freedom_section .buy_btn, .inner_freedom_section a.buy_btn").mPageScroll2id({
-		offset: 90
-	});
-
+	$(".terminal_section .top_wrapper .more[href*='#'], .inner_freedom_section .buy_btn, .inner_freedom_section a.buy_btn").click(function() {
+		$(this).mPageScroll2id({
+			offset: 86
+		});
+	})
+	
 
 	// MOD SELECT
 	$(".mod_select").niceSelect();
@@ -740,13 +742,17 @@ $(document).ready(function() {
 
 	// SCROLL TO ID
 	if($(window).width() > 479) {
-		$(".terminal_section .bottom_wrapper .main_btn").mPageScroll2id({
-			offset: 115
-		});
+		$(".terminal_section .bottom_wrapper .main_btn").click(function() {
+			$(this).mPageScroll2id({
+				offset: 115
+			});
+		})
 	} else {
-		$(".terminal_section .bottom_wrapper .main_btn").mPageScroll2id({
-			offset: 72
-		});
+		$(".terminal_section .bottom_wrapper .main_btn").click(function() {
+			$(this).mPageScroll2id({
+				offset: 72
+			});
+		})
 	}
 
 
@@ -758,25 +764,34 @@ $(document).ready(function() {
 
     // SCROLL TO ID
 	if($(window).width() > 479) {
-		$(".main_section .main_btn, .what_is_section .main_btn, .academy_welcome .more, .product_main_section .more").mPageScroll2id({
-			offset: 86
-		});
+		$(".main_section .main_btn, .what_is_section .main_btn, .academy_welcome .more, .product_main_section .more").click(function() {
+			$(this).mPageScroll2id({
+				offset: 86
+			});
+		})
 	} else {
-		$(".main_section .main_btn, .what_is_section .main_btn, .academy_welcome .more, .product_main_section .more").mPageScroll2id({
-			offset: 51
+		$(".main_section .main_btn, .what_is_section .main_btn, .academy_welcome .more, .product_main_section .more").click(function() {
+			$(this).mPageScroll2id({
+				offset: 51
+			});
 		});
 	}
+	
 	
 
 	// SCROLL TO ID
 	if($(window).width() > 767) {
-		$(".academy_all_welcome .more").mPageScroll2id({
-			offset: 200
-		});
+		$(".academy_all_welcome .more").click(function() {
+			$(this).mPageScroll2id({
+				offset: 200
+			});
+		})
 	} else {
-		$(".academy_all_welcome .more").mPageScroll2id({
-			offset: 140
-		});
+		$(".academy_all_welcome .more").click(function() {
+			$(this).mPageScroll2id({
+				offset: 140
+			});
+		})
 	}
 
 });
