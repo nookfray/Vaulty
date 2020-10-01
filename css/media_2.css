@@ -940,7 +940,10 @@
   .characteristics_section {
     -webkit-background-size: 100%;
     -o-background-size: 100%;
-    background-size: 100%; } }
+    background-size: 100%; }
+
+  .product_main_section .img_block img {
+    max-width: 1281px; } }
 @media screen and (max-width: 850px) {
   .charge_section .charger {
     left: -100px; } }
