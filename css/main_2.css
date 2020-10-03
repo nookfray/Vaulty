@@ -6590,4 +6590,58 @@
   visibility: hidden;
   transition: 0.3s all; }
 
+.step_form .btns_block .submit_btn:focus, .step_form .btns_block .submit_btn:hover {
+  color: #FFF; }
+
+.shipping_methods .terms_checkbox {
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .shipping_methods .terms_checkbox .icon {
+    top: -1px;
+    width: 21px;
+    height: 21px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px; }
+    .shipping_methods .terms_checkbox .icon:before, .shipping_methods .terms_checkbox .icon:after {
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      content: "";
+      display: block;
+      width: 2px;
+      height: 8px;
+      transform: rotate(-45deg);
+      background: #FFF;
+      position: absolute;
+      top: 0px;
+      left: -8px;
+      right: 0px;
+      bottom: -4px;
+      margin: auto;
+      opacity: 0;
+      transition: 0.3s all; }
+    .shipping_methods .terms_checkbox .icon:after {
+      left: 6px;
+      bottom: 0px;
+      height: 13px;
+      transform: rotate(45deg); }
+  .shipping_methods .terms_checkbox input:checked + .icon:before {
+    transform: rotate(-45deg);
+    opacity: 1; }
+  .shipping_methods .terms_checkbox input:checked + .icon:after {
+    transform: rotate(45deg);
+    opacity: 1; }
+  .shipping_methods .terms_checkbox .name {
+    display: inline-block;
+    vertical-align: top; }
+.shipping_methods .term_info {
+  position: relative;
+  width: 100%;
+  background: #eee;
+  padding: 15px;
+  font-weight: normal;
+  font-size: 16.67px;
+  line-height: 21px;
+  margin: 0px; }
+
 /*# sourceMappingURL=main_2.css.map */
