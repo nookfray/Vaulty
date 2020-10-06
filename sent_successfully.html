@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vaulty</title>
+	<meta content="Vaulty" name='description' itemprop="description">
+	<meta content="Vaulty" name='keywords' itemprop="keywords">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+
+	<!-- PAGE WRAPPER -->
+	<div class="page_wrapper">
+	
+		<!-- HEADER -->
+		<header class="main_header">
+			<div class="container">
+				<a href="index.html" class="logo"><svg><use xlink:href="img/sprite.svg#logo_icon"></use></svg></a>
+				<ul class="left_nav">
+					<li class="active"><a href="#">Card</a></li>
+					<li class="soon"><a href="#">Terminal <sup>soon</sup></a></li>
+				</ul>
+				<div class="right_block">
+					<div class="products_dropdown">
+						<button type="button" class="products_btn">Products</button>
+						<ul class="dropdown_menu">
+							<li><a href="#">Founder edition</a></li>
+							<li><a href="#">Charger Station</a></li>
+							<li><a href="#">Protection Sleeve</a></li>
+						</ul>
+					</div>
+					<ul class="main_nav">
+						<li><a href="#">Academy</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Card status</a></li>
+					</ul>
+					<button type="button" class="toggle_menu">
+						<span class='sandwich'>
+							<span class="sw-topper"></span>
+							<span class="sw-bottom"></span>
+							<span class="sw-footer"></span>
+						</span>
+					</button>
+					<ul class="icons_list">
+						<li class="dropdown language_dropdown">
+							<button type="button" class="drop_btn"><svg><use xlink:href="img/sprite.svg#global_icon"></use></svg></button>
+							<ul class="dropdown_menu">
+								<li><a href="#">EN</a></li>
+								<li><a href="#">FR</a></li>
+								<li><a href="#">ES</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="login.html" class="user_link"><svg><use xlink:href="img/sprite.svg#user_icon"></use></svg></a>
+						</li>
+						<li>
+							<a href="#" class="basket_link" data-toggle="modal" data-target="#cart_modal"><svg><use xlink:href="img/sprite.svg#basket_icon"></use></svg></a>
+						</li>
+					</ul>
+					<!-- MODILE NAV -->
+					<ul class="mobile_nav">
+						<li class="active"><a href="#">Card</a></li>
+						<li class="soon"><a href="#">Terminal <sup>soon</sup></a></li>
+						<li class="products_dropdown">
+							<button type="button" class="products_btn">Products</button>
+							<ul class="dropdown_menu">
+								<li><a href="#">Founder edition</a></li>
+								<li><a href="#">Charger Station</a></li>
+								<li><a href="#">Protection Sleeve</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Academy</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Card status</a></li>
+						<li class="language_list">
+							<a href="#">En</a>
+							<a href="#">Fr</a>
+							<a href="#">Es</a>
+						</li>
+					</ul>
+					<!-- END MOBILE NAV -->
+				</div>
+			</div>
+		</header>
+		<!-- END HEADER -->
+
+		<!-- SUBSCRIBED THANK -->
+		<section class="subscribed_thank">
+			<div class="container">
+				<img src="img/sent_successfully.png" alt="img" class="thank_img">
+				<h2 class="title">Message sent successfully</h2>
+				<p>You are in good hands. <br>
+				The Support Team will now take care of your message.</p>	
+				<a href="index.html" class="main_btn">Go to homepage</a>
+				<p class="small_text">You will receive an email with your ticket number in a few moments.</p>
+			</div>
+		</section>
+		<!-- END SUBSCRIBED THANK -->
+
+	</div>
+	<!-- END PAGE WRAPPER -->
+
+	<!-- FOOTER -->
+	<footer class="main_footer">
+		<div class="top_footer">
+			<div class="container">
+				<h3 class="title">We’re here to help</h3>
+				<div class="wrap">
+					<p>Join the thousands of peoples who already using the Vaulty Card.</p>
+					<a href="#" class="more">Contact us<svg><use xlink:href="img/sprite.svg#arrow_right"></use></svg></a>
+				</div>
+			</div>
+		</div>
+		<div class="mid_footer">
+			<div class="container">
+				<a href="index.html" class="logo"><svg><use xlink:href="img/sprite.svg#logo_icon"></use></svg></a>
+				<div class="language_dropdown">
+					<button type="button" class="drop_btn">English</button>
+					<ul class="dropdown_menu">
+						<li><a href="#">French</a></li>
+						<li><a href="#">Spain</a></li>
+					</ul>
+				</div>
+				<ul class="soc_list">
+					<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#twitter_icon"></use></svg></a></li>
+					<li><a href="#" target="_blank"><svg><use xlink:href="img/sprite.svg#facebook_icon"></use></svg></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom_footer">
+			<div class="container">
+				<p>Copyright © Vaulty LTD company. All rights reserved. Vaulty, Vaulty Card, Vaulty Terminal are registered trademarks of Vaulty LTD --- 2020</p>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+
+	<!-- CART MODAL -->
+	<div class="modal fade cart_modal" id="cart_modal">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal">X</button>
+					<h3 class="modal_title">My Cart</h3>
+				</div>
+				<div class="empty_cart">
+					<p>Your cart is currently empty.</p>
+					<a href="#" class="continue_btn" data-dismiss="modal">Continue browsing</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END CART MODAL -->
+
+
+
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/popper.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="libs/scroll2id/pagescroll2id.min.js"></script>
+	<script src="libs/validator/jquery.validate.min.js"></script>
+	<script src="libs/selectstyle/jquery.nice-select.min.js"></script>
+	<script src="js/common.js"></script>
+
+	<script src="libs/typeit/typeit.min.js"></script>
+	<script>
+		$('.typed_text').typeIt({
+			speed: 150,
+			loop: true,
+			startDelay: 500,
+			loopDelay: 0,
+		})
+		.tiType('Hardware wallet')
+		.tiPause(2000)
+		.tiDelete()
+		.tiType('Payment option')
+		.tiPause(2000)
+		.tiDelete()
+		.tiType('Crypto exchange')
+		.tiPause(2000)
+		.tiDelete();
+	</script>
+
+</body>
+</html>
