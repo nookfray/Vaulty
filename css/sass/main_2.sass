@@ -6976,7 +6976,10 @@
 			opacity: 0
 			z-index: -2
 			width: 0px
-			height: 0px     
+			height: 0px    
+		input.error + .icon, input.error + label + .icon
+			-webkit-box-shadow: 0px 0px 0px 1px red 
+			box-shadow: 0px 0px 0px 1px red 
 		.icon
 			position: relative
 			display: block
@@ -7009,12 +7012,12 @@
 				bottom: 0px
 				height: 13px
 				transform: rotate(45deg)
-		input:checked + .icon		
+		input:checked + .icon, input:checked + label + .icon	
 			background: #CDB382 
-		input:checked + .icon:before
+		input:checked + .icon:before, input:checked + label + .icon:before
 			transform: rotate(-45deg)
 			opacity: 1 
-		input:checked + .icon:after
+		input:checked + .icon:after, input:checked + label + .icon:after
 			transform: rotate(45deg)
 			opacity: 1 
 		.name

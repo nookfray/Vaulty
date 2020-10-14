@@ -6618,6 +6618,9 @@
     z-index: -2;
     width: 0px;
     height: 0px; }
+  .checkout_block .terms_checkbox input.error + .icon, .checkout_block .terms_checkbox input.error + label + .icon {
+    -webkit-box-shadow: 0px 0px 0px 1px red;
+    box-shadow: 0px 0px 0px 1px red; }
   .checkout_block .terms_checkbox .icon {
     position: relative;
     display: block;
@@ -6650,12 +6653,12 @@
       bottom: 0px;
       height: 13px;
       transform: rotate(45deg); }
-  .checkout_block .terms_checkbox input:checked + .icon {
+  .checkout_block .terms_checkbox input:checked + .icon, .checkout_block .terms_checkbox input:checked + label + .icon {
     background: #CDB382; }
-  .checkout_block .terms_checkbox input:checked + .icon:before {
+  .checkout_block .terms_checkbox input:checked + .icon:before, .checkout_block .terms_checkbox input:checked + label + .icon:before {
     transform: rotate(-45deg);
     opacity: 1; }
-  .checkout_block .terms_checkbox input:checked + .icon:after {
+  .checkout_block .terms_checkbox input:checked + .icon:after, .checkout_block .terms_checkbox input:checked + label + .icon:after {
     transform: rotate(45deg);
     opacity: 1; }
   .checkout_block .terms_checkbox .name {
