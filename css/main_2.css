@@ -6593,17 +6593,42 @@
 .step_form .btns_block .submit_btn:focus, .step_form .btns_block .submit_btn:hover {
   color: #FFF; }
 
-.shipping_methods .terms_checkbox {
+.checkout_block .terms_checkbox {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 15px 0px;
+  cursor: pointer;
   border: none;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 30px; }
-  .shipping_methods .terms_checkbox .icon {
+  .checkout_block .terms_checkbox input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: -2;
+    width: 0px;
+    height: 0px; }
+  .checkout_block .terms_checkbox .icon {
+    position: relative;
+    display: block;
+    background: #ddd;
+    transition: 0.3s all;
     top: -1px;
     width: 21px;
     height: 21px;
     -webkit-border-radius: 0px;
     border-radius: 0px; }
-    .shipping_methods .terms_checkbox .icon:before, .shipping_methods .terms_checkbox .icon:after {
+    .checkout_block .terms_checkbox .icon:before, .checkout_block .terms_checkbox .icon:after {
       -webkit-border-radius: 0px;
       border-radius: 0px;
       content: "";
@@ -6620,21 +6645,32 @@
       margin: auto;
       opacity: 0;
       transition: 0.3s all; }
-    .shipping_methods .terms_checkbox .icon:after {
+    .checkout_block .terms_checkbox .icon:after {
       left: 6px;
       bottom: 0px;
       height: 13px;
       transform: rotate(45deg); }
-  .shipping_methods .terms_checkbox input:checked + .icon:before {
+  .checkout_block .terms_checkbox input:checked + .icon {
+    background: #CDB382; }
+  .checkout_block .terms_checkbox input:checked + .icon:before {
     transform: rotate(-45deg);
     opacity: 1; }
-  .shipping_methods .terms_checkbox input:checked + .icon:after {
+  .checkout_block .terms_checkbox input:checked + .icon:after {
     transform: rotate(45deg);
     opacity: 1; }
-  .shipping_methods .terms_checkbox .name {
+  .checkout_block .terms_checkbox .name {
+    position: relative;
+    width: calc(100% - 21px);
     display: inline-block;
-    vertical-align: top; }
-.shipping_methods .term_info {
+    vertical-align: top;
+    font-size: 16.67px;
+    line-height: 21px;
+    font-weight: normal;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin: 0px; }
+.checkout_block .term_info {
   position: relative;
   width: 100%;
   background: #eee;
