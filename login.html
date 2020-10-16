@@ -49,20 +49,17 @@
 							</div>
 							<a href="#" class="forgot_link">Forgot your password?</a>
 						</div>
-						<div class="app_message">
-							<img src="img/preloader.gif" alt="preloader">
-						</div>
 
 						<!-- скрипт для примера (появление окна) -->
 						<script>
 							window.onload = function() {
 								// показываем окно по клику на кнопку отправить
-								$('.main_form .submit_btn').click(function() {
-									$('.main_form .app_message').show(0);
+								$('.submit_btn').click(function() {
+									$(this).addClass("load");
 
 									// скрываем через 3сек
 									setTimeout(function(){
-										$('.main_form .app_message').hide(0);
+										$('.submit_btn').removeClass("load");
 									}, 3000);
 								});
 								
