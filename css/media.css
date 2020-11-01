@@ -807,8 +807,6 @@
 
   .new_what_is_section {
     padding-bottom: 0px; }
-    .new_what_is_section .slider_wrapper {
-      margin-bottom: -97px; }
 
   .new_freedom_section {
     background: #505050;
@@ -1977,8 +1975,7 @@
   .new_what_is_section {
     padding-bottom: 0px; }
     .new_what_is_section .slider_wrapper {
-      max-width: 287px;
-      margin-bottom: -64px; }
+      max-width: 287px; }
       .new_what_is_section .slider_wrapper .swiper-pagination .swiper-pagination-bullet {
         width: 5px;
         height: 5px;
