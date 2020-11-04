@@ -815,7 +815,14 @@
       display: none; }
     .new_freedom_section .vaulty_item {
       width: 100%;
-      margin-right: 0px; } }
+      margin-right: 0px; }
+
+  .main_section ul li {
+    padding-left: 0px;
+    text-align: center; }
+
+  .main_section ul li:before {
+    display: none; } }
 @media screen and (max-width: 767px) {
   .main_header .products_dropdown {
     display: none; }
