@@ -5429,6 +5429,10 @@ section, .main_header, .main_footer {
   width: 153px;
   margin-bottom: 50px; }
 
+.new_what_is_section .main_slider {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
 .test {
   width: 100%;
   height: 1000px; }
