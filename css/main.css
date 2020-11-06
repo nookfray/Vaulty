@@ -5396,7 +5396,7 @@ section, .main_header, .main_footer {
     -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
     width: calc(33.333% - 38.666px);
-    padding: 45px 35px;
+    padding: 45px 0px;
     padding-bottom: 20px;
     text-align: left;
     margin-bottom: 30px;
@@ -5411,12 +5411,44 @@ section, .main_header, .main_footer {
       display: inline-block;
       vertical-align: top;
       max-width: 100%;
+      width: 100%;
       text-align: left;
       font-weight: 600;
       font-size: 29px;
       line-height: 1.1;
       color: #343434;
-      margin-bottom: 20px; }
+      text-align: center;
+      padding: 0px 20px;
+      margin-bottom: 40px; }
+      .new_freedom_section .vaulty_item .item_title:after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #CDB382;
+        position: absolute;
+        bottom: -18px;
+        left: 0px;
+        right: 0px;
+        margin: auto; }
+    .new_freedom_section .vaulty_item ul {
+      position: relative;
+      width: 100%;
+      padding: 0px;
+      list-style: none;
+      margin: 0px; }
+      .new_freedom_section .vaulty_item ul li {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: #505050;
+        padding: 15px 30px;
+        margin: 0px; }
+      .new_freedom_section .vaulty_item ul li:nth-of-type(2n + 1) {
+        background: #F5F5F5; }
     .new_freedom_section .vaulty_item p {
       font-size: 21px;
       line-height: 27px;
