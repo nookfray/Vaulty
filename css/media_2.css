@@ -451,7 +451,10 @@
     border-bottom: 10px solid rgba(52, 52, 52, 0.95); }
 
   .product_header.fixed_header .toggle_menu:after {
-    margin-top: 28px; } }
+    margin-top: 28px; }
+
+  .vaulty_coin .desktop_img {
+    right: -355px; } }
 @media screen and (max-width: 991px) {
   .academy_welcome .container {
     max-width: 720px; }
@@ -956,7 +959,32 @@
     max-width: 1281px; }
 
   .academy_item .item_img {
-    margin-bottom: 27px; } }
+    margin-bottom: 27px; }
+
+  .vaulty_coin {
+    text-align: center; }
+    .vaulty_coin .container {
+      padding-top: 0px;
+      padding-bottom: 80px; }
+    .vaulty_coin .wrapper {
+      max-width: 550px;
+      width: 100%;
+      margin: auto; }
+    .vaulty_coin .mobile_img {
+      display: block;
+      max-width: 170px;
+      margin: 40px auto;
+      margin-top: -65px; }
+    .vaulty_coin .desktop_img {
+      display: none; }
+    .vaulty_coin .title {
+      font-size: 54px;
+      line-height: 1; }
+    .vaulty_coin ul li {
+      text-align: center;
+      padding: 0px; }
+      .vaulty_coin ul li:before {
+        display: none; } }
 @media screen and (max-width: 850px) {
   .charge_section .charger {
     left: -100px; } }
@@ -1513,7 +1541,29 @@
   .main_header .mobile_nav .products_dropdown .dropdown_menu li a {
     background: #FFF;
     opacity: 1;
-    color: #505050; } }
+    color: #505050; }
+
+  .vaulty_coin .mobile_img {
+    max-width: 100px;
+    margin-top: -65px; }
+  .vaulty_coin p {
+    font-size: 16.67px;
+    line-height: 21px;
+    margin-bottom: 15px; }
+  .vaulty_coin .title {
+    font-size: 37.5px; }
+  .vaulty_coin .tag {
+    font-size: 21px;
+    line-height: 27px;
+    margin-bottom: 0px; }
+  .vaulty_coin ul {
+    margin-bottom: 45px; }
+    .vaulty_coin ul li {
+      font-size: 16.67px;
+      line-height: 21px;
+      text-align: center;
+      padding: 0px;
+      margin-bottom: 15px; } }
 @media screen and (max-width: 575px) {
   .academy_header .mobile_block {
     padding-top: 0px;
@@ -2391,7 +2441,11 @@
   .checkout_block .terms_checkbox .name {
     font-size: 16px;
     padding-left: 15px;
-    padding-right: 0px; } }
+    padding-right: 0px; }
+
+  .vaulty_coin .buy_btn {
+    margin-right: 0px;
+    margin-bottom: 20px; } }
 @media screen and (max-width: 399px) {
   .product_compare .wrapper {
     padding-bottom: 150px; }
