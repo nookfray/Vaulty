@@ -6752,7 +6752,7 @@
     color: #505050;
     margin-bottom: 15px; }
   .vaulty_coin .tag {
-    font-size: 33px;
+    font-size: 29px;
     font-weight: 600;
     line-height: 1.2;
     color: #CDB382;
@@ -6800,7 +6800,9 @@
         -o-background-size: 100% 100%;
         background-size: 100% 100%; }
       .vaulty_coin ul li span {
-        color: #CDB382; }
+        color: #CDB382;
+        font-size: 18px;
+        text-transform: uppercase; }
     .vaulty_coin ul li:last-of-type {
       margin-bottom: 0px; }
   .vaulty_coin .buy_btn {
@@ -6816,6 +6818,25 @@
       color: #FFF;
       -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35); }
+  .vaulty_coin .disabled_btn {
+    background: #A7A7A7;
+    border-color: #A7A7A7;
+    color: #FFF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    pointer-events: none; }
+    .vaulty_coin .disabled_btn:focus {
+      color: #FFF; }
+    .vaulty_coin .disabled_btn:hover {
+      background: #A7A7A7;
+      border-color: #A7A7A7;
+      color: #FFF;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .vaulty_coin .disabled_btn span {
+      color: #505050;
+      font-size: 16.67px;
+      font-style: italic; }
   .vaulty_coin .desktop_img {
     position: absolute;
     max-width: 712px;

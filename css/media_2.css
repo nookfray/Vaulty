@@ -1553,7 +1553,7 @@
   .vaulty_coin .title {
     font-size: 37.5px; }
   .vaulty_coin .tag {
-    font-size: 21px;
+    font-size: 20px;
     line-height: 27px;
     margin-bottom: 0px; }
   .vaulty_coin ul {
@@ -1563,7 +1563,9 @@
       line-height: 21px;
       text-align: center;
       padding: 0px;
-      margin-bottom: 15px; } }
+      margin-bottom: 15px; }
+      .vaulty_coin ul li span {
+        font-size: 15px; } }
 @media screen and (max-width: 575px) {
   .academy_header .mobile_block {
     padding-top: 0px;
