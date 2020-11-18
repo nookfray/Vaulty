@@ -1565,7 +1565,10 @@
       padding: 0px;
       margin-bottom: 15px; }
       .vaulty_coin ul li span {
-        font-size: 15px; } }
+        font-size: 15px; }
+
+  .buyvc_section textarea {
+    height: 88px; } }
 @media screen and (max-width: 575px) {
   .academy_header .mobile_block {
     padding-top: 0px;
@@ -2184,7 +2187,34 @@
     margin-bottom: 5px; }
 
   .dashboard_section .main_block .left_col .name {
-    margin-bottom: 5px; } }
+    margin-bottom: 5px; }
+
+  .buyvc_section {
+    padding-top: 70px;
+    padding-bottom: 60px; }
+    .buyvc_section .container {
+      padding-left: 0px;
+      padding-right: 0px; }
+    .buyvc_section .white_wrapper img {
+      max-width: 82px;
+      margin-bottom: 40px;
+      margin-top: -55px; }
+    .buyvc_section .tag {
+      font-size: 17px; }
+    .buyvc_section p {
+      font-size: 16.67px;
+      line-height: 21px; }
+    .buyvc_section ul {
+      margin-bottom: 20px; }
+      .buyvc_section ul li {
+        font-size: 16.67px;
+        line-height: 21px;
+        padding-top: 14px;
+        padding-bottom: 14px; }
+    .buyvc_section .more {
+      white-space: nowrap; }
+    .buyvc_section .price_input p {
+      padding-top: 24px; } }
 @media screen and (max-width: 479px) {
   .academy_welcome {
     padding-top: 120px; }
@@ -2447,7 +2477,25 @@
 
   .vaulty_coin .buy_btn {
     margin-right: 0px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .buyvc_section p br {
+    display: none; }
+  .buyvc_section .price_input p {
+    padding: 0px 15px;
+    padding-top: 18px; }
+  .buyvc_section textarea {
+    font-size: 16.67px;
+    line-height: 21px; }
+  .buyvc_section .white_wrapper {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .buyvc_section .checkbox_item label {
+    font-size: 16.67px;
+    line-height: 21px; }
+  .buyvc_section .pay_submit_btn {
+    width: 170px;
+    height: 46px; } }
 @media screen and (max-width: 399px) {
   .product_compare .wrapper {
     padding-bottom: 150px; }

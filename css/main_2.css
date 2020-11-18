@@ -6845,4 +6845,245 @@
   .vaulty_coin .mobile_img {
     display: none; }
 
+.buyvc_section {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #F5F5F5; }
+  .buyvc_section .container {
+    width: 100%;
+    max-width: 630px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .buyvc_section .white_wrapper {
+    position: relative;
+    width: 100%;
+    background: #FFF;
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 30px 26px;
+    padding-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    .buyvc_section .white_wrapper img {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: 114px;
+      margin: auto;
+      margin-top: -77px;
+      margin-bottom: 45px; }
+  .buyvc_section .section_title {
+    margin-bottom: 45px; }
+    .buyvc_section .section_title:before {
+      width: 34px;
+      height: 4px;
+      bottom: -22px; }
+  .buyvc_section .main_title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px; }
+    .buyvc_section .main_title:before {
+      display: none; }
+  .buyvc_section p {
+    position: relative;
+    font-size: 20.8px;
+    line-height: 25px;
+    color: #505050;
+    margin-bottom: 20px; }
+  .buyvc_section .tag {
+    position: relative;
+    width: 100%;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #CDB382; }
+  .buyvc_section .second_title {
+    position: relative;
+    width: 100%;
+    position: relative;
+    font-size: 20.8px;
+    line-height: 25px;
+    color: #505050;
+    margin-bottom: 45px; }
+    .buyvc_section .second_title:before {
+      content: "";
+      display: block;
+      width: 33px;
+      height: 3px;
+      background: #ccb381;
+      position: absolute;
+      bottom: -25px;
+      left: 0px;
+      right: 0px;
+      margin: auto; }
+  .buyvc_section .more {
+    margin-bottom: 20px; }
+  .buyvc_section .top_wrapper p {
+    margin-bottom: 15px; }
+  .buyvc_section .divider {
+    position: relative;
+    width: 100%;
+    height: 11px;
+    border-bottom: 1px solid #D3D3D3;
+    margin-bottom: 30px; }
+  .buyvc_section ul {
+    position: relative;
+    list-style: none;
+    width: calc(100% + 52px);
+    margin-left: -26px;
+    margin-right: -26px;
+    padding: 0px;
+    margin-bottom: 30px; }
+    .buyvc_section ul li {
+      position: relative;
+      width: 100%;
+      padding: 0px;
+      text-align: center;
+      font-weight: normal;
+      font-size: 20.8px;
+      line-height: 26px;
+      padding: 12px 26px; }
+    .buyvc_section ul .completed {
+      color: #a2a2a2; }
+    .buyvc_section ul .active {
+      color: #CDB382; }
+    .buyvc_section ul li:nth-of-type(2n+1) {
+      background: #F5F5F5; }
+  .buyvc_section .form_wrap {
+    position: relative;
+    width: 100%; }
+    .buyvc_section .form_wrap p {
+      text-align: left; }
+      .buyvc_section .form_wrap p span {
+        color: #CCB381;
+        font-size: 18px;
+        text-transform: uppercase; }
+  .buyvc_section textarea {
+    position: relative;
+    resize: none;
+    outline: none;
+    width: 100%;
+    height: 66px;
+    border: 1px solid #a7a7a7;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    color: #B08B45;
+    padding: 20px;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all;
+    margin-bottom: 27px; }
+    .buyvc_section textarea:focus {
+      -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+      background: #F9F9F9; }
+    .buyvc_section textarea.error {
+      border-color: #ff3434; }
+  .buyvc_section .price_input {
+    position: relative;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 27px; }
+    .buyvc_section .price_input input {
+      width: 50%;
+      -webkit-border-radius: 10px 0px 0px 10px;
+      border-radius: 10px 0px 0px 10px;
+      margin-bottom: 0px; }
+    .buyvc_section .price_input p {
+      position: relative;
+      top: 0px;
+      right: 0px;
+      width: 50%;
+      text-align: right;
+      background: #F5F5F5;
+      border: 1px solid #a7a7a7;
+      border-left: none;
+      -webkit-border-radius: 0px 10px 10px 0px;
+      border-radius: 0px 10px 10px 0px;
+      margin: 0px;
+      padding: 19px 18px;
+      padding-bottom: 17px; }
+      .buyvc_section .price_input p span {
+        font-size: 13px;
+        color: #505050; }
+  .buyvc_section .checkbox_item {
+    width: 100%;
+    padding: 0px;
+    border: none;
+    text-align: left;
+    margin-bottom: 20px; }
+    .buyvc_section .checkbox_item label {
+      position: relative;
+      border: 1px solid #a7a7a7;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 20.8px;
+      line-height: 26px;
+      color: #505050;
+      padding: 17px 20px;
+      padding-top: 19px;
+      padding-left: 55px; }
+      .buyvc_section .checkbox_item label .icon {
+        width: 17px;
+        height: 17px;
+        top: 0px;
+        left: 19px;
+        bottom: 0px;
+        margin: auto;
+        background: #F5F5F5;
+        border-width: 1px; }
+  .buyvc_section .pay_submit_btn {
+    width: 280px;
+    height: 76px;
+    padding: 0px;
+    border: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-image: url("../img/btn_off.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 0.5;
+    margin-bottom: 12px; }
+    .buyvc_section .pay_submit_btn:hover {
+      background-image: url("../img/btn_off.png"); }
+    .buyvc_section .pay_submit_btn.active {
+      background-image: url("../img/btn_on.png");
+      opacity: 1; }
+  .buyvc_section .secure_text {
+    width: 100%;
+    text-align: center;
+    font-size: 16.67px;
+    line-height: 25px;
+    color: #505050;
+    opacity: 0.5;
+    margin: 0px; }
+
+.coin_ty .small_text a {
+  font-weight: 600;
+  font-size: 16.67px;
+  line-height: 27px;
+  color: #505050; }
+  .coin_ty .small_text a:hover {
+    color: #CDB382; }
+
 /*# sourceMappingURL=main_2.css.map */
