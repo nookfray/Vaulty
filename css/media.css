@@ -825,6 +825,9 @@
     text-align: center; }
 
   .main_section ul li:before {
+    display: none; }
+
+  .subscribed_thank p br {
     display: none; } }
 @media screen and (max-width: 767px) {
   .main_header .products_dropdown {
