@@ -486,7 +486,12 @@ $(document).ready(function() {
 					required: true,
 					minlength: 2,
 					maxlength: 120,
-				}
+				},
+				price: {
+					required: true,
+					minlength: 3,
+					maxlength: 7,
+				},
 			},
 			messages:{
 				name: {
