@@ -487,7 +487,7 @@ $(document).ready(function() {
 					minlength: 2,
 					maxlength: 120,
 				},
-				price: {
+				how_many_vaulty: {
 					required: true,
 					minlength: 3,
 					maxlength: 7,
