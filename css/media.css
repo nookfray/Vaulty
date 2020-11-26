@@ -423,7 +423,14 @@
         margin-bottom: 20px; }
       .new_freedom_section .vaulty_item ul li {
         padding-left: 28px;
-        padding-right: 28px; } }
+        padding-right: 28px; }
+
+  .main_section ul li {
+    padding-left: 0px;
+    text-align: center; }
+
+  .main_section ul li:before {
+    display: none; } }
 @media screen and (max-width: 991px) {
   .main_header.fixed_header .container {
     min-height: 0px; }

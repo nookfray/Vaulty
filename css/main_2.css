@@ -7086,4 +7086,11 @@
   .coin_ty .small_text a:hover {
     color: #CDB382; }
 
+.academy_item.no_img {
+  padding-left: 26px; }
+  .academy_item.no_img .item_img {
+    display: none; }
+  .academy_item.no_img .date {
+    left: 26px; }
+
 /*# sourceMappingURL=main_2.css.map */

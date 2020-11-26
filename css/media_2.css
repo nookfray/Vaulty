@@ -984,7 +984,10 @@
       text-align: center;
       padding: 0px; }
       .vaulty_coin ul li:before {
-        display: none; } }
+        display: none; }
+
+  .academy_item.no_img {
+    margin-top: auto; } }
 @media screen and (max-width: 850px) {
   .charge_section .charger {
     left: -100px; } }
@@ -2214,7 +2217,18 @@
     .buyvc_section .more {
       white-space: nowrap; }
     .buyvc_section .price_input p {
-      padding-top: 24px; } }
+      padding-top: 24px; }
+
+  .academy_article ol li {
+    padding-left: 30px; }
+    .academy_article ol li:before {
+      display: block;
+      font-size: 16.67px; }
+  .academy_article ul li {
+    padding-left: 30px; }
+    .academy_article ul li:before {
+      width: 22px;
+      height: 20px; } }
 @media screen and (max-width: 479px) {
   .academy_welcome {
     padding-top: 120px; }
@@ -2495,7 +2509,12 @@
     line-height: 21px; }
   .buyvc_section .pay_submit_btn {
     width: 170px;
-    height: 46px; } }
+    height: 46px; }
+
+  .academy_item.no_img {
+    padding-left: 20px; }
+    .academy_item.no_img .date {
+      left: 20px; } }
 @media screen and (max-width: 399px) {
   .product_compare .wrapper {
     padding-bottom: 150px; }

@@ -492,6 +492,12 @@ $(document).ready(function() {
 					minlength: 3,
 					maxlength: 7,
 				},
+				vaulty_coin_address: {
+					required: true,
+					minlength: 42,
+					maxlength: 42,
+					coin_addess: true,
+				},
 			},
 			messages:{
 				name: {
@@ -808,5 +814,16 @@ $(document).ready(function() {
 			$('.pay_submit_btn').removeClass('active');
 		}
 	});
+
+
+	$('.mod_select').on('change', function() {
+        $(this).valid();
+    })
+
+
+	jQuery.validator.addMethod("coin_addess", function(value, element) {
+		return this.optional(element) || /^0x/.test(value);
+	}, "Please enter valid Coin address!");
+
 
 });
