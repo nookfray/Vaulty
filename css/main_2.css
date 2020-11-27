@@ -7054,7 +7054,7 @@
     border: none;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    background-image: url("../img/btn_off.png");
+    background-image: url("../img/btn_on.png");
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: 100% 100%;
@@ -7062,10 +7062,8 @@
     background-size: 100% 100%;
     -webkit-box-shadow: none;
     box-shadow: none;
-    opacity: 0.5;
+    opacity: 1;
     margin-bottom: 12px; }
-    .buyvc_section .pay_submit_btn:hover {
-      background-image: url("../img/btn_off.png"); }
     .buyvc_section .pay_submit_btn.active {
       background-image: url("../img/btn_on.png");
       opacity: 1; }

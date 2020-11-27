@@ -807,15 +807,6 @@ $(document).ready(function() {
 
 
 
-	$('.buyvc_section input').on('keyup click', function() {
-		if ($(".main_form").valid()) {
-			$('.pay_submit_btn').addClass('active');  
-		} else {
-			$('.pay_submit_btn').removeClass('active');
-		}
-	});
-
-
 	$('.mod_select').on('change', function() {
         $(this).valid();
     })
