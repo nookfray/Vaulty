@@ -491,6 +491,8 @@ $(document).ready(function() {
 					required: true,
 					minlength: 3,
 					maxlength: 7,
+					number: true,
+					sum: true,
 				},
 				vaulty_coin_address: {
 					required: true,
@@ -815,6 +817,16 @@ $(document).ready(function() {
 	jQuery.validator.addMethod("coin_addess", function(value, element) {
 		return this.optional(element) || /^0x/.test(value);
 	}, "Please enter valid Coin address!");
+
+
+	$.validator.addMethod(
+		"sum",
+		function (value, element, params) {
+			var sumOfVals = 100;
+			if (element.value < sumOfVals) return false;
+			return true;
+		}, "Value must be more 100"
+	);
 
 
 });
